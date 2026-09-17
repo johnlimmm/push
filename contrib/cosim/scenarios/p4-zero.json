@@ -1,0 +1,9 @@
+{
+  "name": "p4-zero",
+  "seed": 7,
+  "background": {},
+  "expected_queueing": {
+    "command": "zero",
+    "result": "zero"
+  }
+}

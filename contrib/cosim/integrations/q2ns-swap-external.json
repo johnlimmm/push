@@ -1,0 +1,11 @@
+{
+  "clean_base_patch_reproduction_passed": true,
+  "patch": "q2ns-swap-external.patch",
+  "patch_sha256": "a232b01c3efdda91f29a8e00eff38e694392807a493f1eb82ff88b018423fc30",
+  "q2ns_base_commit": "f22ba28f437099ba3cf9956ca332ba5ce8bb14fd",
+  "source_sha256": {
+    "model/q2ns-swap-app.cc": "6cbecbbe5f0d6c5ef598eb78f049c3e3b7b4b20029a12d402dc5bd079ae2ebcb",
+    "model/q2ns-swap-app.h": "f45e096288d51c738ce89b1a4f6542d41793a666ade32d4f9770569f7a673f93",
+    "test/q2ns-swap-external-test-suite.cc": "f89f26370493f3c99580a9e5c47d4fc991614086a56c6060fb8e92489e37feb2"
+  }
+}

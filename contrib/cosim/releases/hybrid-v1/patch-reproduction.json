@@ -1,0 +1,15 @@
+{
+  "passed": true,
+  "patches": [
+    {
+      "patch": "q2ns-swap-external.patch",
+      "passed": true,
+      "files": 3
+    },
+    {
+      "patch": "q2ns-teleport-external.patch",
+      "passed": true,
+      "files": 3
+    }
+  ]
+}

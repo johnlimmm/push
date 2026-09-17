@@ -1,0 +1,121 @@
+{
+  "date": "2026-09-16T12:47:26.164532+00:00",
+  "milestone": "Hybrid v1 release verification",
+  "native": {
+    "q2ns-analysis": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-analysis",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.575,
+      "log": "hybrid-v1-q2ns-analysis.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 4
+    },
+    "q2ns-netcontroller": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-netcontroller",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.233,
+      "log": "hybrid-v1-q2ns-netcontroller.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 8
+    },
+    "q2ns-qchannel": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qchannel",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.205,
+      "log": "hybrid-v1-q2ns-qchannel.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 14
+    },
+    "q2ns-qnode": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qnode",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.207,
+      "log": "hybrid-v1-q2ns-qnode.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 7
+    },
+    "q2ns-qstate-interface": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-interface",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.215,
+      "log": "hybrid-v1-q2ns-qstate-interface.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 4
+    },
+    "q2ns-qstate-registry": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-registry",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.221,
+      "log": "hybrid-v1-q2ns-qstate-registry.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 35
+    },
+    "q2ns-swap-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-swap-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.298,
+      "log": "hybrid-v1-q2ns-swap-external.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 4
+    },
+    "q2ns-teleport-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-teleport-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.285,
+      "log": "hybrid-v1-q2ns-teleport-external.log",
+      "passed": true,
+      "returncode": 0,
+      "test_cases": 7
+    }
+  },
+  "native_test_cases": 83,
+  "passed": true,
+  "python": {
+    "command": [
+      "/home/ns3/qunet/bin/python",
+      "-m",
+      "unittest",
+      "discover",
+      "-s",
+      "contrib/cosim/tests",
+      "-v"
+    ],
+    "elapsed_seconds": 294.993,
+    "log": "hybrid-v1-python-tests.log",
+    "passed": true,
+    "returncode": 0,
+    "tests": 136
+  },
+  "total_test_cases": 219
+}

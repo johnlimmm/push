@@ -1,0 +1,13 @@
+{
+  "classical_loads": [0.0, 0.35, 0.7],
+  "request_intervals_ns": [800000, 2000000],
+  "sessions": 4,
+  "calibration_traffic_seeds": [100, 101],
+  "test_traffic_seeds": [200, 201, 202, 203],
+  "quantum_seeds": [7, 11],
+  "calibration_request_interval_ns": 2000000,
+  "correction_duration_ns": 50000,
+  "fidelity_min": 0.5,
+  "deadline_ns": 5000000,
+  "bootstrap_samples": 1000
+}

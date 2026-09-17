@@ -1,0 +1,28 @@
+{
+  "name": "p5-quantum-only",
+  "seed": 7,
+  "sessions": [
+    {
+      "session_id": 1,
+      "command_time_ns": 1000000
+    },
+    {
+      "session_id": 2,
+      "command_time_ns": 1800000
+    },
+    {
+      "session_id": 3,
+      "command_time_ns": 2600000
+    },
+    {
+      "session_id": 4,
+      "command_time_ns": 3400000
+    }
+  ],
+  "background": {},
+  "expected_queueing": {
+    "command": "zero",
+    "result": "zero",
+    "R": "positive"
+  }
+}

@@ -1,0 +1,1779 @@
+{
+  "calibration_runs": 6,
+  "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+  "calibration_test_disjoint": true,
+  "cases": [
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-200_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 200,
+      "workload_sha256": "170da0d322b5afe7e69761dd0c6558a917af944a9aa27ee45fdc41cecbf3c630"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-200_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 200,
+      "workload_sha256": "170da0d322b5afe7e69761dd0c6558a917af944a9aa27ee45fdc41cecbf3c630"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-201_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 201,
+      "workload_sha256": "a56b076fed6aaf1823b127dc274025b4deb4936a6bd65377bc2dd01f8c7ef0b1"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-201_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 201,
+      "workload_sha256": "a56b076fed6aaf1823b127dc274025b4deb4936a6bd65377bc2dd01f8c7ef0b1"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-202_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 202,
+      "workload_sha256": "592dabb7bb9be197ef469af23274c9a0f6e1a867a4263aff8b117a524ea95b9e"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-202_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 202,
+      "workload_sha256": "592dabb7bb9be197ef469af23274c9a0f6e1a867a4263aff8b117a524ea95b9e"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-203_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 203,
+      "workload_sha256": "a4c84643a673a73e5cd9f2b14a2b3693edb1e3a1f752dd40df08c1abc9ea0f0b"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-203_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 203,
+      "workload_sha256": "a4c84643a673a73e5cd9f2b14a2b3693edb1e3a1f752dd40df08c1abc9ea0f0b"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-200_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 200,
+      "workload_sha256": "a50c798691fca7610a43237aa443364e952d33e5fb602babc2ec43123b95978f"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-200_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 200,
+      "workload_sha256": "a50c798691fca7610a43237aa443364e952d33e5fb602babc2ec43123b95978f"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-201_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 201,
+      "workload_sha256": "c40b0065b110f05c2ea99f3711fc07805ee1596a8ddba826745373e80cca041c"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-201_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 201,
+      "workload_sha256": "c40b0065b110f05c2ea99f3711fc07805ee1596a8ddba826745373e80cca041c"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-202_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 202,
+      "workload_sha256": "6956ab1468815249865e2c8602a8403b010d3d4e0934ddbdcd73362062def140"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-202_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 202,
+      "workload_sha256": "6956ab1468815249865e2c8602a8403b010d3d4e0934ddbdcd73362062def140"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-203_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 203,
+      "workload_sha256": "c0215ec889963154533df49d9f84f8049be28b4e0095e28fbec8cf65978a31a1"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-203_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 203,
+      "workload_sha256": "c0215ec889963154533df49d9f84f8049be28b4e0095e28fbec8cf65978a31a1"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-200_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 200,
+      "workload_sha256": "c158d04060580505aff1b7a3b801a5bbb7316b99558039ec7dd624a6e7899642"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-200_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 200,
+      "workload_sha256": "c158d04060580505aff1b7a3b801a5bbb7316b99558039ec7dd624a6e7899642"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-201_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 201,
+      "workload_sha256": "cd5627396b476b797d8865fab43afa869b8ef59c9734313574e370708e268b7c"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-201_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 201,
+      "workload_sha256": "cd5627396b476b797d8865fab43afa869b8ef59c9734313574e370708e268b7c"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-202_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 202,
+      "workload_sha256": "157355d5bfecd15c1bfb6a07e1abd63fb54c105c934c2c124de2435fb1bcdce4"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-202_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 202,
+      "workload_sha256": "157355d5bfecd15c1bfb6a07e1abd63fb54c105c934c2c124de2435fb1bcdce4"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-203_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 203,
+      "workload_sha256": "fcd7b728a3a0b0a49f8b07d9e4c9a5f281f11f9ae36186c1ce7a5c20a4a3c38c"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-203_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 203,
+      "workload_sha256": "fcd7b728a3a0b0a49f8b07d9e4c9a5f281f11f9ae36186c1ce7a5c20a4a3c38c"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-200_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 200,
+      "workload_sha256": "2df9c5cc288a628d5abb0e1fec603d3a54c45e332f71726f22aa07e85c8d6eb9"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-200_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 200,
+      "workload_sha256": "2df9c5cc288a628d5abb0e1fec603d3a54c45e332f71726f22aa07e85c8d6eb9"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-201_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 201,
+      "workload_sha256": "72cc2384a880b50eb918ea0ca6a7cd27f8b4e2263ce25d89bb925f3d4daf86ed"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-201_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 201,
+      "workload_sha256": "72cc2384a880b50eb918ea0ca6a7cd27f8b4e2263ce25d89bb925f3d4daf86ed"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-202_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 202,
+      "workload_sha256": "4411dd35ffea5f5b3abc88aeec89db90ac7ae36c71852ce19c962cf82a0c28ca"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-202_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 202,
+      "workload_sha256": "4411dd35ffea5f5b3abc88aeec89db90ac7ae36c71852ce19c962cf82a0c28ca"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-203_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 203,
+      "workload_sha256": "6e7a41b3e483b8d78556c841b9e33c590a993e325bc2c38bfd45f6d55ba63fee"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-203_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 203,
+      "workload_sha256": "6e7a41b3e483b8d78556c841b9e33c590a993e325bc2c38bfd45f6d55ba63fee"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-200_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 200,
+      "workload_sha256": "2ef8f903c202c559df125aaef0b4ea1cebf6789ec3733c2414cc551b97713438"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-200_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 200,
+      "workload_sha256": "2ef8f903c202c559df125aaef0b4ea1cebf6789ec3733c2414cc551b97713438"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-201_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 201,
+      "workload_sha256": "452c05d236f6b5bcbdce15cd419c4f9b49079f2848c8ccbd09d3e1e98698d5b2"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-201_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 201,
+      "workload_sha256": "452c05d236f6b5bcbdce15cd419c4f9b49079f2848c8ccbd09d3e1e98698d5b2"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-202_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 202,
+      "workload_sha256": "8474fbb98cc9f97528eac398fc916bf89865425a1693104e4688857d80852584"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-202_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 202,
+      "workload_sha256": "8474fbb98cc9f97528eac398fc916bf89865425a1693104e4688857d80852584"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-203_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 203,
+      "workload_sha256": "ff3b56c1ec7bf08696850e238b26080199953c983e36c18afc299852a0be865b"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-203_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 203,
+      "workload_sha256": "ff3b56c1ec7bf08696850e238b26080199953c983e36c18afc299852a0be865b"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-200_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 200,
+      "workload_sha256": "a74f2854c9c958cacdd077f329616755cbea5faa5c11e488a8b43e50edb73dfd"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-200_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 200,
+      "workload_sha256": "a74f2854c9c958cacdd077f329616755cbea5faa5c11e488a8b43e50edb73dfd"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-201_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 201,
+      "workload_sha256": "8d576f09fa18c6d7f407859f624c3f11e1a274db90d445a63466dea387557b34"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-201_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 201,
+      "workload_sha256": "8d576f09fa18c6d7f407859f624c3f11e1a274db90d445a63466dea387557b34"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-202_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 202,
+      "workload_sha256": "d18d98e4df454651c7c83cbcbcfa3ad87444256630aa53f9324fe5e06f1a4caf"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-202_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 202,
+      "workload_sha256": "d18d98e4df454651c7c83cbcbcfa3ad87444256630aa53f9324fe5e06f1a4caf"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-203_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 203,
+      "workload_sha256": "b4fdfae0d5d1483f5757c1bdd2cd3f1c0414cf64818379f6effb45bbc78bbc7b"
+    },
+    {
+      "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-203_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 203,
+      "workload_sha256": "b4fdfae0d5d1483f5757c1bdd2cd3f1c0414cf64818379f6effb45bbc78bbc7b"
+    }
+  ],
+  "core_source_hashes_unchanged": true,
+  "execution_runs": 144,
+  "groups": [
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 800000,
+      "success_probability_mae": null,
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.041875654129768916,
+          0.041875654129768916
+        ],
+        "mean": 0.041875654129768916,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.041875654129768916,
+          0.041875654129768916
+        ],
+        "mean": 0.041875654129768916,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.04020832374480663,
+          0.04020832374480663
+        ],
+        "mean": 0.04020832374480663,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -1200000.0,
+          -1200000.0
+        ],
+        "mean": -1200000.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          1200000.0,
+          1200000.0
+        ],
+        "mean": 1200000.0,
+        "traffic_clusters": 4
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": null,
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -17291.625,
+          -3131.25
+        ],
+        "mean": -9996.375,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          76158.25,
+          245985.75
+        ],
+        "mean": 161072.0,
+        "traffic_clusters": 4
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 800000,
+      "success_probability_mae": null,
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0014616582591782806,
+          0.003264643679558671
+        ],
+        "mean": 0.0001659986127657935,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0028671297048713726,
+          0.005957147225005163
+        ],
+        "mean": 0.00436331861908815,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.1875
+        ],
+        "mean": 0.0625,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0011911131479859088,
+          0.0028196261163075803
+        ],
+        "mean": 0.0002224050536193383,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -107101.25,
+          60703.125
+        ],
+        "mean": -4034.5625,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          142661.125,
+          250831.375
+        ],
+        "mean": 191465.5625,
+        "traffic_clusters": 4
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          1.3877787807814457e-17,
+          9.71445146547012e-17
+        ],
+        "mean": 5.551115123125783e-17,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.040387630242455994,
+          0.04225550749710639
+        ],
+        "mean": 0.04140442240854347,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.040387630242455994,
+          0.04225550749710639
+        ],
+        "mean": 0.04140442240854347,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.1875
+        ],
+        "mean": 0.0625,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.03830188265731835,
+          0.04088955923720912
+        ],
+        "mean": 0.03982339100419293,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -1217291.625,
+          -1203131.25
+        ],
+        "mean": -1209996.375,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          1203131.25,
+          1217291.625
+        ],
+        "mean": 1209996.375,
+        "traffic_clusters": 4
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": null,
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0025336825217876467,
+          0.0021778557546653227
+        ],
+        "mean": -0.0006310765240628811,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0028685201767617713,
+          0.005695396177120879
+        ],
+        "mean": 0.004113019387938229,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.002771964035389596,
+          0.002064821395394538
+        ],
+        "mean": -0.0011016511253687453,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -124519.3125,
+          103134.375
+        ],
+        "mean": -14485.75,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          156162.625,
+          259529.125
+        ],
+        "mean": 207845.875,
+        "traffic_clusters": 4
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          1.3877787807814457e-17,
+          9.71445146547012e-17
+        ],
+        "mean": 5.551115123125783e-17,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.1875
+        ],
+        "mean": 0.0625,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -126496.0,
+          194335.0
+        ],
+        "mean": 28302.375,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          112149.3125,
+          342835.1875
+        ],
+        "mean": 228474.75,
+        "traffic_clusters": 4
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 800000,
+      "success_probability_mae": null,
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0031207916115053684,
+          0.0006548837359382498
+        ],
+        "mean": -0.0010038059726029183,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.00492386696578722,
+          0.0056426905485650256
+        ],
+        "mean": 0.005283278757176123,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.1875
+        ],
+        "mean": 0.0625,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0029052788079269344,
+          0.0008953225468609875
+        ],
+        "mean": -0.0010049781305329734,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -44305.75,
+          107451.125
+        ],
+        "mean": 22240.4375,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          217208.5,
+          279615.125
+        ],
+        "mean": 243847.5625,
+        "traffic_clusters": 4
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          8.326672684688674e-17,
+          8.326672684688674e-17
+        ],
+        "mean": 8.326672684688674e-17,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.03486608768558255,
+          0.04138282670840174
+        ],
+        "mean": 0.03863421646558024,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.03486608768558255,
+          0.04138282670840174
+        ],
+        "mean": 0.03863421646558024,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.1875
+        ],
+        "mean": 0.0625,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.032988251032225836,
+          0.039239324455049504
+        ],
+        "mean": 0.03687513637682315,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -1326496.0,
+          -1005665.0
+        ],
+        "mean": -1171697.625,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          1005665.0,
+          1326496.0
+        ],
+        "mean": 1171697.625,
+        "traffic_clusters": 4
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": null,
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0021145604480682506,
+          0.0006904662457664149
+        ],
+        "mean": -0.0008074114728411248,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.004342013347080315,
+          0.004765856392779044
+        ],
+        "mean": 0.004568738467231884,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          -0.0030581572698148533,
+          0.0004379102224660522
+        ],
+        "mean": -0.0012522248577275207,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -50823.875,
+          8594.625
+        ],
+        "mean": -21114.625,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          226946.875,
+          282162.125
+        ],
+        "mean": 254554.5,
+        "traffic_clusters": 4
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          8.326672684688674e-17,
+          8.326672684688674e-17
+        ],
+        "mean": 8.326672684688674e-17,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 4
+      },
+      "transactions": 32
+    }
+  ],
+  "max_density_matrix_error": 3.3306690738754696e-16,
+  "milestone": "P5-B",
+  "paired_cases": 48,
+  "passed": true,
+  "plan": {
+    "bootstrap_samples": 1000,
+    "calibration_request_interval_ns": 2000000,
+    "calibration_traffic_seeds": [
+      100,
+      101
+    ],
+    "classical_loads": [
+      0.0,
+      0.35,
+      0.7
+    ],
+    "correction_duration_ns": 50000,
+    "deadline_ns": 5000000,
+    "fidelity_min": 0.5,
+    "quantum_seeds": [
+      7,
+      11
+    ],
+    "request_intervals_ns": [
+      800000,
+      2000000
+    ],
+    "sessions": 4,
+    "test_traffic_seeds": [
+      200,
+      201,
+      202,
+      203
+    ]
+  },
+  "quantum_repetitions": 2,
+  "scope": "finite seeded evaluation; pilot, not a hardware truth or stationary performance claim",
+  "statistics": "95% percentile bootstrap over traffic-seed clusters; sessions/quantum seeds averaged within cluster; paired sampled feasibility uses shared quantum seed, not guaranteed identical BSM branch",
+  "test_workloads": 24,
+  "transactions_per_model": 192
+}

@@ -1,0 +1,11 @@
+{
+  "clean_base_patch_reproduction_passed": true,
+  "patch": "q2ns-teleport-external.patch",
+  "patch_sha256": "f015f4621b25963338c5daef9f77d1569bbe3591eaf0e89d1c8104c4bb5a3972",
+  "q2ns_base_commit": "f22ba28f437099ba3cf9956ca332ba5ce8bb14fd",
+  "source_sha256": {
+    "model/q2ns-teleportation-app.cc": "0250dd0831c43857597fa3fecb896f63335d9ebb76d2e54ce3cda265328506f3",
+    "model/q2ns-teleportation-app.h": "33320017ebe87473b3cdb14bcd29ab33decc22372fc8dc6aedc87f359f4223ac",
+    "test/q2ns-teleport-external-test-suite.cc": "a327379a49fc0a027f5cd1d0b317501148222d67e2205b5c470a0b7fdcfb1fb2"
+  }
+}

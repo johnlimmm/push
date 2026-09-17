@@ -1,0 +1,40 @@
+{
+  "name": "hybrid-mixed",
+  "sessions": [
+    {
+      "session_id": 1,
+      "protocol": "swap",
+      "command_time_ns": 1000000
+    },
+    {
+      "session_id": 2,
+      "protocol": "teleport",
+      "input_state": "+i",
+      "command_time_ns": 1000000
+    },
+    {
+      "session_id": 3,
+      "protocol": "swap",
+      "command_time_ns": 1800000
+    },
+    {
+      "session_id": 4,
+      "protocol": "teleport",
+      "input_state": "-",
+      "command_time_ns": 1800000
+    }
+  ],
+  "memory_noise": {
+    "model": "T1T2NoiseModel",
+    "T1_ns": 10000000,
+    "T2_ns": 10000000
+  },
+  "background": {
+    "result": {
+      "start_ns": 2600000,
+      "interval_ns": 1600000,
+      "count": 4,
+      "payload_bytes": 1000
+    }
+  }
+}

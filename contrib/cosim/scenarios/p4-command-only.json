@@ -1,0 +1,16 @@
+{
+  "name": "p4-command-only",
+  "seed": 7,
+  "background": {
+    "command": {
+      "start_ns": 900000,
+      "interval_ns": 20000,
+      "count": 5,
+      "payload_bytes": 1000
+    }
+  },
+  "expected_queueing": {
+    "command": "positive",
+    "result": "zero"
+  }
+}

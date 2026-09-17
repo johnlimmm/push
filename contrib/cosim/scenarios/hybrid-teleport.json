@@ -1,0 +1,16 @@
+{
+  "name": "hybrid-teleport",
+  "sessions": [
+    {
+      "session_id": 1,
+      "protocol": "teleport",
+      "input_state": "+i",
+      "command_time_ns": 1000000
+    }
+  ],
+  "memory_noise": {
+    "model": "T1T2NoiseModel",
+    "T1_ns": 10000000,
+    "T2_ns": 10000000
+  }
+}

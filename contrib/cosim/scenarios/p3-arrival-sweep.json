@@ -1,0 +1,5 @@
+{
+  "scenario": {"seed": 7},
+  "session_count": 4,
+  "arrival_intervals_ns": [200000, 400000, 800000, 1600000, 3200000]
+}

@@ -1,0 +1,9 @@
+{
+  "name": "p2-memory-aging",
+  "seed": 7,
+  "memory_noise": {
+    "model": "T1T2NoiseModel",
+    "T1_ns": 20000000,
+    "T2_ns": 10000000
+  }
+}

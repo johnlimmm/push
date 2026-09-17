@@ -1,0 +1,21 @@
+{
+  "name": "queue-ordering",
+  "seed": 7,
+  "processors": [0, 1],
+  "resources": [
+    {"pair_id": 1, "processor_id": 0},
+    {"pair_id": 2, "processor_id": 0},
+    {"pair_id": 3, "processor_id": 0},
+    {"pair_id": 4, "processor_id": 0},
+    {"pair_id": 5, "processor_id": 1},
+    {"pair_id": 6, "processor_id": 1}
+  ],
+  "events": [
+    {"time_ns": 37400000, "request_id": 101, "processor_id": 0,
+     "pair_a": 1, "pair_b": 2, "duration_ns": 1600000},
+    {"time_ns": 38000000, "request_id": 102, "processor_id": 0,
+     "pair_a": 3, "pair_b": 4, "duration_ns": 1600000},
+    {"time_ns": 38000000, "request_id": 201, "processor_id": 1,
+     "pair_a": 5, "pair_b": 6, "duration_ns": 1600000}
+  ]
+}

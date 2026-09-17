@@ -1,0 +1,22 @@
+{
+  "name": "p4-both",
+  "seed": 7,
+  "background": {
+    "command": {
+      "start_ns": 900000,
+      "interval_ns": 20000,
+      "count": 5,
+      "payload_bytes": 1000
+    },
+    "result": {
+      "start_ns": 2600000,
+      "interval_ns": 50000,
+      "count": 3,
+      "payload_bytes": 1000
+    }
+  },
+  "expected_queueing": {
+    "command": "positive",
+    "result": "positive"
+  }
+}

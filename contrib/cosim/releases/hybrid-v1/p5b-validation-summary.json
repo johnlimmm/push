@@ -1,0 +1,73 @@
+{
+  "baseline": "baselines/q2ns-freeze.json",
+  "calibration_sha256": "653a6a8c1891649c2d9d2d572f150d25dc370b0b08b9e7ddb6723fcae5889c6b",
+  "calibration_test_disjoint": true,
+  "core_source_hashes_unchanged": true,
+  "date": "2026-09-16",
+  "milestone": "P5-B",
+  "passed": true,
+  "pilot": {
+    "all_b_wait_zero": true,
+    "all_packet_drops_zero": true,
+    "calibration_runs": 6,
+    "caveat": "No service feasibility misclassification observed at predeclared F_min=0.5 and relative deadline=5ms; deadline-only errors reported separately.",
+    "decoupled_predictions": 48,
+    "execution_runs": 144,
+    "log": "p5b-pilot.log",
+    "max_density_matrix_error": 3.3306690738754696e-16,
+    "native_q2ns_corrections": 384,
+    "observed_branches": [
+      "00",
+      "01",
+      "10",
+      "11"
+    ],
+    "paired_cases": 48,
+    "quantum_repetitions": 2,
+    "service_false_feasible_count": 0,
+    "service_false_infeasible_count": 0,
+    "summary": "p5b-pilot/summary.json",
+    "traffic_seeds_per_cell": 4,
+    "transactions_per_model": {
+      "Fixed-Dc": 192,
+      "Full-Sync": 192,
+      "No-Dq-R": 192
+    }
+  },
+  "scope": "Baseline implementation and finite seeded pilot evaluation; broader statistical study pending.",
+  "source_sha256": {
+    "contrib/cosim/README-P5B.md": "ff67842075d7a4165561960163bf01cf18392cbc96f6a6bc42227026f998e874",
+    "contrib/cosim/SPEC-P5B.md": "0ffaa54bf5648e4359c557fbb4e3b485d3155b49c54d10a3d27a4a3783a91064",
+    "contrib/cosim/experiments/p5b_analysis.py": "f3d3eb52cc58da9365fbea8359d90e1fa4ab026880f1d0af66760632cc432ec7",
+    "contrib/cosim/experiments/p5b_fixed.py": "72421da56dca2bb7accad5bf456cbdea9e8c1000f221a28f14e88ec3cda1dad5",
+    "contrib/cosim/experiments/p5b_nodq.py": "bdd282f698e00bb2a1dea3a1babfd3d3b49c0067279122ca514ab383d8709c7c",
+    "contrib/cosim/experiments/p5b_nodq_validation.py": "4d6ddc223f677777caec90952c1d522809769c1809abab461c4f6a082bd115c8",
+    "contrib/cosim/experiments/p5b_quantum.py": "38c1edb34c89409410ca2bd5c727f3414ddd4c14edf856cf24ee5c53e80a2db6",
+    "contrib/cosim/experiments/p5b_timing.py": "03db4c9dc4e87289448e15cf89c5e41120d56dca1727e9adaa0581fed49b4e1a",
+    "contrib/cosim/experiments/p5b_workload.py": "8f1755cb644c4dd57c18ea948ae22459f866ce1e5f6941974566b795b00c2327",
+    "contrib/cosim/experiments/run_p5b.py": "d95208cbba74975f01fdf4050bd9c0454062b5219f2b88188c40999f744c321d",
+    "contrib/cosim/scenarios/p5b-pilot.json": "b060799b2eb1ceec222fc19ea47a5218da90772000c072fd14d6a6e8b166ad62",
+    "contrib/cosim/tests/test_p5b.py": "7622e61c8ae4041a4640827be7be4c12e439dfa2ddbfa0835ce7eb7294432eb0"
+  },
+  "test_suites": {
+    "p0_p5": {
+      "elapsed_seconds": 179.335,
+      "log": "p5b-regression-suite.log",
+      "passed": true,
+      "tests": 94
+    },
+    "p5b": {
+      "elapsed_seconds": 26.102,
+      "log": "p5b-test-suite.log",
+      "passed": true,
+      "tests": 16
+    },
+    "q2ns": {
+      "elapsed_seconds": 38.986,
+      "log": "p5b-q2ns-regression-suite.log",
+      "passed": true,
+      "tests": 12
+    }
+  },
+  "total_tests": 122
+}

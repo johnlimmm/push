@@ -1,0 +1,196 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Cosim event envelope v1",
+  "description": "P1에서 고정한 공통 인과 trace 사건 형식. 단위는 정수 ns.",
+  "type": "object",
+  "properties": {
+    "schema_version": {
+      "const": 1
+    },
+    "session_id": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 9223372036854775807
+    },
+    "event_id": {
+      "type": "string",
+      "pattern": "^[np]:[0-9]+$"
+    },
+    "event_type": {
+      "type": "string",
+      "minLength": 1
+    },
+    "sim_time_ns": {
+      "type": "integer",
+      "minimum": 0,
+      "maximum": 9007199254740991
+    },
+    "sequence": {
+      "type": "integer",
+      "minimum": 0
+    },
+    "source": {
+      "enum": [
+        "ns3",
+        "quantum",
+        "federation"
+      ]
+    },
+    "source_sequence": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "round": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "phase": {
+      "enum": [
+        null,
+        "INITIALIZE",
+        "COMMIT",
+        "NS3",
+        "INPUT",
+        "DISPATCH"
+      ]
+    },
+    "caused_by_event_id": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "pattern": "^[np]:[0-9]+$"
+    },
+    "node_id": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "processor_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 0
+    },
+    "request_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "message_id": {
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "input_pair_ids": {
+      "description": "BSM은 AR/RB 입력을 기록한다. CORRECTION_* 및 PAIR_USABLE은 실제 보정 대상 AB만 기록하고 생성 이력은 details.ancestor_pair_ids에 둔다.",
+      "type": "array",
+      "items": {
+        "type": "integer",
+        "minimum": 1
+      },
+      "uniqueItems": true
+    },
+    "output_pair_id": {
+      "description": "BSM으로 생성한 AB ID. 기존 AB에 제자리 보정을 적용하는 correction에서는 input_pair_ids의 대상 ID와 같다.",
+      "type": [
+        "integer",
+        "null"
+      ],
+      "minimum": 1
+    },
+    "request_state": {
+      "type": [
+        "string",
+        "null"
+      ]
+    },
+    "resource_state": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "string"
+      }
+    },
+    "measurement_bits": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "minItems": 2,
+      "maxItems": 2,
+      "items": {
+        "type": "integer",
+        "enum": [
+          0,
+          1
+        ]
+      }
+    },
+    "fidelity": {
+      "type": [
+        "number",
+        "null"
+      ]
+    },
+    "fidelity_kind": {
+      "enum": [
+        null,
+        "initial",
+        "frame",
+        "usable"
+      ]
+    },
+    "details": {
+      "type": "object",
+      "properties": {
+        "ancestor_pair_ids": {
+          "description": "보정 대상 AB를 생성한 AR/RB pair의 이력. correction의 실제 입력 자원과 구분한다.",
+          "type": "array",
+          "items": {
+            "type": "integer",
+            "minimum": 1
+          },
+          "uniqueItems": true
+        }
+      }
+    }
+  },
+  "additionalProperties": false,
+  "required": [
+    "schema_version",
+    "session_id",
+    "event_id",
+    "event_type",
+    "sim_time_ns",
+    "sequence",
+    "source",
+    "source_sequence",
+    "round",
+    "phase",
+    "caused_by_event_id",
+    "node_id",
+    "processor_id",
+    "request_id",
+    "message_id",
+    "input_pair_ids",
+    "output_pair_id",
+    "request_state",
+    "resource_state",
+    "measurement_bits",
+    "fidelity",
+    "fidelity_kind",
+    "details"
+  ]
+}

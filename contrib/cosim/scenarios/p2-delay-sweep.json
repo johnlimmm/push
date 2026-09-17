@@ -1,0 +1,13 @@
+{
+  "scenario": {
+    "name": "p2-delay-sweep",
+    "seed": 7,
+    "memory_noise": {
+      "model": "T1T2NoiseModel",
+      "T1_ns": 20000000,
+      "T2_ns": 10000000
+    }
+  },
+  "command_delays_ns": [100000, 1000000, 5000000, 10000000, 20000000],
+  "result_delays_ns": [200000, 1000000, 5000000, 10000000, 20000000]
+}

@@ -1,0 +1,13 @@
+{
+  "name": "p1-swapping",
+  "session_id": 1,
+  "seed": 7,
+  "command_time_ns": 1000000,
+  "bsm_duration_ns": 1600000,
+  "correction_duration_ns": 500000,
+  "command_payload_bytes": 96,
+  "result_payload_bytes": 80,
+  "command_link": {"rate_bps": 100000000, "delay_ns": 100000},
+  "result_link": {"rate_bps": 10000000, "delay_ns": 200000},
+  "result_replays": []
+}

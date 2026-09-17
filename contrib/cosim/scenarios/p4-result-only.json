@@ -1,0 +1,16 @@
+{
+  "name": "p4-result-only",
+  "seed": 7,
+  "background": {
+    "result": {
+      "start_ns": 2600000,
+      "interval_ns": 50000,
+      "count": 3,
+      "payload_bytes": 1000
+    }
+  },
+  "expected_queueing": {
+    "command": "zero",
+    "result": "positive"
+  }
+}

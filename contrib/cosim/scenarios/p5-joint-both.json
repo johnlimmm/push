@@ -1,0 +1,41 @@
+{
+  "name": "p5-joint-both",
+  "seed": 7,
+  "sessions": [
+    {
+      "session_id": 1,
+      "command_time_ns": 1000000
+    },
+    {
+      "session_id": 2,
+      "command_time_ns": 1800000
+    },
+    {
+      "session_id": 3,
+      "command_time_ns": 2600000
+    },
+    {
+      "session_id": 4,
+      "command_time_ns": 3400000
+    }
+  ],
+  "background": {
+    "command": {
+      "start_ns": 900000,
+      "interval_ns": 20000,
+      "count": 5,
+      "payload_bytes": 1000
+    },
+    "result": {
+      "start_ns": 2600000,
+      "interval_ns": 1600000,
+      "count": 4,
+      "payload_bytes": 1000
+    }
+  },
+  "expected_queueing": {
+    "command": "positive",
+    "result": "positive",
+    "R": "positive"
+  }
+}
