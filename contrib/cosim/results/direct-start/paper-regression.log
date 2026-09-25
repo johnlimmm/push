@@ -1,0 +1,12 @@
+test_corrupt_completion_order_is_detected (test_paper_validation.PaperValidationTests) ... ok
+test_identity_correction_reserves_full_duration (test_paper_validation.PaperValidationTests) ... ok
+test_instrumentation_preserves_full_production_report (test_paper_validation.PaperValidationTests) ... ok
+test_native_duration_perturbation_is_detected (test_paper_validation.PaperValidationTests) ... ok
+test_same_timestamp_order_is_input_order_not_session_id (test_paper_validation.PaperValidationTests) ... ok
+test_scaling_maximum_workload_and_repeat_statistics (test_paper_validation.PaperValidationTests) ... ok
+test_timing_boundary_and_all_arrival_patterns (test_paper_validation.PaperValidationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 7 tests in 3.961s
+
+OK

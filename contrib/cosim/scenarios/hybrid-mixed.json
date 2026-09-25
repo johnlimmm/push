@@ -4,24 +4,24 @@
     {
       "session_id": 1,
       "protocol": "swap",
-      "command_time_ns": 1000000
+      "session_start_ns": 1000000
     },
     {
       "session_id": 2,
       "protocol": "teleport",
       "input_state": "+i",
-      "command_time_ns": 1000000
+      "session_start_ns": 1000000
     },
     {
       "session_id": 3,
       "protocol": "swap",
-      "command_time_ns": 1800000
+      "session_start_ns": 1800000
     },
     {
       "session_id": 4,
       "protocol": "teleport",
       "input_state": "-",
-      "command_time_ns": 1800000
+      "session_start_ns": 1800000
     }
   ],
   "memory_noise": {

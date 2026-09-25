@@ -1,0 +1,804 @@
+{
+  "architecture": "direct-session-start-v2",
+  "branch_coverage": {
+    "branches": {
+      "+": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "+i": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "-": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "0": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "1": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    "max_density_matrix_error": 0,
+    "passed": true,
+    "seeds": 32,
+    "transactions": 160
+  },
+  "current_sources_equal_v1": false,
+  "date": "2026-09-21T19:41:15.117820+00:00",
+  "evaluations": {
+    "p5b-expanded": {
+      "calibration_runs": 6,
+      "execution_runs": 1152,
+      "max_density_matrix_error": 2.7755575615628914e-16,
+      "paired_cases": 384,
+      "passed": true,
+      "sha256": "0f2fb116cb0ea01de93c1fb239ab1a34222283a0edf91913633a2b9e6ad609da",
+      "summary": "direct-start-p5b-expanded/summary.json",
+      "transactions_per_model": 1536
+    },
+    "p5b-pilot": {
+      "calibration_runs": 6,
+      "execution_runs": 144,
+      "max_density_matrix_error": 2.7755575615628914e-16,
+      "paired_cases": 48,
+      "passed": true,
+      "sha256": "46058c5cc8c365a9cd324580125a6f2e3b1808bc1111e36eb306858c599bf0d3",
+      "summary": "direct-start-p5b-pilot/summary.json",
+      "transactions_per_model": 192
+    },
+    "scaling": {
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "measured_runs": 120,
+      "native_timing_replay_max_error_ns": 0,
+      "native_timing_replay_requests": 500,
+      "passed": true,
+      "sha256": "64e740383c9f9319303244a5df8b2c8232eb1840b268b9230d44411a7255d962",
+      "summary": "direct-start-scaling/summary.json",
+      "warmup_runs": 12
+    },
+    "timing": {
+      "case_count": 120,
+      "passed": true,
+      "requests": 2500,
+      "sha256": "bb18ac02eb57da5859bfee719624d7f2c240b300108882ae341b9e56144b4bca",
+      "summary": "direct-start-timing/summary.json"
+    }
+  },
+  "evidence_sha256": {
+    "direct-start-p5b-expanded/summary.json": "0f2fb116cb0ea01de93c1fb239ab1a34222283a0edf91913633a2b9e6ad609da",
+    "direct-start-p5b-pilot/summary.json": "46058c5cc8c365a9cd324580125a6f2e3b1808bc1111e36eb306858c599bf0d3",
+    "direct-start-scaling/summary.json": "64e740383c9f9319303244a5df8b2c8232eb1840b268b9230d44411a7255d962",
+    "direct-start-timing/summary.json": "bb18ac02eb57da5859bfee719624d7f2c240b300108882ae341b9e56144b4bca",
+    "direct-start/hybrid-branch-coverage.json": "078bdc3bb755fb1830f5b0e3e01f463c9540248a262738ebed7ab438d3953eb2",
+    "direct-start/hybrid-mixed-fast-bsm.json": "6d87cbb878531200c23aed5015cd14792f60b10c6e1836f0b12e7f4e2dcc8db6",
+    "direct-start/hybrid-mixed.json": "79abb5fdb968e4a5ad0529d924815a2c39378d3f2d3a83c13a2c5b37c247b466",
+    "direct-start/hybrid-swap-joint-result.json": "60a7c0ff9aba843ce08a2622117491e9138e2575bb67514621651120f4177015",
+    "direct-start/hybrid-swap-matched-joint-result.json": "82d34293eb42b1e938d7614142985b0fa745026f1461a29570bfc76d060b6565",
+    "direct-start/hybrid-swap-matched-quantum-only.json": "de2a2b495bb6a37996ef49bd9221bfefea65167fcb2162da5c6586be786f5731",
+    "direct-start/hybrid-swap-quantum-only.json": "812051e7b69b2e6598ee2a05a4603ceeaf5c04bd1010443a9f5528d6d69c2f4e",
+    "direct-start/hybrid-teleport.json": "f27ce6e43ba5f3c58b0e4a2616fb870ccb77d8e03f88404ccd35e637ebd082fa",
+    "direct-start/regression-summary.json": "aefa139c25e04b85d6bb7b9d6f4e96b4195065d787b3472b5b36ef7ae824a25e"
+  },
+  "historical_v1_archive_unchanged": true,
+  "latency_definition": "correction completion - local session_start_ns",
+  "max_density_matrix_error": 4.440892098500626e-16,
+  "milestone": "Hybrid v2: direct R session activation",
+  "overflow_negative_test": {
+    "expected_failure": true,
+    "report": "direct-start/hybrid-overflow-rejected.json"
+  },
+  "passed": true,
+  "q2ns_patches_unchanged": {
+    "swap": {
+      "clean_base_patch_reproduction_passed": true,
+      "patch": "q2ns-swap-external.patch",
+      "patch_sha256": "a232b01c3efdda91f29a8e00eff38e694392807a493f1eb82ff88b018423fc30",
+      "q2ns_base_commit": "f22ba28f437099ba3cf9956ca332ba5ce8bb14fd",
+      "source_sha256": {
+        "model/q2ns-swap-app.cc": "6cbecbbe5f0d6c5ef598eb78f049c3e3b7b4b20029a12d402dc5bd079ae2ebcb",
+        "model/q2ns-swap-app.h": "f45e096288d51c738ce89b1a4f6542d41793a666ade32d4f9770569f7a673f93",
+        "test/q2ns-swap-external-test-suite.cc": "f89f26370493f3c99580a9e5c47d4fc991614086a56c6060fb8e92489e37feb2"
+      }
+    },
+    "teleport": {
+      "clean_base_patch_reproduction_passed": true,
+      "patch": "q2ns-teleport-external.patch",
+      "patch_sha256": "f015f4621b25963338c5daef9f77d1569bbe3591eaf0e89d1c8104c4bb5a3972",
+      "q2ns_base_commit": "f22ba28f437099ba3cf9956ca332ba5ce8bb14fd",
+      "source_sha256": {
+        "model/q2ns-teleportation-app.cc": "0250dd0831c43857597fa3fecb896f63335d9ebb76d2e54ce3cda265328506f3",
+        "model/q2ns-teleportation-app.h": "33320017ebe87473b3cdb14bcd29ab33decc22372fc8dc6aedc87f359f4223ac",
+        "test/q2ns-teleport-external-test-suite.cc": "a327379a49fc0a027f5cd1d0b317501148222d67e2205b5c470a0b7fdcfb1fb2"
+      }
+    }
+  },
+  "regression": {
+    "architecture": "direct-session-start-v2",
+    "date": "2026-09-21T19:28:14.118901+00:00",
+    "historical_v1_archive_unchanged": true,
+    "native": {
+      "q2ns-analysis": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-analysis",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.8683611930027837,
+        "log": "q2ns-analysis.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 4
+      },
+      "q2ns-netcontroller": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-netcontroller",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.31495664899557596,
+        "log": "q2ns-netcontroller.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 8
+      },
+      "q2ns-qchannel": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-qchannel",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.27840777399978833,
+        "log": "q2ns-qchannel.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 14
+      },
+      "q2ns-qnode": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-qnode",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.2601260049996199,
+        "log": "q2ns-qnode.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 7
+      },
+      "q2ns-qstate-interface": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-qstate-interface",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.3171235429981607,
+        "log": "q2ns-qstate-interface.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 4
+      },
+      "q2ns-qstate-registry": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-qstate-registry",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.2959813689958537,
+        "log": "q2ns-qstate-registry.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 35
+      },
+      "q2ns-swap-external": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-swap-external",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.29669554499560036,
+        "log": "q2ns-swap-external.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 4
+      },
+      "q2ns-teleport-external": {
+        "command": [
+          "build/utils/ns3.47-test-runner-default",
+          "--suite=q2ns-teleport-external",
+          "--verbose"
+        ],
+        "elapsed_seconds": 0.30115819700586144,
+        "log": "q2ns-teleport-external.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 7
+      }
+    },
+    "passed": true,
+    "test_suites": {
+      "paper": {
+        "command": [
+          "/home/ns3/qunet/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "contrib/cosim/experiments/tests",
+          "-v"
+        ],
+        "elapsed_seconds": 4.793196792001254,
+        "log": "paper-regression.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 7
+      },
+      "python": {
+        "command": [
+          "/home/ns3/qunet/bin/python",
+          "-m",
+          "unittest",
+          "discover",
+          "-s",
+          "contrib/cosim/tests",
+          "-v"
+        ],
+        "elapsed_seconds": 248.76513739499933,
+        "log": "python-regression.log",
+        "passed": true,
+        "returncode": 0,
+        "tests": 140
+      }
+    },
+    "total_test_cases": 230
+  },
+  "scenarios": {
+    "mixed": {
+      "batch_completion_ns": 8949600,
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 2600000,
+            "bsm_start_ns": 1000000,
+            "completion_ns": 4212000,
+            "correction_start_ns": 3712000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 1112000,
+            "result_queue_ns": 824000,
+            "session_id": 1,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 3212000,
+            "usable_fidelity": 0.44413003659846145
+          },
+          {
+            "bsm_completion_ns": 4200000,
+            "bsm_start_ns": 2600000,
+            "completion_ns": 5749600,
+            "correction_start_ns": 5249600,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 1600000,
+            "result_delay_ns": 1049600,
+            "result_queue_ns": 824000,
+            "session_id": 2,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 4749600,
+            "usable_fidelity": 0.6376586463448803
+          },
+          {
+            "bsm_completion_ns": 5800000,
+            "bsm_start_ns": 4200000,
+            "completion_ns": 7412000,
+            "correction_start_ns": 6912000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 2400000,
+            "result_delay_ns": 1112000,
+            "result_queue_ns": 824000,
+            "session_id": 3,
+            "session_start_ns": 1800000,
+            "transaction_latency_ns": 5612000,
+            "usable_fidelity": 0.38897807714796784
+          },
+          {
+            "bsm_completion_ns": 7400000,
+            "bsm_start_ns": 5800000,
+            "completion_ns": 8949600,
+            "correction_start_ns": 8449600,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 4000000,
+            "result_delay_ns": 1049600,
+            "result_queue_ns": 824000,
+            "session_id": 4,
+            "session_start_ns": 1800000,
+            "transaction_latency_ns": 7149600,
+            "usable_fidelity": 0.5365232801239738
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "direct-start/hybrid-mixed.json"
+    },
+    "mixed-fast-bsm": {
+      "batch_completion_ns": 3298000,
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 1010000,
+            "bsm_start_ns": 1000000,
+            "completion_ns": 1798000,
+            "correction_start_ns": 1298000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 1,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 798000,
+            "usable_fidelity": 0.6809607627582421
+          },
+          {
+            "bsm_completion_ns": 1020000,
+            "bsm_start_ns": 1010000,
+            "completion_ns": 2298000,
+            "correction_start_ns": 1798000,
+            "correction_wait_ns": 474400,
+            "quantum_wait_ns": 10000,
+            "result_delay_ns": 303600,
+            "result_queue_ns": 78000,
+            "session_id": 2,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 1298000,
+            "usable_fidelity": 0.8270967033621941
+          },
+          {
+            "bsm_completion_ns": 1810000,
+            "bsm_start_ns": 1800000,
+            "completion_ns": 2798000,
+            "correction_start_ns": 2298000,
+            "correction_wait_ns": 200000,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 3,
+            "session_start_ns": 1800000,
+            "transaction_latency_ns": 998000,
+            "usable_fidelity": 0.5550336145107716
+          },
+          {
+            "bsm_completion_ns": 1820000,
+            "bsm_start_ns": 1810000,
+            "completion_ns": 3298000,
+            "correction_start_ns": 2798000,
+            "correction_wait_ns": 674400,
+            "quantum_wait_ns": 10000,
+            "result_delay_ns": 303600,
+            "result_queue_ns": 78000,
+            "session_id": 4,
+            "session_start_ns": 1800000,
+            "transaction_latency_ns": 1498000,
+            "usable_fidelity": 0.7431056151918597
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "direct-start/hybrid-mixed-fast-bsm.json"
+    },
+    "swap-joint-result": {
+      "batch_completion_ns": 9012000,
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 2600000,
+            "bsm_start_ns": 1000000,
+            "completion_ns": 4212000,
+            "correction_start_ns": 3712000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 1112000,
+            "result_queue_ns": 824000,
+            "session_id": 1,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 3212000,
+            "usable_fidelity": 0.5077068911442663
+          },
+          {
+            "bsm_completion_ns": 4200000,
+            "bsm_start_ns": 2600000,
+            "completion_ns": 5812000,
+            "correction_start_ns": 5312000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 800000,
+            "result_delay_ns": 1112000,
+            "result_queue_ns": 824000,
+            "session_id": 2,
+            "session_start_ns": 1800000,
+            "transaction_latency_ns": 4012000,
+            "usable_fidelity": 0.4144125832721568
+          },
+          {
+            "bsm_completion_ns": 5800000,
+            "bsm_start_ns": 4200000,
+            "completion_ns": 7412000,
+            "correction_start_ns": 6912000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 1600000,
+            "result_delay_ns": 1112000,
+            "result_queue_ns": 824000,
+            "session_id": 3,
+            "session_start_ns": 2600000,
+            "transaction_latency_ns": 4812000,
+            "usable_fidelity": 0.35674128796946947
+          },
+          {
+            "bsm_completion_ns": 7400000,
+            "bsm_start_ns": 5800000,
+            "completion_ns": 9012000,
+            "correction_start_ns": 8512000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 2400000,
+            "result_delay_ns": 1112000,
+            "result_queue_ns": 824000,
+            "session_id": 4,
+            "session_start_ns": 3400000,
+            "transaction_latency_ns": 5612000,
+            "usable_fidelity": 0.3667720049970003
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "direct-start/hybrid-swap-joint-result.json"
+    },
+    "swap-matched-joint-result": {
+      "batch_completion_ns": 9012000,
+      "max_density_matrix_error": 1.1102230246251565e-16,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 2710080,
+            "bsm_start_ns": 1110080,
+            "completion_ns": 4212000,
+            "correction_start_ns": 3712000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 1001920,
+            "result_queue_ns": 713920,
+            "session_id": 1,
+            "session_start_ns": 1110080,
+            "transaction_latency_ns": 3101920,
+            "usable_fidelity": 0.5040740822531959
+          },
+          {
+            "bsm_completion_ns": 4310080,
+            "bsm_start_ns": 2710080,
+            "completion_ns": 5812000,
+            "correction_start_ns": 5312000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 800000,
+            "result_delay_ns": 1001920,
+            "result_queue_ns": 713920,
+            "session_id": 2,
+            "session_start_ns": 1910080,
+            "transaction_latency_ns": 3901920,
+            "usable_fidelity": 0.4124286339138684
+          },
+          {
+            "bsm_completion_ns": 5910080,
+            "bsm_start_ns": 4310080,
+            "completion_ns": 7412000,
+            "correction_start_ns": 6912000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 1600000,
+            "result_delay_ns": 1001920,
+            "result_queue_ns": 713920,
+            "session_id": 3,
+            "session_start_ns": 2710080,
+            "transaction_latency_ns": 4701920,
+            "usable_fidelity": 0.35565341477919077
+          },
+          {
+            "bsm_completion_ns": 7510080,
+            "bsm_start_ns": 5910080,
+            "completion_ns": 9012000,
+            "correction_start_ns": 8512000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 2400000,
+            "result_delay_ns": 1001920,
+            "result_queue_ns": 713920,
+            "session_id": 4,
+            "session_start_ns": 3510080,
+            "transaction_latency_ns": 5501920,
+            "usable_fidelity": 0.3658873396314577
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "direct-start/hybrid-swap-matched-joint-result.json"
+    },
+    "swap-matched-quantum-only": {
+      "batch_completion_ns": 8298080,
+      "max_density_matrix_error": 1.1102230246251565e-16,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 2710080,
+            "bsm_start_ns": 1110080,
+            "completion_ns": 3498080,
+            "correction_start_ns": 2998080,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 1,
+            "session_start_ns": 1110080,
+            "transaction_latency_ns": 2388000,
+            "usable_fidelity": 0.534522155608756
+          },
+          {
+            "bsm_completion_ns": 4310080,
+            "bsm_start_ns": 2710080,
+            "completion_ns": 5098080,
+            "correction_start_ns": 4598080,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 800000,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 2,
+            "session_start_ns": 1910080,
+            "transaction_latency_ns": 3188000,
+            "usable_fidelity": 0.43203404446762766
+          },
+          {
+            "bsm_completion_ns": 5910080,
+            "bsm_start_ns": 4310080,
+            "completion_ns": 6698080,
+            "correction_start_ns": 6198080,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 1600000,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 3,
+            "session_start_ns": 2710080,
+            "transaction_latency_ns": 3988000,
+            "usable_fidelity": 0.36928636596337017
+          },
+          {
+            "bsm_completion_ns": 7510080,
+            "bsm_start_ns": 5910080,
+            "completion_ns": 8298080,
+            "correction_start_ns": 7798080,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 2400000,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 4,
+            "session_start_ns": 3510080,
+            "transaction_latency_ns": 4788000,
+            "usable_fidelity": 0.36694125299927327
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "direct-start/hybrid-swap-matched-quantum-only.json"
+    },
+    "swap-quantum-only": {
+      "batch_completion_ns": 8188000,
+      "max_density_matrix_error": 1.6653345369377348e-16,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 2600000,
+            "bsm_start_ns": 1000000,
+            "completion_ns": 3388000,
+            "correction_start_ns": 2888000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 1,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 2388000,
+            "usable_fidelity": 0.5437521581641098
+          },
+          {
+            "bsm_completion_ns": 4200000,
+            "bsm_start_ns": 2600000,
+            "completion_ns": 4988000,
+            "correction_start_ns": 4488000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 800000,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 2,
+            "session_start_ns": 1800000,
+            "transaction_latency_ns": 3188000,
+            "usable_fidelity": 0.43753880901446657
+          },
+          {
+            "bsm_completion_ns": 5800000,
+            "bsm_start_ns": 4200000,
+            "completion_ns": 6588000,
+            "correction_start_ns": 6088000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 1600000,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 3,
+            "session_start_ns": 2600000,
+            "transaction_latency_ns": 3988000,
+            "usable_fidelity": 0.37275564650282667
+          },
+          {
+            "bsm_completion_ns": 7400000,
+            "bsm_start_ns": 5800000,
+            "completion_ns": 8188000,
+            "correction_start_ns": 7688000,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 2400000,
+            "result_delay_ns": 288000,
+            "result_queue_ns": 0,
+            "session_id": 4,
+            "session_start_ns": 3400000,
+            "transaction_latency_ns": 4788000,
+            "usable_fidelity": 0.3681690601552254
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "direct-start/hybrid-swap-quantum-only.json"
+    },
+    "teleport": {
+      "batch_completion_ns": 3325600,
+      "max_density_matrix_error": 5.551115123125783e-17,
+      "metrics": {
+        "sessions": [
+          {
+            "bsm_completion_ns": 2600000,
+            "bsm_start_ns": 1000000,
+            "completion_ns": 3325600,
+            "correction_start_ns": 2825600,
+            "correction_wait_ns": 0,
+            "quantum_wait_ns": 0,
+            "result_delay_ns": 225600,
+            "result_queue_ns": 0,
+            "session_id": 1,
+            "session_start_ns": 1000000,
+            "transaction_latency_ns": 2325600,
+            "usable_fidelity": 0.7249524940872891
+          }
+        ]
+      },
+      "nodes": {
+        "A": 0,
+        "B": 2,
+        "R": 1
+      },
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 1,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 1
+      },
+      "report": "direct-start/hybrid-teleport.json"
+    }
+  },
+  "scope": "A/R/B, local Q2NS start at R, shared R/B FIFO, native R-to-B UDP result, NetSquid sole state ownership and T1/T2 aging",
+  "source_sha256": {
+    "contrib/cosim/examples/cosim-hybrid.cc": "64b4e61ab5748e49e0016992630b9596680eeeb436ee3fdba1274a5e2ddf3f79",
+    "contrib/cosim/experiments/p5b_analysis.py": "d0025fd38ccf0882317832d622bffc16dca2b2f2dca92ee937702ceb64ba371e",
+    "contrib/cosim/experiments/p5b_fixed.py": "50432960ea80579cf1c660d06e9141ae96973c3de6e4b3f7f180710cceeb47b9",
+    "contrib/cosim/experiments/p5b_nodq.py": "abf2e42ef325b8361ba699d80169fd8a553d823703eceb706cf54a568cf0e1eb",
+    "contrib/cosim/experiments/p5b_nodq_validation.py": "916fc5a164744caf454caa0106e8305ebc0d576bbb353913c28d4e3932b083ad",
+    "contrib/cosim/experiments/p5b_timing.py": "c42cc158872feb13ed4a10cb4ef4ff6bd7676872679795eca22d8fb66fab5614",
+    "contrib/cosim/experiments/p5b_workload.py": "4d6c11fc347ecb0c913935f3602e43e762dc0ccfe12975b076cd9d8223696938",
+    "contrib/cosim/experiments/paper_scaling.py": "3f10eb41779820115eb0326be529bff7860b11e7550b9c487c79d90e03dd2d2d",
+    "contrib/cosim/experiments/paper_timing.py": "a80ce697d2c5ef821363e33f2af792e3e35c9b084cb59491a59e0149b4bf5e31",
+    "contrib/cosim/experiments/render_paper_results.py": "dce10a43f6224031efb783464770b1701c0ffdb69e2c279132e4c3881a2a6d5e",
+    "contrib/cosim/experiments/run_p5b.py": "05711a32fc96578e94b122571015af4c142de9cb2cae22a940bd1ed6102fc27b",
+    "contrib/cosim/experiments/run_paper_validation.py": "51c6cc0a0f78e40afd08513c348342800638e7f5dcc2aa9503993e5b583d9131",
+    "contrib/cosim/experiments/tests/test_paper_validation.py": "876f5219c51ba980d134a46bdbca82ea28174db1c80a62725d8d4d17f5ddd5e9",
+    "contrib/cosim/python/hybrid_adapters.py": "9eb7db4f800e6e9831ff8194c65a31feae9b194c4c3f6b81191f66065cc22f21",
+    "contrib/cosim/python/hybrid_config.py": "aa9369953ab6cca9a9bf707496e7a4dcd57523532702e1d08e690060024dd234",
+    "contrib/cosim/python/hybrid_core.py": "49d19b9d17104002d58ceb520f1f2f7bd038681c12bde9311dca2923d2d7c46c",
+    "contrib/cosim/python/hybrid_validation.py": "ee4c85bbac4be9f6f35578b96725c74eaa2273e3bde96781f739619c8c7249e6",
+    "contrib/cosim/python/netsquid_reference_hybrid.py": "05b822d8dcdb28deb16616435b387eb4aa8e98177e57ade4e41bf0fdb663bc18",
+    "contrib/cosim/python/run_hybrid.py": "6494d463532ef83a94cf7fe0d5ddb5086710344d82c6862d4ba4988c0388b8ea",
+    "contrib/cosim/scenarios/hybrid-mixed.json": "eb6d9636027b5cae94ae3bd48811f6fe1cca7e544c874b942ac8bb1b50bfbd1f",
+    "contrib/cosim/scenarios/hybrid-paper-validation.json": "5708fff24f875926e5b8f4616909538d86ed1308630e348dd971b90199806f11",
+    "contrib/cosim/scenarios/hybrid-swap-joint-result.json": "4422550706620cd7c3b2b2ce475ddae8db24eedea03268b1b1551f9012b9aea4",
+    "contrib/cosim/scenarios/hybrid-swap-quantum-only.json": "fbced95defcc8bfd6bf4d82f750fcc3ee671e79c6bbf3fdf1f4ede8a95f2cb94",
+    "contrib/cosim/scenarios/hybrid-teleport.json": "fa7bcb3e86a2d7b59eeadc6032b1fe2628288d78edc7b1fdbb4167925c664052",
+    "contrib/cosim/scenarios/p5b-paper-expanded.json": "362f9565581e577851cef4ce0e34f4e60307685b5f816028dda067412c1440e2",
+    "contrib/cosim/scenarios/p5b-pilot.json": "b060799b2eb1ceec222fc19ea47a5218da90772000c072fd14d6a6e8b166ad62",
+    "contrib/cosim/tests/test_hybrid.py": "8478dddd6c463571609e2c737424b9750842db4da46169ff0c81d3788cf00b80",
+    "contrib/cosim/tests/test_p5b.py": "d765a36802d7f5c148b4a6f49bd340d38cdeb63249738399d2c8e26ab6c5f726",
+    "contrib/cosim/tools/audit_direct_start.py": "4b527ccbfe5b5c55b014ce58479b9a501bfa8e6d7a8e8ea6ac6de13d305b15be",
+    "contrib/cosim/tools/summarize_direct_start.py": "c471bba2d8def68d3e78d70e0da638b4390bc2c34d36c12cf9b8d86a76fc16a7",
+    "contrib/cosim/tools/validate_direct_start.py": "8f9e3f6bc1bd05427a0b94ea3f0b87275e29945a8b52f0fddde9dd23f46ca538",
+    "scratch/cosim-hybrid/CMakeLists.txt": "395a30cd90a28693febc910968c090153daf7f27f24db0bbe912b6fc895e69c6"
+  },
+  "total_test_cases": 230
+}

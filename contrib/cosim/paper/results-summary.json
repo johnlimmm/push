@@ -1,0 +1,2582 @@
+{
+  "architecture": "direct-session-start-v2",
+  "created_at_utc": "2026-09-21T19:34:42.852864+00:00",
+  "evidence": {
+    "contrib/cosim/results/direct-start-p5b-expanded/summary.json": "0f2fb116cb0ea01de93c1fb239ab1a34222283a0edf91913633a2b9e6ad609da",
+    "contrib/cosim/results/direct-start-scaling/summary.json": "64e740383c9f9319303244a5df8b2c8232eb1840b268b9230d44411a7255d962",
+    "contrib/cosim/results/direct-start-timing/summary.json": "bb18ac02eb57da5859bfee719624d7f2c240b300108882ae341b9e56144b4bca"
+  },
+  "expanded_p5b": {
+    "calibration_runs": 6,
+    "execution_runs": 1152,
+    "groups": [
+      {
+        "classical_load": 0.0,
+        "expected_fidelity_bias": null,
+        "expected_fidelity_mae": null,
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": null,
+        "false_infeasible_rate": null,
+        "fidelity_bias": null,
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "Decoupled",
+        "request_interval_ns": 800000,
+        "success_probability_mae": null,
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.0,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "Fixed-Dc",
+        "request_interval_ns": 800000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.0,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.04352243033860504,
+            0.04352243033860504
+          ],
+          "mean": 0.04352243033860504,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.04352243033860504,
+            0.04352243033860504
+          ],
+          "mean": 0.04352243033860504,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.25,
+            0.25
+          ],
+          "mean": 0.25,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.04184440702089321,
+            0.04184440702089321
+          ],
+          "mean": 0.04184440702089321,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -1200000.0,
+            -1200000.0
+          ],
+          "mean": -1200000.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            1200000.0,
+            1200000.0
+          ],
+          "mean": 1200000.0,
+          "traffic_clusters": 32
+        },
+        "model": "No-Dq-R",
+        "request_interval_ns": 800000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.24999999999999994,
+            0.24999999999999994
+          ],
+          "mean": 0.24999999999999994,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.0,
+        "expected_fidelity_bias": null,
+        "expected_fidelity_mae": null,
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": null,
+        "false_infeasible_rate": null,
+        "fidelity_bias": null,
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "Decoupled",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": null,
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.0,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "Fixed-Dc",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.0,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "No-Dq-R",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.35,
+        "expected_fidelity_bias": null,
+        "expected_fidelity_mae": null,
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0390625
+          ],
+          "mean": 0.015625,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": null,
+        "false_infeasible_rate": null,
+        "fidelity_bias": null,
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            8758.03125,
+            15141.359375
+          ],
+          "mean": 11762.8359375,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            73194.546875,
+            164634.34375
+          ],
+          "mean": 116594.5546875,
+          "traffic_clusters": 32
+        },
+        "model": "Decoupled",
+        "request_interval_ns": 800000,
+        "success_probability_mae": null,
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.35,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.003103457470107868,
+            0.0048902328136746
+          ],
+          "mean": 0.00398511850223923,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0034850978508854046,
+            0.005216999454047964
+          ],
+          "mean": 0.004337171652888827,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0390625
+          ],
+          "mean": 0.015625,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.003046901895927523,
+            0.004658878495035317
+          ],
+          "mean": 0.003852460536443796,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -190632.6171875,
+            -128184.546875
+          ],
+          "mean": -158620.0546875,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            144119.578125,
+            205718.7421875
+          ],
+          "mean": 174218.5703125,
+          "traffic_clusters": 32
+        },
+        "model": "Fixed-Dc",
+        "request_interval_ns": 800000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.35,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.041894589473765335,
+            0.04263718326703694
+          ],
+          "mean": 0.042285025236816105,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.041894589473765335,
+            0.04263718326703694
+          ],
+          "mean": 0.042285025236816105,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0390625
+          ],
+          "mean": 0.015625,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.1484375,
+            0.2265625
+          ],
+          "mean": 0.1875,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.040161778552645355,
+            0.04116970325543071
+          ],
+          "mean": 0.04068714738469309,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -1191241.96875,
+            -1184858.640625
+          ],
+          "mean": -1188237.1640625,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            1184857.1875,
+            1191241.96875
+          ],
+          "mean": 1188237.1640625,
+          "traffic_clusters": 32
+        },
+        "model": "No-Dq-R",
+        "request_interval_ns": 800000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.15624999999999994,
+            0.22656249999999994
+          ],
+          "mean": 0.19150172144363214,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.35,
+        "expected_fidelity_bias": null,
+        "expected_fidelity_mae": null,
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": null,
+        "false_infeasible_rate": null,
+        "fidelity_bias": null,
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "Decoupled",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": null,
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.35,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0031403906617681492,
+            0.005320610887754736
+          ],
+          "mean": 0.00424709319035641,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0034753471859779793,
+            0.005560183134159425
+          ],
+          "mean": 0.004532320805721269,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.003003878578315249,
+            0.0055445480362286085
+          ],
+          "mean": 0.0042889922380000035,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -201844.8515625,
+            -133087.9140625
+          ],
+          "mean": -168410.8671875,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            150646.0625,
+            216287.7265625
+          ],
+          "mean": 184414.5390625,
+          "traffic_clusters": 32
+        },
+        "model": "Fixed-Dc",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.35,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "No-Dq-R",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.7,
+        "expected_fidelity_bias": null,
+        "expected_fidelity_mae": null,
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": null,
+        "false_infeasible_rate": null,
+        "fidelity_bias": null,
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -8202.9765625,
+            26483.6875
+          ],
+          "mean": 11628.03125,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            188799.1015625,
+            259738.4375
+          ],
+          "mean": 223411.296875,
+          "traffic_clusters": 32
+        },
+        "model": "Decoupled",
+        "request_interval_ns": 800000,
+        "success_probability_mae": null,
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.7,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0008286368195215116,
+            0.0026159097282913942
+          ],
+          "mean": 0.001734501063142616,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.004991744710966818,
+            0.005850450681894614
+          ],
+          "mean": 0.005418808463615531,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0546875
+          ],
+          "mean": 0.0234375,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0006938939241197695,
+            0.0023285743757714417
+          ],
+          "mean": 0.0015283013720460623,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -104842.765625,
+            -40272.5
+          ],
+          "mean": -72817.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            226688.75,
+            257812.4140625
+          ],
+          "mean": 241748.796875,
+          "traffic_clusters": 32
+        },
+        "model": "Fixed-Dc",
+        "request_interval_ns": 800000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.7,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.04026453856043299,
+            0.04147707212646054
+          ],
+          "mean": 0.04088180193704325,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.04026453856043299,
+            0.04147707212646054
+          ],
+          "mean": 0.04088180193704325,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0546875
+          ],
+          "mean": 0.0234375,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0546875,
+            0.1328125
+          ],
+          "mean": 0.09375,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.03833474863460529,
+            0.039850205667409815
+          ],
+          "mean": 0.03911512688117633,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -1208202.9765625,
+            -1173516.3125
+          ],
+          "mean": -1188371.96875,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            1173507.53125,
+            1208139.8046875
+          ],
+          "mean": 1188371.96875,
+          "traffic_clusters": 32
+        },
+        "model": "No-Dq-R",
+        "request_interval_ns": 800000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.05487844288726435,
+            0.14062499999999994
+          ],
+          "mean": 0.09775172144363216,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.7,
+        "expected_fidelity_bias": null,
+        "expected_fidelity_mae": null,
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": null,
+        "false_infeasible_rate": null,
+        "fidelity_bias": null,
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "Decoupled",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": null,
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.7,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0009772732408438942,
+            0.002595036618189929
+          ],
+          "mean": 0.001806182976759425,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.00466291292694565,
+            0.005534257012671479
+          ],
+          "mean": 0.0050970926607688625,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0009901873787134538,
+            0.0026918654015710653
+          ],
+          "mean": 0.0018607673663372372,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            -85302.46875,
+            -28820.8359375
+          ],
+          "mean": -57623.9453125,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            226896.109375,
+            253382.1796875
+          ],
+          "mean": 239733.7578125,
+          "traffic_clusters": 32
+        },
+        "model": "Fixed-Dc",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      },
+      {
+        "classical_load": 0.7,
+        "expected_fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "expected_fidelity_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_deadline_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_feasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "false_infeasible_rate": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "fidelity_bias": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_bias_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "latency_mae_ns": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "model": "No-Dq-R",
+        "request_interval_ns": 2000000,
+        "success_probability_mae": {
+          "ci95_cluster_bootstrap": [
+            0.0,
+            0.0
+          ],
+          "mean": 0.0,
+          "traffic_clusters": 32
+        },
+        "transactions": 256
+      }
+    ],
+    "max_density_matrix_error": 2.7755575615628914e-16,
+    "paired_cases": 384,
+    "plan": {
+      "bootstrap_samples": 10000,
+      "calibration_request_interval_ns": 2000000,
+      "calibration_traffic_seeds": [
+        100,
+        101
+      ],
+      "classical_loads": [
+        0.0,
+        0.35,
+        0.7
+      ],
+      "correction_duration_ns": 50000,
+      "deadline_ns": 5000000,
+      "fidelity_min": 0.5,
+      "quantum_seeds": [
+        7,
+        11
+      ],
+      "request_intervals_ns": [
+        800000,
+        2000000
+      ],
+      "sessions": 4,
+      "test_traffic_seeds": [
+        1000,
+        1001,
+        1002,
+        1003,
+        1004,
+        1005,
+        1006,
+        1007,
+        1008,
+        1009,
+        1010,
+        1011,
+        1012,
+        1013,
+        1014,
+        1015,
+        1016,
+        1017,
+        1018,
+        1019,
+        1020,
+        1021,
+        1022,
+        1023,
+        1024,
+        1025,
+        1026,
+        1027,
+        1028,
+        1029,
+        1030,
+        1031
+      ]
+    },
+    "transactions_per_model": 1536
+  },
+  "manuscript": "QuCl.pdf reviewed; original PDF not modified; LaTeX/BibTeX source not available.",
+  "manuscript_sha256": "e924c074360dd51d4aa86798e41cccc16ad5c74d29143e296a08b42e4c000cf2",
+  "native_timing": {
+    "cases": 120,
+    "max_error_ns": 0,
+    "synthetic_requests": 2500,
+    "trace_replay_requests": 500
+  },
+  "passed": true,
+  "plots": {
+    "matplotlib": "3.8.4",
+    "numpy": "1.26.4"
+  },
+  "scaling": {
+    "environment": {
+      "cpu": "Intel(R) Core(TM) Ultra 7 155H",
+      "cpu_affinity": [
+        0,
+        1
+      ],
+      "instrumentation": "Two IPC line/byte counters per direction; normal production trace logging enabled.",
+      "netsquid": "1.1.7",
+      "numpy": "1.21.6",
+      "platform": "Linux-6.8.0-138-generic-x86_64-with-Ubuntu-22.04-jammy",
+      "python": "3.7.17 (default, Jun  6 2023, 20:10:09) \n[GCC 11.3.0]",
+      "python_executable": "/home/ns3/qunet/bin/python"
+    },
+    "groups": [
+      {
+        "classical_load": 0.0,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0025977362995035945,
+            0.0047662985991337335
+          ],
+          "maximum": 0.008818176997010596,
+          "mean": 0.0034607705994858405,
+          "median": 0.0026327679988753516,
+          "minimum": 0.002385335996223148
+        },
+        "counters": {
+          "background_packets": 0,
+          "classical_trace_rows": 17,
+          "completed_transactions": 1,
+          "distinct_boundary_timestamps": 6,
+          "final_federation_ns": 3388000,
+          "final_transaction_ns": 3388000,
+          "ipc_rx_bytes": 1367,
+          "ipc_rx_lines": 32,
+          "ipc_tx_bytes": 295,
+          "ipc_tx_lines": 17,
+          "synchronization_rounds": 8
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.015489808600977994,
+            0.02418820969905937
+          ],
+          "maximum": 0.03497971099568531,
+          "mean": 0.01939523429973633,
+          "median": 0.015709384500951273,
+          "minimum": 0.0141581599964411
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.015489808600977994,
+            0.02418820969905937
+          ],
+          "maximum": 0.03497971099568531,
+          "mean": 0.01939523429973633,
+          "median": 0.015709384500951273,
+          "minimum": 0.0141581599964411
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0009075379006389994,
+            0.0010426360975543502
+          ],
+          "maximum": 0.0012027799966745079,
+          "mean": 0.0009701710987428669,
+          "median": 0.0009484474976488855,
+          "minimum": 0.0008240690003731288
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0035116150982503315,
+            0.0036241408000933007
+          ],
+          "maximum": 0.0037663710027118213,
+          "mean": 0.003563609499542508,
+          "median": 0.003521883496432565,
+          "minimum": 0.003461852000327781
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.028205112702562474,
+            0.050508950700168496
+          ],
+          "maximum": 0.09156771199923242,
+          "mean": 0.03691976890186197,
+          "median": 0.03065567949670367,
+          "minimum": 0.024271550006233156
+        },
+        "repetitions": 10,
+        "sessions": 1,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.04994202209854848,
+            0.08208658730072785
+          ],
+          "maximum": 0.13088242700177943,
+          "mean": 0.06333938330062665,
+          "median": 0.052829639502306236,
+          "minimum": 0.044520855000882875
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.04994202209854848,
+            0.08208658730072785
+          ],
+          "maximum": 0.13088242700177943,
+          "mean": 0.06333938330062665,
+          "median": 0.052829639502306236,
+          "minimum": 0.044520855000882875
+        }
+      },
+      {
+        "classical_load": 0.7,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.002755807199719129,
+            0.006194233801215887
+          ],
+          "maximum": 0.011972501000855118,
+          "mean": 0.004209698300110176,
+          "median": 0.002760178998869378,
+          "minimum": 0.0022043099961592816
+        },
+        "counters": {
+          "background_packets": 4,
+          "classical_trace_rows": 45,
+          "completed_transactions": 1,
+          "distinct_boundary_timestamps": 18,
+          "final_federation_ns": 5599153,
+          "final_transaction_ns": 3832867,
+          "ipc_rx_bytes": 3615,
+          "ipc_rx_lines": 72,
+          "ipc_tx_bytes": 490,
+          "ipc_tx_lines": 29,
+          "synchronization_rounds": 20
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.027683962399169103,
+            0.05967458410013933
+          ],
+          "maximum": 0.11933782100095414,
+          "mean": 0.04046015610001632,
+          "median": 0.02764209499946446,
+          "minimum": 0.023824201001843903
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.027683962399169103,
+            0.05967458410013933
+          ],
+          "maximum": 0.11933782100095414,
+          "mean": 0.04046015610001632,
+          "median": 0.02764209499946446,
+          "minimum": 0.023824201001843903
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0014051639001991135,
+            0.0028656821988988666
+          ],
+          "maximum": 0.004870757999015041,
+          "mean": 0.002054299199517118,
+          "median": 0.0013566419984272216,
+          "minimum": 0.0011364409947418608
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.003547419798996998,
+            0.005240170501201647
+          ],
+          "maximum": 0.007794566001393832,
+          "mean": 0.0042520081995462535,
+          "median": 0.003620649000367848,
+          "minimum": 0.003464549001364503
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.029079032799199923,
+            0.056114877700747454
+          ],
+          "maximum": 0.09758771899942076,
+          "mean": 0.04101810220090556,
+          "median": 0.03141632700135233,
+          "minimum": 0.023611735996382777
+        },
+        "repetitions": 10,
+        "sessions": 1,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.06335246889939299,
+            0.1269933723997383
+          ],
+          "maximum": 0.2350938559975475,
+          "mean": 0.08993996480057831,
+          "median": 0.06453851649712306,
+          "minimum": 0.05358312300086254
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.06335246889939299,
+            0.1269933723997383
+          ],
+          "maximum": 0.2350938559975475,
+          "mean": 0.08993996480057831,
+          "median": 0.06453851649712306,
+          "minimum": 0.05358312300086254
+        }
+      },
+      {
+        "classical_load": 0.0,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.00583742110102321,
+            0.05292323020112235
+          ],
+          "maximum": 0.15617046000261325,
+          "mean": 0.021988673301530072,
+          "median": 0.00598628950319835,
+          "minimum": 0.005191682997974567
+        },
+        "counters": {
+          "background_packets": 0,
+          "classical_trace_rows": 68,
+          "completed_transactions": 4,
+          "distinct_boundary_timestamps": 20,
+          "final_federation_ns": 8125600,
+          "final_transaction_ns": 8125600,
+          "ipc_rx_bytes": 5308,
+          "ipc_rx_lines": 109,
+          "ipc_tx_bytes": 907,
+          "ipc_tx_lines": 52,
+          "synchronization_rounds": 28
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.05140252400233294,
+            0.06506833229941549
+          ],
+          "maximum": 0.0894279239946627,
+          "mean": 0.05678272360091796,
+          "median": 0.05225169700133847,
+          "minimum": 0.04869958700146526
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.012850631000583234,
+            0.01626708307485387
+          ],
+          "maximum": 0.022356980998665676,
+          "mean": 0.01419568090022949,
+          "median": 0.013062924250334618,
+          "minimum": 0.012174896750366315
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0030310244008433075,
+            0.004782986701320624
+          ],
+          "maximum": 0.0077807510024285875,
+          "mean": 0.0037516269003390335,
+          "median": 0.003372776998730842,
+          "minimum": 0.0024573429982410744
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.003566078798758099,
+            0.0038566272989555726
+          ],
+          "maximum": 0.0043005280022043735,
+          "mean": 0.00369398229959188,
+          "median": 0.0036046999957761727,
+          "minimum": 0.0034635819974937476
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.026713118497718825,
+            0.0351632667989179
+          ],
+          "maximum": 0.05084934700425947,
+          "mean": 0.030035548498563002,
+          "median": 0.028274166499613784,
+          "minimum": 0.023957895995408762
+        },
+        "repetitions": 10,
+        "sessions": 4,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.08968265569928917,
+            0.14666898129871697
+          ],
+          "maximum": 0.23516876399662578,
+          "mean": 0.11250092770060291,
+          "median": 0.09286155100198812,
+          "minimum": 0.08280268899397925
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.022420663924822292,
+            0.03666724532467924
+          ],
+          "maximum": 0.058792190999156446,
+          "mean": 0.028125231925150727,
+          "median": 0.02321538775049703,
+          "minimum": 0.02070067224849481
+        }
+      },
+      {
+        "classical_load": 0.7,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.006362742702913237,
+            0.010904197100899182
+          ],
+          "maximum": 0.019114075003017206,
+          "mean": 0.008167365401459393,
+          "median": 0.006731994504661998,
+          "minimum": 0.00510373600263847
+        },
+        "counters": {
+          "background_packets": 10,
+          "classical_trace_rows": 138,
+          "completed_transactions": 4,
+          "distinct_boundary_timestamps": 50,
+          "final_federation_ns": 12662011,
+          "final_transaction_ns": 8479039,
+          "ipc_rx_bytes": 11027,
+          "ipc_rx_lines": 209,
+          "ipc_tx_bytes": 1401,
+          "ipc_tx_lines": 82,
+          "synchronization_rounds": 58
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.08315523380151717,
+            0.13996519680076744
+          ],
+          "maximum": 0.2249710639953264,
+          "mean": 0.107517533400096,
+          "median": 0.08351615700303228,
+          "minimum": 0.07574739499978023
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.020788808450379292,
+            0.03499129920019186
+          ],
+          "maximum": 0.0562427659988316,
+          "mean": 0.026879383350024,
+          "median": 0.02087903925075807,
+          "minimum": 0.018936848749945057
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0039418133004801344,
+            0.004893755498778773
+          ],
+          "maximum": 0.005991189995256718,
+          "mean": 0.004376604899152881,
+          "median": 0.004276497500541154,
+          "minimum": 0.0035209310008212924
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0035496719989168922,
+            0.0037542616009886842
+          ],
+          "maximum": 0.0041332140026497655,
+          "mean": 0.003630928200436756,
+          "median": 0.0035776434997387696,
+          "minimum": 0.00348422399838455
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.02947278729843674,
+            0.04160719730061828
+          ],
+          "maximum": 0.06538317900412949,
+          "mean": 0.03411909579881467,
+          "median": 0.030661384997074492,
+          "minimum": 0.027234798995777965
+        },
+        "repetitions": 10,
+        "sessions": 4,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.12319998359962483,
+            0.19574700990269775
+          ],
+          "maximum": 0.31360153200512286,
+          "mean": 0.1534349228008068,
+          "median": 0.12343119050274254,
+          "minimum": 0.11418749499716796
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.03079999589990621,
+            0.04893675247567444
+          ],
+          "maximum": 0.07840038300128072,
+          "mean": 0.0383587307002017,
+          "median": 0.030857797625685635,
+          "minimum": 0.02854687374929199
+        }
+      },
+      {
+        "classical_load": 0.0,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.01113006689993199,
+            0.0205453051989025
+          ],
+          "maximum": 0.02851139999984298,
+          "mean": 0.01559015409948188,
+          "median": 0.011355963499227073,
+          "minimum": 0.00815601900103502
+        },
+        "counters": {
+          "background_packets": 0,
+          "classical_trace_rows": 136,
+          "completed_transactions": 8,
+          "distinct_boundary_timestamps": 38,
+          "final_federation_ns": 14525600,
+          "final_transaction_ns": 14525600,
+          "ipc_rx_bytes": 10688,
+          "ipc_rx_lines": 211,
+          "ipc_tx_bytes": 1746,
+          "ipc_tx_lines": 98,
+          "synchronization_rounds": 54
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.11527244289973168,
+            0.17604822810026236
+          ],
+          "maximum": 0.23538674700103002,
+          "mean": 0.14387148980022174,
+          "median": 0.11526555149976048,
+          "minimum": 0.09276619099546224
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.01440905536246646,
+            0.022006028512532794
+          ],
+          "maximum": 0.029423343375128752,
+          "mean": 0.017983936225027718,
+          "median": 0.01440819393747006,
+          "minimum": 0.01159577387443278
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.005915546597680077,
+            0.009720554699742933
+          ],
+          "maximum": 0.015774195002450142,
+          "mean": 0.007477556698722765,
+          "median": 0.006258491495827911,
+          "minimum": 0.005281929996272083
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.003550544800964417,
+            0.004966813601640752
+          ],
+          "maximum": 0.00770508900313871,
+          "mean": 0.004105855401576264,
+          "median": 0.003654509000625694,
+          "minimum": 0.0031512659988948144
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.029548077301296872,
+            0.047151950497936926
+          ],
+          "maximum": 0.0693341079968377,
+          "mean": 0.037713270699896384,
+          "median": 0.02995166900291224,
+          "minimum": 0.02483713100082241
+        },
+        "repetitions": 10,
+        "sessions": 8,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.16250447700294898,
+            0.2449125286992057
+          ],
+          "maximum": 0.3363835209966055,
+          "mean": 0.20128077000117628,
+          "median": 0.16390862950356677,
+          "minimum": 0.13566119000461185
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.020313059625368623,
+            0.030614066087400714
+          ],
+          "maximum": 0.04204794012457569,
+          "mean": 0.025160096250147035,
+          "median": 0.020488578687945846,
+          "minimum": 0.01695764875057648
+        }
+      },
+      {
+        "classical_load": 0.7,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.010765235999133437,
+            0.08085273759861593
+          ],
+          "maximum": 0.23122612499719253,
+          "mean": 0.035230644899274924,
+          "median": 0.011408209498767974,
+          "minimum": 0.009104445998673327
+        },
+        "counters": {
+          "background_packets": 19,
+          "classical_trace_rows": 269,
+          "completed_transactions": 8,
+          "distinct_boundary_timestamps": 95,
+          "final_federation_ns": 23256298,
+          "final_transaction_ns": 14525600,
+          "ipc_rx_bytes": 21761,
+          "ipc_rx_lines": 401,
+          "ipc_tx_bytes": 2698,
+          "ipc_tx_lines": 155,
+          "synchronization_rounds": 111
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.15409356399977697,
+            0.16218353190124618
+          ],
+          "maximum": 0.16894146500271745,
+          "mean": 0.1580454829003429,
+          "median": 0.1587204989991733,
+          "minimum": 0.1484542030011653
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.01926169549997212,
+            0.020272941487655773
+          ],
+          "maximum": 0.02111768312533968,
+          "mean": 0.019755685362542862,
+          "median": 0.01984006237489666,
+          "minimum": 0.018556775375145662
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.008090326400269987,
+            0.014273030001641018
+          ],
+          "maximum": 0.026955016001011245,
+          "mean": 0.0103789738008345,
+          "median": 0.008489331001328537,
+          "minimum": 0.007403139999951236
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.003582866796932649,
+            0.003857828798209084
+          ],
+          "maximum": 0.004103466999367811,
+          "mean": 0.0037111650977749377,
+          "median": 0.0035845999991579447,
+          "minimum": 0.0035184489970561117
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.02731429400155321,
+            0.037985193799977425
+          ],
+          "maximum": 0.05729361400153721,
+          "mean": 0.03163867790135555,
+          "median": 0.02797916700001224,
+          "minimum": 0.024945443001342937
+        },
+        "repetitions": 10,
+        "sessions": 8,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.19864347349721356,
+            0.27755530279901
+          ],
+          "maximum": 0.43123299699800555,
+          "mean": 0.2286259707987483,
+          "median": 0.20540691449787118,
+          "minimum": 0.18774596599541837
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.024830434187151695,
+            0.03469441284987625
+          ],
+          "maximum": 0.05390412462475069,
+          "mean": 0.028578246349843538,
+          "median": 0.025675864312233898,
+          "minimum": 0.023468245749427297
+        }
+      },
+      {
+        "classical_load": 0.0,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.021281873901170912,
+            0.03719396769956802
+          ],
+          "maximum": 0.054071298996859696,
+          "mean": 0.028722522300085984,
+          "median": 0.021575862003373913,
+          "minimum": 0.018698567000683397
+        },
+        "counters": {
+          "background_packets": 0,
+          "classical_trace_rows": 272,
+          "completed_transactions": 16,
+          "distinct_boundary_timestamps": 74,
+          "final_federation_ns": 27325600,
+          "final_transaction_ns": 27325600,
+          "ipc_rx_bytes": 21818,
+          "ipc_rx_lines": 415,
+          "ipc_tx_bytes": 3469,
+          "ipc_tx_lines": 190,
+          "synchronization_rounds": 106
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.22859060340051657,
+            0.31561772239874697
+          ],
+          "maximum": 0.41080474999762373,
+          "mean": 0.269342011599656,
+          "median": 0.24288166200130945,
+          "minimum": 0.19606962699617725
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.014286912712532285,
+            0.019726107649921686
+          ],
+          "maximum": 0.025675296874851483,
+          "mean": 0.0168338757249785,
+          "median": 0.01518010387508184,
+          "minimum": 0.012254351687261078
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.012871404401084873,
+            0.022115885501989396
+          ],
+          "maximum": 0.03169353900011629,
+          "mean": 0.017008556701330235,
+          "median": 0.013766758500423748,
+          "minimum": 0.010472127003595233
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0036567782997735778,
+            0.0038823146998765877
+          ],
+          "maximum": 0.004054459001054056,
+          "mean": 0.003766259099211311,
+          "median": 0.00371903400082374,
+          "minimum": 0.003575355003704317
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.030525352497352286,
+            0.04086933020153083
+          ],
+          "maximum": 0.0525209650004399,
+          "mean": 0.03542952350035193,
+          "median": 0.032137811998836696,
+          "minimum": 0.0251044480028213
+        },
+        "repetitions": 10,
+        "sessions": 16,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.28728948960051637,
+            0.390743407397531
+          ],
+          "maximum": 0.47291554000548786,
+          "mean": 0.3372603164993052,
+          "median": 0.3007705839991104,
+          "minimum": 0.2459409279981628
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.017955593100032273,
+            0.024421462962345687
+          ],
+          "maximum": 0.02955722125034299,
+          "mean": 0.021078769781206576,
+          "median": 0.0187981614999444,
+          "minimum": 0.015371307999885175
+        }
+      },
+      {
+        "classical_load": 0.7,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.02060219200066058,
+            0.057850597600190665
+          ],
+          "maximum": 0.13908417300262954,
+          "mean": 0.033694250300322894,
+          "median": 0.021582152003247757,
+          "minimum": 0.019312498996441718
+        },
+        "counters": {
+          "background_packets": 35,
+          "classical_trace_rows": 517,
+          "completed_transactions": 16,
+          "distinct_boundary_timestamps": 179,
+          "final_federation_ns": 42090586,
+          "final_transaction_ns": 27325600,
+          "ipc_rx_bytes": 42305,
+          "ipc_rx_lines": 765,
+          "ipc_tx_bytes": 5236,
+          "ipc_tx_lines": 295,
+          "synchronization_rounds": 211
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.3110952205992362,
+            0.4150903621004545
+          ],
+          "maximum": 0.5710426720033865,
+          "mean": 0.35547519980027575,
+          "median": 0.3168055195019406,
+          "minimum": 0.2929975020015263
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.019443451287452264,
+            0.025943147631278408
+          ],
+          "maximum": 0.03569016700021166,
+          "mean": 0.022217199987517235,
+          "median": 0.019800344968871286,
+          "minimum": 0.018312343875095394
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.018378081201808526,
+            0.03169468710257206
+          ],
+          "maximum": 0.055867907001811545,
+          "mean": 0.023764617300912505,
+          "median": 0.019265246999566443,
+          "minimum": 0.016258577998087276
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.003645137399871601,
+            0.004293364501791075
+          ],
+          "maximum": 0.005563190003158525,
+          "mean": 0.0038879873005498665,
+          "median": 0.00367372749678907,
+          "minimum": 0.003552488000423182
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.02879640509854653,
+            0.03486152589830453
+          ],
+          "maximum": 0.041043662997253705,
+          "mean": 0.03155771599922445,
+          "median": 0.029748800996458158,
+          "minimum": 0.027285118005238473
+        },
+        "repetitions": 10,
+        "sessions": 16,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.37589754400105446,
+            0.4860168973988038
+          ],
+          "maximum": 0.6466885849949904,
+          "mean": 0.4246151534003729,
+          "median": 0.3772588780011574,
+          "minimum": 0.3461590820006677
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.023493596500065904,
+            0.03037605608742524
+          ],
+          "maximum": 0.0404180365621869,
+          "mean": 0.026538447087523308,
+          "median": 0.02357867987507234,
+          "minimum": 0.02163494262504173
+        }
+      },
+      {
+        "classical_load": 0.0,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.041447243301081474,
+            0.14644170140236384
+          ],
+          "maximum": 0.3046167560023605,
+          "mean": 0.08943392779983697,
+          "median": 0.04213129599884269,
+          "minimum": 0.03669169500062708
+        },
+        "counters": {
+          "background_packets": 0,
+          "classical_trace_rows": 544,
+          "completed_transactions": 32,
+          "distinct_boundary_timestamps": 146,
+          "final_federation_ns": 52925600,
+          "final_transaction_ns": 52925600,
+          "ipc_rx_bytes": 44179,
+          "ipc_rx_lines": 823,
+          "ipc_tx_bytes": 6936,
+          "ipc_tx_lines": 374,
+          "synchronization_rounds": 210
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.43681676709966266,
+            0.5509851448005065
+          ],
+          "maximum": 0.6520863010009634,
+          "mean": 0.4905401017997065,
+          "median": 0.43918337949799024,
+          "minimum": 0.4035553810026613
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.013650523971864458,
+            0.01721828577501583
+          ],
+          "maximum": 0.020377696906280107,
+          "mean": 0.015329378181240827,
+          "median": 0.013724480609312195,
+          "minimum": 0.012611105656333166
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.02645517980054137,
+            0.03331371290041716
+          ],
+          "maximum": 0.046044831004110165,
+          "mean": 0.02907519820073503,
+          "median": 0.026705413500167197,
+          "minimum": 0.02539157499995781
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0037207072018645704,
+            0.00420914349888335
+          ],
+          "maximum": 0.004864995004027151,
+          "mean": 0.003936419500678312,
+          "median": 0.0037469259987119585,
+          "minimum": 0.0035758970043389127
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.029957076498976675,
+            0.037211798798671224
+          ],
+          "maximum": 0.05036359999940032,
+          "mean": 0.03285866719961632,
+          "median": 0.031305232496379176,
+          "minimum": 0.028391466003085952
+        },
+        "repetitions": 10,
+        "sessions": 32,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.5394984186008515,
+            0.7164759996005159
+          ],
+          "maximum": 0.9966208620026009,
+          "mean": 0.6167691162998381,
+          "median": 0.5578997074990184,
+          "minimum": 0.49543760500091594
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.016859325581276608,
+            0.02238987498751612
+          ],
+          "maximum": 0.03114440193758128,
+          "mean": 0.01927403488436994,
+          "median": 0.017434365859344325,
+          "minimum": 0.015482425156278623
+        }
+      },
+      {
+        "classical_load": 0.7,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.040877904399530963,
+            0.06209532270149794
+          ],
+          "maximum": 0.10276068300299812,
+          "mean": 0.049081437900167654,
+          "median": 0.041362741500051925,
+          "minimum": 0.0388112469954649
+        },
+        "counters": {
+          "background_packets": 68,
+          "classical_trace_rows": 1020,
+          "completed_transactions": 32,
+          "distinct_boundary_timestamps": 350,
+          "final_federation_ns": 80936305,
+          "final_transaction_ns": 53210473,
+          "ipc_rx_bytes": 84102,
+          "ipc_rx_lines": 1503,
+          "ipc_tx_bytes": 10395,
+          "ipc_tx_lines": 578,
+          "synchronization_rounds": 414
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.6332682093001495,
+            0.7802672770012578
+          ],
+          "maximum": 0.8865265599961276,
+          "mean": 0.704253548401175,
+          "median": 0.6351278680012911,
+          "minimum": 0.5724329510048847
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.01978963154062967,
+            0.024383352406289305
+          ],
+          "maximum": 0.027703954999878988,
+          "mean": 0.02200792338753672,
+          "median": 0.019847745875040346,
+          "minimum": 0.017888529718902646
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.03996600299869897,
+            0.059381121300248196
+          ],
+          "maximum": 0.08108893300232012,
+          "mean": 0.04813247579877498,
+          "median": 0.04151360899777501,
+          "minimum": 0.03732784900057595
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0036694013004307637,
+            0.005330360399966594
+          ],
+          "maximum": 0.008660298997710925,
+          "mean": 0.004308518900506897,
+          "median": 0.0036536510015139356,
+          "minimum": 0.0034952800051542
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.03182513539941283,
+            0.04591846079856623
+          ],
+          "maximum": 0.0647153139943839,
+          "mean": 0.03801628449873533,
+          "median": 0.03476235649941373,
+          "minimum": 0.026161100999161135
+        },
+        "repetitions": 10,
+        "sessions": 32,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.7131331740994937,
+            0.886395614502544
+          ],
+          "maximum": 1.046902026006137,
+          "mean": 0.7956597897005849,
+          "median": 0.716101947997231,
+          "minimum": 0.6439579759971821
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.02228541169060918,
+            0.0276998629532045
+          ],
+          "maximum": 0.03271568831269178,
+          "mean": 0.02486436842814328,
+          "median": 0.02237818587491347,
+          "minimum": 0.02012368674991194
+        }
+      },
+      {
+        "classical_load": 0.0,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.07952709989767755,
+            0.16055258200140088
+          ],
+          "maximum": 0.309652759002347,
+          "mean": 0.1117657638991659,
+          "median": 0.08480594350112369,
+          "minimum": 0.07153822099644458
+        },
+        "counters": {
+          "background_packets": 0,
+          "classical_trace_rows": 1088,
+          "completed_transactions": 64,
+          "distinct_boundary_timestamps": 290,
+          "final_federation_ns": 104125600,
+          "final_transaction_ns": 104125600,
+          "ipc_rx_bytes": 89202,
+          "ipc_rx_lines": 1639,
+          "ipc_tx_bytes": 13954,
+          "ipc_tx_lines": 742,
+          "synchronization_rounds": 418
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.8847750476998044,
+            1.2130048083010478
+          ],
+          "maximum": 1.7736997940010042,
+          "mean": 1.0209324607996677,
+          "median": 0.9243748619992402,
+          "minimum": 0.8202206529967953
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.013824610120309444,
+            0.018953200129703873
+          ],
+          "maximum": 0.02771405928126569,
+          "mean": 0.015952069699994808,
+          "median": 0.014443357218738129,
+          "minimum": 0.012815947703074926
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.06173500580116524,
+            0.07563616969782742
+          ],
+          "maximum": 0.08996803899935912,
+          "mean": 0.06836462509963895,
+          "median": 0.06614783850091044,
+          "minimum": 0.057056336001551244
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0038005293004971462,
+            0.00530580440099584
+          ],
+          "maximum": 0.008564821000618394,
+          "mean": 0.004339228099706815,
+          "median": 0.0038980769968475215,
+          "minimum": 0.00367605900100898
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.030531726000481284,
+            0.041989467699022495
+          ],
+          "maximum": 0.05425766699772794,
+          "mean": 0.035664507200272054,
+          "median": 0.03254598299827194,
+          "minimum": 0.026957433998177294
+        },
+        "repetitions": 10,
+        "sessions": 64,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.9996797069972672,
+            1.3968018235987985
+          ],
+          "maximum": 1.995954726000491,
+          "mean": 1.1727019599988124,
+          "median": 1.0383322929992573,
+          "minimum": 0.9307544330004021
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.0156199954218323,
+            0.021825028493731226
+          ],
+          "maximum": 0.031186792593757673,
+          "mean": 0.018323468124981444,
+          "median": 0.016223942078113396,
+          "minimum": 0.014543038015631282
+        }
+      },
+      {
+        "classical_load": 0.7,
+        "core_initialization_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.07828163390004192,
+            0.1523412979018758
+          ],
+          "maximum": 0.3091401500059874,
+          "mean": 0.10530675400004838,
+          "median": 0.0825542474995018,
+          "minimum": 0.07012588599900482
+        },
+        "counters": {
+          "background_packets": 133,
+          "classical_trace_rows": 2019,
+          "completed_transactions": 64,
+          "distinct_boundary_timestamps": 689,
+          "final_federation_ns": 157450600,
+          "final_transaction_ns": 104125600,
+          "ipc_rx_bytes": 169666,
+          "ipc_rx_lines": 2969,
+          "ipc_tx_bytes": 20883,
+          "ipc_tx_lines": 1141,
+          "synchronization_rounds": 817
+        },
+        "federation_seconds": {
+          "ci95_repetition_bootstrap": [
+            1.2963891516003059,
+            1.4419480235017545
+          ],
+          "maximum": 1.6495784990038374,
+          "mean": 1.3622755663003772,
+          "median": 1.3467879769996216,
+          "minimum": 1.2128867020001053
+        },
+        "federation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.02025608049375478,
+            0.022530437867214915
+          ],
+          "maximum": 0.02577466404693496,
+          "mean": 0.021285555723443393,
+          "median": 0.021043562140619088,
+          "minimum": 0.018951354718751645
+        },
+        "offline_validation_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.0907282675972965,
+            0.11553150809850195
+          ],
+          "maximum": 0.1604028660003678,
+          "mean": 0.10063473599875579,
+          "median": 0.09252287899653311,
+          "minimum": 0.08464784699754091
+        },
+        "participant_finish_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.00371962539938977,
+            0.005043926298822043
+          ],
+          "maximum": 0.00787673600279959,
+          "mean": 0.004193736999150132,
+          "median": 0.003730622000148287,
+          "minimum": 0.0036488990008365363
+        },
+        "participant_startup_seconds": {
+          "ci95_repetition_bootstrap": [
+            0.02921893620150513,
+            0.03257930779873277
+          ],
+          "maximum": 0.03460191499470966,
+          "mean": 0.03102002919986262,
+          "median": 0.03169969100054004,
+          "minimum": 0.02590170300391037
+        },
+        "repetitions": 10,
+        "sessions": 64,
+        "simulation_seconds": {
+          "ci95_repetition_bootstrap": [
+            1.414424794298975,
+            1.6066096783004469
+          ],
+          "maximum": 1.793767351002316,
+          "mean": 1.5027960864994383,
+          "median": 1.4628127594987745,
+          "minimum": 1.313090807001572
+        },
+        "simulation_seconds_per_transaction": {
+          "ci95_repetition_bootstrap": [
+            0.022100387410921483,
+            0.025103276223444482
+          ],
+          "maximum": 0.028027614859411187,
+          "mean": 0.023481188851553723,
+          "median": 0.022856449367168352,
+          "minimum": 0.020517043859399564
+        }
+      }
+    ],
+    "max_density_matrix_error": 4.440892098500626e-16,
+    "measured_runs": 120,
+    "warmup_runs": 12
+  }
+}

@@ -11,10 +11,16 @@ def require(ok,message):
     if not ok:raise RuntimeError('Hybrid validation: '+message)
 
 
-def validate_report(report):
-    c=report['config'];snap=report['snapshot'];rows=report['ns3_events'];events=report['events']
-    expected=expected_timing(c)
-    require(report['ns3_time_ns']==snap['time_ns']==snap['netsquid_time_ns'],'clock mismatch')
+def validate_report(report, expected=None, network=True):
+    c=report['config'];snap=report['snapshot'];rows=report.get('ns3_events',[]);events=report['events']
+    expected=expected if expected is not None else expected_timing(c,no_dq=report.get('model')=='No-Dq-R')
+    require(snap['time_ns']==snap['netsquid_time_ns'],'clock mismatch')
+    if network:
+        require(report['ns3_time_ns']==snap['time_ns'],'ns-3 clock mismatch')
+        require(report['nodes']==dict(A=0,R=1,B=2),'node mapping')
+        require(not any(r['event_type'].startswith('COMMAND_') or r['node_id'] not in (1,2) for r in rows),'removed command path/node')
+    capacity=len(c['sessions']) if report.get('model')=='No-Dq-R' else 1
+    require(snap['R_execution_capacity']==capacity,'R execution capacity')
     def times(value):
         if isinstance(value,dict):
             for k,v in value.items():
@@ -23,26 +29,29 @@ def validate_report(report):
         elif isinstance(value,list):
             for v in value:times(v)
     times(report)
-    require(report['q2ns_status']==dict(native_state_count=0,native_qubit_count=0,
-            sessions=len(c['sessions']),corrections_applied=len(c['sessions'])),'Q2NS ownership/completion')
-    require(not any('DROP' in r['event_type'] for r in rows),'packet drop')
-    packet_types={'COMMAND_TX','RESULT_TX','BACKGROUND_TX','COMMAND_RX','RESULT_RX','BACKGROUND_RX',
-                  'QUEUE_ENQUEUE','QUEUE_DEQUEUE','PHY_TX','PHY_TX_END','PHY_RX'}
-    packet_rows=[r for r in rows if r['event_type'] in packet_types]
-    require({r['message_id'] for r in packet_rows}=={p['packet_id'] for p in expected['packets']},'packet IDs')
-    for p in expected['packets']:
-        own=[r for r in packet_rows if r['message_id']==p['packet_id']]
-        tx='BACKGROUND_TX' if not p['session_id'] else ('COMMAND_TX' if p['link']=='command' else 'RESULT_TX')
-        rx=tx.replace('TX','RX')
-        schedule={tx:'app_tx_ns',rx:'app_rx_ns','QUEUE_ENQUEUE':'enqueue_ns','QUEUE_DEQUEUE':'dequeue_ns',
-                  'PHY_TX':'phy_tx_ns','PHY_TX_END':'phy_tx_end_ns','PHY_RX':'phy_rx_ns'}
-        require(len(own)==len(schedule),'packet trace count')
-        for kind,key in schedule.items():
-            matches=[r for r in own if r['event_type']==kind]
-            require(len(matches)==1 and matches[0]['time_ns']==p[key],'FIFO packet timing '+kind)
-            r=matches[0]
-            require(r['session_id']==p['session_id'],'packet session')
-            require(r['packet_bytes']==p['payload_bytes']+(0 if kind in (tx,rx) else 30),'wire bytes')
+    if network:
+        require(not any('DROP' in r['event_type'] for r in rows),'packet drop')
+        require(report['q2ns_status']==dict(native_state_count=0,native_qubit_count=0,
+                sessions=len(c['sessions']),corrections_applied=len(c['sessions'])),'Q2NS ownership/completion')
+        require(not any('DROP' in r['event_type'] for r in rows),'packet drop')
+        packet_types={'RESULT_TX','BACKGROUND_TX','RESULT_RX','BACKGROUND_RX',
+                      'QUEUE_ENQUEUE','QUEUE_DEQUEUE','PHY_TX','PHY_TX_END','PHY_RX'}
+        packet_rows=[r for r in rows if r['event_type'] in packet_types]
+        require({r['message_id'] for r in packet_rows}=={p['packet_id'] for p in expected['packets']},'packet IDs')
+        for p in expected['packets']:
+            own=[r for r in packet_rows if r['message_id']==p['packet_id']]
+            tx='BACKGROUND_TX' if not p['session_id'] else 'RESULT_TX'
+            rx=tx.replace('TX','RX')
+            schedule={tx:'app_tx_ns',rx:'app_rx_ns','QUEUE_ENQUEUE':'enqueue_ns','QUEUE_DEQUEUE':'dequeue_ns',
+                      'PHY_TX':'phy_tx_ns','PHY_TX_END':'phy_tx_end_ns','PHY_RX':'phy_rx_ns'}
+            require(len(own)==len(schedule),'packet trace count')
+            for kind,key in schedule.items():
+                matches=[r for r in own if r['event_type']==kind]
+                require(len(matches)==1 and matches[0]['time_ns']==p[key],'FIFO packet timing '+kind)
+                r=matches[0]
+                require(r['session_id']==p['session_id'],'packet session')
+                require(r['node_id']==(2 if kind in (rx,'PHY_RX') else 1),'packet endpoint')
+                require(r['packet_bytes']==p['payload_bytes']+(0 if kind in (tx,rx) else 30),'wire bytes')
     requests=snap['requests'];require(len(requests)==2*len(c['sessions']),'request count')
     for s in c['sessions']:
         sid=s['session_id'];out=snap['sessions'][str(sid)];pred=expected['sessions'][str(sid)]
@@ -55,15 +64,21 @@ def validate_report(report):
             for field in ('arrival_ns','start_ns','completion_ns'):
                 require(r[field]==pred[op.lower()+'_'+field],'quantum FIFO timing')
             require(r['processor_id']==('R' if op=='BSM' else 'B'),'shared processor mapping')
-        own=[r for r in rows if r['session_id']==sid]
-        prefix='Q2NS_' if s['protocol']=='swap' else 'Q2NS_TELEPORT_'
-        for suffix,key in [('BSM_REQUEST','bsm_arrival_ns'),('BSM_DONE','bsm_completion_ns'),
-                           ('CORRECTION_REQUEST','correction_arrival_ns'),('CORRECTION_APPLIED','correction_completion_ns')]:
-            selected=[r for r in own if r['event_type']==prefix+suffix]
-            require(len(selected)==1 and selected[0]['time_ns']==pred[key],'native app '+suffix)
-        for name in ('RESULT_TX','RESULT_RX','CORRECTION_REQUEST'):
-            selected=[r for r in own if r['event_type']==name]
-            require(len(selected)==1 and [selected[0]['m1'],selected[0]['m2']]==out['measurement_bits'],'actual payload bits')
+        if network:
+            own=[r for r in rows if r['session_id']==sid]
+            prefix='Q2NS_' if s['protocol']=='swap' else 'Q2NS_TELEPORT_'
+            for suffix,key in [('BSM_REQUEST','bsm_arrival_ns'),('BSM_DONE','bsm_completion_ns'),
+                               ('CORRECTION_REQUEST','correction_arrival_ns'),('CORRECTION_APPLIED','correction_completion_ns')]:
+                selected=[r for r in own if r['event_type']==prefix+suffix]
+                require(len(selected)==1 and selected[0]['time_ns']==pred[key],'native app '+suffix)
+            for name in ('RESULT_TX','RESULT_RX','CORRECTION_REQUEST'):
+                selected=[r for r in own if r['event_type']==name]
+                require(len(selected)==1 and [selected[0]['m1'],selected[0]['m2']]==out['measurement_bits'],'actual payload bits')
+            local=[r for r in own if r['event_type']=='SESSION_START']
+            bsm=[r for r in own if r['event_type']=='BSM_REQUEST']
+            require(len(local)==len(bsm)==1 and local[0]['time_ns']==s['session_start_ns'] and
+                    bsm[0]['time_ns']==s['session_start_ns'] and bsm[0]['cause']==local[0]['event_id'],
+                    'local session activation')
         resources=[r for r in snap['resources'] if r['session_id']==sid]
         require(len(resources)==3,'resource lifecycle count')
         for r in resources:
@@ -76,10 +91,9 @@ def validate_report(report):
         require(e['event_id'] not in known,'event ID reused')
         require(e['caused_by_event_id'] is None or e['caused_by_event_id'] in known,'causal parent missing/future')
         known.add(e['event_id']);last=e['sim_time_ns']
-    require(snap['time_ns']==max([p['app_rx_ns'] for p in expected['packets']]+
-            [s['correction_completion_ns'] for s in expected['sessions'].values()]),'final drain boundary')
-    return dict(passed=True,checks=['packet_FIFO','processor_FIFO','native_apps','resource_lifecycle',
-                'causal_log','integer_time','single_state_owner'],expected_timing=expected)
+    require(snap['time_ns']==expected['simulation_completion_ns'],'final drain boundary')
+    return dict(passed=True,checks=(['packet_FIFO','native_apps','local_session_start','single_state_owner'] if network else [])+
+                ['processor_FIFO','resource_lifecycle','causal_log','integer_time'],expected_timing=expected)
 
 
 def cross_validate(report,references=None):

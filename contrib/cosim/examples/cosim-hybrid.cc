@@ -1,5 +1,5 @@
 // 동일 IPC/packet 계측에서 실제 SwapApp과 TeleportationApp을 함께 실행한다.
-// P5-A 참가자의 packet/queue 경로를 보존한 확장이다. Quantum 정책은 Python core가 담당한다.
+// Session은 R에서 직접 시작한다. R→B 실제 Q2NS packet과 quantum core를 연동한다.
 #include "../model/cosim-bridge.h"
 #include "ns3/cosim-agent-app.h"
 #include "ns3/core-module.h"
@@ -23,7 +23,7 @@ using namespace ns3::cosim::bridge;
 
 namespace
 {
-constexpr uint32_t CONTROLLER = 0, A = 1, R = 2, B = 3;
+constexpr uint32_t A = 0, R = 1, B = 2;
 constexpr uint16_t PORT = 9000, BG_PORT = 9001;
 
 // 고정 길이 60-byte 헤더. fidelity나 양자 상태는 패킷에 싣지 않는다.
@@ -31,7 +31,7 @@ constexpr uint16_t PORT = 9000, BG_PORT = 9001;
 class Q2nsHeader : public Header
 {
   public:
-    uint8_t kind{1}; // 1: 명령, 2: 결과, 3: command-link 배경, 4: result-link 배경
+    uint8_t kind{5}; // 2: native result, 4: result-link background, 5: local event
     uint64_t session{1}, request{1}, message{1}, pairA{1}, pairB{2}, output{3};
     int m1{-1}, m2{-1};
     uint64_t txSequence{0};
@@ -60,7 +60,7 @@ class Q2nsHeader : public Header
     {
         Require(i.ReadU8() == 1, "invalid packet version");
         kind = i.ReadU8();
-        Require(kind >= 1 && kind <= 4, "invalid packet kind");
+        Require(kind == 4, "invalid packet kind");
         session = i.ReadNtohU64();
         request = i.ReadNtohU64();
         message = i.ReadNtohU64();
@@ -168,7 +168,7 @@ Q2nsHeader ReadWire(Ptr<const Packet> packet, bool hasPpp = true)
     copy->RemoveHeader(udp);
     SwapTraceTag provenance;
     auto h = copy->PeekPacketTag(provenance) ? ReadSwapResult(copy) : ReadMessage(copy);
-    Require(udp.GetDestinationPort() == (h.kind <= 2 ? PORT : BG_PORT) ||
+    Require(udp.GetDestinationPort() == (h.kind == 2 ? PORT : BG_PORT) ||
             (provenance.teleport && h.kind==2 && udp.GetDestinationPort()>=10000), "kind/port mismatch");
     return h;
 }
@@ -202,36 +202,33 @@ void RunParticipant(Wire& wire)
     ObjectFactory factory;
     factory.SetTypeId(VisibleScheduler::GetTypeId());
     Simulator::SetScheduler(factory);
-    wire.Send("HELLO COSIM_HYBRID 1");
+    wire.Send("HELLO COSIM_HYBRID 2");
     std::string tag;
-    uint64_t commandRate, resultRate;
-    int64_t commandDelay, resultDelay;
-    uint32_t commandBytes, resultBytes, queuePackets, sessionCount;
-    Parse(wire.Read(), tag, commandRate, commandDelay, resultRate, resultDelay,
-          commandBytes, resultBytes, queuePackets, sessionCount);
-    Require(tag == "CONFIG" && commandRate > 0 && resultRate > 0 &&
-            commandDelay >= 0 && resultDelay >= 0 &&
-            commandBytes >= 60 && commandBytes <= 1400 && resultBytes >= 60 &&
-            resultBytes <= 1400 && queuePackets > 0 && queuePackets <= 65536 &&
-            sessionCount > 0 && sessionCount <= 64, "invalid Q2ns CONFIG");
-    struct Session { int64_t commandAt; std::string root; uint64_t message; unsigned protocol; };
+    uint64_t resultRate;
+    int64_t resultDelay;
+    uint32_t resultBytes, queuePackets, sessionCount;
+    Parse(wire.Read(), tag, resultRate, resultDelay, resultBytes, queuePackets, sessionCount);
+    Require(tag == "CONFIG" && resultRate > 0 && resultDelay >= 0 &&
+            resultBytes >= 60 && resultBytes <= 1400 && queuePackets > 0 && queuePackets <= 65536 &&
+            sessionCount > 0 && sessionCount <= 64, "invalid Hybrid CONFIG");
+    struct Session { int64_t startAt; std::string root; uint64_t message; unsigned protocol; };
     std::map<uint64_t, Session> sessions;
     std::vector<uint64_t> sessionOrder;
     for (uint32_t slot = 0; slot < sessionCount; ++slot)
     {
         uint64_t sid;
         Session item;
-        Parse(wire.Read(), tag, sid, item.commandAt, item.root, item.protocol);
+        Parse(wire.Read(), tag, sid, item.startAt, item.root, item.protocol);
         Require(item.protocol<=1, "unsupported protocol");
         Require(tag == "SESSION" && sid > 0 && sessions.count(sid) == 0 &&
-                item.commandAt >= 0 && item.commandAt <= MAX_TIME, "invalid SESSION");
+                item.startAt >= 0 && item.startAt <= MAX_TIME, "invalid SESSION");
         // 패킷 ID는 설정 순번으로 정한다. 큰 session ID도 산술 overflow 없이 운반한다.
-        item.message = 2 * slot + 1;
+        item.message = slot + 1;
         sessions.emplace(sid, item);
         sessionOrder.push_back(sid);
     }
     std::vector<Flow> flows;
-    for (const auto& side : {"command", "result"})
+    for (const auto& side : {"result"})
     {
         Flow flow;
         std::string name;
@@ -246,13 +243,13 @@ void RunParticipant(Wire& wire)
 
     q2ns::QStateRegistry registry;
     NodeContainer nodes;
-    for (int i=0; i<4; ++i) nodes.Add(CreateObject<q2ns::QNode>(registry));
+    for (int i=0; i<3; ++i) nodes.Add(CreateObject<q2ns::QNode>(registry));
     // Q2NS QNode/App을 실제 사용하되 quantum state는 NetSquid만 소유한다.
     InternetStackHelper internet;
     internet.SetIpv6StackInstall(false);
     internet.Install(nodes);
     TraceBuffer trace;
-    for (auto node : {CONTROLLER, R, B})
+    for (auto node : {R, B})
     {
         nodes.Get(node)->GetObject<TrafficControlLayer>()->TraceConnectWithoutContext("TcDrop",
             MakeBoundCallback(&TraceTcDrop, &trace, node));
@@ -294,15 +291,7 @@ void RunParticipant(Wire& wire)
         }
         return interfaces;
     };
-    auto cr = link(CONTROLLER, R, commandRate, commandDelay, "10.1.1.0");
-    auto rb = link(R, B, resultRate, resultDelay, "10.1.2.0");
-    std::map<uint32_t, Ptr<CosimAgentApp>> agents;
-    for (auto node : {CONTROLLER, R, B})
-    {
-        auto app = CreateObject<CosimAgentApp>();
-        nodes.Get(node)->AddApplication(app);
-        agents[node] = app;
-    }
+    auto rb = link(R, B, resultRate, resultDelay, "10.1.1.0");
     std::map<uint64_t, Ptr<q2ns::TeleportationApp>> teleSource, teleSink;
     auto repeater = CreateObject<q2ns::SwapApp>();
     auto endpoint = CreateObject<q2ns::SwapApp>();
@@ -311,7 +300,7 @@ void RunParticipant(Wire& wire)
     repeater->SetPayloadBytes(resultBytes);
     repeater->SetStartTime(NanoSeconds(0));
     endpoint->SetStartTime(NanoSeconds(0));
-    std::map<uint64_t, std::string> commandCauses, resultCauses, completionCauses, correctionCauses, localCauses;
+    std::map<uint64_t, std::string> startCauses, resultCauses, completionCauses, correctionCauses, localCauses;
     uint32_t correctionsApplied=0;
     auto nativeTrace = [&](std::string type, uint32_t node, uint64_t sid, const std::string& cause,
                            int m1=-1, int m2=-1) {
@@ -325,20 +314,20 @@ void RunParticipant(Wire& wire)
         Require(resources.pairPrev==101 && resources.pairNext==102 && resources.outputPair==103,
                 "Q2NS logical EPR mapping mismatch");
         Q2nsHeader h;
-        h.session=sid; h.message=sessions.at(sid).message;
-        auto id=trace.Add("BSM_REQUEST", R, h, commandCauses.at(sid));
+        h.session=sid; h.message=0;
+        auto id=trace.Add("BSM_REQUEST", R, h, startCauses.at(sid));
         nativeTrace("Q2NS_BSM_REQUEST", R, sid, EventIdString(id));
     }, {});
     endpoint->SetExternalQuantumCallbacks({}, [&](uint64_t sid, uint64_t output, uint8_t m1, uint8_t m2) {
         Require(output==103, "Q2NS correction pair mapping mismatch");
         Q2nsHeader h;
-        h.kind=2; h.session=sid; h.message=sessions.at(sid).message+1; h.m1=m1; h.m2=m2;
+        h.kind=2; h.session=sid; h.message=sessions.at(sid).message; h.m1=m1; h.m2=m2;
         auto id=trace.Add("CORRECTION_REQUEST", B, h, resultCauses.at(sid));
         nativeTrace("Q2NS_CORRECTION_REQUEST", B, sid, EventIdString(id), m1, m2);
     });
     repeater->SetExternalPacketObservers([&](uint64_t sid, uint8_t m1, uint8_t m2, Ptr<Packet> packet) {
         Q2nsHeader h;
-        h.kind=2; h.session=sid; h.message=sessions.at(sid).message+1; h.m1=m1; h.m2=m2;
+        h.kind=2; h.session=sid; h.message=sessions.at(sid).message; h.m1=m1; h.m2=m2;
         auto id=trace.Add("RESULT_TX", R, h, localCauses.at(sid), packet->GetSize());
         SwapTraceTag provenance;
         provenance.session=sid; provenance.message=h.message; provenance.sequence=id;
@@ -375,7 +364,7 @@ void RunParticipant(Wire& wire)
             auto source=CreateObject<q2ns::TeleportationApp>();
             auto sink=CreateObject<q2ns::TeleportationApp>();
             teleSource[sid]=source; teleSink[sid]=sink;
-            const uint16_t port=10000+(sessions.at(sid).message-1)/2;
+            const uint16_t port=10000+sessions.at(sid).message-1;
             for (auto app : {source,sink}) {
                 app->SetAttribute("SessionId",UintegerValue(sid));
                 app->SetAttribute("Role",StringValue(app==source ? "source" : "sink"));
@@ -388,15 +377,15 @@ void RunParticipant(Wire& wire)
             source->ConfigureExternal({201,202,203},
                 [&,sid](uint64_t actual, const q2ns::TeleportationApp::ExternalResources& r) {
                     Require(actual==sid && r.input==201 && r.epr==202 && r.output==203,"teleport handle mismatch");
-                    Q2nsHeader h; h.session=sid; h.message=sessions.at(sid).message;
+                    Q2nsHeader h; h.session=sid; h.message=0;
                     h.pairA=h.pairB=h.output=0;
-                    auto id=trace.Add("BSM_REQUEST",R,h,commandCauses.at(sid));
+                    auto id=trace.Add("BSM_REQUEST",R,h,startCauses.at(sid));
                     nativeTrace("Q2NS_TELEPORT_BSM_REQUEST",R,sid,EventIdString(id));
                 },{});
             sink->ConfigureExternal({201,202,203},{},
                 [&,sid](uint64_t actual,uint64_t target,uint8_t m1,uint8_t m2) {
                     Require(actual==sid && target==203,"teleport target mismatch");
-                    Q2nsHeader h; h.kind=2; h.session=sid; h.message=sessions.at(sid).message+1;
+                    Q2nsHeader h; h.kind=2; h.session=sid; h.message=sessions.at(sid).message;
                     h.pairA=h.pairB=h.output=0; h.m1=m1; h.m2=m2;
                     auto id=trace.Add("CORRECTION_REQUEST",B,h,resultCauses.at(sid));
                     nativeTrace("Q2NS_TELEPORT_CORRECTION_REQUEST",B,sid,EventIdString(id),m1,m2);
@@ -404,7 +393,7 @@ void RunParticipant(Wire& wire)
             source->SetExternalPacketObservers(
                 [&,sid](uint64_t actual,uint8_t m1,uint8_t m2,Ptr<Packet> packet) {
                     Require(actual==sid,"teleport tx session mismatch");
-                    Q2nsHeader h; h.kind=2; h.session=sid; h.message=sessions.at(sid).message+1;
+                    Q2nsHeader h; h.kind=2; h.session=sid; h.message=sessions.at(sid).message;
                     h.pairA=h.pairB=h.output=0; h.m1=m1; h.m2=m2;
                     auto id=trace.Add("RESULT_TX",R,h,localCauses.at(sid),packet->GetSize());
                     SwapTraceTag tag; tag.session=sid; tag.message=h.message; tag.sequence=id; tag.teleport=true;
@@ -443,27 +432,10 @@ void RunParticipant(Wire& wire)
         cfg.role=q2ns::SwapApp::Role::Next; cfg.applyCorrections=true;
         endpoint->AddExternalSession(cfg, {101,102,103});
     }
-    auto receive = [&](uint32_t node, Ptr<Packet> packet, const Address&) {
-        uint32_t bytes = packet->GetSize();
-        auto h = ReadMessage(packet);
-        Require(sessions.count(h.session) == 1 && ((node == R && h.kind == 1) ||
-                (node == B && h.kind == 2)), "unexpected UDP destination/session");
-        auto rx = trace.Add(h.kind == 1 ? "COMMAND_RX" : "RESULT_RX", node, h,
-                            EventIdString(h.txSequence), bytes);
-        // 이 이벤트가 Python의 양자 요청을 만든다. 송신 시각을 도착 시각으로 대신 쓰지 않는다.
-        Require(node==R && h.kind==1, "commands must arrive at R");
-        commandCauses[h.session]=EventIdString(rx);
-        Require(sessions.at(h.session).protocol ? teleSource.at(h.session)->RequestExternalBsm(h.session) :
-                repeater->RequestExternalBsm(h.session), "duplicate Q2NS BSM command");
-    };
-    agents[CONTROLLER]->BindUdp(PORT, [](Ptr<Packet>, const Address&) {
-        throw std::runtime_error("unexpected packet at Controller");
-    });
-    agents[R]->BindUdp(PORT, [&](Ptr<Packet> p, const Address& a) { receive(R, p, a); });
     // B의 실제 수신 socket과 header 해석은 Q2NS PacketSink/SwapApp이 담당한다.
     // 별도 UDP port로 수신한 background는 trace만 남기며 양자 요청을 만들지 않는다.
     std::map<uint32_t, Ptr<CosimAgentApp>> background;
-    for (auto node : {CONTROLLER, R, B})
+    for (auto node : {R, B})
     {
         auto app = CreateObject<CosimAgentApp>();
         nodes.Get(node)->AddApplication(app);
@@ -471,47 +443,43 @@ void RunParticipant(Wire& wire)
         app->BindUdp(BG_PORT, [&, node](Ptr<Packet> packet, const Address&) {
             auto bytes = packet->GetSize();
             auto h = ReadMessage(packet);
-            Require(h.session == 0 && ((node == R && h.kind == 3) ||
-                    (node == B && h.kind == 4)), "unexpected background destination");
+            Require(h.session == 0 && (node == B && h.kind == 4), "unexpected background destination");
             trace.Add("BACKGROUND_RX", node, h, EventIdString(h.txSequence), bytes);
         });
     }
-    auto send = [&](uint32_t from, const Address& destination, Q2nsHeader h,
-                    uint32_t bytes, const std::string& cause) {
-        h.txSequence = trace.Add(h.kind > 2 ? "BACKGROUND_TX" :
-                                  (h.kind == 1 ? "COMMAND_TX" : "RESULT_TX"), from, h, cause, bytes);
-        auto packet = Create<Packet>(bytes - h.GetSerializedSize());
-        packet->AddHeader(h);
-        (h.kind > 2 ? background : agents).at(from)->SendUdp(packet, destination);
-    };
-    // 같은 시각이면 background를 먼저 enqueue한다. 모든 유한 입력을 먼저 등록한다.
-    for (uint32_t side = 0; side < flows.size(); ++side)
+    // Register application initialization before possible session starts at t=0.
+    for (uint32_t i = 0; i < nodes.GetN(); ++i) nodes.Get(i)->Initialize();
+    // Background packets use a separate port and never invoke quantum requests.
+    const auto flow = flows.at(0);
+    for (uint32_t i = 0; i < flow.count; ++i)
     {
-        const auto flow = flows[side];
-        for (uint32_t i = 0; i < flow.count; ++i)
-        {
-            Q2nsHeader h;
-            h.kind = side + 3;
-            h.session = h.request = h.pairA = h.pairB = h.output = 0;
-            h.message = (side == 0 ? 1000 : 100000) + i;
-            Simulator::Schedule(NanoSeconds(flow.start + i * flow.interval), [&, h, side, flow] {
-                auto to = side == 0 ? cr.GetAddress(1) : rb.GetAddress(1);
-                send(side == 0 ? CONTROLLER : R, InetSocketAddress(to, BG_PORT), h, flow.bytes, "-");
-            });
-        }
-    }
-    // 동일 시각 command들은 설정 목록 순서로 enqueue된다.
-    for (auto sid : sessionOrder)
-    {
-        Q2nsHeader command;
-        command.session = sid;
-        const auto item = sessions.at(sid);
-        command.message = item.message;
-        if (item.protocol) command.pairA=command.pairB=command.output=0;
-        Simulator::Schedule(NanoSeconds(item.commandAt), [&, command, item] {
-            send(CONTROLLER, InetSocketAddress(cr.GetAddress(1), PORT), command, commandBytes, item.root);
+        Q2nsHeader h;
+        h.kind = 4;
+        h.session = h.request = h.pairA = h.pairB = h.output = 0;
+        h.message = 100000 + i;
+        Simulator::Schedule(NanoSeconds(flow.start + i * flow.interval), [&, h, flow]() mutable {
+            h.txSequence = trace.Add("BACKGROUND_TX", R, h, "-", flow.bytes);
+            auto packet = Create<Packet>(flow.bytes - h.GetSerializedSize());
+            packet->AddHeader(h);
+            background.at(R)->SendUdp(packet, InetSocketAddress(rb.GetAddress(1), BG_PORT));
         });
     }
+    // Equal-time starts retain configuration order; there is no command packet.
+    for (auto sid : sessionOrder)
+    {
+        const auto item = sessions.at(sid);
+        Simulator::Schedule(NanoSeconds(item.startAt), [&, sid, item] {
+            Q2nsHeader h;
+            h.session = sid; h.message = 0;
+            if (item.protocol) h.pairA = h.pairB = h.output = 0;
+            startCauses[sid] = EventIdString(trace.Add("SESSION_START", R, h, item.root));
+            Require(item.protocol ? teleSource.at(sid)->RequestExternalBsm(sid) :
+                    repeater->RequestExternalBsm(sid), "duplicate Q2NS session start");
+        });
+    }
+    wire.Send("NODES " + std::to_string(nodes.GetN()) + " " +
+              std::to_string(nodes.Get(A)->GetId()) + " " + std::to_string(nodes.Get(R)->GetId()) + " " +
+              std::to_string(nodes.Get(B)->GetId()));
     wire.Send("READY 0 " + std::to_string(NextTime()));
     while (true)
     {

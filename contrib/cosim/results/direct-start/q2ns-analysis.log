@@ -1,0 +1,5 @@
+PASS q2ns-analysis 0.009 s
+  PASS q2ns::analysis conformance (ket) 0.000 s
+  PASS q2ns::analysis conformance (dm) 0.000 s
+  PASS q2ns::analysis DM mixed-state validation 0.000 s
+  PASS q2ns::analysis conformance (stab) 0.000 s

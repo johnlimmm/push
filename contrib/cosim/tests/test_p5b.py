@@ -8,9 +8,9 @@ import unittest
 
 MODULE=Path(__file__).resolve().parents[1]
 sys.path[:0]=[str(MODULE/'experiments'),str(MODULE/'python')]
-from run_q2ns import Q2nsFederationManager
+from run_hybrid import HybridManager, HybridValidationFailure
 from run_p5b import evaluate, run_model, ReferenceCache, verify_frozen
-from p5b_nodq import NoDqManager, Q2nsValidationFailure
+from p5b_nodq import NoDqManager
 from p5b_nodq_validation import validate_report
 from p5b_fixed import run_fixed
 from p5b_timing import decoupled, fixed_timing
@@ -21,12 +21,11 @@ from p5b_analysis import model_rows, compare, estimate
 class P5BTests(unittest.TestCase):
     @classmethod
     def setUpClass(cls):
-        cls.cfg=json.loads((MODULE/'scenarios/p5-joint-result.json').read_text())
+        cls.cfg=json.loads((MODULE/'scenarios/hybrid-swap-joint-result.json').read_text())
         cls.cfg['correction_duration_ns']=50000
-        cls.cfg['expected_queueing']={k:'any' for k in ('command','result','R')}
-        cls.full=Q2nsFederationManager(cls.cfg).run()
+        cls.full=HybridManager(cls.cfg).run()
         cls.nodq=NoDqManager(cls.cfg).run()
-        cls.delays=dict(command_ns=110080,result_ns=288000)
+        cls.delays=dict(result_ns=288000)
         cls.fixed=run_fixed(cls.cfg,cls.delays)
         cls.plan=json.loads((MODULE/'scenarios/p5b-pilot.json').read_text())
 
@@ -34,59 +33,60 @@ class P5BTests(unittest.TestCase):
         full=self.full['metrics']['sessions'][1]; no=self.nodq['metrics']['sessions'][1]
         self.assertEqual(full['quantum_wait_ns'],800000)
         self.assertEqual(no['quantum_wait_ns'],0)
-        self.assertEqual(full['result_queue_ns'],713920)
-        self.assertEqual(no['result_queue_ns'],1920)
+        self.assertEqual(full['result_queue_ns'],824000)
+        self.assertEqual(no['result_queue_ns'],112000)
         self.assertNotEqual(no['completion_ns'],full['completion_ns']-full['quantum_wait_ns'])
         self.assertEqual(self.nodq['q2ns_status']['corrections_applied'],4)
-        self.assertTrue(self.nodq['q2ns_validation']['passed'])
+        self.assertTrue(self.nodq['validation']['passed'])
 
     def test_02_nodq_keeps_duration_and_ownership(self):
-        for s in self.nodq['snapshot']['sessions'].values():
-            b=s['requests']['1']
-            self.assertEqual(b['start_ns'],b['arrival_ns'])
-            self.assertEqual(b['completion_ns']-b['start_ns'],1600000)
-            self.assertEqual(s['correction']['completion_ns']-s['correction']['start_ns'],50000)
+        for r in self.nodq['snapshot']['requests']:
+            if r['operation']=='BSM':
+                self.assertEqual(r['start_ns'],r['arrival_ns'])
+            self.assertEqual(r['completion_ns']-r['start_ns'],1600000 if r['operation']=='BSM' else 50000)
         self.assertEqual(self.nodq['q2ns_status']['native_state_count'],0)
         self.assertEqual(self.nodq['snapshot']['R_execution_capacity'],4)
 
     def test_03_fixed_reruns_fifo_and_native_aging(self):
         self.assertEqual([r['quantum_wait_ns'] for r in self.fixed['metrics']['sessions']],[0,800000,1600000,2400000])
-        shifted=run_fixed(self.cfg,dict(command_ns=310080,result_ns=288000))
+        shifted=run_fixed(self.cfg,dict(result_ns=488000))
         for a,b in zip(self.fixed['metrics']['sessions'],shifted['metrics']['sessions']):
-            self.assertEqual(b['bsm_start_ns']-a['bsm_start_ns'],200000)
-        self.assertNotEqual(self.fixed['snapshot']['sessions']['1']['ab_pair']['density_matrix'],
-                            shifted['snapshot']['sessions']['1']['ab_pair']['density_matrix'])
+            self.assertEqual(b['bsm_start_ns'],a['bsm_start_ns'])
+            self.assertEqual(b['completion_ns']-a['completion_ns'],200000)
+        self.assertNotEqual(self.fixed['snapshot']['sessions']['1']['checkpoints']['usable']['density_matrix'],
+                            shifted['snapshot']['sessions']['1']['checkpoints']['usable']['density_matrix'])
         self.assertTrue(shifted['cross_validation']['passed'])
 
     def test_04_nodq_packet_and_resource_mutations_fail(self):
         for defect in ('packet_time','resource','bits','clock'):
             r=copy.deepcopy(self.nodq)
-            if defect=='packet_time': next(e for e in r['packet_events'] if e['event_type']=='PHY_RX')['time_ns']+=1
-            elif defect=='resource': r['snapshot']['sessions']['1']['resources']['1']['state']='AVAILABLE'
-            elif defect=='bits': r['snapshot']['sessions']['1']['correction']['measurement_bits'][0]^=1
+            if defect=='packet_time': next(e for e in r['ns3_events'] if e['event_type']=='PHY_RX')['time_ns']+=1
+            elif defect=='resource': r['snapshot']['resources'][0]['state']='AVAILABLE'
+            elif defect=='bits': r['snapshot']['sessions']['1']['measurement_bits'][0]^=1
             else:r['snapshot']['netsquid_time_ns']-=1
             with self.subTest(defect=defect),self.assertRaises(RuntimeError):validate_report(r)
 
     def test_05_all_branches_under_unbounded_r(self):
-        refs={sid:c['reference'] for sid,c in self.nodq['cross_validation']['sessions'].items()}
+        refs={}
         bits=set()
         for seed in range(8):
             cfg=copy.deepcopy(self.cfg);cfg['seed']=seed
             r=NoDqManager(cfg).run(refs)
-            bits.update(tuple(s['correction']['measurement_bits']) for s in r['snapshot']['sessions'].values())
+            bits.update(tuple(s['measurement_bits']) for s in r['snapshot']['sessions'].values())
         self.assertEqual(bits,{(0,0),(0,1),(1,0),(1,1)})
 
     def test_06_noise_off_restores_bell_in_both_baselines(self):
         cfg=copy.deepcopy(self.cfg);cfg['memory_noise']=dict(model='T1T2NoiseModel',T1_ns=0,T2_ns=0)
         for r in (NoDqManager(cfg).run(),run_fixed(cfg,self.delays)):
-            for s in r['snapshot']['sessions'].values():self.assertAlmostEqual(s['ab_pair']['fidelity'],1,places=12)
+            for s in r['snapshot']['sessions'].values():self.assertAlmostEqual(s['checkpoints']['usable']['fidelity'],1,places=12)
 
     def test_07_b_wait_rejected_in_every_execution_model(self):
         cfg=copy.deepcopy(self.cfg);cfg['correction_duration_ns']=500000
+        for item in cfg['sessions']:item['session_start_ns']=1000000
         with self.assertRaisesRegex(ValueError,'B wait'):run_model(cfg,'No-Dq-R',ReferenceCache())
-        with self.assertRaises(Q2nsValidationFailure):NoDqManager(cfg).run()
+        with self.assertRaises(HybridValidationFailure):NoDqManager(cfg).run()
         cfg['bsm_duration_ns']=10000
-        cfg['sessions']=[dict(session_id=i+1,command_time_ns=1000000) for i in range(2)]
+        cfg['sessions']=[dict(session_id=i+1,session_start_ns=1000000) for i in range(2)]
         for name in ('Full-Sync','No-Dq-R','Fixed-Dc'):
             with self.subTest(model=name),self.assertRaisesRegex(ValueError,'B wait'):
                 run_model(cfg,name,ReferenceCache(),self.delays)
@@ -118,7 +118,6 @@ class P5BTests(unittest.TestCase):
     def test_11_success_probability_uses_branch_thresholds(self):
         report=copy.deepcopy(self.fixed)
         for c in report['cross_validation']['sessions'].values():
-            c['reference']['ensemble']['fidelity']=.5
             for i,b in enumerate(c['reference']['branches'].values()):
                 b['probability']=.25;b['usable']['fidelity']=.9 if i<2 else .1
         rows=model_rows(report,.4,10**9)
@@ -141,10 +140,13 @@ class P5BTests(unittest.TestCase):
         self.assertIsNone(estimate(rows[:2],'x',100)['ci95_cluster_bootstrap'])
 
     def test_14_reference_cache_rejects_wrong_timing(self):
-        refs={sid:c['reference'] for sid,c in self.nodq['cross_validation']['sessions'].items()}
-        cfg=copy.deepcopy(self.cfg);cfg['bsm_duration_ns']=1600001
-        with self.assertRaises(Q2nsValidationFailure):NoDqManager(cfg).run(refs)
-        with self.assertRaises(RuntimeError):run_fixed(self.cfg,dict(command_ns=110081,result_ns=288000),refs)
+        # Preserve the expected cache key but corrupt its returned reference spec.
+        cache=ReferenceCache();run_model(self.cfg,'No-Dq-R',cache)
+        for ref in cache.values():ref['spec']['bsm_completion_ns']+=1
+        with self.assertRaises(HybridValidationFailure):NoDqManager(self.cfg).run(cache)
+        cache=ReferenceCache();run_fixed(self.cfg,self.delays,cache)
+        for ref in cache.values():ref['spec']['correction_start_ns']+=1
+        with self.assertRaises(RuntimeError):run_fixed(self.cfg,self.delays,cache)
 
     def test_15_small_evaluation_artifacts(self):
         p=copy.deepcopy(self.plan);p.update(classical_loads=[0.0],request_intervals_ns=[2000000],sessions=1,
@@ -161,5 +163,27 @@ class P5BTests(unittest.TestCase):
     def test_16_core_and_nested_q2ns_sources_frozen(self):
         self.assertTrue(verify_frozen())
 
+
+    def test_17_latency_and_all_baselines_have_no_command_term(self):
+        for report in (self.full,self.nodq,self.fixed):
+            for s in report['metrics']['sessions']:
+                self.assertFalse(any('command' in k for k in s))
+                self.assertEqual(s['transaction_latency_ns'],s['completion_ns']-s['session_start_ns'])
+                self.assertEqual(s['transaction_latency_ns'],s['quantum_wait_ns']+1600000+s['result_delay_ns']+50000)
+        self.assertEqual(set(self.fixed['fixed_delays']),{'result_ns'})
+        with self.assertRaises(ValueError):run_fixed(self.cfg,dict(command_ns=0,result_ns=288000))
+        self.assertTrue(all(m['bsm_start_ns']==s['session_start_ns'] for m,s in
+            zip(self.nodq['metrics']['sessions'],self.nodq['config']['sessions'])))
+
+    def test_18_shared_core_and_causal_reexecution(self):
+        for report in (self.full,self.nodq,self.fixed):
+            self.assertEqual(report['execution_core'],'HybridExecutionCore')
+            self.assertEqual(report['federation'],'HybridFederation')
+        for report in (self.full,self.nodq):
+            for r in report['snapshot']['requests']:
+                if r['operation']=='BSM':
+                    tx=next(e for e in report['ns3_events'] if e['event_type']=='RESULT_TX' and e['session_id']==r['session_id'])
+                    self.assertEqual(tx['time_ns'],r['completion_ns'])
+        self.assertNotEqual(self.full['metrics']['sessions'][1]['result_delay_ns'],self.nodq['metrics']['sessions'][1]['result_delay_ns'])
 
 if __name__=='__main__':unittest.main()

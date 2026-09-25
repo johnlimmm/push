@@ -3,11 +3,11 @@
 **Q2NS/ns-3의 실제 classical protocol·packet 실행과 NetSquid의 quantum state evolution을 연결하는 공동 시뮬레이터.**
 
 이 저장소는 `johnlimmm`의 hybrid simulator 구현과 검증 결과를 담는다.
-현재 **Hybrid v1**은 실제 Q2NS **SwapApp**과 **TeleportationApp**을 공통 실행 기반에 연결하고,
+현재 **Hybrid v2 (direct session start)**은 실제 Q2NS **SwapApp**과 **TeleportationApp**을 공통 실행 기반에 연결하고,
 두 프로토콜의 혼합 실행에서 classical packet queue와 quantum processor queue가
 실제 연산 시각 및 memory aging에 반영되는 것을 검증했다.
 
-**상태: 219개 test cases PASS · Swap / Teleport / Mixed 실행 지원 · 독립 NetSquid reference 검증 완료**
+**상태: 230개 test cases PASS · Swap / Teleport / Mixed 실행 지원 · 독립 NetSquid reference 검증 완료**
 
 ## 이 프로젝트에서 구현한 것
 
@@ -28,7 +28,7 @@ Q2NS 외부 실행 adapter, 시나리오 및 검증·평가 코드다.
 
 ```mermaid
 flowchart TD
-    C[Controller: ns-3 UDP command] --> R[Q2NS SwapApp / TeleportationApp at R]
+    S[Local session start at R] --> R[Q2NS SwapApp / TeleportationApp at R]
     R -->|Async BSM request| H[HybridExecutionCore: shared R FIFO]
     H --> N[NetSquid: state, memory aging, atomic BSM]
     N -->|Completion at simulation time| R
@@ -51,31 +51,29 @@ flowchart TD
 |---|---|---|
 | Teleportation | 입력 qubit + EPR, 실제 결과 packet, Bob correction | [hybrid-teleport.json](contrib/cosim/scenarios/hybrid-teleport.json) |
 | Mixed | Swap·Teleport가 같은 R/B processor를 공유하고 서로 대기시킴 | [hybrid-mixed.json](contrib/cosim/scenarios/hybrid-mixed.json) |
-| Joint contention | 여러 Swap session의 quantum FIFO와 classical background traffic 결합 | [p5-joint-both.json](contrib/cosim/scenarios/p5-joint-both.json) |
+| Joint contention | 여러 Swap session의 quantum FIFO와 classical background traffic 결합 | [hybrid-swap-joint-result.json](contrib/cosim/scenarios/hybrid-swap-joint-result.json) |
 | Simplification pilot | 네 실행/근사 모델을 동일 workload 조건에서 비교 | [p5b-pilot.json](contrib/cosim/scenarios/p5b-pilot.json) |
 
-기본 Mixed 실행의 R 대기시간은 session 순서대로 **0 / 1.589920 / 2.400000 / 3.989920 ms**다.
+기본 Mixed 실행의 R 대기시간은 session 순서대로 **0 / 1.6 / 2.4 / 4.0 ms**다.
 추가 fast-BSM 테스트에서는 B correction FIFO의 protocol 간 경합도 검증한다.
 
-## 검증 결과
+## 검증 결과와 새 평가
 
-- **Python 136개 + Q2NS native 83개 = 219개 test cases PASS**.
-- `|0>`, `|1>`, `|+>`, `|->`, `|+i>` 각각 32 seeds: 총 **160 teleport transactions**.
-  각 입력 상태에서 BSM의 네 branch를 모두 확인했고 noiseless fidelity≈1이다.
-- 독립 NetSquid reference와의 최대 density-matrix error: **2.22×10⁻¹⁶**.
-- 기존 Swap 세 시나리오와 packet/request timing 일치. 최대 quantum checkpoint 차이 **8.33×10⁻¹⁷**.
-- Mixed의 R/B FIFO, session·resource 격리, 중복/late completion, 실제 packet queue 및 overflow 실패 검출.
+- **Python 140개 + timing/계측 7개 + Q2NS native 83개 = 230개 PASS**.
+- 5개 Teleport 입력 상태 × 32 seeds에서 네 BSM branch를 다시 확인했다.
+- Local 시작, R/B FIFO, native Q2NS result packet, completion callback, 자원 격리와 aging을 검증한다.
+- P5-B pilot/expanded, native timing, 1–64 session 비용 측정을 새 구조로 재실행했다.
+- [새 전체 검증 요약](contrib/cosim/results/direct-start-validation-summary.json)
+- [현재 P5-B 평가](contrib/cosim/README-P5B.md), [논문용 수치·CI·그림](contrib/cosim/paper/RESULTS.md)
+- [새 결과 원자료 압축본](contrib/cosim/baselines/direct-start-v2-results.tar.gz)과
+  [복원·검증 방법](contrib/cosim/README-PAPER-VALIDATION.md#원자료-복원)
 
-GitHub에서 바로 확인할 수 있는 기록:
+현재 topology는 **A/R/B**다. `session_start_ns`에 R의 Q2NS 앱이 BSM을 요청하며,
+classical 통신은 실제 **R→B result UDP**다. Latency는 local session start부터 correction 완료까지다.
 
-- [Hybrid 시나리오·상태 검증 요약](contrib/cosim/releases/hybrid-v1/validation-summary.json)
-- [219개 release 재검증 기록](contrib/cosim/releases/hybrid-v1/release-checks.json)
-- [Q2NS patch 재현 검사](contrib/cosim/releases/hybrid-v1/patch-reproduction.json)
-- [P5-B pilot 요약](contrib/cosim/releases/hybrid-v1/p5b-pilot-summary.json)
-
-위 상태 오차는 동일한 operation timestamps에서 구현과 reference가 일치한다는 의미다.
-P5-B의 48 paired cases는 유한 workload pilot이며, 광범위한 성능 일반화나 service feasibility
-오판이 입증됐다는 의미가 아니다. 상세 trace·state·로그는 [보존 archive](contrib/cosim/baselines/hybrid-v1-freeze.tar.gz)에 있다.
+P0–P5-A/초기 Q2NS는 과거 command-path 구조의 regression fixture로 보존한다.
+[Hybrid v1 release 기록](contrib/cosim/releases/hybrid-v1/)과
+[v1 archive](contrib/cosim/baselines/hybrid-v1-freeze.tar.gz)는 이전 버전의 결과이며 현재 수치와 구분한다.
 
 ## 빠른 실행
 
@@ -111,8 +109,11 @@ Teleport 단독 실행은 설정을 `hybrid-teleport.json`으로 바꾸면 된�
 전체 회귀를 위한 추가 build target과 재현 절차는 [release 문서](contrib/cosim/RELEASE-HYBRID-V1.md)에 있다.
 
 ```bash
-# 보존된 archive와 현재 소스·설정의 hash 확인
-python3 contrib/cosim/tools/verify_hybrid_v1.py
+# 과거 v1 archive 검증 (현재 v2 source는 의도적으로 변경됨)
+python3 contrib/cosim/tools/verify_hybrid_v1.py --archive-only
+
+# 현재 구조를 포함한 전체 회귀
+/home/ns3/qunet/bin/python contrib/cosim/tools/validate_direct_start.py
 ```
 
 ## 코드와 문서 읽는 순서
@@ -128,7 +129,7 @@ P0–P5-B의 구현·결과도 함께 보존하며, 현재 진입점은 이 READ
 
 ## 지원 범위와 다음 단계
 
-**v1 지원 범위:** 고정 C/A/R/B 배치, IPv4/UDP, t=0에 생성한 input/EPR,
+**v2 지원 범위:** 고정 A/R/B 배치, IPv4/UDP, t=0에 생성한 input/EPR,
 atomic BSM/correction, shared R/B FIFO, native T1/T2 aging, 최대 64 sessions.
 
 임의 topology, dynamic EPR, physical quantum channel, 모든 Q2NS 예제의 무수정 실행은 아직 지원하지 않는다.

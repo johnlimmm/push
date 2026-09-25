@@ -1,0 +1,5 @@
+PASS q2ns-qstate-interface 0.014 s
+  PASS QState conformance (ket) 0.004 s
+  PASS QState conformance (dm) 0.001 s
+  PASS QStateDM ValidateDensityMatrix 0.000 s
+  PASS QState conformance (stab) 0.000 s

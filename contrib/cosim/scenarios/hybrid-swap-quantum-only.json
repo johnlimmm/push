@@ -1,0 +1,26 @@
+{
+  "name": "hybrid-swap-quantum-only",
+  "sessions": [
+    {
+      "session_id": 1,
+      "protocol": "swap",
+      "session_start_ns": 1000000
+    },
+    {
+      "session_id": 2,
+      "protocol": "swap",
+      "session_start_ns": 1800000
+    },
+    {
+      "session_id": 3,
+      "protocol": "swap",
+      "session_start_ns": 2600000
+    },
+    {
+      "session_id": 4,
+      "protocol": "swap",
+      "session_start_ns": 3400000
+    }
+  ],
+  "background": {}
+}

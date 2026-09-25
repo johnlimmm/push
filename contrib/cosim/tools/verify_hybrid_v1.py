@@ -14,7 +14,7 @@ def digest(data):
     return hashlib.sha256(data).hexdigest()
 
 
-def verify(manifest):
+def verify(manifest, archive_only=False):
     data = json.loads(manifest.read_text())
     if Path(data['archive']).name != data['archive']:
         raise ValueError('archive must be a filename beside the manifest')
@@ -36,7 +36,7 @@ def verify(manifest):
         raise ValueError('archive entries do not match manifest')
     sources = 0
     for name, value in expected.items():
-        if name.startswith('contrib/cosim/results/'):
+        if archive_only or name.startswith('contrib/cosim/results/'):
             continue  # Reruns may replace local results; their original archived bytes were checked above.
         if digest((ROOT / name).read_bytes()) != value:
             raise ValueError('current source/configuration mismatch: ' + name)
@@ -44,14 +44,15 @@ def verify(manifest):
     for name, value in data['baseline_archives_sha256'].items():
         if digest((ROOT / name).read_bytes()) != value:
             raise ValueError('prior baseline archive mismatch: ' + name)
-    print('Hybrid v1: {} archived files, {} current source/configuration files; PASS'.format(len(seen), sources))
+    print('Hybrid v1 archive: {} files PASS; current source check: {}'.format(len(seen), 'not requested (v2 development)' if archive_only else str(sources)+' PASS'))
 
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument('--manifest', type=Path, default=DEFAULT)
+    parser.add_argument('--archive-only', action='store_true', help='Verify immutable v1 archive; current v2 sources intentionally differ')
     args = parser.parse_args()
-    verify(args.manifest)
+    verify(args.manifest, args.archive_only)
 
 
 if __name__ == '__main__':

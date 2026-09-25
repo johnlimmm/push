@@ -29,17 +29,19 @@ class HybridParticipant(Q2nsParticipant):
         finally: peer.close()
         self.stream=self.sock.makefile('rwb',buffering=0);self.source_sequence=0
         try:
-            if self.read()!=['HELLO','COSIM_HYBRID','1']: raise RuntimeError('invalid hybrid handshake')
+            if self.read()!=['HELLO','COSIM_HYBRID','2']: raise RuntimeError('invalid hybrid handshake')
             c=config
-            self.send('CONFIG '+' '.join(map(str,[c['command_link']['rate_bps'],c['command_link']['delay_ns'],
-                c['result_link']['rate_bps'],c['result_link']['delay_ns'],c['command_payload_bytes'],
+            self.send('CONFIG '+' '.join(map(str,[c['result_link']['rate_bps'],c['result_link']['delay_ns'],
                 c['result_payload_bytes'],c['queue_packets'],len(c['sessions'])])))
             for s in c['sessions']:
-                self.send('SESSION {} {} {} {}'.format(s['session_id'],s['command_time_ns'],roots[s['session_id']],
+                self.send('SESSION {} {} {} {}'.format(s['session_id'],s['session_start_ns'],roots[s['session_id']],
                                                       int(s['protocol']=='teleport')))
-            for side in ('command','result'):
+            for side in ('result',):
                 f=c['background'][side]
                 self.send('FLOW {} {} {} {} {}'.format(side,f['start_ns'],f['interval_ns'],f['count'],f['payload_bytes']))
+            topology=self.read()
+            if topology!=['NODES','3','0','1','2']: raise RuntimeError('invalid native topology')
+            self.nodes=dict(zip(('A','R','B'),map(int,topology[2:])))
             row=self.read()
             if len(row)!=3 or row[:2]!=['READY','0']: raise RuntimeError('invalid READY')
             self.now_ns=0;self.next_time=self._time(row[2])
@@ -65,7 +67,8 @@ class HybridValidationFailure(RuntimeError):
 
 
 class HybridManager:
-    def __init__(self,scenario,binary=None):
+    def __init__(self,scenario,binary=None,*,no_dq=False):
+        self.no_dq=no_dq
         self.config=normalize_config(scenario)
         if binary is None:
             found=[p for p in (NS3_DIR/'build/contrib/cosim').rglob('*cosim-hybrid*') if p.is_file() and os.access(str(p),os.X_OK)]
@@ -74,7 +77,7 @@ class HybridManager:
         self.binary=Path(binary)
 
     def run(self,references=None):
-        core=HybridExecutionCore(self.config)
+        core=HybridExecutionCore(self.config, r_capacity=len(self.config['sessions']) if self.no_dq else 1)
         for slot,s in enumerate(self.config['sessions']):
             adapter=(SwapAdapter if s['protocol']=='swap' else TeleportAdapter)(core,s,slot)
             core.adapters[s['session_id']]=adapter
@@ -84,7 +87,8 @@ class HybridManager:
         try:
             snapshot=federation.run();p.finish()
         finally:p.close()
-        report=dict(schema_version=1,milestone='Multi-Protocol-Hybrid',config=self.config,
+        report=dict(schema_version=2,milestone='Hybrid-Direct-Start',architecture='direct-session-start-v2',
+            model='No-Dq-R' if self.no_dq else 'Full-Sync',nodes=p.nodes,config=self.config,
             execution_core='HybridExecutionCore',federation='HybridFederation',ns3_binary=str(self.binary),
             ns3_time_ns=p.now_ns,time_unit='ns',snapshot=snapshot,events=core.events,
             ns3_events=federation.rows,bridge_steps=federation.steps,q2ns_status=p.q2ns_status)
@@ -92,10 +96,30 @@ class HybridManager:
         try:
             report['validation']=validate_report(report)
             report['cross_validation']=cross_validate(report,references)
+            report['metrics']=session_metrics(report)
+            report['batch_completion_ns']=max(r['completion_ns'] for r in report['metrics']['sessions'])
         except (ValueError,RuntimeError,KeyError) as error:
             report['validation']=dict(passed=False,error=str(error))
             raise HybridValidationFailure(report,error) from error
         return report
+
+
+def session_metrics(report):
+    """Latency starts at the local Q2NS session activation, before the R FIFO."""
+    rows=[]
+    packets={p['session_id']:p for p in report['validation']['expected_timing']['packets'] if p['session_id']}
+    for s in report['config']['sessions']:
+        sid=s['session_id']
+        req={r['operation']:r for r in report['snapshot']['requests'] if r['session_id']==sid}
+        b,c=req['BSM'],req['CORRECTION'];p=packets[sid]
+        rows.append(dict(session_id=sid,session_start_ns=s['session_start_ns'],
+            quantum_wait_ns=b['start_ns']-b['arrival_ns'],correction_wait_ns=c['start_ns']-c['arrival_ns'],
+            bsm_start_ns=b['start_ns'],bsm_completion_ns=b['completion_ns'],
+            result_delay_ns=c['arrival_ns']-b['completion_ns'],result_queue_ns=p['queue_wait_ns'],
+            correction_start_ns=c['start_ns'],completion_ns=c['completion_ns'],
+            transaction_latency_ns=c['completion_ns']-s['session_start_ns'],
+            usable_fidelity=report['snapshot']['sessions'][str(sid)]['checkpoints']['usable']['fidelity']))
+    return dict(sessions=rows)
 
 
 def main():

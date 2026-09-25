@@ -8,12 +8,12 @@ def model_rows(report, fmin, deadline):
     for metric in report['metrics']['sessions']:
         sid=str(metric['session_id']); row=dict(metric)
         ref=report['cross_validation']['sessions'][sid]['reference']
-        row['expected_fidelity']=ref['ensemble']['fidelity']
+        row['expected_fidelity']=sum(b['probability']*b['usable']['fidelity'] for b in ref['branches'].values() if b['probability']>0)
         row['deadline_ok']=row['transaction_latency_ns']<=deadline
         row['feasible']=row['deadline_ok'] and row['usable_fidelity']>=fmin
         row['success_probability']=sum(b['probability'] for b in ref['branches'].values()
             if b['probability']>0 and b['usable']['fidelity']>=fmin) if row['deadline_ok'] else 0.0
-        row['measurement_bits']=report['snapshot']['sessions'][sid]['correction']['measurement_bits']
+        row['measurement_bits']=report['snapshot']['sessions'][sid]['measurement_bits']
         rows.append(row)
     return rows
 

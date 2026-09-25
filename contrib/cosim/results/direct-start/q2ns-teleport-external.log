@@ -1,0 +1,8 @@
+PASS q2ns-teleport-external 0.017 s
+  PASS teleport external: actual UDP, duplicates, invalid bits, readiness first 0.007 s
+  PASS teleport external: control arrives before Bob resource ready 0.000 s
+  PASS teleport external: stop rejects late BSM completion 0.000 s
+  PASS teleport external: stop rejects late correction completion 0.000 s
+  PASS teleport external: stop ignores late result packet 0.000 s
+  PASS teleport external: invalid configuration rejected 0.000 s
+  PASS teleport native: built-in preparation, quantum send, BSM and correction retained 0.003 s

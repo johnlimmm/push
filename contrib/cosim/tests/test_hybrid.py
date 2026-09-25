@@ -18,7 +18,8 @@ from hybrid_validation import validate_report,cross_validate
 
 def scenario(name):return json.loads((MODULE/'scenarios'/(name+'.json')).read_text())
 def save(name,value):
-    (MODULE/'results'/name).write_text(json.dumps(value,indent=2,sort_keys=True,allow_nan=False)+'\n')
+    (MODULE/'results/direct-start').mkdir(exist_ok=True)
+    (MODULE/'results/direct-start'/name).write_text(json.dumps(value,indent=2,sort_keys=True,allow_nan=False)+'\n')
 def dm(state):
     d=state['density_matrix'];return np.array(d['real'])+1j*np.array(d['imag'])
 
@@ -30,11 +31,16 @@ class HybridIntegrationTests(unittest.TestCase):
         cls.mixed=HybridManager(scenario('hybrid-mixed')).run()
         save('hybrid-teleport.json',cls.tele);save('hybrid-mixed.json',cls.mixed)
 
-    def test_01_swap_three_scenarios_equal_frozen_runner(self):
-        result={}
-        for name in ('quantum-only','joint-result','joint-both'):
-            cfg=scenario('p5-'+name)
-            old=Q2nsFederationManager(cfg).run();new=HybridManager(cfg).run();maximum=0
+    def test_01_swap_equivalence_at_matched_operation_arrivals(self):
+        # Historical runner is independently rerun, with local starts set to its
+        # command receipt times. Default direct starts deliberately occur earlier.
+        for name in ('quantum-only','joint-result'):
+            old=Q2nsFederationManager(scenario('p5-'+name)).run()
+            cfg=scenario('hybrid-swap-'+name)
+            for item in cfg['sessions']:
+                item['session_start_ns']=next(m['bsm_start_ns']-m['quantum_wait_ns']
+                    for m in old['metrics']['sessions'] if m['session_id']==item['session_id'])
+            new=HybridManager(cfg).run()
             for sid,new_s in new['snapshot']['sessions'].items():
                 old_s=old['snapshot']['sessions'][sid]
                 self.assertEqual(new_s['measurement_bits'],old_s['correction']['measurement_bits'])
@@ -42,26 +48,21 @@ class HybridIntegrationTests(unittest.TestCase):
                 bsm=old_s['requests'].get('1',old_s['requests'].get(1))
                 for op,r in [('BSM',bsm),('CORRECTION',old_s['correction'])]:
                     for k in ('arrival_ns','start_ns','completion_ns'):self.assertEqual(own[op][k],r[k])
-                for stage in ('arrival','bsm_start','bsm_end_inputs','frame','correction_start','usable'):
+                for stage in ('bsm_start','bsm_end_inputs','frame','correction_start','usable'):
                     a,b=new_s['checkpoints'][stage],old_s['checkpoints'][stage]
                     pairs=[(a,b)] if 'density_matrix' in a else [(a[k],b[k]) for k in a]
-                    for left,right in pairs:
-                        error=float(np.max(np.abs(dm(left)-dm(right))));maximum=max(maximum,error)
-                        self.assertLessEqual(error,1e-12)
-                        self.assertAlmostEqual(left['fidelity'],right['fidelity'],places=12)
-            old_packets={p['packet_id']:p for p in old['packets']}
-            for packet in new['validation']['expected_timing']['packets']:
-                for key in ('app_tx_ns','app_rx_ns','phy_tx_ns','phy_rx_ns','queue_wait_ns'):
-                    self.assertEqual(packet[key],old_packets[packet['packet_id']][key])
-            self.assertEqual(new['ns3_time_ns'],old['ns3_time_ns'])
-            save('hybrid-swap-'+name+'.json',new)
-            result[name]=dict(passed=True,max_density_matrix_error=maximum,packet_timing_equal=True,
-                             report='hybrid-swap-'+name+'.json')
-        save('hybrid-swap-equivalence.json',result)
+                    for left,right in pairs:self.assertLessEqual(float(np.max(np.abs(dm(left)-dm(right)))),1e-12)
+            # Result packets retain native payload and all on-wire timestamps.
+            for p in new['validation']['expected_timing']['packets']:
+                old_id=2*p['packet_id'] if p['session_id'] else p['packet_id']
+                other=next(q for q in old['packets'] if q['packet_id']==old_id)
+                for k in ('app_tx_ns','app_rx_ns','phy_tx_ns','phy_rx_ns','queue_wait_ns'):
+                    self.assertEqual(p[k],other[k])
+            save('hybrid-swap-matched-'+name+'.json',new)
 
     def test_02_each_input_all_four_branches_noiseless(self):
         cfg=dict(name='hybrid-branch-coverage',memory_noise=dict(model='T1T2NoiseModel',T1_ns=0,T2_ns=0),
-                 sessions=[dict(session_id=i+1,protocol='teleport',input_state=state,command_time_ns=1000000)
+                 sessions=[dict(session_id=i+1,protocol='teleport',input_state=state,session_start_ns=1000000)
                            for i,state in enumerate(STATES)])
         seen={state:set() for state in STATES};cache={};maximum=0
         for seed in range(32):
@@ -124,8 +125,8 @@ class HybridIntegrationTests(unittest.TestCase):
 
     def test_08_same_timestamp_completion_before_arrival(self):
         cfg=dict(memory_noise=dict(model='T1T2NoiseModel',T1_ns=0,T2_ns=0),sessions=[
-            dict(session_id=9,protocol='teleport',input_state='+',command_time_ns=0),
-            dict(session_id=4,protocol='swap',command_time_ns=1600000)])
+            dict(session_id=9,protocol='teleport',input_state='+',session_start_ns=0),
+            dict(session_id=4,protocol='swap',session_start_ns=1600000)])
         run=HybridManager(cfg).run()
         bsm=[r for r in run['snapshot']['requests'] if r['operation']=='BSM']
         self.assertEqual(bsm[0]['completion_ns'],bsm[1]['arrival_ns'])
@@ -159,7 +160,8 @@ class HybridIntegrationTests(unittest.TestCase):
         with self.assertRaises(ValueError):HybridManager(cfg)
 
     def test_12_overflow_is_explicit_failure(self):
-        cfg=scenario('p5-joint-both');cfg['sessions'][1]['protocol']='teleport';cfg['queue_packets']=1
+        cfg=scenario('hybrid-mixed');cfg['queue_packets']=1
+        cfg['background']['result']=dict(start_ns=2590000,interval_ns=1000,count=5,payload_bytes=1000)
         with self.assertRaises(HybridValidationFailure) as caught:HybridManager(cfg).run()
         self.assertIn('packet drop',str(caught.exception))
         save('hybrid-overflow-rejected.json',caught.exception.report)
@@ -186,5 +188,33 @@ class HybridIntegrationTests(unittest.TestCase):
         sys.path.insert(0,str(MODULE/'experiments'))
         from run_p5b import verify_frozen
         verify_frozen()
+
+    def test_15_no_controller_and_no_command_configuration(self):
+        for run in (self.tele,self.mixed):
+            self.assertEqual(run['nodes'],dict(A=0,R=1,B=2))
+            self.assertEqual(set(run['config']['background']),{'result'})
+            self.assertFalse(any('command' in k for k in run['config']))
+            self.assertFalse(any(r['event_type'].startswith('COMMAND_') for r in run['ns3_events']))
+            for session in run['config']['sessions']:
+                own=[r for r in run['ns3_events'] if r['session_id']==session['session_id']]
+                for kind in ('SESSION_START','BSM_REQUEST'):
+                    self.assertEqual([r['time_ns'] for r in own if r['event_type']==kind],[session['session_start_ns']])
+            self.assertEqual(len([r for r in run['ns3_events'] if r['event_type']=='RESULT_TX']),len(run['config']['sessions']))
+        for bad in (dict(command_link=dict(rate_bps=1,delay_ns=0)),dict(command_payload_bytes=96),
+                    dict(background=dict(command={})),dict(sessions=[dict(session_id=1,command_time_ns=0)])):
+            with self.subTest(bad=bad),self.assertRaises(ValueError):normalize_config(bad)
+
+    def test_16_simultaneous_mixed_starts_use_input_order(self):
+        cfg=scenario('hybrid-mixed');cfg['background']={}
+        cfg['sessions']=cfg['sessions'][:2]
+        cfg['sessions'][0]['session_id']=9;cfg['sessions'][1]['session_id']=3
+        run=HybridManager(cfg).run()
+        requests=[r for r in run['snapshot']['requests'] if r['operation']=='BSM']
+        self.assertEqual([r['session_id'] for r in requests],[9,3])
+        self.assertEqual([r['arrival_ns'] for r in requests],[1000000,1000000])
+        self.assertEqual([r['start_ns'] for r in requests],[1000000,2600000])
+        # Config order controls ties, not numeric session IDs or a hidden link.
+        cfg['sessions'].reverse();reverse=HybridManager(cfg).run()
+        self.assertEqual([r['session_id'] for r in reverse['snapshot']['requests'] if r['operation']=='BSM'],[3,9])
 
 if __name__=='__main__':unittest.main()

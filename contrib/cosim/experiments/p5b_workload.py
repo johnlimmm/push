@@ -5,7 +5,7 @@ import json
 import math
 import random
 
-from p5_config import normalize_config
+from hybrid_config import normalize_config
 from p1_validation import tx_duration_ns
 from quantum_scheduler import integer
 
@@ -38,11 +38,11 @@ def validate_plan(raw):
 def workload(plan, load, request_interval, traffic_seed, quantum_seed):
     rng=random.Random(traffic_seed)
     config=normalize_config(dict(name='p5b',seed=quantum_seed,
-        sessions=[dict(session_id=i+1,command_time_ns=1000000+i*request_interval) for i in range(plan['sessions'])],
+        sessions=[dict(session_id=i+1,session_start_ns=1000000+i*request_interval) for i in range(plan['sessions'])],
         correction_duration_ns=plan['correction_duration_ns']))
     # 모든 모델에 동일한 packet 입력을 공급한다. seed는 background의 시작 phase만 변경한다.
     horizon=1000000+(plan['sessions']-1)*request_interval+plan['sessions']*config['bsm_duration_ns']+3000000
-    for side in ('command','result'):
+    for side in ('result',):
         serial=tx_duration_ns(1000,config[side+'_link']['rate_bps'])
         interval=max(serial,int(round(serial/load))) if load else serial
         start=rng.randrange(interval)
@@ -63,8 +63,8 @@ def rounded_mean(values):
 
 def calibration_entry(load, records):
     delays={side+'_ns':rounded_mean([m[side+'_delay_ns'] for r in records for m in r['metrics']['sessions']])
-            for side in ('command','result')}
+            for side in ('result',)}
     return dict(classical_load=load,delays=delays,rounding='nearest integer ns; half up',
         sample_count=sum(len(r['metrics']['sessions']) for r in records),
         measured_delays={side:[m[side+'_delay_ns'] for r in records for m in r['metrics']['sessions']]
-                         for side in ('command','result')})
+                         for side in ('result',)})

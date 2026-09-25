@@ -1,0 +1,36 @@
+PASS q2ns-qstate-registry 0.017 s
+  PASS QStateRegistry: create single qubit state 0.000 s
+  PASS QStateRegistry: create multi-qubit state 0.000 s
+  PASS QStateRegistry: create multiple independent states 0.000 s
+  PASS QStateRegistry: create state from existing QState 0.000 s
+  PASS QStateRegistry: backend selection 0.000 s
+  PASS QStateRegistry: register qubit 0.000 s
+  PASS QStateRegistry: register multiple qubits 0.000 s
+  PASS QStateRegistry: unregister qubit 0.000 s
+  PASS QStateRegistry: unregister qubit everywhere 0.000 s
+  PASS QStateRegistry: resolve state by ID 0.000 s
+  PASS QStateRegistry: resolve state from qubit 0.000 s
+  PASS QStateRegistry: remove state 0.000 s
+  PASS QStateRegistry: merge qubits from same state (no-op) 0.000 s
+  PASS QStateRegistry: merge qubits from different states 0.000 s
+  PASS QStateRegistry: merge empty qubit list 0.000 s
+  PASS QStateRegistry: set and get node location 0.000 s
+  PASS QStateRegistry: set and get channel location 0.000 s
+  PASS QStateRegistry: get location for Unset qubit 0.000 s
+  PASS QStateRegistry: update qubit location 0.000 s
+  PASS QStateRegistry: retrieve qubits of state 0.000 s
+  PASS QStateRegistry: create zero-qubit state returns empty result 0.000 s
+  PASS QStateRegistry: resolve invalid state ID 0.000 s
+  PASS QStateRegistry: register same qubit twice 0.000 s
+  PASS QStateRegistry: unregister never-registered qubit 0.000 s
+  PASS QStateRegistry: unregister same qubit twice 0.000 s
+  PASS QStateRegistry: remove same state twice 0.000 s
+  PASS QStateRegistry: remove non-existent state 0.000 s
+  PASS QStateRegistry: merge list with single qubit 0.000 s
+  PASS QStateRegistry: merge qubits from three different states 0.000 s
+  PASS QStateRegistry: QubitsOf with invalid state ID 0.000 s
+  PASS QStateRegistry: resolve state from unregistered qubit 0.000 s
+  PASS QStateRegistry: null qubit operations (void methods) 0.000 s
+  PASS QStateRegistry: null qubit queries (return values) 0.000 s
+  PASS QStateRegistry: merge states with nullptr in list 0.000 s
+  PASS QStateRegistry: create from nullptr state 0.000 s

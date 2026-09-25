@@ -1,4 +1,4 @@
-# Multi-Protocol Hybrid Execution — Teleportation Integration
+# Hybrid v2 — Direct Session Start / Multi-Protocol Execution
 
 ## 목표와 완료 조건
 
@@ -8,8 +8,12 @@ NetSquid 장치를 사용함을 검증한다. 단독 teleport 성공, 기존 Swa
 
 ## 실행 범위
 
-- C(Controller), A, R, B 고정 배치. Teleport의 Alice 역할은 **R**에 둔다.
-- Controller→R UDP command가 session 실행을 요청한다. R→B는 실제 Q2NS 결과 UDP다.
+- A=0, R=1, B=2 고정 배치. Teleport의 Alice 역할은 **R**에 둔다.
+- 각 session의 `session_start_ns`에 R의 실제 Q2NS 앱이 직접 external BSM을 요청한다.
+- C/Controller와 C–R 링크/command socket/background/COMMAND_TX·RX는 제거한다.
+- 같은 시작시각에는 설정 목록 순서로 요청한다. 앱 초기화 후 t=0 session 시작도 지원한다.
+- R→B는 기존 Q2NS의 실제 결과 UDP다. Result packet은 NetSquid 완료 callback에서 생성한다.
+- Legacy command 설정은 거절한다. Latency 기준은 local session start부터 correction 완료까지다.
 - Swap 결과 payload는 설정값(기본 80 bytes), Teleport는 기존 앱 그대로 2 bytes.
 - IPv4/UDP, 미리 준비한 noiseless EPR, atomic BSM/correction. Memory noise만 native T1/T2.
 - session ID는 실행 전체에서 유일한 양의 정수, logical resource handle은 session-local이다.
@@ -84,8 +88,9 @@ Bob correction: 00→I, 01→X, 10→Z, 11→X 다음 Z (행렬 ZX).
   Co-sim gate/measurement 함수를 재사용하지 않는다. 관측 branch에 조건화하여 비교한다.
   같은 seed로 branch가 같을 것이라 가정하지 않는다. 네 branch 확률 합도 확인한다.
 - T3: 준비 순서, 실제 2-byte UDP timing, 잘못된 bit/session, 중복, stopped callback, native ownership=0.
-- T4: 기존 122개 P0–P5-B/Q2NS Python 테스트와 기존 Q2NS native suite를 유지한다.
-- 기존 Swap 세 시나리오를 새 core로 재실행: request/packet timing과 각 state checkpoint가 일치해야 한다.
+- T4: P0–P5-A/초기 Q2NS 회귀와 새 구조에 맞춘 P5-B/Hybrid, native Q2NS suite를 재실행한다.
+- 과거 Swap의 실제 command 도착시각에 local start를 맞춘 두 사례에서 result/request timing과 state를 비교한다.
+  이 검사는 시간 입력을 맞춘 backend 동등성이며 기본 설정의 전후 수치 동등성을 뜻하지 않는다.
 - Mixed: 동일 R/B FIFO, 다른 memory positions, 올바른 adapter로 결과 반환, protocol 간 대기 영향.
 - Packet enqueue/dequeue/PHY/app timing을 설정 기반 독립 FIFO와 비교한다.
 - 결과는 correction 완료 시 저장한다. 후속 traffic drain으로 역사적 fidelity를 재평가하지 않는다.
@@ -93,3 +98,10 @@ Bob correction: 00→I, 01→X, 10→Z, 11→X 다음 Z (행렬 ZX).
 기존 구현은 freeze archive에 보존한다. 신규 core는 두 구체 protocol에 필요한 공통부만 구현하며,
 기존 frozen 실행기와 비교한다. 현재 결과만으로 임의 operation/topology 또는 모든 Q2NS 예제의
 무수정 실행을 주장하지 않는다.
+
+## 평가 모델 경계
+
+Full Sync의 R/B capacity는 각각 1이다. P5-B No-Dq-R은 평가용 생성자 인자로 R capacity만
+session 수까지 늘린다. 프로토콜 adapter, 실제 memory 위치, duration, B FIFO 및 federation은 공유한다.
+Fixed-Dc는 같은 core/federation에 별도 virtual participant를 연결하며 ns-3 packet 실행을 주장하지 않는다.
+IPC handshake와 report schema는 version 2로 올려 과거 command-path 참가자와 혼용을 거절한다.

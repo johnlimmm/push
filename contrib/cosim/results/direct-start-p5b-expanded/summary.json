@@ -1,0 +1,4832 @@
+{
+  "architecture": "direct-session-start-v2",
+  "calibration_runs": 6,
+  "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+  "calibration_test_disjoint": true,
+  "cases": [
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1000_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1000,
+      "workload_sha256": "75754f857433dbc5cca81b5b2533c962a7fdee3f6723e1c990549d762a31b77f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1000_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1000,
+      "workload_sha256": "75754f857433dbc5cca81b5b2533c962a7fdee3f6723e1c990549d762a31b77f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1001_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1001,
+      "workload_sha256": "c23a2976b557c0f09df0d7723ab67f48c2b189f21661841efa5e8081b9e13bdf"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1001_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1001,
+      "workload_sha256": "c23a2976b557c0f09df0d7723ab67f48c2b189f21661841efa5e8081b9e13bdf"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1002_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1002,
+      "workload_sha256": "aaad49544574ef6a7fab692ead9fa5244a3d64021677cbc30b9ae2b25852910f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1002_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1002,
+      "workload_sha256": "aaad49544574ef6a7fab692ead9fa5244a3d64021677cbc30b9ae2b25852910f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1003_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1003,
+      "workload_sha256": "c0d908424959fc5d0e49a26b09cd3214b128b94ff995928ba2d8c05b33f7a487"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1003_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1003,
+      "workload_sha256": "c0d908424959fc5d0e49a26b09cd3214b128b94ff995928ba2d8c05b33f7a487"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1004_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1004,
+      "workload_sha256": "4ff5eaa745397182e64787a5b3c82c5124acb6cfbaa58cf4051e3f3c223033d5"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1004_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1004,
+      "workload_sha256": "4ff5eaa745397182e64787a5b3c82c5124acb6cfbaa58cf4051e3f3c223033d5"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1005_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1005,
+      "workload_sha256": "6fcd0cb968811d4292b0f921758c4b403830950f2f350a23c7a66e5182ad53c7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1005_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1005,
+      "workload_sha256": "6fcd0cb968811d4292b0f921758c4b403830950f2f350a23c7a66e5182ad53c7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1006_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1006,
+      "workload_sha256": "296fc4db8182842196bf015262c0a0c049dc9e94be4c8836ff3b1a96b46d8b41"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1006_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1006,
+      "workload_sha256": "296fc4db8182842196bf015262c0a0c049dc9e94be4c8836ff3b1a96b46d8b41"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1007_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1007,
+      "workload_sha256": "5ce46f160f8c07192eba5eb755c8fd4bdb19968b6d5d98e2df88905c1d50a70a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1007_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1007,
+      "workload_sha256": "5ce46f160f8c07192eba5eb755c8fd4bdb19968b6d5d98e2df88905c1d50a70a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1008_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1008,
+      "workload_sha256": "324cf4f4d36b33f4285f12161fc3007d9a0a6fb292f52d2271a35025ad99ff8a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1008_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1008,
+      "workload_sha256": "324cf4f4d36b33f4285f12161fc3007d9a0a6fb292f52d2271a35025ad99ff8a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1009_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1009,
+      "workload_sha256": "23884302a48642add775d68fa45581a323db1f13fd355046b2659ce580a69e0e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1009_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1009,
+      "workload_sha256": "23884302a48642add775d68fa45581a323db1f13fd355046b2659ce580a69e0e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1010_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1010,
+      "workload_sha256": "47e3932f85e0620cff789de5617ad202ef28794976ca43f66327184209301518"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1010_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1010,
+      "workload_sha256": "47e3932f85e0620cff789de5617ad202ef28794976ca43f66327184209301518"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1011_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1011,
+      "workload_sha256": "3b5d2308f9088fbf4389b282a42f9ae1372d20e7c5ead986c1fb7672828932bf"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1011_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1011,
+      "workload_sha256": "3b5d2308f9088fbf4389b282a42f9ae1372d20e7c5ead986c1fb7672828932bf"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1012_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1012,
+      "workload_sha256": "634050ec0a0c5730364e7448414fbd74648f6708848908c38f5f34996a1fdac2"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1012_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1012,
+      "workload_sha256": "634050ec0a0c5730364e7448414fbd74648f6708848908c38f5f34996a1fdac2"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1013_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1013,
+      "workload_sha256": "9b10401ddd88b6d3ce75af0dbaf3afda407d6a183b3ac412d013c05acde9d139"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1013_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1013,
+      "workload_sha256": "9b10401ddd88b6d3ce75af0dbaf3afda407d6a183b3ac412d013c05acde9d139"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1014_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1014,
+      "workload_sha256": "43ac7e5747f4d4ff4a9fa0ecc82bdb5457ad3c11b8720c3fa0f74df8ff5237af"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1014_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1014,
+      "workload_sha256": "43ac7e5747f4d4ff4a9fa0ecc82bdb5457ad3c11b8720c3fa0f74df8ff5237af"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1015_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1015,
+      "workload_sha256": "9f2b66e3a6234079e72becfd39a42fbcf473450057771f44834a46edb911af33"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1015_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1015,
+      "workload_sha256": "9f2b66e3a6234079e72becfd39a42fbcf473450057771f44834a46edb911af33"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1016_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1016,
+      "workload_sha256": "f1d0e7ce8fbc4665c9b623701cef24d8cee312d711f2d202c1410fbb01565e19"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1016_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1016,
+      "workload_sha256": "f1d0e7ce8fbc4665c9b623701cef24d8cee312d711f2d202c1410fbb01565e19"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1017_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1017,
+      "workload_sha256": "2b8e06bbe64df126f8bdbd5f888bebfede15e8bc66062f413e372cc9e27e619b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1017_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1017,
+      "workload_sha256": "2b8e06bbe64df126f8bdbd5f888bebfede15e8bc66062f413e372cc9e27e619b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1018_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1018,
+      "workload_sha256": "5ac4bb0ad135b17d9d1bc9d1e530bea04a7537aa9f758e8cf629516c67158b85"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1018_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1018,
+      "workload_sha256": "5ac4bb0ad135b17d9d1bc9d1e530bea04a7537aa9f758e8cf629516c67158b85"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1019_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1019,
+      "workload_sha256": "0adfc10b84c5a1b6870ddedc2b01cce878e7a7df203496c7500464bae63fd050"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1019_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1019,
+      "workload_sha256": "0adfc10b84c5a1b6870ddedc2b01cce878e7a7df203496c7500464bae63fd050"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1020_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1020,
+      "workload_sha256": "1a02c532421533eba765be131c8cec1481671d67a4474914bc6bc1ac151ebd66"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1020_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1020,
+      "workload_sha256": "1a02c532421533eba765be131c8cec1481671d67a4474914bc6bc1ac151ebd66"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1021_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1021,
+      "workload_sha256": "488e073dfaa478eec74a105322404fea2d2bdad174f53d128a34c766130a801f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1021_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1021,
+      "workload_sha256": "488e073dfaa478eec74a105322404fea2d2bdad174f53d128a34c766130a801f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1022_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1022,
+      "workload_sha256": "987ad348b86c8dcc8b2f48e3c5f30c3f68b72f4ad1466308fae2ad3cdd92417d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1022_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1022,
+      "workload_sha256": "987ad348b86c8dcc8b2f48e3c5f30c3f68b72f4ad1466308fae2ad3cdd92417d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1023_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1023,
+      "workload_sha256": "b9a06c0fb27e7b0e98f652c373d34b0e022fa77dfeeddc818cbeb29156abe2c3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1023_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1023,
+      "workload_sha256": "b9a06c0fb27e7b0e98f652c373d34b0e022fa77dfeeddc818cbeb29156abe2c3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1024_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1024,
+      "workload_sha256": "0dad75e2f185a9c0bccbfdceeadd12e7358d66caa01dadff5be8e6a8867a1327"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1024_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1024,
+      "workload_sha256": "0dad75e2f185a9c0bccbfdceeadd12e7358d66caa01dadff5be8e6a8867a1327"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1025_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1025,
+      "workload_sha256": "0b53235b3d012f4e08d30be90c6822671e80832258eaa068854261fb33b54ed0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1025_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1025,
+      "workload_sha256": "0b53235b3d012f4e08d30be90c6822671e80832258eaa068854261fb33b54ed0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1026_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1026,
+      "workload_sha256": "5eb239ce0d973130a503201806f9b1b6cb5fb8d5008c5aabaaededb3f4d303c4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1026_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1026,
+      "workload_sha256": "5eb239ce0d973130a503201806f9b1b6cb5fb8d5008c5aabaaededb3f4d303c4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1027_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1027,
+      "workload_sha256": "bdc6e22e10e0ee2621837b6728c3bb1bd1871e5cc1d53036260ced90b92406f8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1027_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1027,
+      "workload_sha256": "bdc6e22e10e0ee2621837b6728c3bb1bd1871e5cc1d53036260ced90b92406f8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1028_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1028,
+      "workload_sha256": "f793a1de813c21d76a182070b9d02b9479175a6fd0590542ef1a4305fb9786db"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1028_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1028,
+      "workload_sha256": "f793a1de813c21d76a182070b9d02b9479175a6fd0590542ef1a4305fb9786db"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1029_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1029,
+      "workload_sha256": "0887a5c595a5394c8fd1fe36f4271d81aa3dfbde45885d70d59df5e023edf228"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1029_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1029,
+      "workload_sha256": "0887a5c595a5394c8fd1fe36f4271d81aa3dfbde45885d70d59df5e023edf228"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1030_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1030,
+      "workload_sha256": "27e4cef9f9f13f14ef2c5092cabdf1bda77c09a4cfa6bd4a8558ef2d2c054853"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1030_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1030,
+      "workload_sha256": "27e4cef9f9f13f14ef2c5092cabdf1bda77c09a4cfa6bd4a8558ef2d2c054853"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1031_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1031,
+      "workload_sha256": "057588cbaddbab2d53988973874d69526c649b04a793b64a41398a6050f09457"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-800000_traffic-1031_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1031,
+      "workload_sha256": "057588cbaddbab2d53988973874d69526c649b04a793b64a41398a6050f09457"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1000_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1000,
+      "workload_sha256": "4c1d3bb3e7fe4cd901b0488d9b6a3430d4729ce72dda9edd37c22fea0af15a98"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1000_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1000,
+      "workload_sha256": "4c1d3bb3e7fe4cd901b0488d9b6a3430d4729ce72dda9edd37c22fea0af15a98"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1001_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1001,
+      "workload_sha256": "b689789d6551964a753eef63b95735e6e99711a1fc1d3a53ceb1224d706f7647"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1001_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1001,
+      "workload_sha256": "b689789d6551964a753eef63b95735e6e99711a1fc1d3a53ceb1224d706f7647"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1002_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1002,
+      "workload_sha256": "28c74552067dd0397f205297232c703c6418269b4a42f3e8605cb577952da52f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1002_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1002,
+      "workload_sha256": "28c74552067dd0397f205297232c703c6418269b4a42f3e8605cb577952da52f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1003_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1003,
+      "workload_sha256": "278e99940f35dd017afd1956f020ba5ca7600f3a989e0cdb2b2dbecdf6115f82"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1003_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1003,
+      "workload_sha256": "278e99940f35dd017afd1956f020ba5ca7600f3a989e0cdb2b2dbecdf6115f82"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1004_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1004,
+      "workload_sha256": "695ec116eba784360e25e69325c23c06ba584f34438221264bedb2aa46d8bba6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1004_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1004,
+      "workload_sha256": "695ec116eba784360e25e69325c23c06ba584f34438221264bedb2aa46d8bba6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1005_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1005,
+      "workload_sha256": "2fe5933a8cdb9283fb1d4fc942200de97911f76304c52225c6bd5e9217ee8f73"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1005_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1005,
+      "workload_sha256": "2fe5933a8cdb9283fb1d4fc942200de97911f76304c52225c6bd5e9217ee8f73"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1006_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1006,
+      "workload_sha256": "1debc9cf3aee978d0da806c40f76cbfd997f3f997cba29fe34dd7886ded435e7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1006_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1006,
+      "workload_sha256": "1debc9cf3aee978d0da806c40f76cbfd997f3f997cba29fe34dd7886ded435e7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1007_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1007,
+      "workload_sha256": "38461e8036af6b8e8a23609ed692825e60fd2743f34b468e8fd13df270939a96"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1007_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1007,
+      "workload_sha256": "38461e8036af6b8e8a23609ed692825e60fd2743f34b468e8fd13df270939a96"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1008_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1008,
+      "workload_sha256": "d43bec9d953049be3d17e93147477c5609d517073192ad280af4a49b2d132296"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1008_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1008,
+      "workload_sha256": "d43bec9d953049be3d17e93147477c5609d517073192ad280af4a49b2d132296"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1009_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1009,
+      "workload_sha256": "a653bde89cf57ce3112498ddfc9bff423a4ef63c7e140d9252310c19e33d719c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1009_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1009,
+      "workload_sha256": "a653bde89cf57ce3112498ddfc9bff423a4ef63c7e140d9252310c19e33d719c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1010_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1010,
+      "workload_sha256": "b29dd42a7a3f63a126ea97721104d26aab74c4a6e01f2d76f58a9ae900d66079"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1010_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1010,
+      "workload_sha256": "b29dd42a7a3f63a126ea97721104d26aab74c4a6e01f2d76f58a9ae900d66079"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1011_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1011,
+      "workload_sha256": "16f7325721676f5097b0e60d0dfef6694c9071916592a53f854b2a438117054b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1011_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1011,
+      "workload_sha256": "16f7325721676f5097b0e60d0dfef6694c9071916592a53f854b2a438117054b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1012_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1012,
+      "workload_sha256": "3039efc9d73b89561e6732df18a703cf3420b80d232db0f1b701c6f743c36119"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1012_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1012,
+      "workload_sha256": "3039efc9d73b89561e6732df18a703cf3420b80d232db0f1b701c6f743c36119"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1013_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1013,
+      "workload_sha256": "44494d0476dcd8491cf3630987ae1a3c30d8f7834f45ff87bbf01c1d6261b713"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1013_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1013,
+      "workload_sha256": "44494d0476dcd8491cf3630987ae1a3c30d8f7834f45ff87bbf01c1d6261b713"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1014_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1014,
+      "workload_sha256": "16100ae9d46dccb7b2b271194f7fc6a944bd715fec6d7ed379f00c9cfa0e8f49"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1014_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1014,
+      "workload_sha256": "16100ae9d46dccb7b2b271194f7fc6a944bd715fec6d7ed379f00c9cfa0e8f49"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1015_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1015,
+      "workload_sha256": "4ac3ae3a8e5847d79483419325674bb0a9ed3b285ff56a03769bff99f727693e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1015_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1015,
+      "workload_sha256": "4ac3ae3a8e5847d79483419325674bb0a9ed3b285ff56a03769bff99f727693e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1016_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1016,
+      "workload_sha256": "ccebebdbf292e5098565022c9cc2ed68e4939d9d531459cfe326b5d5321ae375"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1016_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1016,
+      "workload_sha256": "ccebebdbf292e5098565022c9cc2ed68e4939d9d531459cfe326b5d5321ae375"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1017_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1017,
+      "workload_sha256": "daa4f055b7b733c8f0b7fadc7201c2e73ee58ebcaa330e10b2196b0382bb5451"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1017_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1017,
+      "workload_sha256": "daa4f055b7b733c8f0b7fadc7201c2e73ee58ebcaa330e10b2196b0382bb5451"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1018_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1018,
+      "workload_sha256": "354ef8298404997ad6754ea47d690d7cb8bc632981b72caa9e16d3c2a24365fc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1018_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1018,
+      "workload_sha256": "354ef8298404997ad6754ea47d690d7cb8bc632981b72caa9e16d3c2a24365fc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1019_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1019,
+      "workload_sha256": "6ab477dc48c8c507a9cc3f799009d1f396d421924ecadd50db8203195184e4dd"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1019_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1019,
+      "workload_sha256": "6ab477dc48c8c507a9cc3f799009d1f396d421924ecadd50db8203195184e4dd"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1020_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1020,
+      "workload_sha256": "a4f96485c12cf25bd989fa41a9ff92dc5c3ae630ba93e0d9d37e160cb761b56e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1020_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1020,
+      "workload_sha256": "a4f96485c12cf25bd989fa41a9ff92dc5c3ae630ba93e0d9d37e160cb761b56e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1021_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1021,
+      "workload_sha256": "7b91932b04bcbfc25b217c1cfeb3ce2c5bdbb7ccb6522bac0a243efb6c88b48b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1021_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1021,
+      "workload_sha256": "7b91932b04bcbfc25b217c1cfeb3ce2c5bdbb7ccb6522bac0a243efb6c88b48b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1022_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1022,
+      "workload_sha256": "bfbc504caf19c968a72be9a217cf69853ee1fff55284a964a2980e7a7d778534"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1022_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1022,
+      "workload_sha256": "bfbc504caf19c968a72be9a217cf69853ee1fff55284a964a2980e7a7d778534"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1023_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1023,
+      "workload_sha256": "584ee05cedeabb2b22154e92d9de14c998f3409b9294ef4972cd4f5011931258"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1023_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1023,
+      "workload_sha256": "584ee05cedeabb2b22154e92d9de14c998f3409b9294ef4972cd4f5011931258"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1024_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1024,
+      "workload_sha256": "c40331b47b9f00ece2bce0cd4448ab83c2c37b8dba38ee7cad8a7cab77afed12"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1024_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1024,
+      "workload_sha256": "c40331b47b9f00ece2bce0cd4448ab83c2c37b8dba38ee7cad8a7cab77afed12"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1025_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1025,
+      "workload_sha256": "f7f40193c5a2d2dc71eff758c8dc3280c1e0f8e5021d42f3d87c2da2d604e4da"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1025_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1025,
+      "workload_sha256": "f7f40193c5a2d2dc71eff758c8dc3280c1e0f8e5021d42f3d87c2da2d604e4da"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1026_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1026,
+      "workload_sha256": "29388823ac9dc7a44ca4f01540674132c9e92472084b61c079642f0be31019b4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1026_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1026,
+      "workload_sha256": "29388823ac9dc7a44ca4f01540674132c9e92472084b61c079642f0be31019b4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1027_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1027,
+      "workload_sha256": "5e747dda9f2615337b25b8abaf0eb73fba7515eb607c80036150b6d00d4d15f9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1027_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1027,
+      "workload_sha256": "5e747dda9f2615337b25b8abaf0eb73fba7515eb607c80036150b6d00d4d15f9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1028_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1028,
+      "workload_sha256": "cfd6aa6ee20306792cf298ea53f7e8a23417906cb01828c2947a0c99ff0e8fa8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1028_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1028,
+      "workload_sha256": "cfd6aa6ee20306792cf298ea53f7e8a23417906cb01828c2947a0c99ff0e8fa8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1029_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1029,
+      "workload_sha256": "32fefa1d378c27401eccf0f84650333e03997977ae636247c948cac5258b16c3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1029_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1029,
+      "workload_sha256": "32fefa1d378c27401eccf0f84650333e03997977ae636247c948cac5258b16c3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1030_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1030,
+      "workload_sha256": "931f3283e3edb9c9ecd59738ed2bd86fa088d1f95bbb045c14c2682bc097309b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1030_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1030,
+      "workload_sha256": "931f3283e3edb9c9ecd59738ed2bd86fa088d1f95bbb045c14c2682bc097309b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1031_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1031,
+      "workload_sha256": "641b04d63b6341c3e575d998794b279e2ab4085779872adff09c0f8bb7a30702"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.0,
+      "path": "runs/load-0.0_interval-2000000_traffic-1031_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1031,
+      "workload_sha256": "641b04d63b6341c3e575d998794b279e2ab4085779872adff09c0f8bb7a30702"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1000_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1000,
+      "workload_sha256": "d580847be21fd1e31344c4c71c5ec2e9e5207f6fb3639429e9014dd8bf506401"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1000_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1000,
+      "workload_sha256": "d580847be21fd1e31344c4c71c5ec2e9e5207f6fb3639429e9014dd8bf506401"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1001_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1001,
+      "workload_sha256": "ebae30120a4ea1224edf7f6c8aebf57494d3d2423a5477826e5fc157a66a49fc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1001_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1001,
+      "workload_sha256": "ebae30120a4ea1224edf7f6c8aebf57494d3d2423a5477826e5fc157a66a49fc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1002_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1002,
+      "workload_sha256": "25f87c8fecb14229316b3c9858261e2c60dfae9112d35f3ef06eb8dc29ad76ee"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1002_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1002,
+      "workload_sha256": "25f87c8fecb14229316b3c9858261e2c60dfae9112d35f3ef06eb8dc29ad76ee"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1003_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1003,
+      "workload_sha256": "5d90d6df17e3c868c5b5a5c5b43cafb7673964645513fcd6af5f97f886be051e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1003_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1003,
+      "workload_sha256": "5d90d6df17e3c868c5b5a5c5b43cafb7673964645513fcd6af5f97f886be051e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1004_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1004,
+      "workload_sha256": "13f42e27584164d9048fb6373113d344c8f95fe6709aa32675fe9c845ac745f8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1004_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1004,
+      "workload_sha256": "13f42e27584164d9048fb6373113d344c8f95fe6709aa32675fe9c845ac745f8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1005_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1005,
+      "workload_sha256": "a9e60f369ead4d754b7ec610154b2c5545e4cea86deaf450467bac310c8cdd91"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1005_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1005,
+      "workload_sha256": "a9e60f369ead4d754b7ec610154b2c5545e4cea86deaf450467bac310c8cdd91"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1006_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1006,
+      "workload_sha256": "5f0f6a007bb01285a2715b127e730419315f1839ccdab360ad78ce4c4d955f3a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1006_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1006,
+      "workload_sha256": "5f0f6a007bb01285a2715b127e730419315f1839ccdab360ad78ce4c4d955f3a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1007_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1007,
+      "workload_sha256": "e604e1d73e551b2dd565441529a6ef2d17f6bbc861673ca97225823dbebb6ea4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1007_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1007,
+      "workload_sha256": "e604e1d73e551b2dd565441529a6ef2d17f6bbc861673ca97225823dbebb6ea4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1008_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1008,
+      "workload_sha256": "d63dd708426fd4c4642c4802e013e1a286b4c7319d596f3b940f616490f31ad6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1008_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1008,
+      "workload_sha256": "d63dd708426fd4c4642c4802e013e1a286b4c7319d596f3b940f616490f31ad6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1009_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1009,
+      "workload_sha256": "6ccc6f21c40c4722777091c49c3192ca26f96480205c7bd73a38cef1d3c2198f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1009_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1009,
+      "workload_sha256": "6ccc6f21c40c4722777091c49c3192ca26f96480205c7bd73a38cef1d3c2198f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1010_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1010,
+      "workload_sha256": "08764eb3060c59dc1eace2940821677963de4f9b33d87205584e0a2196d97449"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1010_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1010,
+      "workload_sha256": "08764eb3060c59dc1eace2940821677963de4f9b33d87205584e0a2196d97449"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1011_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1011,
+      "workload_sha256": "31d3f92099b2af6bb4ac6689823875ed412685f16383d8924cc769c195b01788"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1011_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1011,
+      "workload_sha256": "31d3f92099b2af6bb4ac6689823875ed412685f16383d8924cc769c195b01788"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1012_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1012,
+      "workload_sha256": "f3d451a8c9b0f032c1fd605d2a647cd24f49e85a15da075b16f7b4c525ac5984"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1012_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1012,
+      "workload_sha256": "f3d451a8c9b0f032c1fd605d2a647cd24f49e85a15da075b16f7b4c525ac5984"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1013_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1013,
+      "workload_sha256": "71dd1f065b4486ded8df8b5b383fe69eb16fc56811e6e9de5a1ce0acbc75b316"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1013_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1013,
+      "workload_sha256": "71dd1f065b4486ded8df8b5b383fe69eb16fc56811e6e9de5a1ce0acbc75b316"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1014_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1014,
+      "workload_sha256": "cad98dc157f0757905ab52953eb816a3c908f7f1f131c8cc4b6a124aa70a8a50"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1014_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1014,
+      "workload_sha256": "cad98dc157f0757905ab52953eb816a3c908f7f1f131c8cc4b6a124aa70a8a50"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1015_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1015,
+      "workload_sha256": "1434a53c9eb763e1db82eb5d87b9e612b03d5e0e31ad6eb41d8f96cfc41b31ea"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1015_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1015,
+      "workload_sha256": "1434a53c9eb763e1db82eb5d87b9e612b03d5e0e31ad6eb41d8f96cfc41b31ea"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1016_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1016,
+      "workload_sha256": "7b0e7800254a00d9352cf9656685f0cf5fc28db691951f61e746d63d5587ccb4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1016_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1016,
+      "workload_sha256": "7b0e7800254a00d9352cf9656685f0cf5fc28db691951f61e746d63d5587ccb4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1017_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1017,
+      "workload_sha256": "cda22dc84000bce9b9c0ae7771bf978f8417aedd17ee72a6c850367df459618c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1017_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1017,
+      "workload_sha256": "cda22dc84000bce9b9c0ae7771bf978f8417aedd17ee72a6c850367df459618c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1018_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1018,
+      "workload_sha256": "1406434ac330d051d019d2c9b1b19d724482f98591747d83abb4945b6f72d6d8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1018_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1018,
+      "workload_sha256": "1406434ac330d051d019d2c9b1b19d724482f98591747d83abb4945b6f72d6d8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1019_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1019,
+      "workload_sha256": "c10f3b1364a73db7ced712e1732e89037e6ed9b3b6f9cbc421ad8317c1fa0835"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1019_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1019,
+      "workload_sha256": "c10f3b1364a73db7ced712e1732e89037e6ed9b3b6f9cbc421ad8317c1fa0835"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1020_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1020,
+      "workload_sha256": "74dcf461cbc726548931c92612c2fd6b6e32fa3321a40128fa85d34f93c28836"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1020_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1020,
+      "workload_sha256": "74dcf461cbc726548931c92612c2fd6b6e32fa3321a40128fa85d34f93c28836"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1021_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1021,
+      "workload_sha256": "3d1b7ead24ff824c40bec0d07a10265f1f9bd037692ae5a094e96a215afb1356"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1021_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1021,
+      "workload_sha256": "3d1b7ead24ff824c40bec0d07a10265f1f9bd037692ae5a094e96a215afb1356"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1022_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1022,
+      "workload_sha256": "b9e2db12dba9c4079eae3c6fda66718d7385c9050574910d0956b0990a24ac53"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1022_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1022,
+      "workload_sha256": "b9e2db12dba9c4079eae3c6fda66718d7385c9050574910d0956b0990a24ac53"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1023_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1023,
+      "workload_sha256": "eea147ba8af015c742f506d367f08cf32f0c4cf4efe054291292cdd2e321fa31"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1023_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1023,
+      "workload_sha256": "eea147ba8af015c742f506d367f08cf32f0c4cf4efe054291292cdd2e321fa31"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1024_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1024,
+      "workload_sha256": "8e75b2ace42861140e2f0a1a12ccba9e9b07e24771010f22badbea0e50bf1441"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1024_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1024,
+      "workload_sha256": "8e75b2ace42861140e2f0a1a12ccba9e9b07e24771010f22badbea0e50bf1441"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1025_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1025,
+      "workload_sha256": "c783dcb810fb91f09ec3dce90ac7d6047b0f9867f09129b90e5314fe3f9caf64"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1025_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1025,
+      "workload_sha256": "c783dcb810fb91f09ec3dce90ac7d6047b0f9867f09129b90e5314fe3f9caf64"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1026_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1026,
+      "workload_sha256": "1ad50726f4afa5756b53b52c8e49cfbea63e7f8cfd0c76850fa67ab1815aa002"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1026_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1026,
+      "workload_sha256": "1ad50726f4afa5756b53b52c8e49cfbea63e7f8cfd0c76850fa67ab1815aa002"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1027_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1027,
+      "workload_sha256": "7b6813057a345439f73e441318c2e16213f9a59f2f3aecb5ae22912e820030bb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1027_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1027,
+      "workload_sha256": "7b6813057a345439f73e441318c2e16213f9a59f2f3aecb5ae22912e820030bb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1028_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1028,
+      "workload_sha256": "bec43fe2d0c00bc44a22d9f36cfdaac8ef5027ffb699169571a932a136d1a948"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1028_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1028,
+      "workload_sha256": "bec43fe2d0c00bc44a22d9f36cfdaac8ef5027ffb699169571a932a136d1a948"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1029_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1029,
+      "workload_sha256": "35a6a67d36ac194257796fc97b438c95f17594c6df4a428a83560108a705fcd5"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1029_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1029,
+      "workload_sha256": "35a6a67d36ac194257796fc97b438c95f17594c6df4a428a83560108a705fcd5"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1030_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1030,
+      "workload_sha256": "243a880d1cccead2f81325735c6161a3d3ae26bc375b08c0b33ebbb9631c591c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1030_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1030,
+      "workload_sha256": "243a880d1cccead2f81325735c6161a3d3ae26bc375b08c0b33ebbb9631c591c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1031_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1031,
+      "workload_sha256": "e2894cfe546a8b349a2a1a4dd16c699f4945c38926055b51c97dddb7f664210b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-800000_traffic-1031_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1031,
+      "workload_sha256": "e2894cfe546a8b349a2a1a4dd16c699f4945c38926055b51c97dddb7f664210b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1000_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1000,
+      "workload_sha256": "3b84cecc11c4a756b1b3e0e9470bc59d69e9d0e179772b0752d366443508b26a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1000_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1000,
+      "workload_sha256": "3b84cecc11c4a756b1b3e0e9470bc59d69e9d0e179772b0752d366443508b26a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1001_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1001,
+      "workload_sha256": "2991be74903679c1168abe533fd73fd00cfed48d41dd252800f03e315a1aa544"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1001_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1001,
+      "workload_sha256": "2991be74903679c1168abe533fd73fd00cfed48d41dd252800f03e315a1aa544"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1002_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1002,
+      "workload_sha256": "28787c9300222ef09bb50d2251c88bfe71ebcddf5b7924558ae860e8effee76a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1002_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1002,
+      "workload_sha256": "28787c9300222ef09bb50d2251c88bfe71ebcddf5b7924558ae860e8effee76a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1003_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1003,
+      "workload_sha256": "cb7c48c6b35b31822b8c52f8d3e7fcaa951fcb990ded00148147e347b77eca82"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1003_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1003,
+      "workload_sha256": "cb7c48c6b35b31822b8c52f8d3e7fcaa951fcb990ded00148147e347b77eca82"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1004_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1004,
+      "workload_sha256": "8595c82708bb5a08d46d6ad380ad93acda847df0557135677ce920dd0fc3dc9b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1004_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1004,
+      "workload_sha256": "8595c82708bb5a08d46d6ad380ad93acda847df0557135677ce920dd0fc3dc9b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1005_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1005,
+      "workload_sha256": "629a23364b2f9877d2f88ab74e74c7a473e48195d2c69d564bddee51db17c1c4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1005_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1005,
+      "workload_sha256": "629a23364b2f9877d2f88ab74e74c7a473e48195d2c69d564bddee51db17c1c4"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1006_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1006,
+      "workload_sha256": "d0bdc8c6365dcbd0358375ccfea27dd6986c6097ca6436d8949165021dd0c6ca"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1006_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1006,
+      "workload_sha256": "d0bdc8c6365dcbd0358375ccfea27dd6986c6097ca6436d8949165021dd0c6ca"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1007_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1007,
+      "workload_sha256": "94b9cbbbafefda5bdd290e11589facf735df3a27cbc7c8b9d605053bd511eaf1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1007_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1007,
+      "workload_sha256": "94b9cbbbafefda5bdd290e11589facf735df3a27cbc7c8b9d605053bd511eaf1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1008_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1008,
+      "workload_sha256": "3c6939ae4aaacfa53b5b38e5dc055eee205ae775175f0919f4d7be11afe393d6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1008_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1008,
+      "workload_sha256": "3c6939ae4aaacfa53b5b38e5dc055eee205ae775175f0919f4d7be11afe393d6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1009_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1009,
+      "workload_sha256": "f967d4bd656e2ccd33b50bd5920eac2411bc8b1027cb1a00a9812fd4b8dade03"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1009_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1009,
+      "workload_sha256": "f967d4bd656e2ccd33b50bd5920eac2411bc8b1027cb1a00a9812fd4b8dade03"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1010_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1010,
+      "workload_sha256": "0bc3a0aad723ea56c694d3316a34ec7615443cd8e919521693c3bf4921e773f8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1010_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1010,
+      "workload_sha256": "0bc3a0aad723ea56c694d3316a34ec7615443cd8e919521693c3bf4921e773f8"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1011_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1011,
+      "workload_sha256": "024e090d0a31681ec3c00da60fefd9602848b162847413c73edb60cd3ca3c19b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1011_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1011,
+      "workload_sha256": "024e090d0a31681ec3c00da60fefd9602848b162847413c73edb60cd3ca3c19b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1012_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1012,
+      "workload_sha256": "c05099cf3f02de702ebc0dfde6698dbaca4150b9b6ced0215d2138331782ba7b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1012_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1012,
+      "workload_sha256": "c05099cf3f02de702ebc0dfde6698dbaca4150b9b6ced0215d2138331782ba7b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1013_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1013,
+      "workload_sha256": "210a92cf5f9a138a7113de6f79d56ad72c2a564ce43d0cf5b187a0b610e78a49"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1013_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1013,
+      "workload_sha256": "210a92cf5f9a138a7113de6f79d56ad72c2a564ce43d0cf5b187a0b610e78a49"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1014_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1014,
+      "workload_sha256": "fc7a29b163bdf54e41ca09f7abd5bb8f4dc43f9e2e42921e2c6bbbe95652f4d6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1014_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1014,
+      "workload_sha256": "fc7a29b163bdf54e41ca09f7abd5bb8f4dc43f9e2e42921e2c6bbbe95652f4d6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1015_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1015,
+      "workload_sha256": "f20d636b7ff5bc722666f590c298eadc97f96869b40077e5128ad3bbee8b5860"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1015_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1015,
+      "workload_sha256": "f20d636b7ff5bc722666f590c298eadc97f96869b40077e5128ad3bbee8b5860"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1016_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1016,
+      "workload_sha256": "36e82892b45235a3fb6d3fe0f11604af4509d075f04daef329b0cf588de4fcc1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1016_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1016,
+      "workload_sha256": "36e82892b45235a3fb6d3fe0f11604af4509d075f04daef329b0cf588de4fcc1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1017_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1017,
+      "workload_sha256": "153481a6dd1a5aa5569a1563da234e65cc08049b22323be25c59d2f6dfa2e0a5"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1017_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1017,
+      "workload_sha256": "153481a6dd1a5aa5569a1563da234e65cc08049b22323be25c59d2f6dfa2e0a5"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1018_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1018,
+      "workload_sha256": "82da5b8d5c4521fcf36741f12df2d17bfc219689f13c260bb5559f4ea47e0bfc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1018_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1018,
+      "workload_sha256": "82da5b8d5c4521fcf36741f12df2d17bfc219689f13c260bb5559f4ea47e0bfc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1019_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1019,
+      "workload_sha256": "0a0cf55d5f2a05ceca7b59d229b82780414c2703e54220f07335577137027524"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1019_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1019,
+      "workload_sha256": "0a0cf55d5f2a05ceca7b59d229b82780414c2703e54220f07335577137027524"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1020_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1020,
+      "workload_sha256": "06e5e95ac0e01e1cbc548e914a7f9efd118fe8d4402b2eb836d60a3a24b398c3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1020_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1020,
+      "workload_sha256": "06e5e95ac0e01e1cbc548e914a7f9efd118fe8d4402b2eb836d60a3a24b398c3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1021_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1021,
+      "workload_sha256": "c1373c15bd590fb5e4230fd1e1b43e834521cc25951868726b654dae9e47a246"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1021_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1021,
+      "workload_sha256": "c1373c15bd590fb5e4230fd1e1b43e834521cc25951868726b654dae9e47a246"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1022_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1022,
+      "workload_sha256": "d4c63f3bdfb481a6640056ef34f2f1375dd9e82d290b3b7ccd072a88df7361b0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1022_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1022,
+      "workload_sha256": "d4c63f3bdfb481a6640056ef34f2f1375dd9e82d290b3b7ccd072a88df7361b0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1023_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1023,
+      "workload_sha256": "0c4de9732700c9d1e5497c1467fc3e8d2130962ba0e384b0569ea9a03fc69af9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1023_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1023,
+      "workload_sha256": "0c4de9732700c9d1e5497c1467fc3e8d2130962ba0e384b0569ea9a03fc69af9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1024_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1024,
+      "workload_sha256": "dd4c25a0b9cc9b351dca3f73e8785e0ed118be6d27685305df632b1da5739df9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1024_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1024,
+      "workload_sha256": "dd4c25a0b9cc9b351dca3f73e8785e0ed118be6d27685305df632b1da5739df9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1025_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1025,
+      "workload_sha256": "c1ed77297c5108b55f440d972cb4fab842cf2b44abf8334420e895c18b585c01"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1025_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1025,
+      "workload_sha256": "c1ed77297c5108b55f440d972cb4fab842cf2b44abf8334420e895c18b585c01"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1026_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1026,
+      "workload_sha256": "71c376c6ca80ccd7f28b16da5da68ac4de681101cf14fadb2c74daffc13e7543"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1026_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1026,
+      "workload_sha256": "71c376c6ca80ccd7f28b16da5da68ac4de681101cf14fadb2c74daffc13e7543"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1027_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1027,
+      "workload_sha256": "85d4d1f635ecc925702d034d67bfd98e4a6d87c46b8277a5114045c602f82ff3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1027_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1027,
+      "workload_sha256": "85d4d1f635ecc925702d034d67bfd98e4a6d87c46b8277a5114045c602f82ff3"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1028_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1028,
+      "workload_sha256": "bcb792d50a75a0e094a6b84c92bce49ac47258e20a8ea6a448fe0173510ebf65"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1028_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1028,
+      "workload_sha256": "bcb792d50a75a0e094a6b84c92bce49ac47258e20a8ea6a448fe0173510ebf65"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1029_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1029,
+      "workload_sha256": "5be74609f26c4797c69aa8d46a170fdfe81d6c515652dc457560ea978246d61b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1029_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1029,
+      "workload_sha256": "5be74609f26c4797c69aa8d46a170fdfe81d6c515652dc457560ea978246d61b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1030_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1030,
+      "workload_sha256": "ce35705050f44b6405b604fa8d7bdc164c89cf594e1ef6a003206adcb11d31cd"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1030_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1030,
+      "workload_sha256": "ce35705050f44b6405b604fa8d7bdc164c89cf594e1ef6a003206adcb11d31cd"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1031_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1031,
+      "workload_sha256": "3ae630b2fc9f0224aba1a15b19fb1cd625ec04706b8b20e197d44e1af8b0f147"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.35,
+      "path": "runs/load-0.35_interval-2000000_traffic-1031_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1031,
+      "workload_sha256": "3ae630b2fc9f0224aba1a15b19fb1cd625ec04706b8b20e197d44e1af8b0f147"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1000_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1000,
+      "workload_sha256": "5c4170509697e1be3f66d9d4aa63a1f5665b19577ac7f4b1893b7a4d868c6e6c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1000_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1000,
+      "workload_sha256": "5c4170509697e1be3f66d9d4aa63a1f5665b19577ac7f4b1893b7a4d868c6e6c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1001_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1001,
+      "workload_sha256": "a8a4bc631470007053478dd8f0e9a4c1270d0bd53536dd822e0a2e92aeca4144"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1001_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1001,
+      "workload_sha256": "a8a4bc631470007053478dd8f0e9a4c1270d0bd53536dd822e0a2e92aeca4144"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1002_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1002,
+      "workload_sha256": "18f64530e6e1c1cde275da58ad42501badb50652908af00520bd1ca55a8d241a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1002_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1002,
+      "workload_sha256": "18f64530e6e1c1cde275da58ad42501badb50652908af00520bd1ca55a8d241a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1003_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1003,
+      "workload_sha256": "23b321ae3f3305511e68dc16df279e503cdef6c82224a78699ec154a227ce83c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1003_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1003,
+      "workload_sha256": "23b321ae3f3305511e68dc16df279e503cdef6c82224a78699ec154a227ce83c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1004_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1004,
+      "workload_sha256": "6799d2de39fb882783382d42587f1c163811ba66626dee8b58751eee8b4ad844"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1004_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1004,
+      "workload_sha256": "6799d2de39fb882783382d42587f1c163811ba66626dee8b58751eee8b4ad844"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1005_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1005,
+      "workload_sha256": "cd547d5e59b22b32b9a9a08c0d6aec5b19ad663eb899da75096f15c6f1ef0c9a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1005_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1005,
+      "workload_sha256": "cd547d5e59b22b32b9a9a08c0d6aec5b19ad663eb899da75096f15c6f1ef0c9a"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1006_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1006,
+      "workload_sha256": "84e00c822cd024132a6da2fb496079d9fb36b971274f1730fe9e2c8d82777e4d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1006_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1006,
+      "workload_sha256": "84e00c822cd024132a6da2fb496079d9fb36b971274f1730fe9e2c8d82777e4d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1007_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1007,
+      "workload_sha256": "18c833b17393999388824105eb9342e38876b3e52fb2fda6c3addddbb4fdbdb0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1007_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1007,
+      "workload_sha256": "18c833b17393999388824105eb9342e38876b3e52fb2fda6c3addddbb4fdbdb0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1008_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1008,
+      "workload_sha256": "a218395a091fe85ef14780b03fb457d8df3b6c12e81adddb80f93a30fb1f54e7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1008_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1008,
+      "workload_sha256": "a218395a091fe85ef14780b03fb457d8df3b6c12e81adddb80f93a30fb1f54e7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1009_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1009,
+      "workload_sha256": "7d8aa09000547f568b4ac8f22a19ce07f9ece4444e798c2ef5c95327a7584636"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1009_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1009,
+      "workload_sha256": "7d8aa09000547f568b4ac8f22a19ce07f9ece4444e798c2ef5c95327a7584636"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1010_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1010,
+      "workload_sha256": "9ee76b56723575be548fec3c9b928187b5c69d1f5066917ae0be620d23ec3500"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1010_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1010,
+      "workload_sha256": "9ee76b56723575be548fec3c9b928187b5c69d1f5066917ae0be620d23ec3500"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1011_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1011,
+      "workload_sha256": "bc60516e94e70a029041f70f26c1b335ed4df6ca7f573da08caeef77bf7492b0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1011_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1011,
+      "workload_sha256": "bc60516e94e70a029041f70f26c1b335ed4df6ca7f573da08caeef77bf7492b0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1012_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1012,
+      "workload_sha256": "35a2539b714658b4bc950a815105aec1d39703dd64aa04dfe405b8a5ee8867c7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1012_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1012,
+      "workload_sha256": "35a2539b714658b4bc950a815105aec1d39703dd64aa04dfe405b8a5ee8867c7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1013_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1013,
+      "workload_sha256": "cf7938a241e61edb1c871b0ec9e5cfbc6735f956f301062879e8ddd5785bb858"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1013_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1013,
+      "workload_sha256": "cf7938a241e61edb1c871b0ec9e5cfbc6735f956f301062879e8ddd5785bb858"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1014_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1014,
+      "workload_sha256": "c9ee3e2c25a0dadd6eb7b3e0568e032368852d309d3a9b90be7af12ca45fcf6b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1014_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1014,
+      "workload_sha256": "c9ee3e2c25a0dadd6eb7b3e0568e032368852d309d3a9b90be7af12ca45fcf6b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1015_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1015,
+      "workload_sha256": "b088b768ed17b211a8c7053d692ed7663445ebc589d9a7409363120a78703c8b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1015_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1015,
+      "workload_sha256": "b088b768ed17b211a8c7053d692ed7663445ebc589d9a7409363120a78703c8b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1016_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1016,
+      "workload_sha256": "6dae56f0c6dd6c86c6bc3e2298be73cde7992f4430ebe6b39ddd5d9fa1cfc356"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1016_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1016,
+      "workload_sha256": "6dae56f0c6dd6c86c6bc3e2298be73cde7992f4430ebe6b39ddd5d9fa1cfc356"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1017_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1017,
+      "workload_sha256": "40906a2e1317bd77c34a4728f9a04eeb230c26a9af65f84013fd8618da387e7d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1017_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1017,
+      "workload_sha256": "40906a2e1317bd77c34a4728f9a04eeb230c26a9af65f84013fd8618da387e7d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1018_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1018,
+      "workload_sha256": "57367d11a3f84da940e377d9314f0e379089431886b0267d227f751db3e21b0e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1018_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1018,
+      "workload_sha256": "57367d11a3f84da940e377d9314f0e379089431886b0267d227f751db3e21b0e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1019_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1019,
+      "workload_sha256": "dc31d3f1ba5d69b331d0602815ef60e8a7142daeb3062433f22ecad3d266eedc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1019_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1019,
+      "workload_sha256": "dc31d3f1ba5d69b331d0602815ef60e8a7142daeb3062433f22ecad3d266eedc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1020_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1020,
+      "workload_sha256": "3e6df1a5abf321c958afab9a749045e483f6e1bfccd594326c9baf25ba4fbafb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1020_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1020,
+      "workload_sha256": "3e6df1a5abf321c958afab9a749045e483f6e1bfccd594326c9baf25ba4fbafb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1021_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1021,
+      "workload_sha256": "8cad4f3147c40b154861e1e8553da2464786287bd1a56d7897df076f4d39b675"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1021_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1021,
+      "workload_sha256": "8cad4f3147c40b154861e1e8553da2464786287bd1a56d7897df076f4d39b675"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1022_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1022,
+      "workload_sha256": "7c7c87d73654d65081db34cc78eec00f6201e20cb3f9dc718b28cfc2f83daa01"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1022_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1022,
+      "workload_sha256": "7c7c87d73654d65081db34cc78eec00f6201e20cb3f9dc718b28cfc2f83daa01"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1023_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1023,
+      "workload_sha256": "8074c2fe55de288e223c97a926ce69a06080dd49e136971ed84f3b44c7e54b80"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1023_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1023,
+      "workload_sha256": "8074c2fe55de288e223c97a926ce69a06080dd49e136971ed84f3b44c7e54b80"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1024_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1024,
+      "workload_sha256": "5a86dfbb56363cfe2b77334f61b0101ba6f9d35c799cd77e659ed0b342496ab6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1024_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1024,
+      "workload_sha256": "5a86dfbb56363cfe2b77334f61b0101ba6f9d35c799cd77e659ed0b342496ab6"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1025_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1025,
+      "workload_sha256": "fcb55a6e238b915c7a5e3188139fb576f92a38ab10a0e11fc91284469717c7bb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1025_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1025,
+      "workload_sha256": "fcb55a6e238b915c7a5e3188139fb576f92a38ab10a0e11fc91284469717c7bb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1026_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1026,
+      "workload_sha256": "4d2876ab396e81b1592a8bf97e8f1280fb02f71d106130bf33430845aa9cc29b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1026_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1026,
+      "workload_sha256": "4d2876ab396e81b1592a8bf97e8f1280fb02f71d106130bf33430845aa9cc29b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1027_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1027,
+      "workload_sha256": "7de21b34accb86809d36a31bf38d8bb7d8d002cf78d47825f762bf7102025d8c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1027_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1027,
+      "workload_sha256": "7de21b34accb86809d36a31bf38d8bb7d8d002cf78d47825f762bf7102025d8c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1028_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1028,
+      "workload_sha256": "4450ac2db4e4020fad664a0847aa5dcc19cdc177d10c8a55ef5fa1b17eab88fb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1028_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1028,
+      "workload_sha256": "4450ac2db4e4020fad664a0847aa5dcc19cdc177d10c8a55ef5fa1b17eab88fb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1029_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1029,
+      "workload_sha256": "a4508b6dbf398938cf8b2be1bf02d7385f31711fc6bbc3924c0ce10cdaa31cab"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1029_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1029,
+      "workload_sha256": "a4508b6dbf398938cf8b2be1bf02d7385f31711fc6bbc3924c0ce10cdaa31cab"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1030_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1030,
+      "workload_sha256": "a47f29ce10a30c21b23e5eb0b7d5589a2317d561206b468e4c31e3529af1d98f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1030_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1030,
+      "workload_sha256": "a47f29ce10a30c21b23e5eb0b7d5589a2317d561206b468e4c31e3529af1d98f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1031_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1031,
+      "workload_sha256": "e027aa8592f5c67808e9de1d38351949dc3aefc5d25b9b00acbf8c87054fcccd"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-800000_traffic-1031_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 800000,
+      "traffic_seed": 1031,
+      "workload_sha256": "e027aa8592f5c67808e9de1d38351949dc3aefc5d25b9b00acbf8c87054fcccd"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1000_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1000,
+      "workload_sha256": "6bd2a9ec9d13e6dc5a44ad0d72af15ddec2730b1d8922ba4ac8cd0101616d1c1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1000_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1000,
+      "workload_sha256": "6bd2a9ec9d13e6dc5a44ad0d72af15ddec2730b1d8922ba4ac8cd0101616d1c1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1001_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1001,
+      "workload_sha256": "5f31a6b7bca64bcf48ca06a5616c4f14bf96c5b65d9115f3c2eb9b30a1ff4e92"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1001_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1001,
+      "workload_sha256": "5f31a6b7bca64bcf48ca06a5616c4f14bf96c5b65d9115f3c2eb9b30a1ff4e92"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1002_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1002,
+      "workload_sha256": "d27b8b980527ee1c7c67217e97eb20818c7d29451e165ca5cff089da6a991854"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1002_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1002,
+      "workload_sha256": "d27b8b980527ee1c7c67217e97eb20818c7d29451e165ca5cff089da6a991854"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1003_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1003,
+      "workload_sha256": "ddf0df19775ee395ab7d040009efb5e77effe41951f318afdbd5ae765ff099ca"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1003_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1003,
+      "workload_sha256": "ddf0df19775ee395ab7d040009efb5e77effe41951f318afdbd5ae765ff099ca"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1004_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1004,
+      "workload_sha256": "1eb2f1cf5d252cfcd39248fa0f916bc6c72d365aecafc3a03b3dba00528eed76"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1004_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1004,
+      "workload_sha256": "1eb2f1cf5d252cfcd39248fa0f916bc6c72d365aecafc3a03b3dba00528eed76"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1005_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1005,
+      "workload_sha256": "5b12d3e8189096e25791e0e1bb026df20c6c5bf012a4ba02c24b0a2aa6eac961"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1005_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1005,
+      "workload_sha256": "5b12d3e8189096e25791e0e1bb026df20c6c5bf012a4ba02c24b0a2aa6eac961"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1006_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1006,
+      "workload_sha256": "c86a765cf680d479bbd72294f24cf64356b474317286b560aafd7f66a0262ca9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1006_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1006,
+      "workload_sha256": "c86a765cf680d479bbd72294f24cf64356b474317286b560aafd7f66a0262ca9"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1007_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1007,
+      "workload_sha256": "8965e55bc4e658f7ee7ed80def378ef4178db5100ed1c120f3b6f556ae2659e2"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1007_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1007,
+      "workload_sha256": "8965e55bc4e658f7ee7ed80def378ef4178db5100ed1c120f3b6f556ae2659e2"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1008_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1008,
+      "workload_sha256": "0bd57cea44b895f9539d1b2a67c836a9249b4d7b5cc75d42d28ee2f58b703f98"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1008_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1008,
+      "workload_sha256": "0bd57cea44b895f9539d1b2a67c836a9249b4d7b5cc75d42d28ee2f58b703f98"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1009_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1009,
+      "workload_sha256": "fefa4036afa0cf3eabec4891dcf04021df0e3dfc9ff3e5a971d0b9c1d795bb7b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1009_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1009,
+      "workload_sha256": "fefa4036afa0cf3eabec4891dcf04021df0e3dfc9ff3e5a971d0b9c1d795bb7b"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1010_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1010,
+      "workload_sha256": "17593c145a16c73c6ffdde11c67be91c4af17112bbaf36f235d11adf1616d0b7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1010_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1010,
+      "workload_sha256": "17593c145a16c73c6ffdde11c67be91c4af17112bbaf36f235d11adf1616d0b7"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1011_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1011,
+      "workload_sha256": "aa70d875023501ac0f95985ba951a840cc7f0004f588f2031b9e59642816d52f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1011_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1011,
+      "workload_sha256": "aa70d875023501ac0f95985ba951a840cc7f0004f588f2031b9e59642816d52f"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1012_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1012,
+      "workload_sha256": "b0d412ba5dd007f619a200933bb88dfd999f237748dab1d0cb2fe39730252a2e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1012_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1012,
+      "workload_sha256": "b0d412ba5dd007f619a200933bb88dfd999f237748dab1d0cb2fe39730252a2e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1013_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1013,
+      "workload_sha256": "29d29cab3fd120e528030f8af5454a68da3176317b4151fc9b60d085a44b6f6e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1013_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1013,
+      "workload_sha256": "29d29cab3fd120e528030f8af5454a68da3176317b4151fc9b60d085a44b6f6e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1014_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1014,
+      "workload_sha256": "80e498d3a54526544727b653f142a861c5fd69524c07ea2165368d6407bf795d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1014_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1014,
+      "workload_sha256": "80e498d3a54526544727b653f142a861c5fd69524c07ea2165368d6407bf795d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1015_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1015,
+      "workload_sha256": "76e1670af0a46aedbab9a5eba9daa7dc735975ceaef173f28511e82b52d4ee7c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1015_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1015,
+      "workload_sha256": "76e1670af0a46aedbab9a5eba9daa7dc735975ceaef173f28511e82b52d4ee7c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1016_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1016,
+      "workload_sha256": "2c47fe7c91d132a3766a62cecda3349d0046ab5fe08e77898681ab92a7ffe292"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1016_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1016,
+      "workload_sha256": "2c47fe7c91d132a3766a62cecda3349d0046ab5fe08e77898681ab92a7ffe292"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1017_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1017,
+      "workload_sha256": "b18b41f9dcc9386c3a867e61043ec377c9c5e729ae3041157f23ece37f0b63f1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1017_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1017,
+      "workload_sha256": "b18b41f9dcc9386c3a867e61043ec377c9c5e729ae3041157f23ece37f0b63f1"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1018_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1018,
+      "workload_sha256": "c8a9130a3b050e04ae19397bba47c2cc2c303b619f6ec1161ba3234f77fbd72e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1018_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1018,
+      "workload_sha256": "c8a9130a3b050e04ae19397bba47c2cc2c303b619f6ec1161ba3234f77fbd72e"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1019_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1019,
+      "workload_sha256": "30128271a7b207fac16b72e52e01c2b074b306ed06a6a67ec2adba04ada339f0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1019_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1019,
+      "workload_sha256": "30128271a7b207fac16b72e52e01c2b074b306ed06a6a67ec2adba04ada339f0"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1020_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1020,
+      "workload_sha256": "35b2881d5ef0d5740aef798e10726b061a04cad4ac6b12f47c6a942c0b073517"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1020_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1020,
+      "workload_sha256": "35b2881d5ef0d5740aef798e10726b061a04cad4ac6b12f47c6a942c0b073517"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1021_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1021,
+      "workload_sha256": "b925d143583a8970d1600add12190ae266c6952649661c7451f60dd941fba833"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1021_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1021,
+      "workload_sha256": "b925d143583a8970d1600add12190ae266c6952649661c7451f60dd941fba833"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1022_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1022,
+      "workload_sha256": "bc0a85bca232ed3007ca67ec5e2482833ddb33cb4517be48ec19334d885c2293"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1022_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1022,
+      "workload_sha256": "bc0a85bca232ed3007ca67ec5e2482833ddb33cb4517be48ec19334d885c2293"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1023_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1023,
+      "workload_sha256": "d3d7845a6e41d02262b5cc064007e6b1758b90b09ccd0f059e322fe01aeaa64c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1023_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1023,
+      "workload_sha256": "d3d7845a6e41d02262b5cc064007e6b1758b90b09ccd0f059e322fe01aeaa64c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1024_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1024,
+      "workload_sha256": "e6214d5f5e6ae7d2bf1dd2eb7a4fb1c1cf5bc276dff13202e808a34084a63976"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1024_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1024,
+      "workload_sha256": "e6214d5f5e6ae7d2bf1dd2eb7a4fb1c1cf5bc276dff13202e808a34084a63976"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1025_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1025,
+      "workload_sha256": "3da0eee7d8760f96b9e602e165d48ea7e16296398659d9ed8c65f0b327d102cb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1025_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1025,
+      "workload_sha256": "3da0eee7d8760f96b9e602e165d48ea7e16296398659d9ed8c65f0b327d102cb"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1026_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1026,
+      "workload_sha256": "a69bfd325fae1ac4c8a7a43694f51f2f2603334c5838a5c0285033522dff2a99"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1026_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1026,
+      "workload_sha256": "a69bfd325fae1ac4c8a7a43694f51f2f2603334c5838a5c0285033522dff2a99"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1027_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1027,
+      "workload_sha256": "2a61d0045635ea2e77fb5b1f2529923d9b32e0119e1df634c18ed52f843f968d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1027_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1027,
+      "workload_sha256": "2a61d0045635ea2e77fb5b1f2529923d9b32e0119e1df634c18ed52f843f968d"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1028_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1028,
+      "workload_sha256": "a71c8dcb22528f936752a9948dbda75c29b8fef6290bffb920e42b4e55fdec51"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1028_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1028,
+      "workload_sha256": "a71c8dcb22528f936752a9948dbda75c29b8fef6290bffb920e42b4e55fdec51"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1029_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1029,
+      "workload_sha256": "bef9545c7cbf32fe13a1cea776953d31c2310039c2238402d1457f7590d2285c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1029_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1029,
+      "workload_sha256": "bef9545c7cbf32fe13a1cea776953d31c2310039c2238402d1457f7590d2285c"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1030_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1030,
+      "workload_sha256": "24a88ac96a20fb2226e3dac39f3d5e4cc69d8b50d213c675c19f94dbd1f52a26"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1030_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1030,
+      "workload_sha256": "24a88ac96a20fb2226e3dac39f3d5e4cc69d8b50d213c675c19f94dbd1f52a26"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1031_quantum-7/comparison.json",
+      "quantum_seed": 7,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1031,
+      "workload_sha256": "413f7db5950132716fc73960f3906da3d357cb23cc12a0982de4f2d84f5b75bc"
+    },
+    {
+      "calibration_sha256": "7e6bab01e9d6b0298352c3d96c8f671d95a236c9e60e60360e5c70a016b1f97e",
+      "classical_load": 0.7,
+      "path": "runs/load-0.7_interval-2000000_traffic-1031_quantum-11/comparison.json",
+      "quantum_seed": 11,
+      "request_interval_ns": 2000000,
+      "traffic_seed": 1031,
+      "workload_sha256": "413f7db5950132716fc73960f3906da3d357cb23cc12a0982de4f2d84f5b75bc"
+    }
+  ],
+  "execution_runs": 1152,
+  "groups": [
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 800000,
+      "success_probability_mae": null,
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.04352243033860504,
+          0.04352243033860504
+        ],
+        "mean": 0.04352243033860504,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.04352243033860504,
+          0.04352243033860504
+        ],
+        "mean": 0.04352243033860504,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.25,
+          0.25
+        ],
+        "mean": 0.25,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.04184440702089321,
+          0.04184440702089321
+        ],
+        "mean": 0.04184440702089321,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -1200000.0,
+          -1200000.0
+        ],
+        "mean": -1200000.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          1200000.0,
+          1200000.0
+        ],
+        "mean": 1200000.0,
+        "traffic_clusters": 32
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.24999999999999994,
+          0.24999999999999994
+        ],
+        "mean": 0.24999999999999994,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": null,
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.0,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0390625
+        ],
+        "mean": 0.015625,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          8758.03125,
+          15141.359375
+        ],
+        "mean": 11762.8359375,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          73194.546875,
+          164634.34375
+        ],
+        "mean": 116594.5546875,
+        "traffic_clusters": 32
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 800000,
+      "success_probability_mae": null,
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.003103457470107868,
+          0.0048902328136746
+        ],
+        "mean": 0.00398511850223923,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0034850978508854046,
+          0.005216999454047964
+        ],
+        "mean": 0.004337171652888827,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0390625
+        ],
+        "mean": 0.015625,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.003046901895927523,
+          0.004658878495035317
+        ],
+        "mean": 0.003852460536443796,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -190632.6171875,
+          -128184.546875
+        ],
+        "mean": -158620.0546875,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          144119.578125,
+          205718.7421875
+        ],
+        "mean": 174218.5703125,
+        "traffic_clusters": 32
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.041894589473765335,
+          0.04263718326703694
+        ],
+        "mean": 0.042285025236816105,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.041894589473765335,
+          0.04263718326703694
+        ],
+        "mean": 0.042285025236816105,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0390625
+        ],
+        "mean": 0.015625,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.1484375,
+          0.2265625
+        ],
+        "mean": 0.1875,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.040161778552645355,
+          0.04116970325543071
+        ],
+        "mean": 0.04068714738469309,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -1191241.96875,
+          -1184858.640625
+        ],
+        "mean": -1188237.1640625,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          1184857.1875,
+          1191241.96875
+        ],
+        "mean": 1188237.1640625,
+        "traffic_clusters": 32
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.15624999999999994,
+          0.22656249999999994
+        ],
+        "mean": 0.19150172144363214,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": null,
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0031403906617681492,
+          0.005320610887754736
+        ],
+        "mean": 0.00424709319035641,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0034753471859779793,
+          0.005560183134159425
+        ],
+        "mean": 0.004532320805721269,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.003003878578315249,
+          0.0055445480362286085
+        ],
+        "mean": 0.0042889922380000035,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -201844.8515625,
+          -133087.9140625
+        ],
+        "mean": -168410.8671875,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          150646.0625,
+          216287.7265625
+        ],
+        "mean": 184414.5390625,
+        "traffic_clusters": 32
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.35,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -8202.9765625,
+          26483.6875
+        ],
+        "mean": 11628.03125,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          188799.1015625,
+          259738.4375
+        ],
+        "mean": 223411.296875,
+        "traffic_clusters": 32
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 800000,
+      "success_probability_mae": null,
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0008286368195215116,
+          0.0026159097282913942
+        ],
+        "mean": 0.001734501063142616,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.004991744710966818,
+          0.005850450681894614
+        ],
+        "mean": 0.005418808463615531,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0546875
+        ],
+        "mean": 0.0234375,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0006938939241197695,
+          0.0023285743757714417
+        ],
+        "mean": 0.0015283013720460623,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -104842.765625,
+          -40272.5
+        ],
+        "mean": -72817.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          226688.75,
+          257812.4140625
+        ],
+        "mean": 241748.796875,
+        "traffic_clusters": 32
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.04026453856043299,
+          0.04147707212646054
+        ],
+        "mean": 0.04088180193704325,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.04026453856043299,
+          0.04147707212646054
+        ],
+        "mean": 0.04088180193704325,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0546875
+        ],
+        "mean": 0.0234375,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0546875,
+          0.1328125
+        ],
+        "mean": 0.09375,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.03833474863460529,
+          0.039850205667409815
+        ],
+        "mean": 0.03911512688117633,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -1208202.9765625,
+          -1173516.3125
+        ],
+        "mean": -1188371.96875,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          1173507.53125,
+          1208139.8046875
+        ],
+        "mean": 1188371.96875,
+        "traffic_clusters": 32
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 800000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.05487844288726435,
+          0.14062499999999994
+        ],
+        "mean": 0.09775172144363216,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": null,
+      "expected_fidelity_mae": null,
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": null,
+      "false_infeasible_rate": null,
+      "fidelity_bias": null,
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "Decoupled",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": null,
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0009772732408438942,
+          0.002595036618189929
+        ],
+        "mean": 0.001806182976759425,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.00466291292694565,
+          0.005534257012671479
+        ],
+        "mean": 0.0050970926607688625,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0009901873787134538,
+          0.0026918654015710653
+        ],
+        "mean": 0.0018607673663372372,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          -85302.46875,
+          -28820.8359375
+        ],
+        "mean": -57623.9453125,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          226896.109375,
+          253382.1796875
+        ],
+        "mean": 239733.7578125,
+        "traffic_clusters": 32
+      },
+      "model": "Fixed-Dc",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    },
+    {
+      "classical_load": 0.7,
+      "expected_fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "expected_fidelity_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_deadline_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_feasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "false_infeasible_rate": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "fidelity_bias": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_bias_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "latency_mae_ns": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "model": "No-Dq-R",
+      "request_interval_ns": 2000000,
+      "success_probability_mae": {
+        "ci95_cluster_bootstrap": [
+          0.0,
+          0.0
+        ],
+        "mean": 0.0,
+        "traffic_clusters": 32
+      },
+      "transactions": 256
+    }
+  ],
+  "historical_q2ns_sources_unchanged": true,
+  "max_density_matrix_error": 2.7755575615628914e-16,
+  "milestone": "P5-B-Direct-Start",
+  "paired_cases": 384,
+  "passed": true,
+  "plan": {
+    "bootstrap_samples": 10000,
+    "calibration_request_interval_ns": 2000000,
+    "calibration_traffic_seeds": [
+      100,
+      101
+    ],
+    "classical_loads": [
+      0.0,
+      0.35,
+      0.7
+    ],
+    "correction_duration_ns": 50000,
+    "deadline_ns": 5000000,
+    "fidelity_min": 0.5,
+    "quantum_seeds": [
+      7,
+      11
+    ],
+    "request_intervals_ns": [
+      800000,
+      2000000
+    ],
+    "sessions": 4,
+    "test_traffic_seeds": [
+      1000,
+      1001,
+      1002,
+      1003,
+      1004,
+      1005,
+      1006,
+      1007,
+      1008,
+      1009,
+      1010,
+      1011,
+      1012,
+      1013,
+      1014,
+      1015,
+      1016,
+      1017,
+      1018,
+      1019,
+      1020,
+      1021,
+      1022,
+      1023,
+      1024,
+      1025,
+      1026,
+      1027,
+      1028,
+      1029,
+      1030,
+      1031
+    ]
+  },
+  "quantum_repetitions": 2,
+  "scope": "finite seeded evaluation; pilot, not a hardware truth or stationary performance claim",
+  "statistics": "95% percentile bootstrap over traffic-seed clusters; sessions/quantum seeds averaged within cluster; paired sampled feasibility uses shared quantum seed, not guaranteed identical BSM branch",
+  "test_workloads": 192,
+  "transactions_per_model": 1536
+}

@@ -1,0 +1,8 @@
+PASS q2ns-qnode 0.014 s
+  PASS QNode: CreateQubit(label) creates a qubit in the 0 state 0.003 s
+  PASS QNode: Apply(X) flips 0 to 1 and Measure(Z)=1 0.002 s
+  PASS QNode: GetQubit by label and by id 0.000 s
+  PASS QNode: CreateBellPair yields Z-basis correlated outcomes 0.000 s
+  PASS QNode: MeasureBell returns bits and leaves qubits in 1-qubit states 0.000 s
+  PASS QNode: Send triggers receive callback and preserves Bell Z-correlation 0.000 s
+  PASS QNode: Apply on a non-local qubit should fail 0.000 s

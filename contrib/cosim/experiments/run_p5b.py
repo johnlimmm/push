@@ -10,8 +10,8 @@ import sys
 MODULE=Path(__file__).resolve().parents[1]
 sys.path.insert(0,str(MODULE/'python'))
 
-from run_q2ns import Q2nsFederationManager
-from p5_config import analytic_timing, normalize_config
+from run_hybrid import HybridManager
+from hybrid_config import expected_timing, normalize_config
 from p5b_nodq import NoDqManager
 from p5b_fixed import run_fixed
 from p5b_timing import no_dq_timing, fixed_timing, decoupled
@@ -37,33 +37,26 @@ def verify_frozen():
     return True
 
 
-class ReferenceCache:
-    """독립 subprocess가 만든 분기 표만 cache한다. 실제 checkpoint와 매번 다시 대조한다."""
-    def __init__(self): self.values={}
-    @staticmethod
-    def key(config,t):
-        return digest(dict(memory_noise=config['memory_noise'],**{k:t[k] for k in (
-            'bsm_start_ns','bsm_completion_ns','correction_start_ns','correction_completion_ns')}))
-    def get(self,config,timing):
-        keys={sid:self.key(config,t) for sid,t in timing.items()}
-        return {sid:self.values[k] for sid,k in keys.items()} if all(k in self.values for k in keys.values()) else None
-    def add(self,report):
-        for comparison in report['cross_validation']['sessions'].values():
-            self.values[self.key(report['config'],comparison['input_timing'])]=comparison['reference']
+class ReferenceCache(dict):
+    """Shared cache keyed by the complete independent reference specification.
+
+    The hybrid validator includes protocol, noise, creation times and all actual
+    operation/packet-arrival timestamps. No sampled state is cached.
+    """
+    pass
 
 
 def run_model(config,model,cache,delays=None):
     if model not in ('Full-Sync','No-Dq-R','Fixed-Dc'):
         raise ValueError('unknown execution model: '+model)
     config=normalize_config(config)
-    timing=(analytic_timing(config)['sessions'] if model=='Full-Sync' else
-            no_dq_timing(config)['sessions'] if model=='No-Dq-R' else fixed_timing(config,delays))
-    if any(t['correction_queue_ns'] for t in timing.values()):
+    timing=(expected_timing(config)['sessions'] if model=='Full-Sync' else
+            no_dq_timing(config)['sessions'] if model=='No-Dq-R' else fixed_timing(config,delays)['sessions'])
+    if any(t['correction_wait_ns'] for t in timing.values()):
         raise ValueError(model+': workload violates B wait=0')
-    refs=cache.get(config,timing)
-    report=(Q2nsFederationManager(config).run(refs) if model=='Full-Sync' else
+    refs=cache
+    report=(HybridManager(config).run(refs) if model=='Full-Sync' else
             NoDqManager(config).run(refs) if model=='No-Dq-R' else run_fixed(config,delays,refs))
-    cache.add(report)
     return report
 
 
@@ -102,8 +95,8 @@ def evaluate(raw, destination):
                         max_error=max(max_error,report['cross_validation']['max_density_matrix_error'])
                         reports[model]=report
                         rows[model]=model_rows(report,plan['fidelity_min'],plan['deadline_ns'])
-                        # 有限 batch 지표의 관측 창: 첫 command TX부터 마지막 correction 완료까지.
-                        duration=report['batch_completion_ns']-min(s['command_time_ns'] for s in cfg['sessions'])
+                        # 有限 batch 지표의 관측 창: local session start부터 마지막 correction 완료까지.
+                        duration=report['batch_completion_ns']-min(s['session_start_ns'] for s in cfg['sessions'])
                         rates[model]=dict(observation_duration_ns=duration,
                             completed_throughput_per_second=len(rows[model])*1e9/duration,
                             expected_service_goodput_per_second=sum(r['success_probability'] for r in rows[model])*1e9/duration)
@@ -115,8 +108,8 @@ def evaluate(raw, destination):
                     cases.append(dict(metadata,path='runs/'+key+'/comparison.json'))
                     print(key+' PASS',flush=True)
     verify_frozen()
-    summary=dict(milestone='P5-B',passed=True,scope='finite seeded evaluation; pilot, not a hardware truth or stationary performance claim',
-        core_source_hashes_unchanged=True,calibration_sha256=cal_hash,calibration_test_disjoint=True,
+    summary=dict(milestone='P5-B-Direct-Start',architecture='direct-session-start-v2',passed=True,scope='finite seeded evaluation; pilot, not a hardware truth or stationary performance claim',
+        historical_q2ns_sources_unchanged=True,calibration_sha256=cal_hash,calibration_test_disjoint=True,
         calibration_runs=len(plan['classical_loads'])*len(plan['calibration_traffic_seeds']),
         test_workloads=len(plan['classical_loads'])*len(plan['request_intervals_ns'])*len(plan['test_traffic_seeds']),
         quantum_repetitions=len(plan['quantum_seeds']),paired_cases=len(cases),execution_runs=3*len(cases),

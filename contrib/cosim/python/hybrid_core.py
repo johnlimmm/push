@@ -13,7 +13,7 @@ from quantum_scheduler import MAX_TIME_NS, integer
 
 
 class HybridExecutionCore:
-    def __init__(self, config):
+    def __init__(self, config, r_capacity=1):
         ns.sim_reset()
         ns.set_qstate_formalism(ns.QFormalism.DM)
         ns.set_random_state(seed=config['seed'])
@@ -29,7 +29,10 @@ class HybridExecutionCore:
         for device in self.devices.values():
             for position in device.mem_positions:
                 position.models['noise_model'] = T1T2NoiseModel(T1=noise['T1_ns'], T2=noise['T2_ns'])
-        self.processors = {name: dict(queue=deque(), running=None) for name in ('R','B')}
+        integer(r_capacity, 'R execution capacity', 1, n)
+        self.r_capacity = r_capacity
+        self.processors = {name: dict(queue=deque(), running=[], capacity=r_capacity if name=='R' else 1)
+                           for name in ('R','B')}
         for session in config['sessions']:
             self.roots[session['session_id']] = self.emit('SESSION_CREATED', session['session_id'],
                                                        protocol=session['protocol'])
@@ -113,15 +116,15 @@ class HybridExecutionCore:
 
     def dispatch(self):
         for processor,p in self.processors.items():
-            if p['running'] is not None or not p['queue']: continue
-            key=p['queue'].popleft(); r=self.requests[key]
-            r.update(state='RUNNING',start_ns=self.now_ns,completion_ns=self.now_ns+r['duration_ns'])
-            p['running']=key
-            for h in r['handles']: self.resources[(r['session_id'],h)]['state']='IN_USE'
-            self.adapters[r['session_id']].on_start(r)
-            r['cause']=self.emit(r['operation']+'_START',r['session_id'],r['cause'],
-                protocol=r['protocol'],request_id=r['request_id'],processor_id=processor,
-                resource_handles=r['handles'],waiting_ns=self.now_ns-r['arrival_ns'])
+            while len(p['running']) < p['capacity'] and p['queue']:
+                key=p['queue'].popleft(); r=self.requests[key]
+                r.update(state='RUNNING',start_ns=self.now_ns,completion_ns=self.now_ns+r['duration_ns'])
+                p['running'].append(key)
+                for h in r['handles']: self.resources[(r['session_id'],h)]['state']='IN_USE'
+                self.adapters[r['session_id']].on_start(r)
+                r['cause']=self.emit(r['operation']+'_START',r['session_id'],r['cause'],
+                    protocol=r['protocol'],request_id=r['request_id'],processor_id=processor,
+                    resource_handles=r['handles'],waiting_ns=self.now_ns-r['arrival_ns'])
         self.check()
 
     def advance(self, at):
@@ -132,22 +135,21 @@ class HybridExecutionCore:
         self.now_ns=at
         completed=[]
         for processor,p in self.processors.items():
-            key=p['running']
-            if key is None: continue
-            r=self.requests[key]
-            if r['completion_ns']!=at: continue
-            adapter=self.adapters[r['session_id']]
-            adapter.on_complete(r)
-            for handle in r['handles']:
-                self.resources[(adapter.sid,handle)].update(owner=None,
-                    state='CONSUMED' if r['operation']=='BSM' else 'USABLE')
-            r['state']='COMPLETED';p['running']=None
-            r['cause']=self.emit(r['operation']+'_COMPLETE',adapter.sid,r['cause'],
-                protocol=adapter.protocol,request_id=r['request_id'],processor_id=processor,
-                resource_handles=r['handles'],measurement_bits=adapter.bits,
-                fidelity=adapter.checkpoints['usable']['fidelity'] if r['operation']=='CORRECTION' else None)
-            completed.append(dict(session_id=adapter.sid,operation=r['operation'],
-                                  measurement_bits=adapter.bits,cause=r['cause']))
+            for key in list(p['running']):
+                r=self.requests[key]
+                if r['completion_ns']!=at: continue
+                adapter=self.adapters[r['session_id']]
+                adapter.on_complete(r)
+                for handle in r['handles']:
+                    self.resources[(adapter.sid,handle)].update(owner=None,
+                        state='CONSUMED' if r['operation']=='BSM' else 'USABLE')
+                r['state']='COMPLETED';p['running'].remove(key)
+                r['cause']=self.emit(r['operation']+'_COMPLETE',adapter.sid,r['cause'],
+                    protocol=adapter.protocol,request_id=r['request_id'],processor_id=processor,
+                    resource_handles=r['handles'],measurement_bits=adapter.bits,
+                    fidelity=adapter.checkpoints['usable']['fidelity'] if r['operation']=='CORRECTION' else None)
+                completed.append(dict(session_id=adapter.sid,operation=r['operation'],
+                                      measurement_bits=adapter.bits,cause=r['cause']))
         self.drain();self.check()
         return completed
 
@@ -155,14 +157,15 @@ class HybridExecutionCore:
         if ns.sim_time()!=self.now_ns or ns.sim_count_events(): raise RuntimeError('native clock mismatch')
         seen=set();locations=set()
         for name,p in self.processors.items():
-            for key in list(p['queue'])+([] if p['running'] is None else [p['running']]):
+            if len(p['running']) > p['capacity']: raise RuntimeError('processor capacity exceeded')
+            for key in list(p['queue'])+p['running']:
                 if key in seen: raise RuntimeError('request dispatched twice')
                 seen.add(key);r=self.requests[key]
-                if r['state']!=('RUNNING' if key==p['running'] else 'QUEUED') or r['processor_id']!=name:
+                if r['state']!=('RUNNING' if key in p['running'] else 'QUEUED') or r['processor_id']!=name:
                     raise RuntimeError('request/FIFO mismatch')
                 for handle in r['handles']:
                     res=self.resources[(r['session_id'],handle)]
-                    if res['owner']!=r['request_id'] or res['state']!=('IN_USE' if key==p['running'] else 'RESERVED'):
+                    if res['owner']!=r['request_id'] or res['state']!=('IN_USE' if key in p['running'] else 'RESERVED'):
                         raise RuntimeError('resource ownership mismatch')
                     if locations.intersection(res['locations']): raise RuntimeError('resource positions overlap')
                     locations.update(res['locations'])
@@ -171,7 +174,7 @@ class HybridExecutionCore:
 
     def snapshot(self):
         self.check()
-        return dict(time_ns=self.now_ns,netsquid_time_ns=int(ns.sim_time()),
+        return dict(time_ns=self.now_ns,netsquid_time_ns=int(ns.sim_time()),R_execution_capacity=self.r_capacity,
             requests=copy.deepcopy(list(self.requests.values())),resources=copy.deepcopy(list(self.resources.values())),
             sessions={str(sid):a.snapshot() for sid,a in self.adapters.items()})
 

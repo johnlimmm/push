@@ -5,7 +5,7 @@
       "session_id": 1,
       "protocol": "teleport",
       "input_state": "+i",
-      "command_time_ns": 1000000
+      "session_start_ns": 1000000
     }
   ],
   "memory_noise": {

@@ -1,0 +1,2520 @@
+{
+  "architecture": "direct-session-start-v2",
+  "batch_completion_ns": 3325600,
+  "bridge_steps": [
+    {
+      "ns3_next_ns": 1000000,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 0
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": 2600000,
+      "time_ns": 1000000
+    },
+    {
+      "ns3_next_ns": 2600000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": null,
+      "time_ns": 2600000
+    },
+    {
+      "ns3_next_ns": 2625600,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 2600000
+    },
+    {
+      "ns3_next_ns": 2825600,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 2625600
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": 3325600,
+      "time_ns": 2825600
+    },
+    {
+      "ns3_next_ns": 3325600,
+      "quantum_horizon_ns": 3325600,
+      "quantum_next_ns": null,
+      "time_ns": 3325600
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 3325600
+    }
+  ],
+  "config": {
+    "background": {
+      "result": {
+        "count": 0,
+        "interval_ns": 1000000,
+        "payload_bytes": 1000,
+        "start_ns": 0
+      }
+    },
+    "bsm_duration_ns": 1600000,
+    "correction_duration_ns": 500000,
+    "memory_noise": {
+      "T1_ns": 10000000,
+      "T2_ns": 10000000,
+      "model": "T1T2NoiseModel"
+    },
+    "name": "hybrid-teleport",
+    "queue_packets": 128,
+    "result_link": {
+      "delay_ns": 200000,
+      "rate_bps": 10000000
+    },
+    "result_payload_bytes": 80,
+    "seed": 7,
+    "sessions": [
+      {
+        "epr_created_ns": 0,
+        "input_created_ns": 0,
+        "input_state": "+i",
+        "protocol": "teleport",
+        "session_id": 1,
+        "session_start_ns": 1000000
+      }
+    ]
+  },
+  "cross_validation": {
+    "max_density_matrix_error": 5.551115123125783e-17,
+    "passed": true,
+    "sessions": {
+      "1": {
+        "checkpoint_errors": {
+          "bsm_end_inputs.epr": 0.0,
+          "bsm_end_inputs.input": 0.0,
+          "bsm_start.epr": 0.0,
+          "bsm_start.input": 0.0,
+          "correction_start": 5.551115123125783e-17,
+          "frame": 5.551115123125783e-17,
+          "packet_arrival": 5.551115123125783e-17,
+          "usable": 5.551115123125783e-17
+        },
+        "max_density_matrix_error": 5.551115123125783e-17,
+        "max_fidelity_error": 0.0,
+        "observed_branch": "01",
+        "passed": true,
+        "reference": {
+          "branches": {
+            "00": {
+              "correction_start": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.21292890213549998
+                    ],
+                    [
+                      0.21292890213549998,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.6862992926058467,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.31370070739415346
+                    ]
+                  ]
+                },
+                "fidelity": 0.7129289021354999,
+                "sim_time_ns": 2825600
+              },
+              "frame": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.21778717341658713
+                    ],
+                    [
+                      0.21778717341658713,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.6791417713754975,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.3208582286245025
+                    ]
+                  ]
+                },
+                "fidelity": 0.7177871734165869,
+                "sim_time_ns": 2600000
+              },
+              "packet_arrival": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.21292890213549998
+                    ],
+                    [
+                      0.21292890213549998,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.6862992926058467,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.31370070739415346
+                    ]
+                  ]
+                },
+                "fidelity": 0.7129289021354999,
+                "sim_time_ns": 2825600
+              },
+              "probability": 0.2631043440907652,
+              "usable": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.2025442370379205
+                    ],
+                    [
+                      0.2025442370379205,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.7015986566399925,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.2984013433600075
+                    ]
+                  ]
+                },
+                "fidelity": 0.7025442370379205,
+                "sim_time_ns": 3325600
+              }
+            },
+            "01": {
+              "correction_start": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.23648605509166562
+                    ],
+                    [
+                      -0.23648605509166562,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5528544704074901,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.44714552959250986
+                    ]
+                  ]
+                },
+                "fidelity": 0.7364860550916655,
+                "sim_time_ns": 2825600
+              },
+              "frame": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.2418818158282626
+                    ],
+                    [
+                      -0.2418818158282626,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5426522185614565,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.45734778143854343
+                    ]
+                  ]
+                },
+                "fidelity": 0.7418818158282624,
+                "sim_time_ns": 2600000
+              },
+              "packet_arrival": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.23648605509166562
+                    ],
+                    [
+                      -0.23648605509166562,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5528544704074901,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.44714552959250986
+                    ]
+                  ]
+                },
+                "fidelity": 0.7364860550916655,
+                "sim_time_ns": 2825600
+              },
+              "probability": 0.23689565590923436,
+              "usable": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.22495249408728923
+                    ],
+                    [
+                      0.22495249408728923,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.42533798478235013,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.5746620152176498
+                    ]
+                  ]
+                },
+                "fidelity": 0.7249524940872891,
+                "sim_time_ns": 3325600
+              }
+            },
+            "10": {
+              "correction_start": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.21292890213549998
+                    ],
+                    [
+                      -0.21292890213549998,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.6862992926058467,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.31370070739415346
+                    ]
+                  ]
+                },
+                "fidelity": 0.7129289021354999,
+                "sim_time_ns": 2825600
+              },
+              "frame": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.21778717341658713
+                    ],
+                    [
+                      -0.21778717341658713,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.6791417713754975,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.3208582286245025
+                    ]
+                  ]
+                },
+                "fidelity": 0.7177871734165869,
+                "sim_time_ns": 2600000
+              },
+              "packet_arrival": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.21292890213549998
+                    ],
+                    [
+                      -0.21292890213549998,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.6862992926058467,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.31370070739415346
+                    ]
+                  ]
+                },
+                "fidelity": 0.7129289021354999,
+                "sim_time_ns": 2825600
+              },
+              "probability": 0.2631043440907652,
+              "usable": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.2025442370379205
+                    ],
+                    [
+                      0.2025442370379205,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.7015986566399925,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.2984013433600075
+                    ]
+                  ]
+                },
+                "fidelity": 0.7025442370379205,
+                "sim_time_ns": 3325600
+              }
+            },
+            "11": {
+              "correction_start": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.23648605509166562
+                    ],
+                    [
+                      0.23648605509166562,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5528544704074901,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.44714552959250986
+                    ]
+                  ]
+                },
+                "fidelity": 0.7364860550916655,
+                "sim_time_ns": 2825600
+              },
+              "frame": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.2418818158282626
+                    ],
+                    [
+                      0.2418818158282626,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5426522185614565,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.45734778143854343
+                    ]
+                  ]
+                },
+                "fidelity": 0.7418818158282624,
+                "sim_time_ns": 2600000
+              },
+              "packet_arrival": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.23648605509166562
+                    ],
+                    [
+                      0.23648605509166562,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5528544704074901,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.44714552959250986
+                    ]
+                  ]
+                },
+                "fidelity": 0.7364860550916655,
+                "sim_time_ns": 2825600
+              },
+              "probability": 0.23689565590923436,
+              "usable": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.22495249408728923
+                    ],
+                    [
+                      0.22495249408728923,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.42533798478235013,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.5746620152176498
+                    ]
+                  ]
+                },
+                "fidelity": 0.7249524940872891,
+                "sim_time_ns": 3325600
+              }
+            }
+          },
+          "events": [
+            {
+              "event_type": "bsm_start",
+              "sim_time_ns": 1000000
+            },
+            {
+              "event_type": "bsm_end_inputs",
+              "sim_time_ns": 2600000
+            },
+            {
+              "event_type": "packet_arrival",
+              "sim_time_ns": 2825600
+            },
+            {
+              "event_type": "correction_start",
+              "sim_time_ns": 2825600
+            },
+            {
+              "event_type": "usable",
+              "sim_time_ns": 3325600
+            }
+          ],
+          "inputs": {
+            "bsm_end_inputs": {
+              "epr": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "Alice_EPR",
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5262086881815307,
+                      0.0,
+                      0.0,
+                      0.2972602739850971
+                    ],
+                    [
+                      0.0,
+                      0.08826551891668596,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.08826551891668596,
+                      0.0
+                    ],
+                    [
+                      0.2972602739850971,
+                      0.0,
+                      0.0,
+                      0.2972602739850971
+                    ]
+                  ]
+                },
+                "fidelity": 0.7089947550684108,
+                "sim_time_ns": 2600000
+              },
+              "input": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.385525792901783
+                    ],
+                    [
+                      0.385525792901783,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "input"
+                  ],
+                  "real": [
+                    [
+                      0.6144742070982167,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.385525792901783
+                    ]
+                  ]
+                },
+                "fidelity": 0.8855257929017828,
+                "sim_time_ns": 2600000
+              }
+            },
+            "bsm_start": {
+              "epr": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.0,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "Alice_EPR",
+                    "B"
+                  ],
+                  "real": [
+                    [
+                      0.5045279585030312,
+                      0.0,
+                      0.0,
+                      0.40936537653899085
+                    ],
+                    [
+                      0.0,
+                      0.04305333247898888,
+                      0.0,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.0,
+                      0.043053332478988876,
+                      0.0
+                    ],
+                    [
+                      0.40936537653899085,
+                      0.0,
+                      0.0,
+                      0.40936537653899085
+                    ]
+                  ]
+                },
+                "fidelity": 0.8663120440600016,
+                "sim_time_ns": 1000000
+              },
+              "input": {
+                "density_matrix": {
+                  "imag": [
+                    [
+                      0.0,
+                      -0.45241870901797965
+                    ],
+                    [
+                      0.45241870901797965,
+                      0.0
+                    ]
+                  ],
+                  "qubit_order": [
+                    "input"
+                  ],
+                  "real": [
+                    [
+                      0.5475812909820201,
+                      0.0
+                    ],
+                    [
+                      0.0,
+                      0.4524187090179797
+                    ]
+                  ]
+                },
+                "fidelity": 0.9524187090179794,
+                "sim_time_ns": 1000000
+              }
+            }
+          },
+          "model": "independent-native-memory-Bell-projection",
+          "spec": {
+            "bsm_completion_ns": 2600000,
+            "bsm_start_ns": 1000000,
+            "correction_arrival_ns": 2825600,
+            "correction_completion_ns": 3325600,
+            "correction_start_ns": 2825600,
+            "epr_created_ns": 0,
+            "input_created_ns": 0,
+            "input_state": "+i",
+            "memory_noise": {
+              "T1_ns": 10000000,
+              "T2_ns": 10000000,
+              "model": "T1T2NoiseModel"
+            },
+            "protocol": "teleport"
+          },
+          "time_ns": 3325600
+        }
+      }
+    }
+  },
+  "events": [
+    {
+      "caused_by_event_id": null,
+      "event_id": "p:0",
+      "event_type": "SESSION_CREATED",
+      "phase": "INITIALIZE",
+      "protocol": "teleport",
+      "round": 0,
+      "sequence": 0,
+      "session_id": 1,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:0",
+      "created_ns": 0,
+      "event_id": "p:1",
+      "event_type": "RESOURCES_READY",
+      "phase": "INITIALIZE",
+      "protocol": "teleport",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 0,
+      "sequence": 1,
+      "session_id": 1,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:0",
+      "details": {
+        "cause": "p:0",
+        "event_id": "n:0",
+        "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 0,
+        "time_ns": 0
+      },
+      "event_id": "n:0",
+      "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+      "phase": "NS3",
+      "round": 0,
+      "sequence": 2,
+      "session_id": 1,
+      "sim_time_ns": 0,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:0",
+      "details": {
+        "cause": "p:0",
+        "event_id": "n:1",
+        "event_type": "SESSION_START",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 1,
+        "time_ns": 1000000
+      },
+      "event_id": "n:1",
+      "event_type": "SESSION_START",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 3,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:1",
+      "details": {
+        "cause": "n:1",
+        "event_id": "n:2",
+        "event_type": "BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 2,
+        "time_ns": 1000000
+      },
+      "event_id": "n:2",
+      "event_type": "BSM_REQUEST",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 4,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:2",
+      "details": {
+        "cause": "n:2",
+        "event_id": "n:3",
+        "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 3,
+        "time_ns": 1000000
+      },
+      "event_id": "n:3",
+      "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 5,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:2",
+      "event_id": "p:6",
+      "event_type": "BSM_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "1:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 1,
+      "sequence": 6,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:6",
+      "event_id": "p:7",
+      "event_type": "BSM_START",
+      "phase": "DISPATCH",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "1:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 1,
+      "sequence": 7,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "quantum",
+      "waiting_ns": 0
+    },
+    {
+      "caused_by_event_id": "p:7",
+      "event_id": "p:8",
+      "event_type": "BSM_COMPLETE",
+      "fidelity": null,
+      "measurement_bits": [
+        0,
+        1
+      ],
+      "phase": "COMMIT",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "1:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 2,
+      "sequence": 8,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:8",
+      "details": {
+        "cause": "p:8",
+        "event_id": "n:4",
+        "event_type": "BSM_RESULT_LOCAL",
+        "kind": 2,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 4,
+        "time_ns": 2600000
+      },
+      "event_id": "n:4",
+      "event_type": "BSM_RESULT_LOCAL",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 9,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:8",
+      "details": {
+        "cause": "p:8",
+        "event_id": "n:5",
+        "event_type": "Q2NS_TELEPORT_BSM_DONE",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 5,
+        "time_ns": 2600000
+      },
+      "event_id": "n:5",
+      "event_type": "Q2NS_TELEPORT_BSM_DONE",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 10,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:4",
+      "details": {
+        "cause": "n:4",
+        "event_id": "n:6",
+        "event_type": "RESULT_TX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 2,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 6,
+        "time_ns": 2600000
+      },
+      "event_id": "n:6",
+      "event_type": "RESULT_TX",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 11,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:7",
+        "event_type": "QUEUE_ENQUEUE",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 7,
+        "time_ns": 2600000
+      },
+      "event_id": "n:7",
+      "event_type": "QUEUE_ENQUEUE",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 12,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:8",
+        "event_type": "QUEUE_DEQUEUE",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 0,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 8,
+        "time_ns": 2600000
+      },
+      "event_id": "n:8",
+      "event_type": "QUEUE_DEQUEUE",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 13,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:9",
+        "event_type": "PHY_TX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 9,
+        "time_ns": 2600000
+      },
+      "event_id": "n:9",
+      "event_type": "PHY_TX",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 14,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:10",
+        "event_type": "PHY_TX_END",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 10,
+        "time_ns": 2625600
+      },
+      "event_id": "n:10",
+      "event_type": "PHY_TX_END",
+      "phase": "NS3",
+      "round": 4,
+      "sequence": 15,
+      "session_id": 1,
+      "sim_time_ns": 2625600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:11",
+        "event_type": "PHY_RX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 11,
+        "time_ns": 2825600
+      },
+      "event_id": "n:11",
+      "event_type": "PHY_RX",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 16,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:12",
+        "event_type": "RESULT_RX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 2,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 12,
+        "time_ns": 2825600
+      },
+      "event_id": "n:12",
+      "event_type": "RESULT_RX",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 17,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:12",
+      "details": {
+        "cause": "n:12",
+        "event_id": "n:13",
+        "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+        "kind": 5,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 13,
+        "time_ns": 2825600
+      },
+      "event_id": "n:13",
+      "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 18,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:12",
+      "details": {
+        "cause": "n:12",
+        "event_id": "n:14",
+        "event_type": "CORRECTION_REQUEST",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 14,
+        "time_ns": 2825600
+      },
+      "event_id": "n:14",
+      "event_type": "CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 19,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:15",
+        "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+        "kind": 5,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 15,
+        "time_ns": 2825600
+      },
+      "event_id": "n:15",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 20,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "event_id": "p:21",
+      "event_type": "CORRECTION_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "1:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 5,
+      "sequence": 21,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:21",
+      "event_id": "p:22",
+      "event_type": "CORRECTION_START",
+      "phase": "DISPATCH",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "1:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 5,
+      "sequence": 22,
+      "session_id": 1,
+      "sim_time_ns": 2825600,
+      "source": "quantum",
+      "waiting_ns": 0
+    },
+    {
+      "caused_by_event_id": "p:22",
+      "event_id": "p:23",
+      "event_type": "CORRECTION_COMPLETE",
+      "fidelity": 0.7249524940872891,
+      "measurement_bits": [
+        0,
+        1
+      ],
+      "phase": "COMMIT",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "1:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 6,
+      "sequence": 23,
+      "session_id": 1,
+      "sim_time_ns": 3325600,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:23",
+      "details": {
+        "cause": "p:23",
+        "event_id": "n:16",
+        "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 16,
+        "time_ns": 3325600
+      },
+      "event_id": "n:16",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+      "phase": "NS3",
+      "round": 7,
+      "sequence": 24,
+      "session_id": 1,
+      "sim_time_ns": 3325600,
+      "source": "ns3"
+    }
+  ],
+  "execution_core": "HybridExecutionCore",
+  "federation": "HybridFederation",
+  "metrics": {
+    "sessions": [
+      {
+        "bsm_completion_ns": 2600000,
+        "bsm_start_ns": 1000000,
+        "completion_ns": 3325600,
+        "correction_start_ns": 2825600,
+        "correction_wait_ns": 0,
+        "quantum_wait_ns": 0,
+        "result_delay_ns": 225600,
+        "result_queue_ns": 0,
+        "session_id": 1,
+        "session_start_ns": 1000000,
+        "transaction_latency_ns": 2325600,
+        "usable_fidelity": 0.7249524940872891
+      }
+    ]
+  },
+  "milestone": "Hybrid-Direct-Start",
+  "model": "Full-Sync",
+  "nodes": {
+    "A": 0,
+    "B": 2,
+    "R": 1
+  },
+  "ns3_binary": "/home/ns3/ns-3-dev/build/contrib/cosim/examples/ns3.47-cosim-hybrid-default",
+  "ns3_events": [
+    {
+      "cause": "p:0",
+      "event_id": "n:0",
+      "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 0,
+      "time_ns": 0
+    },
+    {
+      "cause": "p:0",
+      "event_id": "n:1",
+      "event_type": "SESSION_START",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 1,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "n:1",
+      "event_id": "n:2",
+      "event_type": "BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 2,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "n:2",
+      "event_id": "n:3",
+      "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 3,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "p:8",
+      "event_id": "n:4",
+      "event_type": "BSM_RESULT_LOCAL",
+      "kind": 2,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 4,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "p:8",
+      "event_id": "n:5",
+      "event_type": "Q2NS_TELEPORT_BSM_DONE",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 5,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:4",
+      "event_id": "n:6",
+      "event_type": "RESULT_TX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 2,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 6,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:7",
+      "event_type": "QUEUE_ENQUEUE",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 7,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:8",
+      "event_type": "QUEUE_DEQUEUE",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 0,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 8,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:9",
+      "event_type": "PHY_TX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 9,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:10",
+      "event_type": "PHY_TX_END",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 10,
+      "time_ns": 2625600
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:11",
+      "event_type": "PHY_RX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 11,
+      "time_ns": 2825600
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:12",
+      "event_type": "RESULT_RX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 2,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 12,
+      "time_ns": 2825600
+    },
+    {
+      "cause": "n:12",
+      "event_id": "n:13",
+      "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+      "kind": 5,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 13,
+      "time_ns": 2825600
+    },
+    {
+      "cause": "n:12",
+      "event_id": "n:14",
+      "event_type": "CORRECTION_REQUEST",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 14,
+      "time_ns": 2825600
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:15",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+      "kind": 5,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 15,
+      "time_ns": 2825600
+    },
+    {
+      "cause": "p:23",
+      "event_id": "n:16",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 16,
+      "time_ns": 3325600
+    }
+  ],
+  "ns3_time_ns": 3325600,
+  "q2ns_status": {
+    "corrections_applied": 1,
+    "native_qubit_count": 0,
+    "native_state_count": 0,
+    "sessions": 1
+  },
+  "schema_version": 2,
+  "snapshot": {
+    "R_execution_capacity": 1,
+    "netsquid_time_ns": 3325600,
+    "requests": [
+      {
+        "arrival_ns": 1000000,
+        "bits": null,
+        "cause": "p:8",
+        "completion_ns": 2600000,
+        "duration_ns": 1600000,
+        "handles": [
+          "input",
+          "epr"
+        ],
+        "operation": "BSM",
+        "processor_id": "R",
+        "protocol": "teleport",
+        "request_id": "1:BSM",
+        "session_id": 1,
+        "start_ns": 1000000,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "R",
+            0
+          ],
+          [
+            "R",
+            1
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 2825600,
+        "bits": [
+          0,
+          1
+        ],
+        "cause": "p:23",
+        "completion_ns": 3325600,
+        "duration_ns": 500000,
+        "handles": [
+          "output"
+        ],
+        "operation": "CORRECTION",
+        "processor_id": "B",
+        "protocol": "teleport",
+        "request_id": "1:CORRECTION",
+        "session_id": 1,
+        "start_ns": 2825600,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "B",
+            0
+          ]
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "created_ns": 0,
+        "handle": "input",
+        "kind": "qubit",
+        "locations": [
+          [
+            "R",
+            0
+          ]
+        ],
+        "owner": null,
+        "session_id": 1,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "epr",
+        "kind": "pair",
+        "locations": [
+          [
+            "R",
+            1
+          ],
+          [
+            "B",
+            0
+          ]
+        ],
+        "owner": null,
+        "session_id": 1,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 2600000,
+        "handle": "output",
+        "kind": "qubit",
+        "locations": [
+          [
+            "B",
+            0
+          ]
+        ],
+        "owner": null,
+        "session_id": 1,
+        "state": "USABLE"
+      }
+    ],
+    "sessions": {
+      "1": {
+        "checkpoints": {
+          "arrival": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.45241870901797965
+                  ],
+                  [
+                    0.45241870901797965,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.5475812909820201,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.4524187090179797
+                  ]
+                ]
+              },
+              "fidelity": 0.9524187090179794,
+              "sim_time_ns": 1000000
+            }
+          },
+          "bsm_end_inputs": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5262086881815307,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ],
+                  [
+                    0.0,
+                    0.08826551891668596,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.08826551891668596,
+                    0.0
+                  ],
+                  [
+                    0.2972602739850971,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ]
+                ]
+              },
+              "fidelity": 0.7089947550684108,
+              "sim_time_ns": 2600000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.385525792901783
+                  ],
+                  [
+                    0.385525792901783,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.6144742070982167,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.385525792901783
+                  ]
+                ]
+              },
+              "fidelity": 0.8855257929017828,
+              "sim_time_ns": 2600000
+            }
+          },
+          "bsm_start": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.45241870901797965
+                  ],
+                  [
+                    0.45241870901797965,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.5475812909820201,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.4524187090179797
+                  ]
+                ]
+              },
+              "fidelity": 0.9524187090179794,
+              "sim_time_ns": 1000000
+            }
+          },
+          "correction_start": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.23648605509166562
+                ],
+                [
+                  -0.23648605509166562,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.5528544704074901,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4471455295925099
+                ]
+              ]
+            },
+            "fidelity": 0.7364860550916655,
+            "sim_time_ns": 2825600
+          },
+          "frame": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.2418818158282626
+                ],
+                [
+                  -0.2418818158282626,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.5426522185614565,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4573477814385435
+                ]
+              ]
+            },
+            "fidelity": 0.7418818158282624,
+            "sim_time_ns": 2600000
+          },
+          "initial": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.4999999999999999
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            }
+          },
+          "packet_arrival": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.23648605509166562
+                ],
+                [
+                  -0.23648605509166562,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.5528544704074901,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4471455295925099
+                ]
+              ]
+            },
+            "fidelity": 0.7364860550916655,
+            "sim_time_ns": 2825600
+          },
+          "usable": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  -0.22495249408728923
+                ],
+                [
+                  0.22495249408728923,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.4253379847823502,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.5746620152176498
+                ]
+              ]
+            },
+            "fidelity": 0.7249524940872891,
+            "sim_time_ns": 3325600
+          }
+        },
+        "correction_count": 1,
+        "epr_created_ns": 0,
+        "input_created_ns": 0,
+        "input_state": "+i",
+        "logical_handles": {
+          "epr": 202,
+          "input": 201,
+          "output": 203
+        },
+        "measurement_bits": [
+          0,
+          1
+        ],
+        "output": {
+          "handle": "output",
+          "kind": "qubit",
+          "locations": [
+            [
+              "B",
+              0
+            ]
+          ],
+          "state": "USABLE"
+        },
+        "protocol": "teleport",
+        "session_id": 1
+      }
+    },
+    "time_ns": 3325600
+  },
+  "time_unit": "ns",
+  "validation": {
+    "checks": [
+      "packet_FIFO",
+      "native_apps",
+      "local_session_start",
+      "single_state_owner",
+      "processor_FIFO",
+      "resource_lifecycle",
+      "causal_log",
+      "integer_time"
+    ],
+    "expected_timing": {
+      "batch_completion_ns": 3325600,
+      "packets": [
+        {
+          "app_rx_ns": 2825600,
+          "app_tx_ns": 2600000,
+          "dequeue_ns": 2600000,
+          "enqueue_ns": 2600000,
+          "link": "result",
+          "packet_id": 1,
+          "payload_bytes": 2,
+          "phy_rx_ns": 2825600,
+          "phy_tx_end_ns": 2625600,
+          "phy_tx_ns": 2600000,
+          "propagation_ns": 200000,
+          "queue_wait_ns": 0,
+          "serialization_ns": 25600,
+          "session_id": 1,
+          "total_delay_ns": 225600,
+          "traffic_class": "control",
+          "wire_bytes": 32
+        }
+      ],
+      "sessions": {
+        "1": {
+          "bsm_arrival_ns": 1000000,
+          "bsm_completion_ns": 2600000,
+          "bsm_start_ns": 1000000,
+          "bsm_wait_ns": 0,
+          "correction_arrival_ns": 2825600,
+          "correction_completion_ns": 3325600,
+          "correction_start_ns": 2825600,
+          "correction_wait_ns": 0,
+          "session_start_ns": 1000000
+        }
+      },
+      "simulation_completion_ns": 3325600,
+      "traffic_drain_completion_ns": 2825600
+    },
+    "passed": true
+  }
+}

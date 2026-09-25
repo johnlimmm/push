@@ -1,0 +1,178 @@
+test_01_swap_equivalence_at_matched_operation_arrivals (test_hybrid.HybridIntegrationTests) ... ok
+test_02_each_input_all_four_branches_noiseless (test_hybrid.HybridIntegrationTests) ... ok
+test_03_native_input_epr_and_post_bsm_aging (test_hybrid.HybridIntegrationTests) ... ok
+test_04_shared_R_fifo_and_physical_positions (test_hybrid.HybridIntegrationTests) ... ok
+test_05_protocol_delay_changes_other_protocol_wait (test_hybrid.HybridIntegrationTests) ... ok
+test_06_native_payload_and_result_queueing (test_hybrid.HybridIntegrationTests) ... ok
+test_07_result_delay_keeps_pre_bsm_state (test_hybrid.HybridIntegrationTests) ... ok
+test_08_same_timestamp_completion_before_arrival (test_hybrid.HybridIntegrationTests) ... ok
+test_09_traffic_drain_keeps_historical_output (test_hybrid.HybridIntegrationTests) ... ok
+test_10_corrupted_trace_state_and_ownership_rejected (test_hybrid.HybridIntegrationTests) ... ok
+test_11_invalid_configuration_rejected (test_hybrid.HybridIntegrationTests) ... ok
+test_12_overflow_is_explicit_failure (test_hybrid.HybridIntegrationTests) ... ok
+test_13_core_rejects_conflict_unsafe_advance_and_duplicates (test_hybrid.HybridIntegrationTests) ... ok
+test_14_frozen_sources_unchanged (test_hybrid.HybridIntegrationTests) ... ok
+test_15_no_controller_and_no_command_configuration (test_hybrid.HybridIntegrationTests) ... ok
+test_16_simultaneous_mixed_starts_use_input_order (test_hybrid.HybridIntegrationTests) ... ok
+test_1_queue_ordering (test_p0.FederationTests)
+두 번째 요청은 첫 요청 완료까지 1 ms 대기하고, 자신의 실행시간도 전부 사용한다. ... ok
+test_2_same_timestamp (test_p0.FederationTests)
+같은 시각에는 양자 완료 → 모든 입력 접수 → 새 작업 시작 순서를 지킨다. ... ok
+test_3_resource_collision_is_atomic (test_p0.FederationTests)
+두 번째 자원에서 충돌해도 첫 번째 자원을 부분 예약한 채 남기지 않는다. ... ok
+test_4_independent_processors (test_p0.FederationTests)
+서로 다른 프로세서의 작업은 동시에 시작하고 각자의 완료 시각을 지킨다. ... ok
+test_5_duplicate_and_id_reuse (test_p0.FederationTests)
+재전송은 같은 결과를 돌려주며, 같은 ID의 다른 내용은 거절하고 BSM은 한 번만 한다. ... ok
+test_6_cancellation (test_p0.FederationTests)
+대기 취소는 자원을 반환하지만 실행 중 취소는 현재 작업에 영향을 주지 않는다. ... ok
+test_cancel_at_completion_before_queue_dispatch (test_p0.FederationTests)
+프로세서가 비는 시각에 온 취소도 다음 대기 작업을 시작하기 전에 반영한다. ... ok
+test_delayed_output_triggers_new_input (test_p0.FederationTests)
+완료 결과 수신 50 ns 뒤의 후속 요청이 정확히 도착하고, 필요하면 FIFO에서 기다린다. ... ok
+test_invalid_requests_leave_resources_available (test_p0.FederationTests)
+존재·위치·중복 쌍 검증에 실패한 요청은 자원 상태를 변경하지 않는다. ... ok
+test_randomized_fifo_matches_analytic_schedule (test_p0.FederationTests)
+무작위 도착·기간 30개를 프로세서별 독립 FIFO 계산 결과와 비교한다. ... ok
+test_same_time_output_triggers_new_input (test_p0.FederationTests)
+완료 응답이 지연 없이 후속 요청을 만들어도 1 ns 보정 없이 같은 시각에 처리한다. ... ok
+test_overflow_and_noninteger_time (test_p0.GuardTests)
+소수 ns와 NetSquid의 정수 시간 정밀도를 넘는 완료 예약을 거부한다. ... ok
+test_time_reversal_and_unsafe_advance (test_p0.GuardTests)
+시간 역행과 다음 양자 완료를 건너뛰는 진행을 거부하고, 정확한 경계는 허용한다. ... ok
+test_unsupported_model_is_rejected (test_p0.GuardTests)
+구현되지 않은 잡음을 설정하면 무잡음으로 실행하지 않고 오류를 낸다. ... ok
+test_all_measurement_branches (test_p1.P1IntegrationTests)
+특정 seed의 비트를 정답으로 두지 않고 32회 실제 transaction에서 네 분기를 모두 검증한다. ... ok
+test_changed_delays_change_time_not_noiseless_state (test_p1.P1IntegrationTests) ... ok
+test_duplicate_packets_wait_for_link_serialization (test_p1.P1IntegrationTests)
+동일 시각에 보낸 결과 복제도 실제 장치 큐를 거치며, 보정을 재실행하지 않는다. ... ok
+test_duplicates_and_conflicting_bits_during_and_after_correction (test_p1.P1IntegrationTests)
+다른 message ID를 가진 재전송/변조 결과를 보정 실행 중과 완료 후 모두 검사한다. ... ok
+test_end_to_end_timing (test_p1.P1IntegrationTests)
+헤더 포함 126/110 bytes의 전송시간을 손으로 계산한 기본 transaction과 비교한다. ... ok
+test_independent_reference_detects_wrong_final_state (test_p1.P1IntegrationTests) ... ok
+test_slow_link_replays_remain_lossless_fifo (test_p1.P1IntegrationTests)
+재전송이 오래 대기해도 기본 AQM의 drop 없이 명시한 FIFO 모델을 유지한다. ... ok
+test_validator_detects_bad_timing_and_metadata_despite_perfect_fidelity (test_p1.P1IntegrationTests) ... ok
+test_zero_propagation_and_ns_rounding (test_p1.P1IntegrationTests) ... ok
+test_configuration_guards (test_p1.P1QuantumGuards) ... ok
+test_consumed_epr_cannot_be_reused (test_p1.P1QuantumGuards) ... ok
+test_correction_horizon_and_exact_completion (test_p1.P1QuantumGuards) ... ok
+test_first_received_bits_are_used_without_hidden_oracle (test_p1.P1QuantumGuards) ... ok
+test_all_branches_match_conditional_reference (test_p2.P2IntegrationTests) ... ok
+test_command_delay_and_bsm_duration_age_inputs (test_p2.P2IntegrationTests) ... ok
+test_correction_duration_including_00_ages_memories (test_p2.P2IntegrationTests) ... ok
+test_end_to_end_native_noise_and_json_roundtrip (test_p2.P2IntegrationTests) ... ok
+test_outcome_distribution_against_exact_probabilities (test_p2.P2IntegrationTests) ... ok
+test_reference_rejects_wrong_branch_state (test_p2.P2IntegrationTests) ... ok
+test_reference_rejects_wrong_checkpoint_time (test_p2.P2IntegrationTests) ... ok
+test_result_delay_changes_only_post_bsm_aging (test_p2.P2IntegrationTests) ... ok
+test_sweep_outputs_and_rejects_missing_condition (test_p2.P2IntegrationTests) ... 1/8 p2-c100000-r200000-off
+2/8 p2-c100000-r200000-on
+3/8 p2-c100000-r1000000-off
+4/8 p2-c100000-r1000000-on
+5/8 p2-c1000000-r200000-off
+6/8 p2-c1000000-r200000-on
+7/8 p2-c1000000-r1000000-off
+8/8 p2-c1000000-r1000000-on
+ok
+test_zero_noise_reproduces_p1 (test_p2.P2IntegrationTests) ... ok
+test_access_and_boundary_partition_invariance (test_p2.P2QuantumGuards) ... ok
+test_native_model_attachment_and_p1_freeze (test_p2.P2QuantumGuards) ... ok
+test_parameter_and_scope_guards (test_p2.P2QuantumGuards) ... ok
+test_reference_detects_missing_packet_interval_noise (test_p2.P2QuantumGuards) ... ok
+test_t1_only_t2_only_and_strong_aging (test_p2.P2QuantumGuards) ... ok
+test_all_branches_across_multi_session_runs (test_p3.P3IntegrationTests) ... ok
+test_classical_or_correction_contention_rejected (test_p3.P3IntegrationTests) ... ok
+test_corrupted_resource_causality_and_metrics_rejected (test_p3.P3IntegrationTests) ... ok
+test_fifo_metrics_and_reference (test_p3.P3IntegrationTests) ... ok
+test_fifo_uses_arrival_not_session_id_or_config_order (test_p3.P3IntegrationTests) ... ok
+test_native_aging_and_no_wait_counterfactual (test_p3.P3IntegrationTests) ... ok
+test_one_session_matches_frozen_p2 (test_p3.P3IntegrationTests) ... ok
+test_same_time_completion_prioritizes_older_queued_session (test_p3.P3IntegrationTests) ... ok
+test_sparse_arrivals_have_idle_processor_and_no_queue (test_p3.P3IntegrationTests) ... ok
+test_sweep_files_and_noise_on_off (test_p3.P3IntegrationTests) ... p3-interval-400000-off: 2 sessions PASS
+p3-interval-400000-on: 2 sessions PASS
+p3-interval-3200000-off: 2 sessions PASS
+p3-interval-3200000-on: 2 sessions PASS
+ok
+test_zero_noise_preserves_timing_and_bell_state (test_p3.P3IntegrationTests) ... ok
+test_boundary_partition_preserves_session_states (test_p3.P3QuantumGuards) ... ok
+test_duplicates_and_invalid_ids_do_not_cross_sessions (test_p3.P3QuantumGuards) ... ok
+test_native_devices_positions_and_p2_freeze (test_p3.P3QuantumGuards) ... ok
+test_reference_detects_lost_queue_aging (test_p3.P3QuantumGuards) ... ok
+test_scope_and_time_guards (test_p3.P3QuantumGuards) ... ok
+test_01_zero_matches_p2 (test_p4.P4Tests) ... ok
+test_02_deterministic_fifo_delays (test_p4.P4Tests) ... ok
+test_03_result_only_isolates_bsm (test_p4.P4Tests) ... ok
+test_04_command_only_moves_absolute_downstream_time (test_p4.P4Tests) ... ok
+test_05_background_isolation (test_p4.P4Tests) ... ok
+test_06_noise_off_all_paths (test_p4.P4Tests) ... ok
+test_07_all_bsm_branches_with_contention (test_p4.P4Tests) ... ok
+test_08_tail_drain_does_not_re_evaluate_usable (test_p4.P4Tests) ... ok
+test_09_same_timestamp_background_first (test_p4.P4Tests) ... ok
+test_10_overflow_fails_and_preserves_trace (test_p4.P4Tests) ... ok
+test_11_cli_failed_report_saved (test_p4.P4Tests) ... ok
+test_12_detects_trace_corruption (test_p4.P4Tests) ... ok
+test_13_detects_quantum_wait_and_clock_errors (test_p4.P4Tests) ... ok
+test_14_detects_missing_aging (test_p4.P4Tests) ... ok
+test_15_configuration_guards (test_p4.P4Tests) ... ok
+test_16_small_characterization (test_p4.P4Tests) ... ok
+test_17_p3_baseline_unchanged (test_p4.P4Tests) ... ok
+test_18_nondefault_link_and_packet_parameters (test_p4.P4Tests) ... ok
+test_01_zero_background_matches_p3 (test_p5.P5Tests) ... ok
+test_02_single_session_matches_p4 (test_p5.P5Tests) ... ok
+test_03_hand_calculated_joint_timing (test_p5.P5Tests) ... ok
+test_04_result_queue_preserves_bsm_checkpoints (test_p5.P5Tests) ... ok
+test_05_r_wait_changes_result_queue_phase (test_p5.P5Tests) ... ok
+test_06_background_and_session_isolation (test_p5.P5Tests) ... ok
+test_07_noise_off_keeps_actual_packet_timing (test_p5.P5Tests) ... ok
+test_08_all_measurement_branches (test_p5.P5Tests) ... ok
+test_09_completion_new_request_and_background_same_time (test_p5.P5Tests) ... ok
+test_10_same_time_commands_and_large_session_ids (test_p5.P5Tests) ... ok
+test_11_traffic_drain_preserves_session_usable (test_p5.P5Tests) ... ok
+test_12_correction_contention_rejected (test_p5.P5Tests) ... ok
+test_13_overflow_rejected_and_saved_by_cli (test_p5.P5Tests) ... ok
+test_14_detects_packet_corruption (test_p5.P5Tests) ... ok
+test_15_detects_quantum_and_resource_corruption (test_p5.P5Tests) ... ok
+test_16_reference_detects_missing_queue_aging (test_p5.P5Tests) ... ok
+test_17_configuration_guards (test_p5.P5Tests) ... ok
+test_18_frozen_p4_sources_unchanged (test_p5.P5Tests) ... ok
+test_01_nodq_real_network_reexecution (test_p5b.P5BTests) ... ok
+test_02_nodq_keeps_duration_and_ownership (test_p5b.P5BTests) ... ok
+test_03_fixed_reruns_fifo_and_native_aging (test_p5b.P5BTests) ... ok
+test_04_nodq_packet_and_resource_mutations_fail (test_p5b.P5BTests) ... ok
+test_05_all_branches_under_unbounded_r (test_p5b.P5BTests) ... ok
+test_06_noise_off_restores_bell_in_both_baselines (test_p5b.P5BTests) ... ok
+test_07_b_wait_rejected_in_every_execution_model (test_p5b.P5BTests) ... ok
+test_08_calibration_test_leakage_and_invalid_plan (test_p5b.P5BTests) ... ok
+test_09_traffic_and_quantum_seed_separation (test_p5b.P5BTests) ... ok
+test_10_decoupled_is_latency_only_composition (test_p5b.P5BTests) ... ok
+test_11_success_probability_uses_branch_thresholds (test_p5b.P5BTests) ... ok
+test_12_signed_errors_and_feasibility_directions (test_p5b.P5BTests) ... ok
+test_13_bootstrap_clusters_workloads_not_sessions (test_p5b.P5BTests) ... ok
+test_14_reference_cache_rejects_wrong_timing (test_p5b.P5BTests) ... ok
+test_15_small_evaluation_artifacts (test_p5b.P5BTests) ... load-0.0_interval-2000000_traffic-200_quantum-7 PASS
+load-0.0_interval-2000000_traffic-201_quantum-7 PASS
+ok
+test_16_core_and_nested_q2ns_sources_frozen (test_p5b.P5BTests) ... ok
+test_17_latency_and_all_baselines_have_no_command_term (test_p5b.P5BTests) ... ok
+test_18_shared_core_and_causal_reexecution (test_p5b.P5BTests) ... ok
+test_01_timing_and_state_match_p5 (test_q2ns.Q2nsIntegrationTests) ... ok
+test_02_actual_swapapp_native_events_and_mapping (test_q2ns.Q2nsIntegrationTests) ... ok
+test_03_correction_ack_occurs_only_at_completion (test_q2ns.Q2nsIntegrationTests) ... ok
+test_04_noise_off_keeps_native_packet_timing (test_q2ns.Q2nsIntegrationTests) ... ok
+test_05_all_four_bits_through_native_packets (test_q2ns.Q2nsIntegrationTests) ... ok
+test_06_native_session_isolation_at_same_timestamp (test_q2ns.Q2nsIntegrationTests) ... ok
+test_07_zero_time_and_boundary_rounds (test_q2ns.Q2nsIntegrationTests) ... ok
+test_08_drain_does_not_repeat_app_completion (test_q2ns.Q2nsIntegrationTests) ... ok
+test_09_reject_native_ownership_and_log_corruption (test_q2ns.Q2nsIntegrationTests) ... ok
+test_10_reject_b_wait_and_keep_native_trace (test_q2ns.Q2nsIntegrationTests) ... ok
+test_11_cli_drop_failure_preserves_report (test_q2ns.Q2nsIntegrationTests) ... ok
+test_12_p5_baseline_sources_unchanged (test_q2ns.Q2nsIntegrationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 140 tests in 247.665s
+
+OK

@@ -1,0 +1,15 @@
+PASS q2ns-qchannel 0.021 s
+  PASS QChannel: connect two devices 0.006 s
+  PASS QChannel: set symmetric delay 0.000 s
+  PASS QChannel: set asymmetric delays 0.000 s
+  PASS QChannel: deliver qubit with zero delay 0.000 s
+  PASS QChannel: deliver qubit with finite delay 0.000 s
+  PASS QChannel: bidirectional qubit exchange 0.000 s
+  PASS QChannel: perfect loss probability 1.0 0.000 s
+  PASS QChannel: asymmetric loss probabilities 0.000 s
+  PASS QChannel: lost qubit marked LOST and is inaccessible 0.000 s
+  PASS QChannel: identity transit map 0.000 s
+  PASS QChannel: transit map applies gate 0.000 s
+  PASS QChannel: asymmetric transit maps 0.000 s
+  PASS QChannel: negative delay value 0.000 s
+  PASS QChannel: negative delay in asymmetric setters 0.000 s

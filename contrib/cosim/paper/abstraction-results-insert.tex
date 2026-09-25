@@ -1,0 +1,69 @@
+% Replace pilot counts/point estimates in VI-A and VI-D; use direct-session-start-v2 model definitions.
+All sessions start locally at R; latency is measured from local session activation to correction completion. Only R--B result delivery contributes classical delay.
+
+The expanded finite-batch study uses 32 independent traffic-phase seeds,
+two quantum seeds, three offered loads, and two request intervals, yielding
+384 paired cases and 1,536 transactions per model. Calibration remains
+fixed from two disjoint traffic seeds. We report 95\% percentile-bootstrap
+intervals from 10,000 resamples of traffic-seed clusters; session and quantum
+repetitions are averaged within each cluster. These intervals are conditional
+on the fixed calibration and the specified periodic-traffic workload family.
+
+\begin{table*}[t]
+\centering
+\caption{Latency MAE (ms), mean [95\% CI], at a 0.8-ms request interval.}
+\begin{tabular}{lccc}
+\hline
+Model & Load 0 & Load 0.35 & Load 0.70 \\
+\hline
+Fixed-Dc & 0.000 [0.000, 0.000] & 0.174 [0.144, 0.206] & 0.242 [0.227, 0.258] \\
+No-Dq-R & 1.200 [1.200, 1.200] & 1.188 [1.185, 1.191] & 1.188 [1.174, 1.208] \\
+Decoupled & 0.000 [0.000, 0.000] & 0.117 [0.073, 0.165] & 0.223 [0.189, 0.260] \\
+\hline
+\end{tabular}
+\end{table*}
+
+At a 0.8-ms request interval, the expected-fidelity biases of No-Dq-R are 0.0435 [0.0435, 0.0435], 0.0423 [0.0419, 0.0426], 0.0409 [0.0403, 0.0415], respectively. These are probability-weighted branch expectations, not single observed-branch fidelities.
+
+At a 2-ms interval, the Fixed-Dc latency MAEs are 0.184 [0.151, 0.216] and 0.240 [0.227, 0.253] ms at loads 0.35 and 0.70. No-Dq-R and Decoupled have zero latency error in these noncontending finite workloads.
+
+With the unchanged $F_{\min}=0.5$ and 5-ms deadline measured from local session start, No-Dq-R has false service-feasible fractions 0.2500 [0.2500, 0.2500], 0.1875 [0.1484, 0.2266], 0.0938 [0.0547, 0.1328] at a 0.8-ms interval. These are finite-workload, paired sampled classifications; they are not hardware success probabilities. The zero-load traffic phase is inactive, so its degenerate interval does not establish population certainty.
+
+\begin{table*}[t]
+\centering
+\caption{Service-feasibility misclassification fractions, mean [95\% CI]. Latency is measured from local session start.}
+\begin{tabular}{lllcc}
+\hline
+Interval (ms) & Load & Model & False feasible & False infeasible \\
+\hline
+0.8 & 0.0 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.0 & No-Dq-R & 0.2500 [0.2500, 0.2500] & 0.0000 [0.0000, 0.0000] \\
+2.0 & 0.0 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+2.0 & 0.0 & No-Dq-R & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.35 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.35 & No-Dq-R & 0.1875 [0.1484, 0.2266] & 0.0000 [0.0000, 0.0000] \\
+2.0 & 0.35 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+2.0 & 0.35 & No-Dq-R & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.7 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.7 & No-Dq-R & 0.0938 [0.0547, 0.1328] & 0.0000 [0.0000, 0.0000] \\
+2.0 & 0.7 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+2.0 & 0.7 & No-Dq-R & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+\hline
+\end{tabular}
+\end{table*}
+
+Deadline-only false-feasible rates are reported separately below; they must not be interpreted as service-feasibility errors. Rates use all paired transactions in each cell as the denominator.
+
+\begin{table*}[t]
+\centering
+\caption{Deadline-only false-feasible fraction, mean [95\% CI], at 0.8 ms.}
+\begin{tabular}{lcc}
+\hline
+Model & Load 0.35 & Load 0.70 \\
+\hline
+Fixed-Dc & 0.0156 [0.0000, 0.0391] & 0.0234 [0.0000, 0.0547] \\
+No-Dq-R & 0.0156 [0.0000, 0.0391] & 0.0234 [0.0000, 0.0547] \\
+Decoupled & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
+\hline
+\end{tabular}
+\end{table*}

@@ -1,0 +1,9 @@
+PASS q2ns-netcontroller 0.016 s
+  PASS NetController CreateNode and GetNode return consistent pointers 0.000 s
+  PASS NetController InstallQuantumLink creates retrievable channel 0.000 s
+  PASS InstallQuantumLink called twice returns existing channel 0.000 s
+  PASS SetQChannelParameters updates channel attributes 0.000 s
+  PASS Send from A to B via InstallQuantumLink triggers receive callback 0.001 s
+  PASS AssignStreams is safe to call before Run and multiple times 0.000 s
+  PASS NetController: InstallQuantumChain installs adjacent links only 0.000 s
+  PASS NetController: InstallQuantumAllToAll installs full pairwise connectivity 0.000 s

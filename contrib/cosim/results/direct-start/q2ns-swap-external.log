@@ -1,0 +1,5 @@
+PASS q2ns-swap-external 0.016 s
+  PASS SwapApp external: actual UDP, async completion, duplicate guards, sole ownership 0.010 s
+  PASS SwapApp external: late result after endpoint stop is ignored 0.000 s
+  PASS SwapApp external: unsupported configurations rejected 0.000 s
+  PASS SwapApp native: built-in BSM and Pauli path still completes 0.001 s

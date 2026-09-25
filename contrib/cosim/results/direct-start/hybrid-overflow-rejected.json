@@ -1,0 +1,7500 @@
+{
+  "architecture": "direct-session-start-v2",
+  "bridge_steps": [
+    {
+      "ns3_next_ns": 1000000,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 0
+    },
+    {
+      "ns3_next_ns": 1800000,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": 2600000,
+      "time_ns": 1000000
+    },
+    {
+      "ns3_next_ns": 2590000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 2600000,
+      "time_ns": 1800000
+    },
+    {
+      "ns3_next_ns": 2591000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 2600000,
+      "time_ns": 2590000
+    },
+    {
+      "ns3_next_ns": 2592000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 2600000,
+      "time_ns": 2591000
+    },
+    {
+      "ns3_next_ns": 2593000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 2600000,
+      "time_ns": 2592000
+    },
+    {
+      "ns3_next_ns": 2594000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 2600000,
+      "time_ns": 2593000
+    },
+    {
+      "ns3_next_ns": 3414000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 2600000,
+      "time_ns": 2594000
+    },
+    {
+      "ns3_next_ns": 2600000,
+      "quantum_horizon_ns": 2600000,
+      "quantum_next_ns": 4200000,
+      "time_ns": 2600000
+    },
+    {
+      "ns3_next_ns": 3414000,
+      "quantum_horizon_ns": 4200000,
+      "quantum_next_ns": 4200000,
+      "time_ns": 2600000
+    },
+    {
+      "ns3_next_ns": 3614000,
+      "quantum_horizon_ns": 4200000,
+      "quantum_next_ns": 4200000,
+      "time_ns": 3414000
+    },
+    {
+      "ns3_next_ns": 4238000,
+      "quantum_horizon_ns": 4200000,
+      "quantum_next_ns": 4200000,
+      "time_ns": 3614000
+    },
+    {
+      "ns3_next_ns": 4200000,
+      "quantum_horizon_ns": 4200000,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4200000
+    },
+    {
+      "ns3_next_ns": 4238000,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4200000
+    },
+    {
+      "ns3_next_ns": 4263600,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4238000
+    },
+    {
+      "ns3_next_ns": 4438000,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4263600
+    },
+    {
+      "ns3_next_ns": 4463600,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4438000
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 4963600,
+      "time_ns": 4463600
+    },
+    {
+      "ns3_next_ns": 4963600,
+      "quantum_horizon_ns": 4963600,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4963600
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 5800000,
+      "time_ns": 4963600
+    },
+    {
+      "ns3_next_ns": 5800000,
+      "quantum_horizon_ns": 5800000,
+      "quantum_next_ns": 7400000,
+      "time_ns": 5800000
+    },
+    {
+      "ns3_next_ns": 5888000,
+      "quantum_horizon_ns": 7400000,
+      "quantum_next_ns": 7400000,
+      "time_ns": 5800000
+    },
+    {
+      "ns3_next_ns": 6088000,
+      "quantum_horizon_ns": 7400000,
+      "quantum_next_ns": 7400000,
+      "time_ns": 5888000
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": 7400000,
+      "quantum_next_ns": 6588000,
+      "time_ns": 6088000
+    },
+    {
+      "ns3_next_ns": 6588000,
+      "quantum_horizon_ns": 6588000,
+      "quantum_next_ns": 7400000,
+      "time_ns": 6588000
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": 7400000,
+      "quantum_next_ns": 7400000,
+      "time_ns": 6588000
+    },
+    {
+      "ns3_next_ns": 7400000,
+      "quantum_horizon_ns": 7400000,
+      "quantum_next_ns": null,
+      "time_ns": 7400000
+    },
+    {
+      "ns3_next_ns": 7425600,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 7400000
+    },
+    {
+      "ns3_next_ns": 7625600,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 7425600
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": 8125600,
+      "time_ns": 7625600
+    },
+    {
+      "ns3_next_ns": 8125600,
+      "quantum_horizon_ns": 8125600,
+      "quantum_next_ns": null,
+      "time_ns": 8125600
+    },
+    {
+      "ns3_next_ns": null,
+      "quantum_horizon_ns": null,
+      "quantum_next_ns": null,
+      "time_ns": 8125600
+    }
+  ],
+  "config": {
+    "background": {
+      "result": {
+        "count": 5,
+        "interval_ns": 1000,
+        "payload_bytes": 1000,
+        "start_ns": 2590000
+      }
+    },
+    "bsm_duration_ns": 1600000,
+    "correction_duration_ns": 500000,
+    "memory_noise": {
+      "T1_ns": 10000000,
+      "T2_ns": 10000000,
+      "model": "T1T2NoiseModel"
+    },
+    "name": "hybrid-mixed",
+    "queue_packets": 1,
+    "result_link": {
+      "delay_ns": 200000,
+      "rate_bps": 10000000
+    },
+    "result_payload_bytes": 80,
+    "seed": 7,
+    "sessions": [
+      {
+        "epr_created_ns": 0,
+        "protocol": "swap",
+        "session_id": 1,
+        "session_start_ns": 1000000
+      },
+      {
+        "epr_created_ns": 0,
+        "input_created_ns": 0,
+        "input_state": "+i",
+        "protocol": "teleport",
+        "session_id": 2,
+        "session_start_ns": 1000000
+      },
+      {
+        "epr_created_ns": 0,
+        "protocol": "swap",
+        "session_id": 3,
+        "session_start_ns": 1800000
+      },
+      {
+        "epr_created_ns": 0,
+        "input_created_ns": 0,
+        "input_state": "-",
+        "protocol": "teleport",
+        "session_id": 4,
+        "session_start_ns": 1800000
+      }
+    ]
+  },
+  "events": [
+    {
+      "caused_by_event_id": null,
+      "event_id": "p:0",
+      "event_type": "SESSION_CREATED",
+      "phase": "INITIALIZE",
+      "protocol": "swap",
+      "round": 0,
+      "sequence": 0,
+      "session_id": 1,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": null,
+      "event_id": "p:1",
+      "event_type": "SESSION_CREATED",
+      "phase": "INITIALIZE",
+      "protocol": "teleport",
+      "round": 0,
+      "sequence": 1,
+      "session_id": 2,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": null,
+      "event_id": "p:2",
+      "event_type": "SESSION_CREATED",
+      "phase": "INITIALIZE",
+      "protocol": "swap",
+      "round": 0,
+      "sequence": 2,
+      "session_id": 3,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": null,
+      "event_id": "p:3",
+      "event_type": "SESSION_CREATED",
+      "phase": "INITIALIZE",
+      "protocol": "teleport",
+      "round": 0,
+      "sequence": 3,
+      "session_id": 4,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:0",
+      "created_ns": 0,
+      "event_id": "p:4",
+      "event_type": "RESOURCES_READY",
+      "phase": "INITIALIZE",
+      "protocol": "swap",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 0,
+      "sequence": 4,
+      "session_id": 1,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:1",
+      "created_ns": 0,
+      "event_id": "p:5",
+      "event_type": "RESOURCES_READY",
+      "phase": "INITIALIZE",
+      "protocol": "teleport",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 0,
+      "sequence": 5,
+      "session_id": 2,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:2",
+      "created_ns": 0,
+      "event_id": "p:6",
+      "event_type": "RESOURCES_READY",
+      "phase": "INITIALIZE",
+      "protocol": "swap",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 0,
+      "sequence": 6,
+      "session_id": 3,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:3",
+      "created_ns": 0,
+      "event_id": "p:7",
+      "event_type": "RESOURCES_READY",
+      "phase": "INITIALIZE",
+      "protocol": "teleport",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 0,
+      "sequence": 7,
+      "session_id": 4,
+      "sim_time_ns": 0,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:1",
+      "details": {
+        "cause": "p:1",
+        "event_id": "n:0",
+        "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 0,
+        "time_ns": 0
+      },
+      "event_id": "n:0",
+      "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+      "phase": "NS3",
+      "round": 0,
+      "sequence": 8,
+      "session_id": 2,
+      "sim_time_ns": 0,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:3",
+      "details": {
+        "cause": "p:3",
+        "event_id": "n:1",
+        "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 1,
+        "time_ns": 0
+      },
+      "event_id": "n:1",
+      "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+      "phase": "NS3",
+      "round": 0,
+      "sequence": 9,
+      "session_id": 4,
+      "sim_time_ns": 0,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:0",
+      "details": {
+        "cause": "p:0",
+        "event_id": "n:2",
+        "event_type": "SESSION_START",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 2,
+        "time_ns": 1000000
+      },
+      "event_id": "n:2",
+      "event_type": "SESSION_START",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 10,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:2",
+      "details": {
+        "cause": "n:2",
+        "event_id": "n:3",
+        "event_type": "BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 3,
+        "time_ns": 1000000
+      },
+      "event_id": "n:3",
+      "event_type": "BSM_REQUEST",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 11,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:3",
+      "details": {
+        "cause": "n:3",
+        "event_id": "n:4",
+        "event_type": "Q2NS_BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 4,
+        "time_ns": 1000000
+      },
+      "event_id": "n:4",
+      "event_type": "Q2NS_BSM_REQUEST",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 12,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:1",
+      "details": {
+        "cause": "p:1",
+        "event_id": "n:5",
+        "event_type": "SESSION_START",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 5,
+        "time_ns": 1000000
+      },
+      "event_id": "n:5",
+      "event_type": "SESSION_START",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 13,
+      "session_id": 2,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:5",
+      "details": {
+        "cause": "n:5",
+        "event_id": "n:6",
+        "event_type": "BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 6,
+        "time_ns": 1000000
+      },
+      "event_id": "n:6",
+      "event_type": "BSM_REQUEST",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 14,
+      "session_id": 2,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "details": {
+        "cause": "n:6",
+        "event_id": "n:7",
+        "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 7,
+        "time_ns": 1000000
+      },
+      "event_id": "n:7",
+      "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+      "phase": "NS3",
+      "round": 1,
+      "sequence": 15,
+      "session_id": 2,
+      "sim_time_ns": 1000000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:3",
+      "event_id": "p:16",
+      "event_type": "BSM_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "R",
+      "protocol": "swap",
+      "request_id": "1:BSM",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 1,
+      "sequence": 16,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "n:6",
+      "event_id": "p:17",
+      "event_type": "BSM_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "2:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 1,
+      "sequence": 17,
+      "session_id": 2,
+      "sim_time_ns": 1000000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:16",
+      "event_id": "p:18",
+      "event_type": "BSM_START",
+      "phase": "DISPATCH",
+      "processor_id": "R",
+      "protocol": "swap",
+      "request_id": "1:BSM",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 1,
+      "sequence": 18,
+      "session_id": 1,
+      "sim_time_ns": 1000000,
+      "source": "quantum",
+      "waiting_ns": 0
+    },
+    {
+      "caused_by_event_id": "p:2",
+      "details": {
+        "cause": "p:2",
+        "event_id": "n:8",
+        "event_type": "SESSION_START",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 8,
+        "time_ns": 1800000
+      },
+      "event_id": "n:8",
+      "event_type": "SESSION_START",
+      "phase": "NS3",
+      "round": 2,
+      "sequence": 19,
+      "session_id": 3,
+      "sim_time_ns": 1800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:8",
+      "details": {
+        "cause": "n:8",
+        "event_id": "n:9",
+        "event_type": "BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 9,
+        "time_ns": 1800000
+      },
+      "event_id": "n:9",
+      "event_type": "BSM_REQUEST",
+      "phase": "NS3",
+      "round": 2,
+      "sequence": 20,
+      "session_id": 3,
+      "sim_time_ns": 1800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:9",
+      "details": {
+        "cause": "n:9",
+        "event_id": "n:10",
+        "event_type": "Q2NS_BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 10,
+        "time_ns": 1800000
+      },
+      "event_id": "n:10",
+      "event_type": "Q2NS_BSM_REQUEST",
+      "phase": "NS3",
+      "round": 2,
+      "sequence": 21,
+      "session_id": 3,
+      "sim_time_ns": 1800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:3",
+      "details": {
+        "cause": "p:3",
+        "event_id": "n:11",
+        "event_type": "SESSION_START",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 11,
+        "time_ns": 1800000
+      },
+      "event_id": "n:11",
+      "event_type": "SESSION_START",
+      "phase": "NS3",
+      "round": 2,
+      "sequence": 22,
+      "session_id": 4,
+      "sim_time_ns": 1800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:11",
+      "details": {
+        "cause": "n:11",
+        "event_id": "n:12",
+        "event_type": "BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 12,
+        "time_ns": 1800000
+      },
+      "event_id": "n:12",
+      "event_type": "BSM_REQUEST",
+      "phase": "NS3",
+      "round": 2,
+      "sequence": 23,
+      "session_id": 4,
+      "sim_time_ns": 1800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:12",
+      "details": {
+        "cause": "n:12",
+        "event_id": "n:13",
+        "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 13,
+        "time_ns": 1800000
+      },
+      "event_id": "n:13",
+      "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+      "phase": "NS3",
+      "round": 2,
+      "sequence": 24,
+      "session_id": 4,
+      "sim_time_ns": 1800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:9",
+      "event_id": "p:25",
+      "event_type": "BSM_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "R",
+      "protocol": "swap",
+      "request_id": "3:BSM",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 2,
+      "sequence": 25,
+      "session_id": 3,
+      "sim_time_ns": 1800000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "n:12",
+      "event_id": "p:26",
+      "event_type": "BSM_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "4:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 2,
+      "sequence": 26,
+      "session_id": 4,
+      "sim_time_ns": 1800000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": null,
+      "details": {
+        "cause": "-",
+        "event_id": "n:14",
+        "event_type": "BACKGROUND_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 14,
+        "time_ns": 2590000
+      },
+      "event_id": "n:14",
+      "event_type": "BACKGROUND_TX",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 27,
+      "session_id": 0,
+      "sim_time_ns": 2590000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:15",
+        "event_type": "QUEUE_ENQUEUE",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 15,
+        "time_ns": 2590000
+      },
+      "event_id": "n:15",
+      "event_type": "QUEUE_ENQUEUE",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 28,
+      "session_id": 0,
+      "sim_time_ns": 2590000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:16",
+        "event_type": "QUEUE_DEQUEUE",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 0,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 16,
+        "time_ns": 2590000
+      },
+      "event_id": "n:16",
+      "event_type": "QUEUE_DEQUEUE",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 29,
+      "session_id": 0,
+      "sim_time_ns": 2590000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:17",
+        "event_type": "PHY_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 17,
+        "time_ns": 2590000
+      },
+      "event_id": "n:17",
+      "event_type": "PHY_TX",
+      "phase": "NS3",
+      "round": 3,
+      "sequence": 30,
+      "session_id": 0,
+      "sim_time_ns": 2590000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": null,
+      "details": {
+        "cause": "-",
+        "event_id": "n:18",
+        "event_type": "BACKGROUND_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 18,
+        "time_ns": 2591000
+      },
+      "event_id": "n:18",
+      "event_type": "BACKGROUND_TX",
+      "phase": "NS3",
+      "round": 4,
+      "sequence": 31,
+      "session_id": 0,
+      "sim_time_ns": 2591000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:18",
+      "details": {
+        "cause": "n:18",
+        "event_id": "n:19",
+        "event_type": "QUEUE_ENQUEUE",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 19,
+        "time_ns": 2591000
+      },
+      "event_id": "n:19",
+      "event_type": "QUEUE_ENQUEUE",
+      "phase": "NS3",
+      "round": 4,
+      "sequence": 32,
+      "session_id": 0,
+      "sim_time_ns": 2591000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": null,
+      "details": {
+        "cause": "-",
+        "event_id": "n:20",
+        "event_type": "BACKGROUND_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100002,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 20,
+        "time_ns": 2592000
+      },
+      "event_id": "n:20",
+      "event_type": "BACKGROUND_TX",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 33,
+      "session_id": 0,
+      "sim_time_ns": 2592000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:20",
+      "details": {
+        "cause": "n:20",
+        "event_id": "n:21",
+        "event_type": "TC_DROP",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100002,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1028,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 21,
+        "time_ns": 2592000
+      },
+      "event_id": "n:21",
+      "event_type": "TC_DROP",
+      "phase": "NS3",
+      "round": 5,
+      "sequence": 34,
+      "session_id": 0,
+      "sim_time_ns": 2592000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": null,
+      "details": {
+        "cause": "-",
+        "event_id": "n:22",
+        "event_type": "BACKGROUND_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100003,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 22,
+        "time_ns": 2593000
+      },
+      "event_id": "n:22",
+      "event_type": "BACKGROUND_TX",
+      "phase": "NS3",
+      "round": 6,
+      "sequence": 35,
+      "session_id": 0,
+      "sim_time_ns": 2593000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:22",
+      "details": {
+        "cause": "n:22",
+        "event_id": "n:23",
+        "event_type": "TC_DROP",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100003,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1028,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 23,
+        "time_ns": 2593000
+      },
+      "event_id": "n:23",
+      "event_type": "TC_DROP",
+      "phase": "NS3",
+      "round": 6,
+      "sequence": 36,
+      "session_id": 0,
+      "sim_time_ns": 2593000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": null,
+      "details": {
+        "cause": "-",
+        "event_id": "n:24",
+        "event_type": "BACKGROUND_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100004,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 24,
+        "time_ns": 2594000
+      },
+      "event_id": "n:24",
+      "event_type": "BACKGROUND_TX",
+      "phase": "NS3",
+      "round": 7,
+      "sequence": 37,
+      "session_id": 0,
+      "sim_time_ns": 2594000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:24",
+      "details": {
+        "cause": "n:24",
+        "event_id": "n:25",
+        "event_type": "TC_DROP",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100004,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1028,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 25,
+        "time_ns": 2594000
+      },
+      "event_id": "n:25",
+      "event_type": "TC_DROP",
+      "phase": "NS3",
+      "round": 7,
+      "sequence": 38,
+      "session_id": 0,
+      "sim_time_ns": 2594000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:18",
+      "event_id": "p:39",
+      "event_type": "BSM_COMPLETE",
+      "fidelity": null,
+      "measurement_bits": [
+        0,
+        1
+      ],
+      "phase": "COMMIT",
+      "processor_id": "R",
+      "protocol": "swap",
+      "request_id": "1:BSM",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 8,
+      "sequence": 39,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:17",
+      "event_id": "p:40",
+      "event_type": "BSM_START",
+      "phase": "DISPATCH",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "2:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 8,
+      "sequence": 40,
+      "session_id": 2,
+      "sim_time_ns": 2600000,
+      "source": "quantum",
+      "waiting_ns": 1600000
+    },
+    {
+      "caused_by_event_id": "p:39",
+      "details": {
+        "cause": "p:39",
+        "event_id": "n:26",
+        "event_type": "BSM_RESULT_LOCAL",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 26,
+        "time_ns": 2600000
+      },
+      "event_id": "n:26",
+      "event_type": "BSM_RESULT_LOCAL",
+      "phase": "NS3",
+      "round": 9,
+      "sequence": 41,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:39",
+      "details": {
+        "cause": "p:39",
+        "event_id": "n:27",
+        "event_type": "Q2NS_BSM_DONE",
+        "kind": 5,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 27,
+        "time_ns": 2600000
+      },
+      "event_id": "n:27",
+      "event_type": "Q2NS_BSM_DONE",
+      "phase": "NS3",
+      "round": 9,
+      "sequence": 42,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:26",
+      "details": {
+        "cause": "n:26",
+        "event_id": "n:28",
+        "event_type": "RESULT_TX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 80,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 28,
+        "time_ns": 2600000
+      },
+      "event_id": "n:28",
+      "event_type": "RESULT_TX",
+      "phase": "NS3",
+      "round": 9,
+      "sequence": 43,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:28",
+      "details": {
+        "cause": "n:28",
+        "event_id": "n:29",
+        "event_type": "TC_DROP",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 1,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 108,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 29,
+        "time_ns": 2600000
+      },
+      "event_id": "n:29",
+      "event_type": "TC_DROP",
+      "phase": "NS3",
+      "round": 9,
+      "sequence": 44,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:26",
+      "details": {
+        "cause": "n:26",
+        "event_id": "n:30",
+        "event_type": "Q2NS_CTRL_SENT",
+        "kind": 5,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 1,
+        "source_sequence": 30,
+        "time_ns": 2600000
+      },
+      "event_id": "n:30",
+      "event_type": "Q2NS_CTRL_SENT",
+      "phase": "NS3",
+      "round": 9,
+      "sequence": 45,
+      "session_id": 1,
+      "sim_time_ns": 2600000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:31",
+        "event_type": "PHY_TX_END",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 31,
+        "time_ns": 3414000
+      },
+      "event_id": "n:31",
+      "event_type": "PHY_TX_END",
+      "phase": "NS3",
+      "round": 10,
+      "sequence": 46,
+      "session_id": 0,
+      "sim_time_ns": 3414000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:18",
+      "details": {
+        "cause": "n:18",
+        "event_id": "n:32",
+        "event_type": "QUEUE_DEQUEUE",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 0,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 32,
+        "time_ns": 3414000
+      },
+      "event_id": "n:32",
+      "event_type": "QUEUE_DEQUEUE",
+      "phase": "NS3",
+      "round": 10,
+      "sequence": 47,
+      "session_id": 0,
+      "sim_time_ns": 3414000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:18",
+      "details": {
+        "cause": "n:18",
+        "event_id": "n:33",
+        "event_type": "PHY_TX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 33,
+        "time_ns": 3414000
+      },
+      "event_id": "n:33",
+      "event_type": "PHY_TX",
+      "phase": "NS3",
+      "round": 10,
+      "sequence": 48,
+      "session_id": 0,
+      "sim_time_ns": 3414000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:34",
+        "event_type": "PHY_RX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 34,
+        "time_ns": 3614000
+      },
+      "event_id": "n:34",
+      "event_type": "PHY_RX",
+      "phase": "NS3",
+      "round": 11,
+      "sequence": 49,
+      "session_id": 0,
+      "sim_time_ns": 3614000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:14",
+      "details": {
+        "cause": "n:14",
+        "event_id": "n:35",
+        "event_type": "BACKGROUND_RX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100000,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 35,
+        "time_ns": 3614000
+      },
+      "event_id": "n:35",
+      "event_type": "BACKGROUND_RX",
+      "phase": "NS3",
+      "round": 11,
+      "sequence": 50,
+      "session_id": 0,
+      "sim_time_ns": 3614000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:40",
+      "event_id": "p:51",
+      "event_type": "BSM_COMPLETE",
+      "fidelity": null,
+      "measurement_bits": [
+        0,
+        1
+      ],
+      "phase": "COMMIT",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "2:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 12,
+      "sequence": 51,
+      "session_id": 2,
+      "sim_time_ns": 4200000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:25",
+      "event_id": "p:52",
+      "event_type": "BSM_START",
+      "phase": "DISPATCH",
+      "processor_id": "R",
+      "protocol": "swap",
+      "request_id": "3:BSM",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 12,
+      "sequence": 52,
+      "session_id": 3,
+      "sim_time_ns": 4200000,
+      "source": "quantum",
+      "waiting_ns": 2400000
+    },
+    {
+      "caused_by_event_id": "p:51",
+      "details": {
+        "cause": "p:51",
+        "event_id": "n:36",
+        "event_type": "BSM_RESULT_LOCAL",
+        "kind": 2,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 36,
+        "time_ns": 4200000
+      },
+      "event_id": "n:36",
+      "event_type": "BSM_RESULT_LOCAL",
+      "phase": "NS3",
+      "round": 13,
+      "sequence": 53,
+      "session_id": 2,
+      "sim_time_ns": 4200000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:51",
+      "details": {
+        "cause": "p:51",
+        "event_id": "n:37",
+        "event_type": "Q2NS_TELEPORT_BSM_DONE",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 37,
+        "time_ns": 4200000
+      },
+      "event_id": "n:37",
+      "event_type": "Q2NS_TELEPORT_BSM_DONE",
+      "phase": "NS3",
+      "round": 13,
+      "sequence": 54,
+      "session_id": 2,
+      "sim_time_ns": 4200000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:36",
+      "details": {
+        "cause": "n:36",
+        "event_id": "n:38",
+        "event_type": "RESULT_TX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 2,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 38,
+        "time_ns": 4200000
+      },
+      "event_id": "n:38",
+      "event_type": "RESULT_TX",
+      "phase": "NS3",
+      "round": 13,
+      "sequence": 55,
+      "session_id": 2,
+      "sim_time_ns": 4200000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:38",
+      "details": {
+        "cause": "n:38",
+        "event_id": "n:39",
+        "event_type": "QUEUE_ENQUEUE",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 39,
+        "time_ns": 4200000
+      },
+      "event_id": "n:39",
+      "event_type": "QUEUE_ENQUEUE",
+      "phase": "NS3",
+      "round": 13,
+      "sequence": 56,
+      "session_id": 2,
+      "sim_time_ns": 4200000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:18",
+      "details": {
+        "cause": "n:18",
+        "event_id": "n:40",
+        "event_type": "PHY_TX_END",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 40,
+        "time_ns": 4238000
+      },
+      "event_id": "n:40",
+      "event_type": "PHY_TX_END",
+      "phase": "NS3",
+      "round": 14,
+      "sequence": 57,
+      "session_id": 0,
+      "sim_time_ns": 4238000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:38",
+      "details": {
+        "cause": "n:38",
+        "event_id": "n:41",
+        "event_type": "QUEUE_DEQUEUE",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 0,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 41,
+        "time_ns": 4238000
+      },
+      "event_id": "n:41",
+      "event_type": "QUEUE_DEQUEUE",
+      "phase": "NS3",
+      "round": 14,
+      "sequence": 58,
+      "session_id": 2,
+      "sim_time_ns": 4238000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:38",
+      "details": {
+        "cause": "n:38",
+        "event_id": "n:42",
+        "event_type": "PHY_TX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 42,
+        "time_ns": 4238000
+      },
+      "event_id": "n:42",
+      "event_type": "PHY_TX",
+      "phase": "NS3",
+      "round": 14,
+      "sequence": 59,
+      "session_id": 2,
+      "sim_time_ns": 4238000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:38",
+      "details": {
+        "cause": "n:38",
+        "event_id": "n:43",
+        "event_type": "PHY_TX_END",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 43,
+        "time_ns": 4263600
+      },
+      "event_id": "n:43",
+      "event_type": "PHY_TX_END",
+      "phase": "NS3",
+      "round": 15,
+      "sequence": 60,
+      "session_id": 2,
+      "sim_time_ns": 4263600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:18",
+      "details": {
+        "cause": "n:18",
+        "event_id": "n:44",
+        "event_type": "PHY_RX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 1030,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 44,
+        "time_ns": 4438000
+      },
+      "event_id": "n:44",
+      "event_type": "PHY_RX",
+      "phase": "NS3",
+      "round": 16,
+      "sequence": 61,
+      "session_id": 0,
+      "sim_time_ns": 4438000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:18",
+      "details": {
+        "cause": "n:18",
+        "event_id": "n:45",
+        "event_type": "BACKGROUND_RX",
+        "kind": 4,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 100001,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 1000,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 0,
+        "session_id": 0,
+        "source_sequence": 45,
+        "time_ns": 4438000
+      },
+      "event_id": "n:45",
+      "event_type": "BACKGROUND_RX",
+      "phase": "NS3",
+      "round": 16,
+      "sequence": 62,
+      "session_id": 0,
+      "sim_time_ns": 4438000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:38",
+      "details": {
+        "cause": "n:38",
+        "event_id": "n:46",
+        "event_type": "PHY_RX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 46,
+        "time_ns": 4463600
+      },
+      "event_id": "n:46",
+      "event_type": "PHY_RX",
+      "phase": "NS3",
+      "round": 17,
+      "sequence": 63,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:38",
+      "details": {
+        "cause": "n:38",
+        "event_id": "n:47",
+        "event_type": "RESULT_RX",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 2,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 47,
+        "time_ns": 4463600
+      },
+      "event_id": "n:47",
+      "event_type": "RESULT_RX",
+      "phase": "NS3",
+      "round": 17,
+      "sequence": 64,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:47",
+      "details": {
+        "cause": "n:47",
+        "event_id": "n:48",
+        "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+        "kind": 5,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 48,
+        "time_ns": 4463600
+      },
+      "event_id": "n:48",
+      "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+      "phase": "NS3",
+      "round": 17,
+      "sequence": 65,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:47",
+      "details": {
+        "cause": "n:47",
+        "event_id": "n:49",
+        "event_type": "CORRECTION_REQUEST",
+        "kind": 2,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 2,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 49,
+        "time_ns": 4463600
+      },
+      "event_id": "n:49",
+      "event_type": "CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 17,
+      "sequence": 66,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:49",
+      "details": {
+        "cause": "n:49",
+        "event_id": "n:50",
+        "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+        "kind": 5,
+        "m1": 0,
+        "m2": 1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 50,
+        "time_ns": 4463600
+      },
+      "event_id": "n:50",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 17,
+      "sequence": 67,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:49",
+      "event_id": "p:68",
+      "event_type": "CORRECTION_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "2:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 17,
+      "sequence": 68,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:68",
+      "event_id": "p:69",
+      "event_type": "CORRECTION_START",
+      "phase": "DISPATCH",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "2:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 17,
+      "sequence": 69,
+      "session_id": 2,
+      "sim_time_ns": 4463600,
+      "source": "quantum",
+      "waiting_ns": 0
+    },
+    {
+      "caused_by_event_id": "p:69",
+      "event_id": "p:70",
+      "event_type": "CORRECTION_COMPLETE",
+      "fidelity": 0.6489152040483543,
+      "measurement_bits": [
+        0,
+        1
+      ],
+      "phase": "COMMIT",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "2:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 18,
+      "sequence": 70,
+      "session_id": 2,
+      "sim_time_ns": 4963600,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:70",
+      "details": {
+        "cause": "p:70",
+        "event_id": "n:51",
+        "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 2,
+        "source_sequence": 51,
+        "time_ns": 4963600
+      },
+      "event_id": "n:51",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+      "phase": "NS3",
+      "round": 19,
+      "sequence": 71,
+      "session_id": 2,
+      "sim_time_ns": 4963600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:52",
+      "event_id": "p:72",
+      "event_type": "BSM_COMPLETE",
+      "fidelity": null,
+      "measurement_bits": [
+        1,
+        0
+      ],
+      "phase": "COMMIT",
+      "processor_id": "R",
+      "protocol": "swap",
+      "request_id": "3:BSM",
+      "resource_handles": [
+        "left_pair",
+        "right_pair"
+      ],
+      "round": 20,
+      "sequence": 72,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:26",
+      "event_id": "p:73",
+      "event_type": "BSM_START",
+      "phase": "DISPATCH",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "4:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 20,
+      "sequence": 73,
+      "session_id": 4,
+      "sim_time_ns": 5800000,
+      "source": "quantum",
+      "waiting_ns": 4000000
+    },
+    {
+      "caused_by_event_id": "p:72",
+      "details": {
+        "cause": "p:72",
+        "event_id": "n:52",
+        "event_type": "BSM_RESULT_LOCAL",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 52,
+        "time_ns": 5800000
+      },
+      "event_id": "n:52",
+      "event_type": "BSM_RESULT_LOCAL",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 74,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:72",
+      "details": {
+        "cause": "p:72",
+        "event_id": "n:53",
+        "event_type": "Q2NS_BSM_DONE",
+        "kind": 5,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 53,
+        "time_ns": 5800000
+      },
+      "event_id": "n:53",
+      "event_type": "Q2NS_BSM_DONE",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 75,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:52",
+      "details": {
+        "cause": "n:52",
+        "event_id": "n:54",
+        "event_type": "RESULT_TX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 80,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 54,
+        "time_ns": 5800000
+      },
+      "event_id": "n:54",
+      "event_type": "RESULT_TX",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 76,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:54",
+      "details": {
+        "cause": "n:54",
+        "event_id": "n:55",
+        "event_type": "QUEUE_ENQUEUE",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 110,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": 1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 55,
+        "time_ns": 5800000
+      },
+      "event_id": "n:55",
+      "event_type": "QUEUE_ENQUEUE",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 77,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:54",
+      "details": {
+        "cause": "n:54",
+        "event_id": "n:56",
+        "event_type": "QUEUE_DEQUEUE",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 110,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": 0,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 56,
+        "time_ns": 5800000
+      },
+      "event_id": "n:56",
+      "event_type": "QUEUE_DEQUEUE",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 78,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:54",
+      "details": {
+        "cause": "n:54",
+        "event_id": "n:57",
+        "event_type": "PHY_TX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 110,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 57,
+        "time_ns": 5800000
+      },
+      "event_id": "n:57",
+      "event_type": "PHY_TX",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 79,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:52",
+      "details": {
+        "cause": "n:52",
+        "event_id": "n:58",
+        "event_type": "Q2NS_CTRL_SENT",
+        "kind": 5,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 58,
+        "time_ns": 5800000
+      },
+      "event_id": "n:58",
+      "event_type": "Q2NS_CTRL_SENT",
+      "phase": "NS3",
+      "round": 21,
+      "sequence": 80,
+      "session_id": 3,
+      "sim_time_ns": 5800000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:54",
+      "details": {
+        "cause": "n:54",
+        "event_id": "n:59",
+        "event_type": "PHY_TX_END",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 1,
+        "output_pair_id": 3,
+        "packet_bytes": 110,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 59,
+        "time_ns": 5888000
+      },
+      "event_id": "n:59",
+      "event_type": "PHY_TX_END",
+      "phase": "NS3",
+      "round": 22,
+      "sequence": 81,
+      "session_id": 3,
+      "sim_time_ns": 5888000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:54",
+      "details": {
+        "cause": "n:54",
+        "event_id": "n:60",
+        "event_type": "PHY_RX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 2,
+        "output_pair_id": 3,
+        "packet_bytes": 110,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 60,
+        "time_ns": 6088000
+      },
+      "event_id": "n:60",
+      "event_type": "PHY_RX",
+      "phase": "NS3",
+      "round": 23,
+      "sequence": 82,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:54",
+      "details": {
+        "cause": "n:54",
+        "event_id": "n:61",
+        "event_type": "RESULT_RX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 2,
+        "output_pair_id": 3,
+        "packet_bytes": 80,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 61,
+        "time_ns": 6088000
+      },
+      "event_id": "n:61",
+      "event_type": "RESULT_RX",
+      "phase": "NS3",
+      "round": 23,
+      "sequence": 83,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:61",
+      "details": {
+        "cause": "n:61",
+        "event_id": "n:62",
+        "event_type": "Q2NS_FRAME_RESOLVED",
+        "kind": 5,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 62,
+        "time_ns": 6088000
+      },
+      "event_id": "n:62",
+      "event_type": "Q2NS_FRAME_RESOLVED",
+      "phase": "NS3",
+      "round": 23,
+      "sequence": 84,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:61",
+      "details": {
+        "cause": "n:61",
+        "event_id": "n:63",
+        "event_type": "CORRECTION_REQUEST",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 3,
+        "node_id": 2,
+        "output_pair_id": 3,
+        "packet_bytes": 0,
+        "pair_a": 1,
+        "pair_b": 2,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 63,
+        "time_ns": 6088000
+      },
+      "event_id": "n:63",
+      "event_type": "CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 23,
+      "sequence": 85,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:63",
+      "details": {
+        "cause": "n:63",
+        "event_id": "n:64",
+        "event_type": "Q2NS_CORRECTION_REQUEST",
+        "kind": 5,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 64,
+        "time_ns": 6088000
+      },
+      "event_id": "n:64",
+      "event_type": "Q2NS_CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 23,
+      "sequence": 86,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:63",
+      "event_id": "p:87",
+      "event_type": "CORRECTION_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "B",
+      "protocol": "swap",
+      "request_id": "3:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 23,
+      "sequence": 87,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:87",
+      "event_id": "p:88",
+      "event_type": "CORRECTION_START",
+      "phase": "DISPATCH",
+      "processor_id": "B",
+      "protocol": "swap",
+      "request_id": "3:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 23,
+      "sequence": 88,
+      "session_id": 3,
+      "sim_time_ns": 6088000,
+      "source": "quantum",
+      "waiting_ns": 0
+    },
+    {
+      "caused_by_event_id": "p:88",
+      "event_id": "p:89",
+      "event_type": "CORRECTION_COMPLETE",
+      "fidelity": 0.38672310320630326,
+      "measurement_bits": [
+        1,
+        0
+      ],
+      "phase": "COMMIT",
+      "processor_id": "B",
+      "protocol": "swap",
+      "request_id": "3:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 24,
+      "sequence": 89,
+      "session_id": 3,
+      "sim_time_ns": 6588000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:89",
+      "details": {
+        "cause": "p:89",
+        "event_id": "n:65",
+        "event_type": "Q2NS_CORRECTION_APPLIED",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 103,
+        "packet_bytes": 0,
+        "pair_a": 101,
+        "pair_b": 102,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 3,
+        "source_sequence": 65,
+        "time_ns": 6588000
+      },
+      "event_id": "n:65",
+      "event_type": "Q2NS_CORRECTION_APPLIED",
+      "phase": "NS3",
+      "round": 25,
+      "sequence": 90,
+      "session_id": 3,
+      "sim_time_ns": 6588000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:73",
+      "event_id": "p:91",
+      "event_type": "BSM_COMPLETE",
+      "fidelity": null,
+      "measurement_bits": [
+        1,
+        0
+      ],
+      "phase": "COMMIT",
+      "processor_id": "R",
+      "protocol": "teleport",
+      "request_id": "4:BSM",
+      "resource_handles": [
+        "input",
+        "epr"
+      ],
+      "round": 26,
+      "sequence": 91,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:91",
+      "details": {
+        "cause": "p:91",
+        "event_id": "n:66",
+        "event_type": "BSM_RESULT_LOCAL",
+        "kind": 2,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 66,
+        "time_ns": 7400000
+      },
+      "event_id": "n:66",
+      "event_type": "BSM_RESULT_LOCAL",
+      "phase": "NS3",
+      "round": 27,
+      "sequence": 92,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "p:91",
+      "details": {
+        "cause": "p:91",
+        "event_id": "n:67",
+        "event_type": "Q2NS_TELEPORT_BSM_DONE",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 67,
+        "time_ns": 7400000
+      },
+      "event_id": "n:67",
+      "event_type": "Q2NS_TELEPORT_BSM_DONE",
+      "phase": "NS3",
+      "round": 27,
+      "sequence": 93,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:66",
+      "details": {
+        "cause": "n:66",
+        "event_id": "n:68",
+        "event_type": "RESULT_TX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 2,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 68,
+        "time_ns": 7400000
+      },
+      "event_id": "n:68",
+      "event_type": "RESULT_TX",
+      "phase": "NS3",
+      "round": 27,
+      "sequence": 94,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:68",
+      "details": {
+        "cause": "n:68",
+        "event_id": "n:69",
+        "event_type": "QUEUE_ENQUEUE",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 69,
+        "time_ns": 7400000
+      },
+      "event_id": "n:69",
+      "event_type": "QUEUE_ENQUEUE",
+      "phase": "NS3",
+      "round": 27,
+      "sequence": 95,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:68",
+      "details": {
+        "cause": "n:68",
+        "event_id": "n:70",
+        "event_type": "QUEUE_DEQUEUE",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": 0,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 70,
+        "time_ns": 7400000
+      },
+      "event_id": "n:70",
+      "event_type": "QUEUE_DEQUEUE",
+      "phase": "NS3",
+      "round": 27,
+      "sequence": 96,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:68",
+      "details": {
+        "cause": "n:68",
+        "event_id": "n:71",
+        "event_type": "PHY_TX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 71,
+        "time_ns": 7400000
+      },
+      "event_id": "n:71",
+      "event_type": "PHY_TX",
+      "phase": "NS3",
+      "round": 27,
+      "sequence": 97,
+      "session_id": 4,
+      "sim_time_ns": 7400000,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:68",
+      "details": {
+        "cause": "n:68",
+        "event_id": "n:72",
+        "event_type": "PHY_TX_END",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 1,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 72,
+        "time_ns": 7425600
+      },
+      "event_id": "n:72",
+      "event_type": "PHY_TX_END",
+      "phase": "NS3",
+      "round": 28,
+      "sequence": 98,
+      "session_id": 4,
+      "sim_time_ns": 7425600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:68",
+      "details": {
+        "cause": "n:68",
+        "event_id": "n:73",
+        "event_type": "PHY_RX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 32,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 73,
+        "time_ns": 7625600
+      },
+      "event_id": "n:73",
+      "event_type": "PHY_RX",
+      "phase": "NS3",
+      "round": 29,
+      "sequence": 99,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:68",
+      "details": {
+        "cause": "n:68",
+        "event_id": "n:74",
+        "event_type": "RESULT_RX",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 2,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 74,
+        "time_ns": 7625600
+      },
+      "event_id": "n:74",
+      "event_type": "RESULT_RX",
+      "phase": "NS3",
+      "round": 29,
+      "sequence": 100,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:74",
+      "details": {
+        "cause": "n:74",
+        "event_id": "n:75",
+        "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+        "kind": 5,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 75,
+        "time_ns": 7625600
+      },
+      "event_id": "n:75",
+      "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+      "phase": "NS3",
+      "round": 29,
+      "sequence": 101,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:74",
+      "details": {
+        "cause": "n:74",
+        "event_id": "n:76",
+        "event_type": "CORRECTION_REQUEST",
+        "kind": 2,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 4,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 76,
+        "time_ns": 7625600
+      },
+      "event_id": "n:76",
+      "event_type": "CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 29,
+      "sequence": 102,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:76",
+      "details": {
+        "cause": "n:76",
+        "event_id": "n:77",
+        "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+        "kind": 5,
+        "m1": 1,
+        "m2": 0,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 77,
+        "time_ns": 7625600
+      },
+      "event_id": "n:77",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+      "phase": "NS3",
+      "round": 29,
+      "sequence": 103,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "ns3"
+    },
+    {
+      "caused_by_event_id": "n:76",
+      "event_id": "p:104",
+      "event_type": "CORRECTION_QUEUED",
+      "phase": "INPUT",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "4:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 29,
+      "sequence": 104,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:104",
+      "event_id": "p:105",
+      "event_type": "CORRECTION_START",
+      "phase": "DISPATCH",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "4:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 29,
+      "sequence": 105,
+      "session_id": 4,
+      "sim_time_ns": 7625600,
+      "source": "quantum",
+      "waiting_ns": 0
+    },
+    {
+      "caused_by_event_id": "p:105",
+      "event_id": "p:106",
+      "event_type": "CORRECTION_COMPLETE",
+      "fidelity": 0.5396602675392167,
+      "measurement_bits": [
+        1,
+        0
+      ],
+      "phase": "COMMIT",
+      "processor_id": "B",
+      "protocol": "teleport",
+      "request_id": "4:CORRECTION",
+      "resource_handles": [
+        "output"
+      ],
+      "round": 30,
+      "sequence": 106,
+      "session_id": 4,
+      "sim_time_ns": 8125600,
+      "source": "quantum"
+    },
+    {
+      "caused_by_event_id": "p:106",
+      "details": {
+        "cause": "p:106",
+        "event_id": "n:78",
+        "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+        "kind": 5,
+        "m1": -1,
+        "m2": -1,
+        "message_id": 0,
+        "node_id": 2,
+        "output_pair_id": 0,
+        "packet_bytes": 0,
+        "pair_a": 0,
+        "pair_b": 0,
+        "queue_depth": -1,
+        "request_id": 1,
+        "session_id": 4,
+        "source_sequence": 78,
+        "time_ns": 8125600
+      },
+      "event_id": "n:78",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+      "phase": "NS3",
+      "round": 31,
+      "sequence": 107,
+      "session_id": 4,
+      "sim_time_ns": 8125600,
+      "source": "ns3"
+    }
+  ],
+  "execution_core": "HybridExecutionCore",
+  "federation": "HybridFederation",
+  "milestone": "Hybrid-Direct-Start",
+  "model": "Full-Sync",
+  "nodes": {
+    "A": 0,
+    "B": 2,
+    "R": 1
+  },
+  "ns3_binary": "/home/ns3/ns-3-dev/build/contrib/cosim/examples/ns3.47-cosim-hybrid-default",
+  "ns3_events": [
+    {
+      "cause": "p:1",
+      "event_id": "n:0",
+      "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 0,
+      "time_ns": 0
+    },
+    {
+      "cause": "p:3",
+      "event_id": "n:1",
+      "event_type": "Q2NS_TELEPORT_RESOURCES_READY",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 1,
+      "time_ns": 0
+    },
+    {
+      "cause": "p:0",
+      "event_id": "n:2",
+      "event_type": "SESSION_START",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 2,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "n:2",
+      "event_id": "n:3",
+      "event_type": "BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 3,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "n:3",
+      "event_id": "n:4",
+      "event_type": "Q2NS_BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 4,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "p:1",
+      "event_id": "n:5",
+      "event_type": "SESSION_START",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 5,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "n:5",
+      "event_id": "n:6",
+      "event_type": "BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 6,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "n:6",
+      "event_id": "n:7",
+      "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 7,
+      "time_ns": 1000000
+    },
+    {
+      "cause": "p:2",
+      "event_id": "n:8",
+      "event_type": "SESSION_START",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 8,
+      "time_ns": 1800000
+    },
+    {
+      "cause": "n:8",
+      "event_id": "n:9",
+      "event_type": "BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 9,
+      "time_ns": 1800000
+    },
+    {
+      "cause": "n:9",
+      "event_id": "n:10",
+      "event_type": "Q2NS_BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 10,
+      "time_ns": 1800000
+    },
+    {
+      "cause": "p:3",
+      "event_id": "n:11",
+      "event_type": "SESSION_START",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 11,
+      "time_ns": 1800000
+    },
+    {
+      "cause": "n:11",
+      "event_id": "n:12",
+      "event_type": "BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 12,
+      "time_ns": 1800000
+    },
+    {
+      "cause": "n:12",
+      "event_id": "n:13",
+      "event_type": "Q2NS_TELEPORT_BSM_REQUEST",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 13,
+      "time_ns": 1800000
+    },
+    {
+      "cause": "-",
+      "event_id": "n:14",
+      "event_type": "BACKGROUND_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 14,
+      "time_ns": 2590000
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:15",
+      "event_type": "QUEUE_ENQUEUE",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 15,
+      "time_ns": 2590000
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:16",
+      "event_type": "QUEUE_DEQUEUE",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 0,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 16,
+      "time_ns": 2590000
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:17",
+      "event_type": "PHY_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 17,
+      "time_ns": 2590000
+    },
+    {
+      "cause": "-",
+      "event_id": "n:18",
+      "event_type": "BACKGROUND_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 18,
+      "time_ns": 2591000
+    },
+    {
+      "cause": "n:18",
+      "event_id": "n:19",
+      "event_type": "QUEUE_ENQUEUE",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 19,
+      "time_ns": 2591000
+    },
+    {
+      "cause": "-",
+      "event_id": "n:20",
+      "event_type": "BACKGROUND_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100002,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 20,
+      "time_ns": 2592000
+    },
+    {
+      "cause": "n:20",
+      "event_id": "n:21",
+      "event_type": "TC_DROP",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100002,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1028,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 21,
+      "time_ns": 2592000
+    },
+    {
+      "cause": "-",
+      "event_id": "n:22",
+      "event_type": "BACKGROUND_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100003,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 22,
+      "time_ns": 2593000
+    },
+    {
+      "cause": "n:22",
+      "event_id": "n:23",
+      "event_type": "TC_DROP",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100003,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1028,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 23,
+      "time_ns": 2593000
+    },
+    {
+      "cause": "-",
+      "event_id": "n:24",
+      "event_type": "BACKGROUND_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100004,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 24,
+      "time_ns": 2594000
+    },
+    {
+      "cause": "n:24",
+      "event_id": "n:25",
+      "event_type": "TC_DROP",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100004,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1028,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 25,
+      "time_ns": 2594000
+    },
+    {
+      "cause": "p:39",
+      "event_id": "n:26",
+      "event_type": "BSM_RESULT_LOCAL",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 26,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "p:39",
+      "event_id": "n:27",
+      "event_type": "Q2NS_BSM_DONE",
+      "kind": 5,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 27,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:26",
+      "event_id": "n:28",
+      "event_type": "RESULT_TX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 80,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 28,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:28",
+      "event_id": "n:29",
+      "event_type": "TC_DROP",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 1,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 108,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 29,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:26",
+      "event_id": "n:30",
+      "event_type": "Q2NS_CTRL_SENT",
+      "kind": 5,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 1,
+      "source_sequence": 30,
+      "time_ns": 2600000
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:31",
+      "event_type": "PHY_TX_END",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 31,
+      "time_ns": 3414000
+    },
+    {
+      "cause": "n:18",
+      "event_id": "n:32",
+      "event_type": "QUEUE_DEQUEUE",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 0,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 32,
+      "time_ns": 3414000
+    },
+    {
+      "cause": "n:18",
+      "event_id": "n:33",
+      "event_type": "PHY_TX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 33,
+      "time_ns": 3414000
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:34",
+      "event_type": "PHY_RX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 34,
+      "time_ns": 3614000
+    },
+    {
+      "cause": "n:14",
+      "event_id": "n:35",
+      "event_type": "BACKGROUND_RX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100000,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 35,
+      "time_ns": 3614000
+    },
+    {
+      "cause": "p:51",
+      "event_id": "n:36",
+      "event_type": "BSM_RESULT_LOCAL",
+      "kind": 2,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 36,
+      "time_ns": 4200000
+    },
+    {
+      "cause": "p:51",
+      "event_id": "n:37",
+      "event_type": "Q2NS_TELEPORT_BSM_DONE",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 37,
+      "time_ns": 4200000
+    },
+    {
+      "cause": "n:36",
+      "event_id": "n:38",
+      "event_type": "RESULT_TX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 2,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 38,
+      "time_ns": 4200000
+    },
+    {
+      "cause": "n:38",
+      "event_id": "n:39",
+      "event_type": "QUEUE_ENQUEUE",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 39,
+      "time_ns": 4200000
+    },
+    {
+      "cause": "n:18",
+      "event_id": "n:40",
+      "event_type": "PHY_TX_END",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 40,
+      "time_ns": 4238000
+    },
+    {
+      "cause": "n:38",
+      "event_id": "n:41",
+      "event_type": "QUEUE_DEQUEUE",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 0,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 41,
+      "time_ns": 4238000
+    },
+    {
+      "cause": "n:38",
+      "event_id": "n:42",
+      "event_type": "PHY_TX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 42,
+      "time_ns": 4238000
+    },
+    {
+      "cause": "n:38",
+      "event_id": "n:43",
+      "event_type": "PHY_TX_END",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 43,
+      "time_ns": 4263600
+    },
+    {
+      "cause": "n:18",
+      "event_id": "n:44",
+      "event_type": "PHY_RX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 1030,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 44,
+      "time_ns": 4438000
+    },
+    {
+      "cause": "n:18",
+      "event_id": "n:45",
+      "event_type": "BACKGROUND_RX",
+      "kind": 4,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 100001,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 1000,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 0,
+      "session_id": 0,
+      "source_sequence": 45,
+      "time_ns": 4438000
+    },
+    {
+      "cause": "n:38",
+      "event_id": "n:46",
+      "event_type": "PHY_RX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 46,
+      "time_ns": 4463600
+    },
+    {
+      "cause": "n:38",
+      "event_id": "n:47",
+      "event_type": "RESULT_RX",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 2,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 47,
+      "time_ns": 4463600
+    },
+    {
+      "cause": "n:47",
+      "event_id": "n:48",
+      "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+      "kind": 5,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 48,
+      "time_ns": 4463600
+    },
+    {
+      "cause": "n:47",
+      "event_id": "n:49",
+      "event_type": "CORRECTION_REQUEST",
+      "kind": 2,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 2,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 49,
+      "time_ns": 4463600
+    },
+    {
+      "cause": "n:49",
+      "event_id": "n:50",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+      "kind": 5,
+      "m1": 0,
+      "m2": 1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 50,
+      "time_ns": 4463600
+    },
+    {
+      "cause": "p:70",
+      "event_id": "n:51",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 2,
+      "source_sequence": 51,
+      "time_ns": 4963600
+    },
+    {
+      "cause": "p:72",
+      "event_id": "n:52",
+      "event_type": "BSM_RESULT_LOCAL",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 52,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "p:72",
+      "event_id": "n:53",
+      "event_type": "Q2NS_BSM_DONE",
+      "kind": 5,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 53,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "n:52",
+      "event_id": "n:54",
+      "event_type": "RESULT_TX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 80,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 54,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "n:54",
+      "event_id": "n:55",
+      "event_type": "QUEUE_ENQUEUE",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 110,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": 1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 55,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "n:54",
+      "event_id": "n:56",
+      "event_type": "QUEUE_DEQUEUE",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 110,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": 0,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 56,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "n:54",
+      "event_id": "n:57",
+      "event_type": "PHY_TX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 110,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 57,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "n:52",
+      "event_id": "n:58",
+      "event_type": "Q2NS_CTRL_SENT",
+      "kind": 5,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 58,
+      "time_ns": 5800000
+    },
+    {
+      "cause": "n:54",
+      "event_id": "n:59",
+      "event_type": "PHY_TX_END",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 1,
+      "output_pair_id": 3,
+      "packet_bytes": 110,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 59,
+      "time_ns": 5888000
+    },
+    {
+      "cause": "n:54",
+      "event_id": "n:60",
+      "event_type": "PHY_RX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 2,
+      "output_pair_id": 3,
+      "packet_bytes": 110,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 60,
+      "time_ns": 6088000
+    },
+    {
+      "cause": "n:54",
+      "event_id": "n:61",
+      "event_type": "RESULT_RX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 2,
+      "output_pair_id": 3,
+      "packet_bytes": 80,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 61,
+      "time_ns": 6088000
+    },
+    {
+      "cause": "n:61",
+      "event_id": "n:62",
+      "event_type": "Q2NS_FRAME_RESOLVED",
+      "kind": 5,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 62,
+      "time_ns": 6088000
+    },
+    {
+      "cause": "n:61",
+      "event_id": "n:63",
+      "event_type": "CORRECTION_REQUEST",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 3,
+      "node_id": 2,
+      "output_pair_id": 3,
+      "packet_bytes": 0,
+      "pair_a": 1,
+      "pair_b": 2,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 63,
+      "time_ns": 6088000
+    },
+    {
+      "cause": "n:63",
+      "event_id": "n:64",
+      "event_type": "Q2NS_CORRECTION_REQUEST",
+      "kind": 5,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 64,
+      "time_ns": 6088000
+    },
+    {
+      "cause": "p:89",
+      "event_id": "n:65",
+      "event_type": "Q2NS_CORRECTION_APPLIED",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 103,
+      "packet_bytes": 0,
+      "pair_a": 101,
+      "pair_b": 102,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 3,
+      "source_sequence": 65,
+      "time_ns": 6588000
+    },
+    {
+      "cause": "p:91",
+      "event_id": "n:66",
+      "event_type": "BSM_RESULT_LOCAL",
+      "kind": 2,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 66,
+      "time_ns": 7400000
+    },
+    {
+      "cause": "p:91",
+      "event_id": "n:67",
+      "event_type": "Q2NS_TELEPORT_BSM_DONE",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 67,
+      "time_ns": 7400000
+    },
+    {
+      "cause": "n:66",
+      "event_id": "n:68",
+      "event_type": "RESULT_TX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 2,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 68,
+      "time_ns": 7400000
+    },
+    {
+      "cause": "n:68",
+      "event_id": "n:69",
+      "event_type": "QUEUE_ENQUEUE",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 69,
+      "time_ns": 7400000
+    },
+    {
+      "cause": "n:68",
+      "event_id": "n:70",
+      "event_type": "QUEUE_DEQUEUE",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": 0,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 70,
+      "time_ns": 7400000
+    },
+    {
+      "cause": "n:68",
+      "event_id": "n:71",
+      "event_type": "PHY_TX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 71,
+      "time_ns": 7400000
+    },
+    {
+      "cause": "n:68",
+      "event_id": "n:72",
+      "event_type": "PHY_TX_END",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 1,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 72,
+      "time_ns": 7425600
+    },
+    {
+      "cause": "n:68",
+      "event_id": "n:73",
+      "event_type": "PHY_RX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 32,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 73,
+      "time_ns": 7625600
+    },
+    {
+      "cause": "n:68",
+      "event_id": "n:74",
+      "event_type": "RESULT_RX",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 2,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 74,
+      "time_ns": 7625600
+    },
+    {
+      "cause": "n:74",
+      "event_id": "n:75",
+      "event_type": "Q2NS_TELEPORT_CTRL_RECEIVED",
+      "kind": 5,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 75,
+      "time_ns": 7625600
+    },
+    {
+      "cause": "n:74",
+      "event_id": "n:76",
+      "event_type": "CORRECTION_REQUEST",
+      "kind": 2,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 4,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 76,
+      "time_ns": 7625600
+    },
+    {
+      "cause": "n:76",
+      "event_id": "n:77",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_REQUEST",
+      "kind": 5,
+      "m1": 1,
+      "m2": 0,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 77,
+      "time_ns": 7625600
+    },
+    {
+      "cause": "p:106",
+      "event_id": "n:78",
+      "event_type": "Q2NS_TELEPORT_CORRECTION_APPLIED",
+      "kind": 5,
+      "m1": -1,
+      "m2": -1,
+      "message_id": 0,
+      "node_id": 2,
+      "output_pair_id": 0,
+      "packet_bytes": 0,
+      "pair_a": 0,
+      "pair_b": 0,
+      "queue_depth": -1,
+      "request_id": 1,
+      "session_id": 4,
+      "source_sequence": 78,
+      "time_ns": 8125600
+    }
+  ],
+  "ns3_time_ns": 8125600,
+  "q2ns_status": {
+    "corrections_applied": 3,
+    "native_qubit_count": 0,
+    "native_state_count": 0,
+    "sessions": 4
+  },
+  "schema_version": 2,
+  "snapshot": {
+    "R_execution_capacity": 1,
+    "netsquid_time_ns": 8125600,
+    "requests": [
+      {
+        "arrival_ns": 1000000,
+        "bits": null,
+        "cause": "p:39",
+        "completion_ns": 2600000,
+        "duration_ns": 1600000,
+        "handles": [
+          "left_pair",
+          "right_pair"
+        ],
+        "operation": "BSM",
+        "processor_id": "R",
+        "protocol": "swap",
+        "request_id": "1:BSM",
+        "session_id": 1,
+        "start_ns": 1000000,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "R",
+            0
+          ],
+          [
+            "R",
+            1
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 1000000,
+        "bits": null,
+        "cause": "p:51",
+        "completion_ns": 4200000,
+        "duration_ns": 1600000,
+        "handles": [
+          "input",
+          "epr"
+        ],
+        "operation": "BSM",
+        "processor_id": "R",
+        "protocol": "teleport",
+        "request_id": "2:BSM",
+        "session_id": 2,
+        "start_ns": 2600000,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "R",
+            2
+          ],
+          [
+            "R",
+            3
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 1800000,
+        "bits": null,
+        "cause": "p:72",
+        "completion_ns": 5800000,
+        "duration_ns": 1600000,
+        "handles": [
+          "left_pair",
+          "right_pair"
+        ],
+        "operation": "BSM",
+        "processor_id": "R",
+        "protocol": "swap",
+        "request_id": "3:BSM",
+        "session_id": 3,
+        "start_ns": 4200000,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "R",
+            4
+          ],
+          [
+            "R",
+            5
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 1800000,
+        "bits": null,
+        "cause": "p:91",
+        "completion_ns": 7400000,
+        "duration_ns": 1600000,
+        "handles": [
+          "input",
+          "epr"
+        ],
+        "operation": "BSM",
+        "processor_id": "R",
+        "protocol": "teleport",
+        "request_id": "4:BSM",
+        "session_id": 4,
+        "start_ns": 5800000,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "R",
+            6
+          ],
+          [
+            "R",
+            7
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 4463600,
+        "bits": [
+          0,
+          1
+        ],
+        "cause": "p:70",
+        "completion_ns": 4963600,
+        "duration_ns": 500000,
+        "handles": [
+          "output"
+        ],
+        "operation": "CORRECTION",
+        "processor_id": "B",
+        "protocol": "teleport",
+        "request_id": "2:CORRECTION",
+        "session_id": 2,
+        "start_ns": 4463600,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "B",
+            1
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 6088000,
+        "bits": [
+          1,
+          0
+        ],
+        "cause": "p:89",
+        "completion_ns": 6588000,
+        "duration_ns": 500000,
+        "handles": [
+          "output"
+        ],
+        "operation": "CORRECTION",
+        "processor_id": "B",
+        "protocol": "swap",
+        "request_id": "3:CORRECTION",
+        "session_id": 3,
+        "start_ns": 6088000,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "B",
+            2
+          ]
+        ]
+      },
+      {
+        "arrival_ns": 7625600,
+        "bits": [
+          1,
+          0
+        ],
+        "cause": "p:106",
+        "completion_ns": 8125600,
+        "duration_ns": 500000,
+        "handles": [
+          "output"
+        ],
+        "operation": "CORRECTION",
+        "processor_id": "B",
+        "protocol": "teleport",
+        "request_id": "4:CORRECTION",
+        "session_id": 4,
+        "start_ns": 7625600,
+        "state": "COMPLETED",
+        "targets": [
+          [
+            "B",
+            3
+          ]
+        ]
+      }
+    ],
+    "resources": [
+      {
+        "created_ns": 0,
+        "handle": "left_pair",
+        "kind": "pair",
+        "locations": [
+          [
+            "A",
+            0
+          ],
+          [
+            "R",
+            0
+          ]
+        ],
+        "owner": null,
+        "session_id": 1,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "right_pair",
+        "kind": "pair",
+        "locations": [
+          [
+            "B",
+            0
+          ],
+          [
+            "R",
+            1
+          ]
+        ],
+        "owner": null,
+        "session_id": 1,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "input",
+        "kind": "qubit",
+        "locations": [
+          [
+            "R",
+            2
+          ]
+        ],
+        "owner": null,
+        "session_id": 2,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "epr",
+        "kind": "pair",
+        "locations": [
+          [
+            "R",
+            3
+          ],
+          [
+            "B",
+            1
+          ]
+        ],
+        "owner": null,
+        "session_id": 2,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "left_pair",
+        "kind": "pair",
+        "locations": [
+          [
+            "A",
+            2
+          ],
+          [
+            "R",
+            4
+          ]
+        ],
+        "owner": null,
+        "session_id": 3,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "right_pair",
+        "kind": "pair",
+        "locations": [
+          [
+            "B",
+            2
+          ],
+          [
+            "R",
+            5
+          ]
+        ],
+        "owner": null,
+        "session_id": 3,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "input",
+        "kind": "qubit",
+        "locations": [
+          [
+            "R",
+            6
+          ]
+        ],
+        "owner": null,
+        "session_id": 4,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 0,
+        "handle": "epr",
+        "kind": "pair",
+        "locations": [
+          [
+            "R",
+            7
+          ],
+          [
+            "B",
+            3
+          ]
+        ],
+        "owner": null,
+        "session_id": 4,
+        "state": "CONSUMED"
+      },
+      {
+        "created_ns": 2600000,
+        "handle": "output",
+        "kind": "pair",
+        "locations": [
+          [
+            "A",
+            0
+          ],
+          [
+            "B",
+            0
+          ]
+        ],
+        "owner": null,
+        "session_id": 1,
+        "state": "FRAME_PENDING"
+      },
+      {
+        "created_ns": 4200000,
+        "handle": "output",
+        "kind": "qubit",
+        "locations": [
+          [
+            "B",
+            1
+          ]
+        ],
+        "owner": null,
+        "session_id": 2,
+        "state": "USABLE"
+      },
+      {
+        "created_ns": 5800000,
+        "handle": "output",
+        "kind": "pair",
+        "locations": [
+          [
+            "A",
+            2
+          ],
+          [
+            "B",
+            2
+          ]
+        ],
+        "owner": null,
+        "session_id": 3,
+        "state": "USABLE"
+      },
+      {
+        "created_ns": 7400000,
+        "handle": "output",
+        "kind": "qubit",
+        "locations": [
+          [
+            "B",
+            3
+          ]
+        ],
+        "owner": null,
+        "session_id": 4,
+        "state": "USABLE"
+      }
+    ],
+    "sessions": {
+      "1": {
+        "checkpoints": {
+          "arrival": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            }
+          },
+          "bsm_end_inputs": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.5262086881815307,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ],
+                  [
+                    0.0,
+                    0.08826551891668596,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.08826551891668596,
+                    0.0
+                  ],
+                  [
+                    0.2972602739850971,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ]
+                ]
+              },
+              "fidelity": 0.7089947550684108,
+              "sim_time_ns": 2600000
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5262086881815307,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ],
+                  [
+                    0.0,
+                    0.08826551891668596,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.08826551891668596,
+                    0.0
+                  ],
+                  [
+                    0.2972602739850971,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ]
+                ]
+              },
+              "fidelity": 0.7089947550684108,
+              "sim_time_ns": 2600000
+            }
+          },
+          "bsm_start": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            }
+          },
+          "frame": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "A",
+                "B"
+              ],
+              "real": [
+                [
+                  0.19606135343658232,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.3465908651248742,
+                  0.18650335767142806,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.18650335767142806,
+                  0.3465908651248742,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.11075691631366916
+                ]
+              ]
+            },
+            "fidelity": 0.5330942227963021,
+            "sim_time_ns": 2600000
+          },
+          "initial": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            }
+          }
+        },
+        "correction_count": 0,
+        "epr_created_ns": 0,
+        "input_created_ns": null,
+        "input_state": null,
+        "logical_handles": {
+          "left_pair": 101,
+          "output": 103,
+          "right_pair": 102
+        },
+        "measurement_bits": [
+          0,
+          1
+        ],
+        "output": {
+          "handle": "output",
+          "kind": "pair",
+          "locations": [
+            [
+              "A",
+              0
+            ],
+            [
+              "B",
+              0
+            ]
+          ],
+          "state": "FRAME_PENDING"
+        },
+        "protocol": "swap",
+        "session_id": 1
+      },
+      "2": {
+        "checkpoints": {
+          "arrival": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5045279585030312,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ],
+                  [
+                    0.0,
+                    0.04305333247898888,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.043053332478988876,
+                    0.0
+                  ],
+                  [
+                    0.40936537653899085,
+                    0.0,
+                    0.0,
+                    0.40936537653899085
+                  ]
+                ]
+              },
+              "fidelity": 0.8663120440600016,
+              "sim_time_ns": 1000000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.45241870901797965
+                  ],
+                  [
+                    0.45241870901797965,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.5475812909820201,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.4524187090179797
+                  ]
+                ]
+              },
+              "fidelity": 0.9524187090179794,
+              "sim_time_ns": 1000000
+            }
+          },
+          "bsm_end_inputs": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5588084418994826,
+                    0.0,
+                    0.0,
+                    0.21585526171453975
+                  ],
+                  [
+                    0.0,
+                    0.1126681481929885,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.11266814819298851,
+                    0.0
+                  ],
+                  [
+                    0.21585526171453975,
+                    0.0,
+                    0.0,
+                    0.21585526171453973
+                  ]
+                ]
+              },
+              "fidelity": 0.6031871135215509,
+              "sim_time_ns": 4200000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.3285234099075282
+                  ],
+                  [
+                    0.3285234099075282,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.6714765900924713,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.32852340990752826
+                  ]
+                ]
+              },
+              "fidelity": 0.8285234099075278,
+              "sim_time_ns": 4200000
+            }
+          },
+          "bsm_start": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5262086881815307,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ],
+                  [
+                    0.0,
+                    0.08826551891668596,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.08826551891668596,
+                    0.0
+                  ],
+                  [
+                    0.2972602739850971,
+                    0.0,
+                    0.0,
+                    0.2972602739850971
+                  ]
+                ]
+              },
+              "fidelity": 0.7089947550684108,
+              "sim_time_ns": 2600000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.385525792901783
+                  ],
+                  [
+                    0.385525792901783,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.6144742070982167,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.385525792901783
+                  ]
+                ]
+              },
+              "fidelity": 0.8855257929017828,
+              "sim_time_ns": 2600000
+            }
+          },
+          "correction_start": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.15655024982697285
+                ],
+                [
+                  -0.15655024982697285,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.5983101143765096,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.40168988562349034
+                ]
+              ]
+            },
+            "fidelity": 0.6565502498269726,
+            "sim_time_ns": 4463600
+          },
+          "frame": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.16073178491957077
+                ],
+                [
+                  -0.16073178491957077,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.5875807775984928,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.4124192224015072
+                ]
+              ]
+            },
+            "fidelity": 0.6607317849195706,
+            "sim_time_ns": 4200000
+          },
+          "initial": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    -0.4999999999999999
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            }
+          },
+          "packet_arrival": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.15655024982697285
+                ],
+                [
+                  -0.15655024982697285,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.5983101143765096,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.40168988562349034
+                ]
+              ]
+            },
+            "fidelity": 0.6565502498269726,
+            "sim_time_ns": 4463600
+          },
+          "usable": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  -0.1489152040483544
+                ],
+                [
+                  0.1489152040483544,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.38209923872939033,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.6179007612706096
+                ]
+              ]
+            },
+            "fidelity": 0.6489152040483543,
+            "sim_time_ns": 4963600
+          }
+        },
+        "correction_count": 1,
+        "epr_created_ns": 0,
+        "input_created_ns": 0,
+        "input_state": "+i",
+        "logical_handles": {
+          "epr": 202,
+          "input": 201,
+          "output": 203
+        },
+        "measurement_bits": [
+          0,
+          1
+        ],
+        "output": {
+          "handle": "output",
+          "kind": "qubit",
+          "locations": [
+            [
+              "B",
+              1
+            ]
+          ],
+          "state": "USABLE"
+        },
+        "protocol": "teleport",
+        "session_id": 2
+      },
+      "3": {
+        "checkpoints": {
+          "arrival": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.5135679516242434,
+                    0.0,
+                    0.0,
+                    0.34883816303551546
+                  ],
+                  [
+                    0.0,
+                    0.06879694267012047,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.06879694267012047,
+                    0.0
+                  ],
+                  [
+                    0.34883816303551546,
+                    0.0,
+                    0.0,
+                    0.3488381630355154
+                  ]
+                ]
+              },
+              "fidelity": 0.7800412203653947,
+              "sim_time_ns": 1800000
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5135679516242434,
+                    0.0,
+                    0.0,
+                    0.34883816303551546
+                  ],
+                  [
+                    0.0,
+                    0.06879694267012047,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.06879694267012047,
+                    0.0
+                  ],
+                  [
+                    0.34883816303551546,
+                    0.0,
+                    0.0,
+                    0.3488381630355154
+                  ]
+                ]
+              },
+              "fidelity": 0.7800412203653947,
+              "sim_time_ns": 1800000
+            }
+          },
+          "bsm_end_inputs": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.5968447238759004,
+                    0.0,
+                    0.0,
+                    0.1567430904413026
+                  ],
+                  [
+                    0.0,
+                    0.1232060928413983,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.12320609284139833,
+                    0.0
+                  ],
+                  [
+                    0.1567430904413026,
+                    0.0,
+                    0.0,
+                    0.15674309044130266
+                  ]
+                ]
+              },
+              "fidelity": 0.533536997599904,
+              "sim_time_ns": 5800000
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5968447238759004,
+                    0.0,
+                    0.0,
+                    0.1567430904413026
+                  ],
+                  [
+                    0.0,
+                    0.1232060928413983,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.12320609284139833,
+                    0.0
+                  ],
+                  [
+                    0.1567430904413026,
+                    0.0,
+                    0.0,
+                    0.15674309044130266
+                  ]
+                ]
+              },
+              "fidelity": 0.533536997599904,
+              "sim_time_ns": 5800000
+            }
+          },
+          "bsm_start": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.5588084418994829,
+                    0.0,
+                    0.0,
+                    0.2158552617145398
+                  ],
+                  [
+                    0.0,
+                    0.1126681481929885,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.11266814819298851,
+                    0.0
+                  ],
+                  [
+                    0.2158552617145398,
+                    0.0,
+                    0.0,
+                    0.21585526171453986
+                  ]
+                ]
+              },
+              "fidelity": 0.603187113521551,
+              "sim_time_ns": 4200000
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5588084418994829,
+                    0.0,
+                    0.0,
+                    0.2158552617145398
+                  ],
+                  [
+                    0.0,
+                    0.1126681481929885,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.11266814819298851,
+                    0.0
+                  ],
+                  [
+                    0.2158552617145398,
+                    0.0,
+                    0.0,
+                    0.21585526171453986
+                  ]
+                ]
+              },
+              "fidelity": 0.603187113521551,
+              "sim_time_ns": 4200000
+            }
+          },
+          "correction_start": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "A",
+                "B"
+              ],
+              "real": [
+                [
+                  0.6311643107191087,
+                  0.0,
+                  0.0,
+                  -0.03885975779970445
+                ],
+                [
+                  0.0,
+                  0.15298309042710712,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.15298309042710712,
+                  0.0
+                ],
+                [
+                  -0.03885975779970445,
+                  0.0,
+                  0.0,
+                  0.06286950842667745
+                ]
+              ]
+            },
+            "fidelity": 0.38587666737259746,
+            "sim_time_ns": 6088000
+          },
+          "frame": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "A",
+                "B"
+              ],
+              "real": [
+                [
+                  0.6222780412966634,
+                  0.0,
+                  0.0,
+                  -0.041163799256770835
+                ],
+                [
+                  0.0,
+                  0.15556242101290155,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.15556242101290157,
+                  0.0
+                ],
+                [
+                  -0.041163799256770835,
+                  0.0,
+                  0.0,
+                  0.0665971166775336
+                ]
+              ]
+            },
+            "fidelity": 0.38560137824386925,
+            "sim_time_ns": 5800000
+          },
+          "initial": {
+            "AR": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "A",
+                  "R_AR"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            },
+            "RB": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "R_RB",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            }
+          },
+          "packet_arrival": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "A",
+                "B"
+              ],
+              "real": [
+                [
+                  0.6311643107191087,
+                  0.0,
+                  0.0,
+                  -0.03885975779970445
+                ],
+                [
+                  0.0,
+                  0.15298309042710712,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.15298309042710712,
+                  0.0
+                ],
+                [
+                  -0.03885975779970445,
+                  0.0,
+                  0.0,
+                  0.06286950842667745
+                ]
+              ]
+            },
+            "fidelity": 0.38587666737259746,
+            "sim_time_ns": 6088000
+          },
+          "usable": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "A",
+                "B"
+              ],
+              "real": [
+                [
+                  0.6462359969086472,
+                  0.0,
+                  0.0,
+                  0.03516176291298732
+                ],
+                [
+                  0.0,
+                  0.14843865970668416,
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0,
+                  0.14843865970668413,
+                  0.0
+                ],
+                [
+                  0.03516176291298732,
+                  0.0,
+                  0.0,
+                  0.05688668367798483
+                ]
+              ]
+            },
+            "fidelity": 0.38672310320630326,
+            "sim_time_ns": 6588000
+          }
+        },
+        "correction_count": 1,
+        "epr_created_ns": 0,
+        "input_created_ns": null,
+        "input_state": null,
+        "logical_handles": {
+          "left_pair": 101,
+          "output": 103,
+          "right_pair": 102
+        },
+        "measurement_bits": [
+          1,
+          0
+        ],
+        "output": {
+          "handle": "output",
+          "kind": "pair",
+          "locations": [
+            [
+              "A",
+              2
+            ],
+            [
+              "B",
+              2
+            ]
+          ],
+          "state": "USABLE"
+        },
+        "protocol": "swap",
+        "session_id": 3
+      },
+      "4": {
+        "checkpoints": {
+          "arrival": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5135679516242434,
+                    0.0,
+                    0.0,
+                    0.34883816303551546
+                  ],
+                  [
+                    0.0,
+                    0.06879694267012047,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.06879694267012047,
+                    0.0
+                  ],
+                  [
+                    0.34883816303551546,
+                    0.0,
+                    0.0,
+                    0.3488381630355154
+                  ]
+                ]
+              },
+              "fidelity": 0.7800412203653947,
+              "sim_time_ns": 1800000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.5823648942943639,
+                    -0.4176351057056359
+                  ],
+                  [
+                    -0.4176351057056359,
+                    0.4176351057056359
+                  ]
+                ]
+              },
+              "fidelity": 0.9176351057056356,
+              "sim_time_ns": 1800000
+            }
+          },
+          "bsm_end_inputs": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.6367049286708719,
+                    0.0,
+                    0.0,
+                    0.11381884419190628
+                  ],
+                  [
+                    0.0,
+                    0.12473811356861075,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.12473811356861074,
+                    0.0
+                  ],
+                  [
+                    0.11381884419190628,
+                    0.0,
+                    0.0,
+                    0.11381884419190627
+                  ]
+                ]
+              },
+              "fidelity": 0.48908073062329527,
+              "sim_time_ns": 7400000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.7614430422394826,
+                    -0.23855695776051708
+                  ],
+                  [
+                    -0.23855695776051708,
+                    0.2385569577605171
+                  ]
+                ]
+              },
+              "fidelity": 0.7385569577605168,
+              "sim_time_ns": 7400000
+            }
+          },
+          "bsm_start": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.5968447238759005,
+                    0.0,
+                    0.0,
+                    0.15674309044130258
+                  ],
+                  [
+                    0.0,
+                    0.12320609284139833,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.1232060928413983,
+                    0.0
+                  ],
+                  [
+                    0.15674309044130258,
+                    0.0,
+                    0.0,
+                    0.15674309044130255
+                  ]
+                ]
+              },
+              "fidelity": 0.533536997599904,
+              "sim_time_ns": 5800000
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.7200508167172988,
+                    -0.2799491832827009
+                  ],
+                  [
+                    -0.2799491832827009,
+                    0.2799491832827009
+                  ]
+                ]
+              },
+              "fidelity": 0.7799491832827006,
+              "sim_time_ns": 5800000
+            }
+          },
+          "correction_start": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.8124582327721168,
+                  0.04169369293851899
+                ],
+                [
+                  0.04169369293851899,
+                  0.18754176722788318
+                ]
+              ]
+            },
+            "fidelity": 0.5416936929385189,
+            "sim_time_ns": 7625600
+          },
+          "frame": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.8081792045491293,
+                  0.042644992968595564
+                ],
+                [
+                  0.042644992968595564,
+                  0.19182079545087075
+                ]
+              ]
+            },
+            "fidelity": 0.5426449929685955,
+            "sim_time_ns": 7400000
+          },
+          "initial": {
+            "epr": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "Alice_EPR",
+                  "B"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0,
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.4999999999999999,
+                    0.0,
+                    0.0,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            },
+            "input": {
+              "density_matrix": {
+                "imag": [
+                  [
+                    0.0,
+                    0.0
+                  ],
+                  [
+                    0.0,
+                    0.0
+                  ]
+                ],
+                "qubit_order": [
+                  "input"
+                ],
+                "real": [
+                  [
+                    0.4999999999999999,
+                    -0.4999999999999999
+                  ],
+                  [
+                    -0.4999999999999999,
+                    0.4999999999999999
+                  ]
+                ]
+              },
+              "fidelity": 0.9999999999999997,
+              "sim_time_ns": 0
+            }
+          },
+          "packet_arrival": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.8124582327721168,
+                  0.04169369293851899
+                ],
+                [
+                  0.04169369293851899,
+                  0.18754176722788318
+                ]
+              ]
+            },
+            "fidelity": 0.5416936929385189,
+            "sim_time_ns": 7625600
+          },
+          "usable": {
+            "density_matrix": {
+              "imag": [
+                [
+                  0.0,
+                  0.0
+                ],
+                [
+                  0.0,
+                  0.0
+                ]
+              ],
+              "qubit_order": [
+                "B"
+              ],
+              "real": [
+                [
+                  0.8216047526899737,
+                  -0.039660267539216906
+                ],
+                [
+                  -0.039660267539216906,
+                  0.1783952473100262
+                ]
+              ]
+            },
+            "fidelity": 0.5396602675392167,
+            "sim_time_ns": 8125600
+          }
+        },
+        "correction_count": 1,
+        "epr_created_ns": 0,
+        "input_created_ns": 0,
+        "input_state": "-",
+        "logical_handles": {
+          "epr": 202,
+          "input": 201,
+          "output": 203
+        },
+        "measurement_bits": [
+          1,
+          0
+        ],
+        "output": {
+          "handle": "output",
+          "kind": "qubit",
+          "locations": [
+            [
+              "B",
+              3
+            ]
+          ],
+          "state": "USABLE"
+        },
+        "protocol": "teleport",
+        "session_id": 4
+      }
+    },
+    "time_ns": 8125600
+  },
+  "time_unit": "ns",
+  "validation": {
+    "error": "Hybrid validation: packet drop",
+    "passed": false
+  }
+}

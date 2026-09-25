@@ -1,0 +1,49 @@
+{
+  "architecture": "direct-session-start-v2",
+  "artifact_counts": {
+    "expanded": {
+      "csv_rows": 4608,
+      "paired_cases": 384,
+      "raw_execution_reports": 1152
+    },
+    "pilot": {
+      "csv_rows": 576,
+      "paired_cases": 48,
+      "raw_execution_reports": 144
+    }
+  },
+  "artifact_sha256": {
+    "paper/RESULTS.md": "e40d45fb5e2bc0acc5a15bd63abb4d73f7d40fde629bc47101d8351cc33643a4",
+    "paper/REVISION-NOTES.md": "6919b29eaf8f0b4fc66d7d4c2de49cce77a0171cf289c28e60087545cffa709a",
+    "paper/abstraction-results-insert.tex": "5f3d326456572a25e5004035bc13199dea734af24079a84039f854fc92e488fa",
+    "paper/figures/fig4-latency-mae.pdf": "9f21d8265d71354ecd956421092395c12023ce7de5cc1016467a2bcb16323287",
+    "paper/figures/fig4-latency-mae.png": "677f60f11c1cd64e30349b358838df0249e7ad0dfe21b34e62b051136212be50",
+    "paper/figures/fig5-expected-fidelity.pdf": "4d2ec10a4b90e9167cec8d5583d3597bd45ed21cc54349faf35090b70d24df71",
+    "paper/figures/fig5-expected-fidelity.png": "1e07b1a697153dfa13776ec0c4241d339c35848a41fc8ef46c577160598508d3",
+    "paper/figures/fig6-mechanism-control.pdf": "728c6f981b3c4e0f2fe6f53e77b76d42f8c08c551ad97ea16f31ddb5a33d5bb5",
+    "paper/figures/fig6-mechanism-control.png": "291e0d4198c8a233ad4af99d870f028c8f1e89d6a5dc1d964b3699da269f7674",
+    "paper/figures/fig7-timing-cost.pdf": "a363e646d3d83aa874099e9c2d6b6d1296b4d2442361357c2d28c09b676180f3",
+    "paper/figures/fig7-timing-cost.png": "c26e22ae1d9702d49e5b26032d16e82259bf8d3b9d39291060a5fb19957849ed",
+    "paper/figures/simulation-cost-details.pdf": "6946d8576aa40e5d89a8faa52ca9eb68b0870460f1e6e42c5eac8e9af860fb82",
+    "paper/figures/simulation-cost-details.png": "ce5f59800c76b56034b0bb529ce91d2bbf82950819273709bb6548f8d714ba1d",
+    "paper/results-summary.json": "0e43abf3c81899742b0df26e12c405e69a4cd3ccb2b1c5082ebcd553b0b7e3b2",
+    "paper/scaling.csv": "2b0390b979bd26f91dd85c8929d46eeee095b7ce31d11868144e6a2a4d6228c4",
+    "paper/setup-and-metrics.tex": "ce4ebef2b18e0eca26eec10bdb3e894b37f945c3fc8d81b5e7f16c1fc94c07e5",
+    "paper/timing.csv": "1fa768c5a45accbbc1cc4f3b18068a30430f3a400f70f4a0f6a30f92d2097947",
+    "paper/validation-insert.tex": "bfa5f0f504626be5e6ef2a3be4c692d5dce46c16d17c18b4a2ed162f93b16079"
+  },
+  "evidence_sha256": {
+    "results/direct-start-validation-summary.json": "b276d08ac5e14449889accfaf022ecd8b5b8d799ddc35e5d401c501709d6543a"
+  },
+  "full_regression_rerun": true,
+  "latency_decomposition_matches": true,
+  "manuscript_rebuilt": false,
+  "no_command_path_in_evaluation": true,
+  "original_manuscript_sha256": "e924c074360dd51d4aa86798e41cccc16ad5c74d29143e296a08b42e4c000cf2",
+  "passed": true,
+  "raw_comparison_csv_aggregates_match": true,
+  "scaling_measurements": 120,
+  "source_and_evidence_hashes_match": true,
+  "synthetic_timing_rows": 2500,
+  "total_test_cases": 230
+}

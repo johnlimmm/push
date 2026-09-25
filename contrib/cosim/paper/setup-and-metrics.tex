@@ -1,0 +1,48 @@
+% Supplement VI-A. Requires amsmath/amssymb for equation/mathbb.
+% The protocol-validation mixed run has T1=T2=10 ms;
+% the P5-B and simulation-cost settings below instead have T1=20 ms, T2=10 ms.
+\begin{table*}[t]
+\centering
+\caption{Configuration of the execution-abstraction and simulation-cost experiments.}
+\label{tab:experiment-parameters}
+\begin{tabular}{lll}
+\hline
+Parameter & P5-B abstraction study & Simulation-cost study \\
+\hline
+Topology / classical transport & Fixed A/R/B; IPv4/UDP & Same \\
+Result link & 10 Mb/s; 0.2-ms propagation & Same \\
+Result payload & 80 B & 80 B (Swap), 2 B (Teleport) \\
+Modeled per-packet headers & 30 B & Same \\
+Background payload & 1,000 B & Same \\
+BSM / correction duration & 1.6 ms / 0.05 ms & 1.6 ms / 0.5 ms \\
+Memory $T_1$ / $T_2$ & 20 ms / 10 ms & Same \\
+Resource creation & Pre-created at $t=0$ & Same \\
+Quantum formalism / memory noise & Density matrix / native T1T2NoiseModel & Same \\
+Sessions per run & 4 & 1, 4, 8, 16, 32, 64 \\
+Request interval & 0.8 and 2 ms & 0.8 ms \\
+R--B background offered load & 0, 0.35, 0.70 & 0, 0.70 \\
+Execution resource & R/B capacity-one FIFO in Full Sync & Same \\
+Destination correction wait & Required to be zero in all variants & Allowed and validated \\
+\hline
+\end{tabular}
+\end{table*}
+
+For transaction $i$, latency is measured from local session activation at R
+to correction completion, $L_i=t_{\mathrm{corr,end},i}-t_{\mathrm{session,start},i}$.
+We distinguish signed latency bias from mean absolute error:
+\begin{equation}
+\operatorname{MAE}_L=\frac{1}{n}\sum_{i=1}^{n}
+\left|L_i^{\mathrm{model}}-L_i^{\mathrm{Full}}\right|.
+\end{equation}
+The expected fidelity is computed by enumerating the four Bell-measurement
+outcomes in the independent quantum reference at each model's operation times:
+\begin{equation}
+\mathbb{E}[F_i]=\sum_{b\in\{00,01,10,11\}}p_{i,b}F_{i,b}.
+\end{equation}
+Expected-fidelity bias is the mean of
+$\mathbb{E}[F_i]_{\mathrm{model}}-\mathbb{E}[F_i]_{\mathrm{Full}}$.
+Decoupled predicts latency and deadline satisfaction only; no fidelity or
+service-feasibility prediction is defined for that model.
+Service feasibility uses the pre-specified $F_{\min}=0.5$ and a 5-ms latency
+deadline. Deadline-only and joint fidelity/deadline misclassifications are
+reported separately relative to Full Sync, not to physical hardware ground truth.
