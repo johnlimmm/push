@@ -1,0 +1,868 @@
+{
+  "architecture": "swapping-assisted-teleportation-v5",
+  "elapsed_seconds": 402.7003330140142,
+  "groups": [
+    {
+      "access_delay_ns": 200000,
+      "means": {
+        "expected_output_fidelity": 0.5310002817122652,
+        "latency_ns": 6975200.0,
+        "ready_packet_ns": 473600.0,
+        "swap_B_wait_ns": 162400.0,
+        "swap_R_wait_ns": 1350000.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5059510525223259,
+          0.5723133022008753
+        ],
+        "latency_ns": [
+          5612800,
+          8337600
+        ],
+        "ready_packet_ns": [
+          473600,
+          473600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          324800
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 800000,
+      "result_load": 0,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 200000,
+      "means": {
+        "expected_output_fidelity": 0.5251367952428679,
+        "latency_ns": 7935479.25,
+        "ready_packet_ns": 473600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 1350000.0,
+        "teleport_A_wait_ns": 245458.8125,
+        "teleport_B_wait_ns": 177900.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5050013781198265,
+          0.5623600283259519
+        ],
+        "latency_ns": [
+          6746052,
+          9152316
+        ],
+        "ready_packet_ns": [
+          473600,
+          473600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          786715
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ]
+      },
+      "request_interval_ns": 800000,
+      "result_load": 0.7,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 200000,
+      "means": {
+        "expected_output_fidelity": 0.5211977401807586,
+        "latency_ns": 5462800.0,
+        "ready_packet_ns": 473600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5001980983010421,
+          0.5723133022008753
+        ],
+        "latency_ns": [
+          5412800,
+          5612800
+        ],
+        "ready_packet_ns": [
+          473600,
+          473600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 4000000,
+      "result_load": 0,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 200000,
+      "means": {
+        "expected_output_fidelity": 0.5172949085402125,
+        "latency_ns": 6270443.9375,
+        "ready_packet_ns": 473600.0,
+        "swap_B_wait_ns": 155267.9375,
+        "swap_R_wait_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 29650.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5001509421992943,
+          0.5659676518520044
+        ],
+        "latency_ns": [
+          5539137,
+          7406144
+        ],
+        "ready_packet_ns": [
+          473600,
+          473600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          412000
+        ],
+        "swap_R_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ]
+      },
+      "request_interval_ns": 4000000,
+      "result_load": 0.7,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 1000000,
+      "means": {
+        "expected_output_fidelity": 0.5227568971918362,
+        "latency_ns": 8494000.0,
+        "ready_packet_ns": 1273600.0,
+        "swap_B_wait_ns": 81200.0,
+        "swap_R_wait_ns": 1350000.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5043213510586618,
+          0.5525102347607841
+        ],
+        "latency_ns": [
+          7212800,
+          9937600
+        ],
+        "ready_packet_ns": [
+          1273600,
+          1273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          324800
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 800000,
+      "result_load": 0,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 1000000,
+      "means": {
+        "expected_output_fidelity": 0.5183963112746708,
+        "latency_ns": 9492507.875,
+        "ready_packet_ns": 1273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 1350000.0,
+        "teleport_A_wait_ns": 245458.8125,
+        "teleport_B_wait_ns": 118600.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5035192172700576,
+          0.5472385453654706
+        ],
+        "latency_ns": [
+          7954641,
+          11139137
+        ],
+        "ready_packet_ns": [
+          1273600,
+          1273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          786715
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ]
+      },
+      "request_interval_ns": 800000,
+      "result_load": 0.7,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 1000000,
+      "means": {
+        "expected_output_fidelity": 0.5153927186203959,
+        "latency_ns": 7062800.0,
+        "ready_packet_ns": 1273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5001438488905474,
+          0.5525102347607841
+        ],
+        "latency_ns": [
+          7012800,
+          7212800
+        ],
+        "ready_packet_ns": [
+          1273600,
+          1273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 4000000,
+      "result_load": 0,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 1000000,
+      "means": {
+        "expected_output_fidelity": 0.5133216461016723,
+        "latency_ns": 7556333.75,
+        "ready_packet_ns": 1273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 105496.875
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5001143407102329,
+          0.5499713678508324
+        ],
+        "latency_ns": [
+          7163671,
+          8020887
+        ],
+        "ready_packet_ns": [
+          1273600,
+          1273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ]
+      },
+      "request_interval_ns": 4000000,
+      "result_load": 0.7,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 5000000,
+      "means": {
+        "expected_output_fidelity": 0.5046168614949097,
+        "latency_ns": 16412800.0,
+        "ready_packet_ns": 5273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 1350000.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5009617584978407,
+          0.5106016335572837
+        ],
+        "latency_ns": [
+          15212800,
+          17612800
+        ],
+        "ready_packet_ns": [
+          5273600,
+          5273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 800000,
+      "result_load": 0,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 5000000,
+      "means": {
+        "expected_output_fidelity": 0.5038566367124104,
+        "latency_ns": 17202279.75,
+        "ready_packet_ns": 5273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 1350000.0,
+        "teleport_A_wait_ns": 245458.8125,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5007467678627032,
+          0.5098497896381422
+        ],
+        "latency_ns": [
+          15632242,
+          18569460
+        ],
+        "ready_packet_ns": [
+          5273600,
+          5273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          786715
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 800000,
+      "result_load": 0.7,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 5000000,
+      "means": {
+        "expected_output_fidelity": 0.5031077362919292,
+        "latency_ns": 15062800.0,
+        "ready_packet_ns": 5273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5000290425901187,
+          0.5106016335572837
+        ],
+        "latency_ns": [
+          15012800,
+          15212800
+        ],
+        "ready_packet_ns": [
+          5273600,
+          5273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 4000000,
+      "result_load": 0,
+      "transactions": 16
+    },
+    {
+      "access_delay_ns": 5000000,
+      "means": {
+        "expected_output_fidelity": 0.5026337196853482,
+        "latency_ns": 15655970.375,
+        "ready_packet_ns": 5273600.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5000225375448243,
+          0.5098497896381422
+        ],
+        "latency_ns": [
+          15012800,
+          16260888
+        ],
+        "ready_packet_ns": [
+          5273600,
+          5273600
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ]
+      },
+      "request_interval_ns": 4000000,
+      "result_load": 0.7,
+      "transactions": 16
+    }
+  ],
+  "interpretation": "Finite characterization. Four periodic-traffic phases; branch-exact expectation at each timing, no population generalization.",
+  "max_density_matrix_error": 4.996003610813204e-16,
+  "passed": true,
+  "plan": {
+    "access_delays_ns": [
+      200000,
+      1000000,
+      5000000
+    ],
+    "chains_per_run": 4,
+    "first_start_ns": 1000000,
+    "input_state": "+i",
+    "name": "chained-end-to-end-characterization",
+    "quantum_seed": 7,
+    "request_intervals_ns": [
+      800000,
+      4000000
+    ],
+    "result_loads": [
+      0,
+      0.7
+    ],
+    "scope": "finite periodic-background phase characterization; no population performance claim",
+    "traffic_seeds": [
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  "reports": [
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0-phase101.json.gz",
+      "sha256": "b1d7711b804620db9d37cd05c970a20cdb78e381f67d4da22094f6147a4eea5d"
+    },
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0-phase102.json.gz",
+      "sha256": "8aec6b89faec4edf819bc2753547375ec1dd35045cf6f31261e3d278ef9c8972"
+    },
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0-phase103.json.gz",
+      "sha256": "699dfc11c6de7c94ddc5531fc10f53b9ed6b6eb0a2755c2e8b88b75231ef8185"
+    },
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0-phase104.json.gz",
+      "sha256": "680902d5dd8286338f6f8964e187c365fdb4d7c738f3ff644299f3250bd9dbef"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0.7-phase101.json.gz",
+      "sha256": "fcfad4f030cc682510f98251b38b93442eb9780dac582161a6a0d61cbb5836fc"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0.7-phase102.json.gz",
+      "sha256": "6a68af9ca57c6769e4144e5046f11cfb4b4ccf3cea3b9e36823e9f9c69720db4"
+    },
+    {
+      "error": 2.220446049250313e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0.7-phase103.json.gz",
+      "sha256": "9103e7a82d2d057c9f819365ced9f26d469e8af1c56dd05c86333e8789b754a1"
+    },
+    {
+      "error": 2.220446049250313e-16,
+      "passed": true,
+      "report": "a200000-i800000-load0.7-phase104.json.gz",
+      "sha256": "4f72bc00f9ee5e64fd0503f5073ced6cf0d07a0c2b6d93fa18e7cf5401c549a7"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0-phase101.json.gz",
+      "sha256": "fa5543c4700481ebfb08ff0408c1e429f1e659eea861ad46197647ae59222f63"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0-phase102.json.gz",
+      "sha256": "d2317d5b69c6f600df81e1aa534cabf3a2ba215e58feaf982bb35be3b364d3f3"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0-phase103.json.gz",
+      "sha256": "9db0bb433f1806ce8ec486942a449265606bf2382fad760a98abf61efe9de734"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0-phase104.json.gz",
+      "sha256": "2aa36b1a03888e9d973ff50d80afc6cbb7d79adce9e5535c7e12b00852eab9c5"
+    },
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0.7-phase101.json.gz",
+      "sha256": "ad9a44c616759f302b1a564f19543a6f97f648f764ff4b2d48730093752444c7"
+    },
+    {
+      "error": 4.996003610813204e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0.7-phase102.json.gz",
+      "sha256": "b71d8a28ef720971e32159007d8d958d6b3b707dda4abbda3a1c3cbedeccf24d"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0.7-phase103.json.gz",
+      "sha256": "e14d0224adcac448fe3c4d9514f8f1622fe20b9473f96d7b99bd720d6f42df35"
+    },
+    {
+      "error": 2.220446049250313e-16,
+      "passed": true,
+      "report": "a200000-i4000000-load0.7-phase104.json.gz",
+      "sha256": "62db701aff4556152afd3b33b589d6550bcc4cf3e57cdff08aa6a3946eed59f9"
+    },
+    {
+      "error": 4.996003610813204e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0-phase101.json.gz",
+      "sha256": "85c1128e11413d40d406a6dc625412a9dfc3e0656ae1fc9f3d9e9d751f94a15f"
+    },
+    {
+      "error": 4.996003610813204e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0-phase102.json.gz",
+      "sha256": "a0af21f0eeaf70b250494f836abac3dec4584a3df0d09d0de0d81ef647be0480"
+    },
+    {
+      "error": 4.996003610813204e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0-phase103.json.gz",
+      "sha256": "04f2cbba22ad818edfc207d2ba5af30507839e8d494ddc2fbb2543740ee04f13"
+    },
+    {
+      "error": 4.996003610813204e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0-phase104.json.gz",
+      "sha256": "da49ec9a71c6f3ecab779487a33f8351044d80f0806d96ff889792334cf2964f"
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0.7-phase101.json.gz",
+      "sha256": "6a18d841cbf91b15cd44a19789aaacdb6220f44dadccad2a673272c60324db68"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0.7-phase102.json.gz",
+      "sha256": "a6d9e756eae192c1f8d67957377044753e8335e5e8d39bc781825c3cc9b28b47"
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0.7-phase103.json.gz",
+      "sha256": "dc8f8a7dfed85dcad755931e80224c6156c1312253abb18465aaa31837624266"
+    },
+    {
+      "error": 4.163336342344337e-16,
+      "passed": true,
+      "report": "a1000000-i800000-load0.7-phase104.json.gz",
+      "sha256": "e2a2d86df0caf621266cafd36649d5fca2781311dcb0432c397c12b570c818dd"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0-phase101.json.gz",
+      "sha256": "cee8b944dd0eb50d24fc97810678b4b33afb2adc6e9d8275bbed56ab42853345"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0-phase102.json.gz",
+      "sha256": "e56e31981d5a80745a43a88fc985bbaec23736b50a22645cfc23e1da0379779c"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0-phase103.json.gz",
+      "sha256": "58d2f3cc000f563256683f724a8bde6317e23498b5cea8c173465ed8085961b9"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0-phase104.json.gz",
+      "sha256": "e4594a2c838d641d2136472cca9477a3bf6c46b9dbca7f082187cdfdf6b0d609"
+    },
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0.7-phase101.json.gz",
+      "sha256": "e676422c811c7e9cb20942e0dfacc1b08dad44b3483c8311efbb786db46ff49c"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0.7-phase102.json.gz",
+      "sha256": "aeaea502d732d02dd38f96a04b4361e9dc1656e36b56e0edd825dfa919703c1f"
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0.7-phase103.json.gz",
+      "sha256": "e416757ab0dab494b5e3534512f62fce170601a4b2ac6deb98ead72dbaa3931f"
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "passed": true,
+      "report": "a1000000-i4000000-load0.7-phase104.json.gz",
+      "sha256": "30b6e433048dbb930e8a3c8019f1fea05c042a9082c7a1e231761f131d5fd043"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0-phase101.json.gz",
+      "sha256": "dbc2f213f38ae59e8755cdb581de418dd5ebb0de112423841765e4134cf3fec3"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0-phase102.json.gz",
+      "sha256": "b16d076525b29c8793e3e924056c87e48cb3c1d241fa8a5e1cb43348dd4c4cfc"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0-phase103.json.gz",
+      "sha256": "7065ffb651b39a1f2cbd2d926e91ffb0ac4038250deacf9109118283ca5387f8"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0-phase104.json.gz",
+      "sha256": "9c34b89a13ad2e25c49ae3563bcedf501cb6c1929303e40d19d24759e57f5b1b"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0.7-phase101.json.gz",
+      "sha256": "a85d2c8ba2986156b4cc266c29d91be2dae57d7b95d53dd78ad14281fc9e7d7f"
+    },
+    {
+      "error": 4.996003610813204e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0.7-phase102.json.gz",
+      "sha256": "9f40d13ae628c3f0a09302be2d7ac6289af6684e351e84cd7ef5a618fd7875e4"
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0.7-phase103.json.gz",
+      "sha256": "3237268f1c50a0c71a3a928df9088400a4047f8e56a93a85d222172bc46f7b1c"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i800000-load0.7-phase104.json.gz",
+      "sha256": "2770b12f452c09e3a2aa37cdc64602088576271dd17a529ff57b5e807a467f24"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0-phase101.json.gz",
+      "sha256": "e1fccecf125b45286ec7582ca46aff57ed45d783408f561bbfc8f663e0d79984"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0-phase102.json.gz",
+      "sha256": "b21b7aafe26163608eb3ae042e5e43c9497b04a1ba83d5ee56c8da48bdb3fe0e"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0-phase103.json.gz",
+      "sha256": "046a07b7e91f18695e1a482b8209a59cff1605d5c16ebb9b05f189705f6237e4"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0-phase104.json.gz",
+      "sha256": "3ffb48362f52c5925e6d8d2f265a997db51483dd275bc346961ae27e04e22252"
+    },
+    {
+      "error": 4.440892098500626e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0.7-phase101.json.gz",
+      "sha256": "a32af058cdc92c8765cf09f4c89a03a6593c07449b4272c6161c6f8b1a7b5856"
+    },
+    {
+      "error": 2.7755575615628914e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0.7-phase102.json.gz",
+      "sha256": "58ee91e0c7a17c6c9b4ee5d98cb0844a870cd4655a94d3b2d1145e9148ddd65f"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0.7-phase103.json.gz",
+      "sha256": "c23afad77f630dd2ea3e71782753c5d6d8d9bffada4c289790c554df6a98b634"
+    },
+    {
+      "error": 3.3306690738754696e-16,
+      "passed": true,
+      "report": "a5000000-i4000000-load0.7-phase104.json.gz",
+      "sha256": "3bf9709f8a328f320b8126325cfc71afa9eb9fb49557c096a073ae7a20f0fe28"
+    }
+  ],
+  "runs": 48,
+  "transactions": 192
+}

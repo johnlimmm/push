@@ -2,6 +2,18 @@
 
 **Q2NS/ns-3의 실제 classical protocol·packet 실행과 NetSquid의 quantum state evolution을 연결하는 공동 시뮬레이터.**
 
+## 새 종단 간 시나리오: Swap → A–B Teleportation
+
+**Hybrid v5는 R의 swapping으로 만든 실제 A–B pair를 A의 TeleportationApp에 넘긴다.**
+A=Alice, R=repeater, B=Bob이다. B의 swapping correction 이후 준비 완료 UDP가
+B→R→A로 전달되고, A의 teleport BSM 결과는 A→R→B의 실제 UDP packet으로 전달된다.
+같은 qubit 객체·noise history를 유지하며 A/R/B native processor FIFO와 공통 federation을 사용한다.
+
+[실행 안내](contrib/cosim/README-CHAINED.md) · [실행 계약](contrib/cosim/SPEC-CHAINED.md) ·
+[검증·분석 결과](contrib/cosim/paper/chained-v5/RESULTS.md)
+
+기존 R→B mixed workload와 v3/v4/P5-B 결과는 각각의 회귀 기준으로 보존한다.
+
 이 저장소는 `johnlimmm`의 hybrid simulator 구현과 검증 결과를 담는다.
 기존 **Hybrid v3 (native timed execution)**은 실제 Q2NS **SwapApp**과 **TeleportationApp**을 공통 실행 기반에 연결하고,
 두 프로토콜의 혼합 실행에서 classical packet queue와 quantum processor queue가

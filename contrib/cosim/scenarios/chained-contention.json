@@ -1,0 +1,33 @@
+{
+  "name": "chained-contention",
+  "chains": [
+    {
+      "chain_id": 1,
+      "session_start_ns": 1000000,
+      "input_state": "+i"
+    },
+    {
+      "chain_id": 2,
+      "session_start_ns": 1800000,
+      "input_state": "+i"
+    },
+    {
+      "chain_id": 3,
+      "session_start_ns": 2600000,
+      "input_state": "+i"
+    },
+    {
+      "chain_id": 4,
+      "session_start_ns": 3400000,
+      "input_state": "+i"
+    }
+  ],
+  "background": {
+    "result": {
+      "start_ns": 2200000,
+      "interval_ns": 850000,
+      "count": 20,
+      "payload_bytes": 1000
+    }
+  }
+}

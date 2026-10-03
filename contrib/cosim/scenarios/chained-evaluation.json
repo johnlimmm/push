@@ -1,0 +1,27 @@
+{
+  "name": "chained-end-to-end-characterization",
+  "input_state": "+i",
+  "chains_per_run": 4,
+  "first_start_ns": 1000000,
+  "request_intervals_ns": [
+    800000,
+    4000000
+  ],
+  "access_delays_ns": [
+    200000,
+    1000000,
+    5000000
+  ],
+  "result_loads": [
+    0,
+    0.7
+  ],
+  "traffic_seeds": [
+    101,
+    102,
+    103,
+    104
+  ],
+  "quantum_seed": 7,
+  "scope": "finite periodic-background phase characterization; no population performance claim"
+}

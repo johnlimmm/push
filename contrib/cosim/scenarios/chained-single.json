@@ -1,0 +1,10 @@
+{
+  "name": "chained-single",
+  "chains": [
+    {
+      "chain_id": 1,
+      "session_start_ns": 1000000,
+      "input_state": "+i"
+    }
+  ]
+}

@@ -1,4 +1,5 @@
 # Preserve generated evidence bytes so published SHA-256 hashes stay valid.
 paper/*.csv -text whitespace=cr-at-eol
 paper/provisioned-v4/*.csv -text whitespace=cr-at-eol
+paper/chained-v5/*.csv -text whitespace=cr-at-eol
 results/** -text whitespace=cr-at-eol

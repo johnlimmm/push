@@ -1,0 +1,128 @@
+{
+  "date": "2026-10-03T11:48:07.960732+00:00",
+  "frozen_sources_unchanged": true,
+  "passed": true,
+  "published_evidence_preserved": true,
+  "suites": {
+    "chained": {
+      "log": "chained-tests.log",
+      "passed": true,
+      "tests": 16
+    },
+    "existing-evaluation": {
+      "command": [
+        "/home/ns3/qunet/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "contrib/cosim/experiments/tests",
+        "-v"
+      ],
+      "elapsed_seconds": 57.296266239951365,
+      "log": "existing-evaluation.log",
+      "passed": true,
+      "tests": 29
+    },
+    "existing-python": {
+      "command": [
+        "/home/ns3/qunet/bin/python",
+        "-c",
+        "import unittest\nsuite=unittest.defaultTestLoader.discover('contrib/cosim/tests')\ndef flatten(s):\n for t in s:\n  if isinstance(t,unittest.TestSuite):\n   yield from flatten(t)\n  elif t.__class__.__module__!='test_chained':yield t\nresult=unittest.TextTestRunner(verbosity=2).run(unittest.TestSuite(flatten(suite)))\nraise SystemExit(not result.wasSuccessful())\n"
+      ],
+      "elapsed_seconds": 406.7099988210248,
+      "log": "existing-python.log",
+      "passed": true,
+      "tests": 179
+    },
+    "q2ns-analysis": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-analysis",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.2044189239386469,
+      "log": "q2ns-analysis.log",
+      "passed": true,
+      "tests": 4
+    },
+    "q2ns-netcontroller": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-netcontroller",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.188239531009458,
+      "log": "q2ns-netcontroller.log",
+      "passed": true,
+      "tests": 8
+    },
+    "q2ns-qchannel": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qchannel",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.20001093402970582,
+      "log": "q2ns-qchannel.log",
+      "passed": true,
+      "tests": 14
+    },
+    "q2ns-qnode": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qnode",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.2051812718855217,
+      "log": "q2ns-qnode.log",
+      "passed": true,
+      "tests": 7
+    },
+    "q2ns-qstate-interface": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-interface",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.40110663103405386,
+      "log": "q2ns-qstate-interface.log",
+      "passed": true,
+      "tests": 4
+    },
+    "q2ns-qstate-registry": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-registry",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.46368435793556273,
+      "log": "q2ns-qstate-registry.log",
+      "passed": true,
+      "tests": 35
+    },
+    "q2ns-swap-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-swap-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.5090625199954957,
+      "log": "q2ns-swap-external.log",
+      "passed": true,
+      "tests": 4
+    },
+    "q2ns-teleport-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-teleport-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.25891881599090993,
+      "log": "q2ns-teleport-external.log",
+      "passed": true,
+      "tests": 7
+    }
+  },
+  "total_test_cases": 307
+}
