@@ -1,0 +1,140 @@
+{
+  "architecture": "provisioned-native-v4",
+  "date": "2026-10-03T08:42:19.867045+00:00",
+  "native_suites": {
+    "q2ns-analysis": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-analysis",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.2408259599469602,
+      "log": "q2ns-analysis.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 4
+    },
+    "q2ns-netcontroller": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-netcontroller",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.2962304881075397,
+      "log": "q2ns-netcontroller.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 8
+    },
+    "q2ns-qchannel": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qchannel",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.37951668398454785,
+      "log": "q2ns-qchannel.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 14
+    },
+    "q2ns-qnode": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qnode",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.22956481797154993,
+      "log": "q2ns-qnode.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 7
+    },
+    "q2ns-qstate-interface": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-interface",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.3026603169273585,
+      "log": "q2ns-qstate-interface.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 4
+    },
+    "q2ns-qstate-registry": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-registry",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.2716806420357898,
+      "log": "q2ns-qstate-registry.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 35
+    },
+    "q2ns-swap-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-swap-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.3289540190016851,
+      "log": "q2ns-swap-external.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 4
+    },
+    "q2ns-teleport-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-teleport-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.32611166092101485,
+      "log": "q2ns-teleport-external.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 7
+    }
+  },
+  "passed": true,
+  "published_evidence_preserved": true,
+  "suites": {
+    "paper": {
+      "command": [
+        "/home/ns3/qunet/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "contrib/cosim/experiments/tests",
+        "-v"
+      ],
+      "elapsed_seconds": 57.74299930501729,
+      "log": "paper.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 29
+    },
+    "python": {
+      "command": [
+        "/home/ns3/qunet/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "contrib/cosim/tests",
+        "-v"
+      ],
+      "elapsed_seconds": 385.59282693406567,
+      "log": "python.log",
+      "passed": true,
+      "returncode": 0,
+      "tests": 179
+    }
+  },
+  "total_test_cases": 291,
+  "v3_sources_unchanged": true
+}

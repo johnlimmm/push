@@ -1,0 +1,39 @@
+{
+  "session_counts": [
+    1,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "scaling_loads": [
+    0.0,
+    0.7
+  ],
+  "scaling_repetitions": 10,
+  "scaling_warmups_per_cell": 1,
+  "request_interval_ns": 800000,
+  "traffic_seed": 401,
+  "quantum_seed": 7,
+  "order_seed": 7301,
+  "bootstrap_samples": 10000,
+  "scope": "v4 actual channel provisioning and mixed native execution; lossless and ideal readiness; finite-batch cost.",
+  "native_instructions": {
+    "cnot_ns": 600000,
+    "h_ns": 200000,
+    "measure_ns": 400000,
+    "x_ns": 250000,
+    "z_ns": 250000
+  },
+  "quantum_links": {
+    "RA": {
+      "delay_ns": 800000,
+      "depolar_rate_hz": 0
+    },
+    "RB": {
+      "delay_ns": 1200000,
+      "depolar_rate_hz": 0
+    }
+  }
+}

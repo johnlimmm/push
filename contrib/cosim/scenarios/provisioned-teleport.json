@@ -1,0 +1,22 @@
+{
+  "name": "provisioned-teleport",
+  "seed": 7,
+  "quantum_links": {
+    "RA": {
+      "delay_ns": 800000,
+      "depolar_rate_hz": 0
+    },
+    "RB": {
+      "delay_ns": 1200000,
+      "depolar_rate_hz": 0
+    }
+  },
+  "sessions": [
+    {
+      "session_id": 1,
+      "protocol": "teleport",
+      "input_state": "+i",
+      "session_start_ns": 1000000
+    }
+  ]
+}

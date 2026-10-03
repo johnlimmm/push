@@ -1,0 +1,139 @@
+{
+  "by_classical_load": {
+    "0.0": {
+      "classical_load": 0.0,
+      "delays": {
+        "result_ns": 288000
+      },
+      "measured_delays": {
+        "result": [
+          288000,
+          288000,
+          288000,
+          288000,
+          288000,
+          288000,
+          288000,
+          288000
+        ]
+      },
+      "rounding": "nearest integer ns; half up",
+      "runs": [
+        {
+          "report": "calibration/load-0.0-traffic-100.json.gz",
+          "traffic_seed": 100,
+          "workload_sha256": "478f0a23fada1151faa9f4268546331cd4774a178aae8e90e1685e703b90d0e7"
+        },
+        {
+          "report": "calibration/load-0.0-traffic-101.json.gz",
+          "traffic_seed": 101,
+          "workload_sha256": "76b70743e1125425556867a9a327ca10299b54f61f1fff969166ef611327743c"
+        }
+      ],
+      "sample_count": 8
+    },
+    "0.35": {
+      "classical_load": 0.35,
+      "delays": {
+        "result_ns": 300965
+      },
+      "measured_delays": {
+        "result": [
+          288000,
+          288000,
+          288000,
+          288000,
+          288000,
+          288000,
+          288000,
+          391717
+        ]
+      },
+      "rounding": "nearest integer ns; half up",
+      "runs": [
+        {
+          "report": "calibration/load-0.35-traffic-100.json.gz",
+          "traffic_seed": 100,
+          "workload_sha256": "d9ad7633406c2d5ebbdfe01c29487c21d68dc2750ba154d2a7c61f5f1fc17bb3"
+        },
+        {
+          "report": "calibration/load-0.35-traffic-101.json.gz",
+          "traffic_seed": 101,
+          "workload_sha256": "61eb2aa62fa73b975ce4b0895566e10de03e93b70278968565007ad785a9a54c"
+        }
+      ],
+      "sample_count": 8
+    },
+    "0.7": {
+      "classical_load": 0.7,
+      "delays": {
+        "result_ns": 712764
+      },
+      "measured_delays": {
+        "result": [
+          971776,
+          348919,
+          703205,
+          1057491,
+          1074715,
+          451858,
+          806144,
+          288000
+        ]
+      },
+      "rounding": "nearest integer ns; half up",
+      "runs": [
+        {
+          "report": "calibration/load-0.7-traffic-100.json.gz",
+          "traffic_seed": 100,
+          "workload_sha256": "c837514dbe94dea36f05cf79d699c167c30c8a77553b39df279ff0f5a39375ab"
+        },
+        {
+          "report": "calibration/load-0.7-traffic-101.json.gz",
+          "traffic_seed": 101,
+          "workload_sha256": "0b8188327fa55cea357813c5524cd75237ce9cf3159635bb26627ca82959c36f"
+        }
+      ],
+      "sample_count": 8
+    }
+  },
+  "calibration_traffic_seeds": [
+    100,
+    101
+  ],
+  "plan_sha256": "66f0d8a10c9f7b94f3ebef95115af6466acdeda8f37d448c81ec6d1ba150931e",
+  "test_traffic_seeds": [
+    1000,
+    1001,
+    1002,
+    1003,
+    1004,
+    1005,
+    1006,
+    1007,
+    1008,
+    1009,
+    1010,
+    1011,
+    1012,
+    1013,
+    1014,
+    1015,
+    1016,
+    1017,
+    1018,
+    1019,
+    1020,
+    1021,
+    1022,
+    1023,
+    1024,
+    1025,
+    1026,
+    1027,
+    1028,
+    1029,
+    1030,
+    1031
+  ]
+}

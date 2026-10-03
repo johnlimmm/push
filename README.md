@@ -3,7 +3,7 @@
 **Q2NS/ns-3의 실제 classical protocol·packet 실행과 NetSquid의 quantum state evolution을 연결하는 공동 시뮬레이터.**
 
 이 저장소는 `johnlimmm`의 hybrid simulator 구현과 검증 결과를 담는다.
-현재 **Hybrid v3 (native timed execution)**은 실제 Q2NS **SwapApp**과 **TeleportationApp**을 공통 실행 기반에 연결하고,
+기존 **Hybrid v3 (native timed execution)**은 실제 Q2NS **SwapApp**과 **TeleportationApp**을 공통 실행 기반에 연결하고,
 두 프로토콜의 혼합 실행에서 classical packet queue와 quantum processor queue가
 실제 연산 시각 및 memory aging에 반영되는 것을 검증했다.
 
@@ -11,7 +11,25 @@ BSM과 correction 내부를 실제 NetSquid `QuantumProgram`으로 실행한다.
 기존 v2 atomic 실행과 논문 평가 결과는 별도 기준점으로 유지한다.
 새 실행 방법과 검증 결과는 [README-NATIVE](contrib/cosim/README-NATIVE.md)에 있다.
 
-**검증·평가: 전체 258개 PASS · 독립 native reference와 최대 density-matrix error 6.66×10⁻¹⁶.**
+**v3 검증·평가: 전체 258개 PASS · 독립 native reference와 최대 density-matrix error 6.66×10⁻¹⁶.**
+
+## 새 실행 경로: Hybrid v4 quantum-channel provisioning
+
+**v4에서는 실제 NetSquid quantum-channel 도착이 자원 준비와 BSM 시작 가능 시각을 결정한다.**
+Swap/Teleport의 준비 대기와 shared R FIFO 대기를 분리하고, 이후 native BSM → 실제 ns-3 UDP →
+B FIFO/correction을 이어 실행한다. 무손실 전달과 지연 0의 readiness 통지를 명시적으로 가정한다.
+
+**v4 검증: 전체 278개 PASS · 새 평가 96회/192 transaction · 최대 density-matrix error 4.44×10⁻¹⁶.**
+
+[README-PROVISIONED](contrib/cosim/README-PROVISIONED.md) ·
+[SPEC](contrib/cosim/SPEC-PROVISIONED.md) · [v4 결과](contrib/cosim/paper/PROVISIONING.md)
+
+v4의 P5-B/실행 비용 평가 계약과 재현 방법은
+[README-PROVISIONED-EVALUATION](contrib/cosim/README-PROVISIONED-EVALUATION.md)에 있다.
+새 평가 표·그림은 [v4 논문 결과](contrib/cosim/paper/provisioned-v4/RESULTS.md)에 별도로 기록한다.
+**v4 평가 완료: 회귀 291개 PASS · P5-B 384 paired cases · 비용 측정 120회 · timing error 0 ns.**
+
+아래 native/P5-B 수치는 보존된 **v3** 평가다. v4 provisioning의 실행·검증 결과는 위 문서에 구분했다.
 
 ## 이 프로젝트에서 구현한 것
 
@@ -135,7 +153,7 @@ python3 contrib/cosim/tools/verify_hybrid_v1.py --archive-only
 5. [README-HYBRID](contrib/cosim/README-HYBRID.md), [SPEC-HYBRID](contrib/cosim/SPEC-HYBRID.md): 보존된 atomic 기반의 시간·자원·adapter 계약.
 
 `contrib/cosim/README.md` 및 이전 milestone 문서는 당시의 기준점을 기록한 문서다.
-P0–P5-B의 구현·결과도 함께 보존하며, 현재 진입점은 이 README와 README-NATIVE다.
+P0–P5-B의 구현·결과도 함께 보존하며, 진입점은 이 README, README-NATIVE(v3), README-PROVISIONED(v4)다.
 
 ## 지원 범위와 다음 단계
 
@@ -143,9 +161,11 @@ P0–P5-B의 구현·결과도 함께 보존하며, 현재 진입점은 이 READ
 직렬 timed BSM/correction, shared capacity-one R/B FIFO, native T1/T2 aging.
 Gate duration은 설정 가능한 모델 값이며 하드웨어 실측값이 아니다.
 
-임의 topology, dynamic EPR, physical quantum channel, 모든 Q2NS 예제의 무수정 실행은 아직 지원하지 않는다.
-후속 확장 후보는 **Scheduled EPR Provisioning**, configurable topology,
-quantum channel/generation 및 multi-hop이다. Native 평가의 범위와 한계는 논문용 결과 문서에 별도로 명시한다.
+**v4 추가 범위:** 실제 NetSquid Network/Node/QuantumChannel를 통한 EPR half 전달,
+준비 완료 callback과 BSM eligibility, channel depolarization 및 이동/저장 noise 구분.
+
+임의 topology, 물리적 photon source·heralded EPR generation, loss/retry, 실제 readiness ACK,
+모든 Q2NS 예제의 무수정 실행은 아직 지원하지 않는다. 각 버전의 범위와 결과는 별도로 기록한다.
 
 ## 기반 프로젝트와 라이선스
 

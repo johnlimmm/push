@@ -1,0 +1,363 @@
+{
+  "architecture": "provisioned-native-v4",
+  "artifacts": {
+    "branches": {
+      "path": "results/provisioned-v4/branch-coverage.json",
+      "sha256": "f52123235bd214ed7b1782ed2be16df6f453806cf2effc6ded7c30fabfb96b3a"
+    },
+    "evaluation": {
+      "path": "results/provisioned-evaluation/summary.json",
+      "sha256": "8545315b2492619418b967a59496d91c7cc000faf1f24153deca1ebbeabeef2f"
+    },
+    "regression": {
+      "path": "results/provisioned-regression/summary.json",
+      "sha256": "034479f2cbb868271de9b6a41d9c4c8779e09a514c783eba3e5377762843b5eb"
+    }
+  },
+  "evaluation_runs": 96,
+  "evaluation_scope": "Finite causality and correctness study; v3 P5-B/cost figures preserved separately.",
+  "evaluation_transactions": 192,
+  "max_density_matrix_error": 4.440892098500626e-16,
+  "new_tests": 20,
+  "noiseless_branch_transactions": 160,
+  "passed": true,
+  "q2ns_source_changes": false,
+  "quantum_loss_model": "none",
+  "ready_notification": "ideal_zero_delay",
+  "scenarios": {
+    "channel-noise": {
+      "max_density_matrix_error": 0.0,
+      "report": "results/provisioned-v4/channel-noise.json.gz",
+      "sessions": [
+        {
+          "bsm_completion_ns": 3600000,
+          "bsm_start_ns": 2000000,
+          "completion_ns": 4388000,
+          "correction_start_ns": 3888000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 2000000,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 2000000,
+          "resource_wait_ns": 1000000,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 3388000,
+          "usable_fidelity": 0.7527400345267292
+        }
+      ]
+    },
+    "late-resources": {
+      "max_density_matrix_error": 1.1102230246251565e-16,
+      "report": "results/provisioned-v4/late-resources.json.gz",
+      "sessions": [
+        {
+          "bsm_completion_ns": 5600000,
+          "bsm_start_ns": 4000000,
+          "completion_ns": 6388000,
+          "correction_start_ns": 5888000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 4000000,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 4000000,
+          "resource_wait_ns": 3000000,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 5388000,
+          "usable_fidelity": 0.47247906380624227
+        }
+      ]
+    },
+    "mixed": {
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "report": "results/provisioned-v4/mixed.json.gz",
+      "sessions": [
+        {
+          "bsm_completion_ns": 4600000,
+          "bsm_start_ns": 3000000,
+          "completion_ns": 5512000,
+          "correction_start_ns": 5012000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 2000000,
+          "quantum_wait_ns": 1000000,
+          "resource_ready_ns": 2000000,
+          "resource_wait_ns": 1000000,
+          "result_delay_ns": 412000,
+          "result_queue_ns": 124000,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 4512000,
+          "usable_fidelity": 0.4682153405529229
+        },
+        {
+          "bsm_completion_ns": 3000000,
+          "bsm_start_ns": 1400000,
+          "completion_ns": 3749600,
+          "correction_start_ns": 3249600,
+          "correction_wait_ns": 0,
+          "eligible_ns": 1400000,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 1200000,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 249600,
+          "result_queue_ns": 24000,
+          "session_id": 2,
+          "session_start_ns": 1400000,
+          "transaction_latency_ns": 2349600,
+          "usable_fidelity": 0.732557484335895
+        },
+        {
+          "bsm_completion_ns": 6200000,
+          "bsm_start_ns": 4600000,
+          "completion_ns": 7248000,
+          "correction_start_ns": 6748000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 2000000,
+          "quantum_wait_ns": 2600000,
+          "resource_ready_ns": 2000000,
+          "resource_wait_ns": 200000,
+          "result_delay_ns": 548000,
+          "result_queue_ns": 260000,
+          "session_id": 3,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 5448000,
+          "usable_fidelity": 0.3957487711531199
+        },
+        {
+          "bsm_completion_ns": 7800000,
+          "bsm_start_ns": 6200000,
+          "completion_ns": 8921600,
+          "correction_start_ns": 8421600,
+          "correction_wait_ns": 0,
+          "eligible_ns": 2200000,
+          "quantum_wait_ns": 4000000,
+          "resource_ready_ns": 1200000,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 621600,
+          "result_queue_ns": 396000,
+          "session_id": 4,
+          "session_start_ns": 2200000,
+          "transaction_latency_ns": 6721600,
+          "usable_fidelity": 0.5443705364238126
+        }
+      ]
+    },
+    "mixed-fast-bsm": {
+      "max_density_matrix_error": 1.6653345369377348e-16,
+      "report": "results/provisioned-v4/mixed-fast-bsm.json.gz",
+      "sessions": [
+        {
+          "bsm_completion_ns": 1050000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 1838000,
+          "correction_start_ns": 1338000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 1000000,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 1000000,
+          "resource_wait_ns": 1000000,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 1838000,
+          "usable_fidelity": 0.8035872022387163
+        },
+        {
+          "bsm_completion_ns": 1100000,
+          "bsm_start_ns": 1050000,
+          "completion_ns": 2338000,
+          "correction_start_ns": 1838000,
+          "correction_wait_ns": 474400,
+          "eligible_ns": 1000000,
+          "quantum_wait_ns": 50000,
+          "resource_ready_ns": 1000000,
+          "resource_wait_ns": 1000000,
+          "result_delay_ns": 263600,
+          "result_queue_ns": 38000,
+          "session_id": 2,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 2338000,
+          "usable_fidelity": 0.8533735908396374
+        },
+        {
+          "bsm_completion_ns": 1150000,
+          "bsm_start_ns": 1100000,
+          "completion_ns": 2838000,
+          "correction_start_ns": 2338000,
+          "correction_wait_ns": 886400,
+          "eligible_ns": 1000000,
+          "quantum_wait_ns": 100000,
+          "resource_ready_ns": 1000000,
+          "resource_wait_ns": 1000000,
+          "result_delay_ns": 301600,
+          "result_queue_ns": 13600,
+          "session_id": 3,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 2838000,
+          "usable_fidelity": 0.7141973550013558
+        },
+        {
+          "bsm_completion_ns": 1200000,
+          "bsm_start_ns": 1150000,
+          "completion_ns": 3338000,
+          "correction_start_ns": 2838000,
+          "correction_wait_ns": 1360800,
+          "eligible_ns": 1000000,
+          "quantum_wait_ns": 150000,
+          "resource_ready_ns": 1000000,
+          "resource_wait_ns": 1000000,
+          "result_delay_ns": 277200,
+          "result_queue_ns": 51600,
+          "session_id": 4,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 3338000,
+          "usable_fidelity": 0.8109389115875967
+        }
+      ]
+    },
+    "ready-order": {
+      "max_density_matrix_error": 1.6653345369377348e-16,
+      "report": "results/provisioned-v4/ready-order.json.gz",
+      "sessions": [
+        {
+          "bsm_completion_ns": 5600000,
+          "bsm_start_ns": 4000000,
+          "completion_ns": 6388000,
+          "correction_start_ns": 5888000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 4000000,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 4000000,
+          "resource_wait_ns": 3000000,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 5388000,
+          "usable_fidelity": 0.4504129401614273
+        },
+        {
+          "bsm_completion_ns": 3100000,
+          "bsm_start_ns": 1500000,
+          "completion_ns": 3825600,
+          "correction_start_ns": 3325600,
+          "correction_wait_ns": 0,
+          "eligible_ns": 1500000,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 500000,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 2,
+          "session_start_ns": 1500000,
+          "transaction_latency_ns": 2325600,
+          "usable_fidelity": 0.7241745864573685
+        }
+      ]
+    },
+    "zero-equivalence": {
+      "max_density_matrix_error": 1.6653345369377348e-16,
+      "report": "results/provisioned-v4/zero-equivalence.json.gz",
+      "sessions": [
+        {
+          "bsm_completion_ns": 1600000,
+          "bsm_start_ns": 0,
+          "completion_ns": 2325600,
+          "correction_start_ns": 1825600,
+          "correction_wait_ns": 0,
+          "eligible_ns": 0,
+          "quantum_wait_ns": 0,
+          "resource_ready_ns": 0,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 2,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 2325600,
+          "usable_fidelity": 0.8313960268819044
+        },
+        {
+          "bsm_completion_ns": 3200000,
+          "bsm_start_ns": 1600000,
+          "completion_ns": 3988000,
+          "correction_start_ns": 3488000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 0,
+          "quantum_wait_ns": 1600000,
+          "resource_ready_ns": 0,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 3988000,
+          "usable_fidelity": 0.5237287924505245
+        },
+        {
+          "bsm_completion_ns": 4800000,
+          "bsm_start_ns": 3200000,
+          "completion_ns": 5525600,
+          "correction_start_ns": 5025600,
+          "correction_wait_ns": 0,
+          "eligible_ns": 300000,
+          "quantum_wait_ns": 2900000,
+          "resource_ready_ns": 0,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 4,
+          "session_start_ns": 300000,
+          "transaction_latency_ns": 5225600,
+          "usable_fidelity": 0.6164699698410543
+        },
+        {
+          "bsm_completion_ns": 6400000,
+          "bsm_start_ns": 4800000,
+          "completion_ns": 7188000,
+          "correction_start_ns": 6688000,
+          "correction_wait_ns": 0,
+          "eligible_ns": 300000,
+          "quantum_wait_ns": 4500000,
+          "resource_ready_ns": 0,
+          "resource_wait_ns": 0,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 3,
+          "session_start_ns": 300000,
+          "transaction_latency_ns": 6888000,
+          "usable_fidelity": 0.3849754895221469
+        }
+      ]
+    }
+  },
+  "scope": "Fixed A/R/B; t=0 pre-generated pairs delivered over native quantum channels; eligibility-gated shared R/B FIFO; native operations; actual result UDP.",
+  "source_sha256": {
+    "contrib/cosim/README-PROVISIONED.md": "d39b1058ee708d18bdb940d0600fda4e258f36cfd4510aa7887ae542fa7bbe37",
+    "contrib/cosim/SPEC-PROVISIONED.md": "683834167e51fa22d0535a31e2707c66b02951b5bc683cf180410c0735551147",
+    "contrib/cosim/examples/cosim-provisioned.cc": "a7038b3dd9c208fb8a9b7d42372bca9837ce178dad1933a93f3a27eac74a1083",
+    "contrib/cosim/experiments/render_provisioned_evaluation.py": "ecdeadab65ec3d8491256145437483fb0b7c877a8759a1dbec9067b3a693a0d5",
+    "contrib/cosim/experiments/run_provisioned_evaluation.py": "095498ad6e569aa6ffa4f5a9266dc9796231fec0a49a9d1094ff6b0c441dfe77",
+    "contrib/cosim/python/netsquid_reference_provisioned.py": "73ee086365ba93cb6381560a57d6252949a554bd036e46b45c14d67fa0fdd364",
+    "contrib/cosim/python/provisioned_config.py": "3e2cb1e882f95e163bdde68768c8e280482d431ee92034da27bea0184e026797",
+    "contrib/cosim/python/provisioned_core.py": "74f9a92f8746e7c97b08b2878b5ed63f04676930e4a2074f7eacf0543d621e87",
+    "contrib/cosim/python/provisioned_participant.py": "71c012db38ac45fa73280da470219389a68a7df78a0ab8a2bd6c543c1e9dfc4b",
+    "contrib/cosim/python/provisioned_validation.py": "de8d672f5081df2bd12be02c3936dea5a1964992922b3b6d157b95c2cda3b9e0",
+    "contrib/cosim/python/quantum_network_backend.py": "7510caa62651a4c1fc55b5afaaaed79408f69d5c3e2b42bf39f6f94c0ea9a48d",
+    "contrib/cosim/python/run_provisioned.py": "3f7881a2b6d22884632ecd00babd17c810543a96c13eccea1340c3d6296f2fd1",
+    "contrib/cosim/scenarios/provisioned-evaluation.json": "0a3dc25c3ff2b28afec7d3b9745e0fcf2a4608867600f0a2ac3b4e94b908eced",
+    "contrib/cosim/scenarios/provisioned-mixed.json": "c68cd66193bf6b191326e9b8837e9ecd16794cecb15f5f45efb2b3a6131689c4",
+    "contrib/cosim/scenarios/provisioned-teleport.json": "d452be912c9f748788732931458ec9459740872cbac550ef84023f6e72e42a58",
+    "contrib/cosim/tests/test_provisioned.py": "8b37557125a69db6cc22a2aaefcba719a6e36cecccfed9db6e301c2aadc4957e",
+    "contrib/cosim/tools/archive_provisioned_results.py": "45d0bf2f372c9db1265e0d8c360e689db90bbeeb671baea887f7603bb53184ed",
+    "contrib/cosim/tools/summarize_provisioned.py": "27d41395e85880fc969713c365ce1bbc58853a3fac63443c294d337ded2e8058",
+    "contrib/cosim/tools/validate_provisioned.py": "7c873da9d734a07694ddd7b6b0fdcfff3ab5ae8279932022ace6c4e06e1e8b1e",
+    "scratch/cosim-provisioned/CMakeLists.txt": "c96d65d8ab5ae50215d33bffbdb6b4a339eac3d65328fadee9f0101d080e0d87"
+  },
+  "total_test_cases": 278,
+  "v3_commit": "e8872ca4b87f716711f2d16183c13902ec50ebff",
+  "v3_sources_unchanged": true
+}

@@ -1,0 +1,7226 @@
+{
+  "architecture": "provisioned-native-v4",
+  "case_count": 12,
+  "cases": [
+    {
+      "cell": "n1-load0.0",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 1
+    },
+    {
+      "cell": "n1-load0.0",
+      "native": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 1
+    },
+    {
+      "cell": "n1-load0.7",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 1
+    },
+    {
+      "cell": "n1-load0.7",
+      "native": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 1
+    },
+    {
+      "cell": "n4-load0.0",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        }
+      ],
+      "sessions": 4
+    },
+    {
+      "cell": "n4-load0.0",
+      "native": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 4
+    },
+    {
+      "cell": "n4-load0.7",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        }
+      ],
+      "sessions": 4
+    },
+    {
+      "cell": "n4-load0.7",
+      "native": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 4
+    },
+    {
+      "cell": "n8-load0.0",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        }
+      ],
+      "sessions": 8
+    },
+    {
+      "cell": "n8-load0.0",
+      "native": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 8
+    },
+    {
+      "cell": "n8-load0.7",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        }
+      ],
+      "sessions": 8
+    },
+    {
+      "cell": "n8-load0.7",
+      "native": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 8
+    },
+    {
+      "cell": "n16-load0.0",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        }
+      ],
+      "sessions": 16
+    },
+    {
+      "cell": "n16-load0.0",
+      "native": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15888000,
+          "completion_ns": 16388000,
+          "session_id": 9,
+          "start_ns": 15888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19088000,
+          "completion_ns": 19588000,
+          "session_id": 11,
+          "start_ns": 19088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20625600,
+          "completion_ns": 21125600,
+          "session_id": 12,
+          "start_ns": 20625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 23825600,
+          "completion_ns": 24325600,
+          "session_id": 14,
+          "start_ns": 23825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25488000,
+          "completion_ns": 25988000,
+          "session_id": 15,
+          "start_ns": 25488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15888000,
+          "completion_ns": 16388000,
+          "session_id": 9,
+          "start_ns": 15888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19088000,
+          "completion_ns": 19588000,
+          "session_id": 11,
+          "start_ns": 19088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20625600,
+          "completion_ns": 21125600,
+          "session_id": 12,
+          "start_ns": 20625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 23825600,
+          "completion_ns": 24325600,
+          "session_id": 14,
+          "start_ns": 23825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25488000,
+          "completion_ns": 25988000,
+          "session_id": 15,
+          "start_ns": 25488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 16
+    },
+    {
+      "cell": "n16-load0.7",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        }
+      ],
+      "sessions": 16
+    },
+    {
+      "cell": "n16-load0.7",
+      "native": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 16281440,
+          "completion_ns": 16781440,
+          "session_id": 9,
+          "start_ns": 16281440,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19812869,
+          "completion_ns": 20312869,
+          "session_id": 11,
+          "start_ns": 19812869,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20927612,
+          "completion_ns": 21427612,
+          "session_id": 12,
+          "start_ns": 20927612,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 24459041,
+          "completion_ns": 24959041,
+          "session_id": 14,
+          "start_ns": 24459041,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25698584,
+          "completion_ns": 26198584,
+          "session_id": 15,
+          "start_ns": 25698584,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 16281440,
+          "completion_ns": 16781440,
+          "session_id": 9,
+          "start_ns": 16281440,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19812869,
+          "completion_ns": 20312869,
+          "session_id": 11,
+          "start_ns": 19812869,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20927612,
+          "completion_ns": 21427612,
+          "session_id": 12,
+          "start_ns": 20927612,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 24459041,
+          "completion_ns": 24959041,
+          "session_id": 14,
+          "start_ns": 24459041,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25698584,
+          "completion_ns": 26198584,
+          "session_id": 15,
+          "start_ns": 25698584,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 16
+    },
+    {
+      "cell": "n32-load0.0",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        }
+      ],
+      "sessions": 32
+    },
+    {
+      "cell": "n32-load0.0",
+      "native": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15888000,
+          "completion_ns": 16388000,
+          "session_id": 9,
+          "start_ns": 15888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19088000,
+          "completion_ns": 19588000,
+          "session_id": 11,
+          "start_ns": 19088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20625600,
+          "completion_ns": 21125600,
+          "session_id": 12,
+          "start_ns": 20625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 23825600,
+          "completion_ns": 24325600,
+          "session_id": 14,
+          "start_ns": 23825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25488000,
+          "completion_ns": 25988000,
+          "session_id": 15,
+          "start_ns": 25488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 28688000,
+          "completion_ns": 29188000,
+          "session_id": 17,
+          "start_ns": 28688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30225600,
+          "completion_ns": 30725600,
+          "session_id": 18,
+          "start_ns": 30225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33425600,
+          "completion_ns": 33925600,
+          "session_id": 20,
+          "start_ns": 33425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35088000,
+          "completion_ns": 35588000,
+          "session_id": 21,
+          "start_ns": 35088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 36625600,
+          "completion_ns": 37125600,
+          "session_id": 22,
+          "start_ns": 36625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38288000,
+          "completion_ns": 38788000,
+          "session_id": 23,
+          "start_ns": 38288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 41488000,
+          "completion_ns": 41988000,
+          "session_id": 25,
+          "start_ns": 41488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43025600,
+          "completion_ns": 43525600,
+          "session_id": 26,
+          "start_ns": 43025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46225600,
+          "completion_ns": 46725600,
+          "session_id": 28,
+          "start_ns": 46225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 47888000,
+          "completion_ns": 48388000,
+          "session_id": 29,
+          "start_ns": 47888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51088000,
+          "completion_ns": 51588000,
+          "session_id": 31,
+          "start_ns": 51088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52625600,
+          "completion_ns": 53125600,
+          "session_id": 32,
+          "start_ns": 52625600,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15888000,
+          "completion_ns": 16388000,
+          "session_id": 9,
+          "start_ns": 15888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19088000,
+          "completion_ns": 19588000,
+          "session_id": 11,
+          "start_ns": 19088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20625600,
+          "completion_ns": 21125600,
+          "session_id": 12,
+          "start_ns": 20625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 23825600,
+          "completion_ns": 24325600,
+          "session_id": 14,
+          "start_ns": 23825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25488000,
+          "completion_ns": 25988000,
+          "session_id": 15,
+          "start_ns": 25488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 28688000,
+          "completion_ns": 29188000,
+          "session_id": 17,
+          "start_ns": 28688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30225600,
+          "completion_ns": 30725600,
+          "session_id": 18,
+          "start_ns": 30225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33425600,
+          "completion_ns": 33925600,
+          "session_id": 20,
+          "start_ns": 33425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35088000,
+          "completion_ns": 35588000,
+          "session_id": 21,
+          "start_ns": 35088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 36625600,
+          "completion_ns": 37125600,
+          "session_id": 22,
+          "start_ns": 36625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38288000,
+          "completion_ns": 38788000,
+          "session_id": 23,
+          "start_ns": 38288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 41488000,
+          "completion_ns": 41988000,
+          "session_id": 25,
+          "start_ns": 41488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43025600,
+          "completion_ns": 43525600,
+          "session_id": 26,
+          "start_ns": 43025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46225600,
+          "completion_ns": 46725600,
+          "session_id": 28,
+          "start_ns": 46225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 47888000,
+          "completion_ns": 48388000,
+          "session_id": 29,
+          "start_ns": 47888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51088000,
+          "completion_ns": 51588000,
+          "session_id": 31,
+          "start_ns": 51088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52625600,
+          "completion_ns": 53125600,
+          "session_id": 32,
+          "start_ns": 52625600,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 32
+    },
+    {
+      "cell": "n32-load0.7",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        }
+      ],
+      "sessions": 32
+    },
+    {
+      "cell": "n32-load0.7",
+      "native": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 16281440,
+          "completion_ns": 16781440,
+          "session_id": 9,
+          "start_ns": 16281440,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19812869,
+          "completion_ns": 20312869,
+          "session_id": 11,
+          "start_ns": 19812869,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20927612,
+          "completion_ns": 21427612,
+          "session_id": 12,
+          "start_ns": 20927612,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 24459041,
+          "completion_ns": 24959041,
+          "session_id": 14,
+          "start_ns": 24459041,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25698584,
+          "completion_ns": 26198584,
+          "session_id": 15,
+          "start_ns": 25698584,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 29230013,
+          "completion_ns": 29730013,
+          "session_id": 17,
+          "start_ns": 29230013,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30344756,
+          "completion_ns": 30844756,
+          "session_id": 18,
+          "start_ns": 30344756,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33876185,
+          "completion_ns": 34376185,
+          "session_id": 20,
+          "start_ns": 33876185,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35115728,
+          "completion_ns": 35615728,
+          "session_id": 21,
+          "start_ns": 35115728,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 37407614,
+          "completion_ns": 37907614,
+          "session_id": 22,
+          "start_ns": 37407614,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38647157,
+          "completion_ns": 39147157,
+          "session_id": 23,
+          "start_ns": 38647157,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 42178586,
+          "completion_ns": 42678586,
+          "session_id": 25,
+          "start_ns": 42178586,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43293329,
+          "completion_ns": 43793329,
+          "session_id": 26,
+          "start_ns": 43293329,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46824758,
+          "completion_ns": 47324758,
+          "session_id": 28,
+          "start_ns": 46824758,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 48064301,
+          "completion_ns": 48564301,
+          "session_id": 29,
+          "start_ns": 48064301,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51595730,
+          "completion_ns": 52095730,
+          "session_id": 31,
+          "start_ns": 51595730,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52710473,
+          "completion_ns": 53210473,
+          "session_id": 32,
+          "start_ns": 52710473,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 16281440,
+          "completion_ns": 16781440,
+          "session_id": 9,
+          "start_ns": 16281440,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19812869,
+          "completion_ns": 20312869,
+          "session_id": 11,
+          "start_ns": 19812869,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20927612,
+          "completion_ns": 21427612,
+          "session_id": 12,
+          "start_ns": 20927612,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 24459041,
+          "completion_ns": 24959041,
+          "session_id": 14,
+          "start_ns": 24459041,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25698584,
+          "completion_ns": 26198584,
+          "session_id": 15,
+          "start_ns": 25698584,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 29230013,
+          "completion_ns": 29730013,
+          "session_id": 17,
+          "start_ns": 29230013,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30344756,
+          "completion_ns": 30844756,
+          "session_id": 18,
+          "start_ns": 30344756,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33876185,
+          "completion_ns": 34376185,
+          "session_id": 20,
+          "start_ns": 33876185,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35115728,
+          "completion_ns": 35615728,
+          "session_id": 21,
+          "start_ns": 35115728,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 37407614,
+          "completion_ns": 37907614,
+          "session_id": 22,
+          "start_ns": 37407614,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38647157,
+          "completion_ns": 39147157,
+          "session_id": 23,
+          "start_ns": 38647157,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 42178586,
+          "completion_ns": 42678586,
+          "session_id": 25,
+          "start_ns": 42178586,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43293329,
+          "completion_ns": 43793329,
+          "session_id": 26,
+          "start_ns": 43293329,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46824758,
+          "completion_ns": 47324758,
+          "session_id": 28,
+          "start_ns": 46824758,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 48064301,
+          "completion_ns": 48564301,
+          "session_id": 29,
+          "start_ns": 48064301,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51595730,
+          "completion_ns": 52095730,
+          "session_id": 31,
+          "start_ns": 51595730,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52710473,
+          "completion_ns": 53210473,
+          "session_id": 32,
+          "start_ns": 52710473,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 32
+    },
+    {
+      "cell": "n64-load0.0",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        },
+        {
+          "arrival_ns": 26600000,
+          "completion_ns": 54000000,
+          "session_id": 33,
+          "start_ns": 52400000,
+          "waiting_ns": 25800000
+        },
+        {
+          "arrival_ns": 27400000,
+          "completion_ns": 55600000,
+          "session_id": 34,
+          "start_ns": 54000000,
+          "waiting_ns": 26600000
+        },
+        {
+          "arrival_ns": 28200000,
+          "completion_ns": 57200000,
+          "session_id": 35,
+          "start_ns": 55600000,
+          "waiting_ns": 27400000
+        },
+        {
+          "arrival_ns": 29000000,
+          "completion_ns": 58800000,
+          "session_id": 36,
+          "start_ns": 57200000,
+          "waiting_ns": 28200000
+        },
+        {
+          "arrival_ns": 29800000,
+          "completion_ns": 60400000,
+          "session_id": 37,
+          "start_ns": 58800000,
+          "waiting_ns": 29000000
+        },
+        {
+          "arrival_ns": 30600000,
+          "completion_ns": 62000000,
+          "session_id": 38,
+          "start_ns": 60400000,
+          "waiting_ns": 29800000
+        },
+        {
+          "arrival_ns": 31400000,
+          "completion_ns": 63600000,
+          "session_id": 39,
+          "start_ns": 62000000,
+          "waiting_ns": 30600000
+        },
+        {
+          "arrival_ns": 32200000,
+          "completion_ns": 65200000,
+          "session_id": 40,
+          "start_ns": 63600000,
+          "waiting_ns": 31400000
+        },
+        {
+          "arrival_ns": 33000000,
+          "completion_ns": 66800000,
+          "session_id": 41,
+          "start_ns": 65200000,
+          "waiting_ns": 32200000
+        },
+        {
+          "arrival_ns": 33800000,
+          "completion_ns": 68400000,
+          "session_id": 42,
+          "start_ns": 66800000,
+          "waiting_ns": 33000000
+        },
+        {
+          "arrival_ns": 34600000,
+          "completion_ns": 70000000,
+          "session_id": 43,
+          "start_ns": 68400000,
+          "waiting_ns": 33800000
+        },
+        {
+          "arrival_ns": 35400000,
+          "completion_ns": 71600000,
+          "session_id": 44,
+          "start_ns": 70000000,
+          "waiting_ns": 34600000
+        },
+        {
+          "arrival_ns": 36200000,
+          "completion_ns": 73200000,
+          "session_id": 45,
+          "start_ns": 71600000,
+          "waiting_ns": 35400000
+        },
+        {
+          "arrival_ns": 37000000,
+          "completion_ns": 74800000,
+          "session_id": 46,
+          "start_ns": 73200000,
+          "waiting_ns": 36200000
+        },
+        {
+          "arrival_ns": 37800000,
+          "completion_ns": 76400000,
+          "session_id": 47,
+          "start_ns": 74800000,
+          "waiting_ns": 37000000
+        },
+        {
+          "arrival_ns": 38600000,
+          "completion_ns": 78000000,
+          "session_id": 48,
+          "start_ns": 76400000,
+          "waiting_ns": 37800000
+        },
+        {
+          "arrival_ns": 39400000,
+          "completion_ns": 79600000,
+          "session_id": 49,
+          "start_ns": 78000000,
+          "waiting_ns": 38600000
+        },
+        {
+          "arrival_ns": 40200000,
+          "completion_ns": 81200000,
+          "session_id": 50,
+          "start_ns": 79600000,
+          "waiting_ns": 39400000
+        },
+        {
+          "arrival_ns": 41000000,
+          "completion_ns": 82800000,
+          "session_id": 51,
+          "start_ns": 81200000,
+          "waiting_ns": 40200000
+        },
+        {
+          "arrival_ns": 41800000,
+          "completion_ns": 84400000,
+          "session_id": 52,
+          "start_ns": 82800000,
+          "waiting_ns": 41000000
+        },
+        {
+          "arrival_ns": 42600000,
+          "completion_ns": 86000000,
+          "session_id": 53,
+          "start_ns": 84400000,
+          "waiting_ns": 41800000
+        },
+        {
+          "arrival_ns": 43400000,
+          "completion_ns": 87600000,
+          "session_id": 54,
+          "start_ns": 86000000,
+          "waiting_ns": 42600000
+        },
+        {
+          "arrival_ns": 44200000,
+          "completion_ns": 89200000,
+          "session_id": 55,
+          "start_ns": 87600000,
+          "waiting_ns": 43400000
+        },
+        {
+          "arrival_ns": 45000000,
+          "completion_ns": 90800000,
+          "session_id": 56,
+          "start_ns": 89200000,
+          "waiting_ns": 44200000
+        },
+        {
+          "arrival_ns": 45800000,
+          "completion_ns": 92400000,
+          "session_id": 57,
+          "start_ns": 90800000,
+          "waiting_ns": 45000000
+        },
+        {
+          "arrival_ns": 46600000,
+          "completion_ns": 94000000,
+          "session_id": 58,
+          "start_ns": 92400000,
+          "waiting_ns": 45800000
+        },
+        {
+          "arrival_ns": 47400000,
+          "completion_ns": 95600000,
+          "session_id": 59,
+          "start_ns": 94000000,
+          "waiting_ns": 46600000
+        },
+        {
+          "arrival_ns": 48200000,
+          "completion_ns": 97200000,
+          "session_id": 60,
+          "start_ns": 95600000,
+          "waiting_ns": 47400000
+        },
+        {
+          "arrival_ns": 49000000,
+          "completion_ns": 98800000,
+          "session_id": 61,
+          "start_ns": 97200000,
+          "waiting_ns": 48200000
+        },
+        {
+          "arrival_ns": 49800000,
+          "completion_ns": 100400000,
+          "session_id": 62,
+          "start_ns": 98800000,
+          "waiting_ns": 49000000
+        },
+        {
+          "arrival_ns": 50600000,
+          "completion_ns": 102000000,
+          "session_id": 63,
+          "start_ns": 100400000,
+          "waiting_ns": 49800000
+        },
+        {
+          "arrival_ns": 51400000,
+          "completion_ns": 103600000,
+          "session_id": 64,
+          "start_ns": 102000000,
+          "waiting_ns": 50600000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        },
+        {
+          "arrival_ns": 26600000,
+          "completion_ns": 54000000,
+          "session_id": 33,
+          "start_ns": 52400000,
+          "waiting_ns": 25800000
+        },
+        {
+          "arrival_ns": 27400000,
+          "completion_ns": 55600000,
+          "session_id": 34,
+          "start_ns": 54000000,
+          "waiting_ns": 26600000
+        },
+        {
+          "arrival_ns": 28200000,
+          "completion_ns": 57200000,
+          "session_id": 35,
+          "start_ns": 55600000,
+          "waiting_ns": 27400000
+        },
+        {
+          "arrival_ns": 29000000,
+          "completion_ns": 58800000,
+          "session_id": 36,
+          "start_ns": 57200000,
+          "waiting_ns": 28200000
+        },
+        {
+          "arrival_ns": 29800000,
+          "completion_ns": 60400000,
+          "session_id": 37,
+          "start_ns": 58800000,
+          "waiting_ns": 29000000
+        },
+        {
+          "arrival_ns": 30600000,
+          "completion_ns": 62000000,
+          "session_id": 38,
+          "start_ns": 60400000,
+          "waiting_ns": 29800000
+        },
+        {
+          "arrival_ns": 31400000,
+          "completion_ns": 63600000,
+          "session_id": 39,
+          "start_ns": 62000000,
+          "waiting_ns": 30600000
+        },
+        {
+          "arrival_ns": 32200000,
+          "completion_ns": 65200000,
+          "session_id": 40,
+          "start_ns": 63600000,
+          "waiting_ns": 31400000
+        },
+        {
+          "arrival_ns": 33000000,
+          "completion_ns": 66800000,
+          "session_id": 41,
+          "start_ns": 65200000,
+          "waiting_ns": 32200000
+        },
+        {
+          "arrival_ns": 33800000,
+          "completion_ns": 68400000,
+          "session_id": 42,
+          "start_ns": 66800000,
+          "waiting_ns": 33000000
+        },
+        {
+          "arrival_ns": 34600000,
+          "completion_ns": 70000000,
+          "session_id": 43,
+          "start_ns": 68400000,
+          "waiting_ns": 33800000
+        },
+        {
+          "arrival_ns": 35400000,
+          "completion_ns": 71600000,
+          "session_id": 44,
+          "start_ns": 70000000,
+          "waiting_ns": 34600000
+        },
+        {
+          "arrival_ns": 36200000,
+          "completion_ns": 73200000,
+          "session_id": 45,
+          "start_ns": 71600000,
+          "waiting_ns": 35400000
+        },
+        {
+          "arrival_ns": 37000000,
+          "completion_ns": 74800000,
+          "session_id": 46,
+          "start_ns": 73200000,
+          "waiting_ns": 36200000
+        },
+        {
+          "arrival_ns": 37800000,
+          "completion_ns": 76400000,
+          "session_id": 47,
+          "start_ns": 74800000,
+          "waiting_ns": 37000000
+        },
+        {
+          "arrival_ns": 38600000,
+          "completion_ns": 78000000,
+          "session_id": 48,
+          "start_ns": 76400000,
+          "waiting_ns": 37800000
+        },
+        {
+          "arrival_ns": 39400000,
+          "completion_ns": 79600000,
+          "session_id": 49,
+          "start_ns": 78000000,
+          "waiting_ns": 38600000
+        },
+        {
+          "arrival_ns": 40200000,
+          "completion_ns": 81200000,
+          "session_id": 50,
+          "start_ns": 79600000,
+          "waiting_ns": 39400000
+        },
+        {
+          "arrival_ns": 41000000,
+          "completion_ns": 82800000,
+          "session_id": 51,
+          "start_ns": 81200000,
+          "waiting_ns": 40200000
+        },
+        {
+          "arrival_ns": 41800000,
+          "completion_ns": 84400000,
+          "session_id": 52,
+          "start_ns": 82800000,
+          "waiting_ns": 41000000
+        },
+        {
+          "arrival_ns": 42600000,
+          "completion_ns": 86000000,
+          "session_id": 53,
+          "start_ns": 84400000,
+          "waiting_ns": 41800000
+        },
+        {
+          "arrival_ns": 43400000,
+          "completion_ns": 87600000,
+          "session_id": 54,
+          "start_ns": 86000000,
+          "waiting_ns": 42600000
+        },
+        {
+          "arrival_ns": 44200000,
+          "completion_ns": 89200000,
+          "session_id": 55,
+          "start_ns": 87600000,
+          "waiting_ns": 43400000
+        },
+        {
+          "arrival_ns": 45000000,
+          "completion_ns": 90800000,
+          "session_id": 56,
+          "start_ns": 89200000,
+          "waiting_ns": 44200000
+        },
+        {
+          "arrival_ns": 45800000,
+          "completion_ns": 92400000,
+          "session_id": 57,
+          "start_ns": 90800000,
+          "waiting_ns": 45000000
+        },
+        {
+          "arrival_ns": 46600000,
+          "completion_ns": 94000000,
+          "session_id": 58,
+          "start_ns": 92400000,
+          "waiting_ns": 45800000
+        },
+        {
+          "arrival_ns": 47400000,
+          "completion_ns": 95600000,
+          "session_id": 59,
+          "start_ns": 94000000,
+          "waiting_ns": 46600000
+        },
+        {
+          "arrival_ns": 48200000,
+          "completion_ns": 97200000,
+          "session_id": 60,
+          "start_ns": 95600000,
+          "waiting_ns": 47400000
+        },
+        {
+          "arrival_ns": 49000000,
+          "completion_ns": 98800000,
+          "session_id": 61,
+          "start_ns": 97200000,
+          "waiting_ns": 48200000
+        },
+        {
+          "arrival_ns": 49800000,
+          "completion_ns": 100400000,
+          "session_id": 62,
+          "start_ns": 98800000,
+          "waiting_ns": 49000000
+        },
+        {
+          "arrival_ns": 50600000,
+          "completion_ns": 102000000,
+          "session_id": 63,
+          "start_ns": 100400000,
+          "waiting_ns": 49800000
+        },
+        {
+          "arrival_ns": 51400000,
+          "completion_ns": 103600000,
+          "session_id": 64,
+          "start_ns": 102000000,
+          "waiting_ns": 50600000
+        }
+      ],
+      "sessions": 64
+    },
+    {
+      "cell": "n64-load0.0",
+      "native": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15888000,
+          "completion_ns": 16388000,
+          "session_id": 9,
+          "start_ns": 15888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19088000,
+          "completion_ns": 19588000,
+          "session_id": 11,
+          "start_ns": 19088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20625600,
+          "completion_ns": 21125600,
+          "session_id": 12,
+          "start_ns": 20625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 23825600,
+          "completion_ns": 24325600,
+          "session_id": 14,
+          "start_ns": 23825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25488000,
+          "completion_ns": 25988000,
+          "session_id": 15,
+          "start_ns": 25488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 28688000,
+          "completion_ns": 29188000,
+          "session_id": 17,
+          "start_ns": 28688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30225600,
+          "completion_ns": 30725600,
+          "session_id": 18,
+          "start_ns": 30225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33425600,
+          "completion_ns": 33925600,
+          "session_id": 20,
+          "start_ns": 33425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35088000,
+          "completion_ns": 35588000,
+          "session_id": 21,
+          "start_ns": 35088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 36625600,
+          "completion_ns": 37125600,
+          "session_id": 22,
+          "start_ns": 36625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38288000,
+          "completion_ns": 38788000,
+          "session_id": 23,
+          "start_ns": 38288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 41488000,
+          "completion_ns": 41988000,
+          "session_id": 25,
+          "start_ns": 41488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43025600,
+          "completion_ns": 43525600,
+          "session_id": 26,
+          "start_ns": 43025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46225600,
+          "completion_ns": 46725600,
+          "session_id": 28,
+          "start_ns": 46225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 47888000,
+          "completion_ns": 48388000,
+          "session_id": 29,
+          "start_ns": 47888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51088000,
+          "completion_ns": 51588000,
+          "session_id": 31,
+          "start_ns": 51088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52625600,
+          "completion_ns": 53125600,
+          "session_id": 32,
+          "start_ns": 52625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 54288000,
+          "completion_ns": 54788000,
+          "session_id": 33,
+          "start_ns": 54288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 55825600,
+          "completion_ns": 56325600,
+          "session_id": 34,
+          "start_ns": 55825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 57488000,
+          "completion_ns": 57988000,
+          "session_id": 35,
+          "start_ns": 57488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 59025600,
+          "completion_ns": 59525600,
+          "session_id": 36,
+          "start_ns": 59025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 60688000,
+          "completion_ns": 61188000,
+          "session_id": 37,
+          "start_ns": 60688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 62225600,
+          "completion_ns": 62725600,
+          "session_id": 38,
+          "start_ns": 62225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 63888000,
+          "completion_ns": 64388000,
+          "session_id": 39,
+          "start_ns": 63888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 65425600,
+          "completion_ns": 65925600,
+          "session_id": 40,
+          "start_ns": 65425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 67088000,
+          "completion_ns": 67588000,
+          "session_id": 41,
+          "start_ns": 67088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 68625600,
+          "completion_ns": 69125600,
+          "session_id": 42,
+          "start_ns": 68625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 70288000,
+          "completion_ns": 70788000,
+          "session_id": 43,
+          "start_ns": 70288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 71825600,
+          "completion_ns": 72325600,
+          "session_id": 44,
+          "start_ns": 71825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 73488000,
+          "completion_ns": 73988000,
+          "session_id": 45,
+          "start_ns": 73488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 75025600,
+          "completion_ns": 75525600,
+          "session_id": 46,
+          "start_ns": 75025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 76688000,
+          "completion_ns": 77188000,
+          "session_id": 47,
+          "start_ns": 76688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 78225600,
+          "completion_ns": 78725600,
+          "session_id": 48,
+          "start_ns": 78225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 79888000,
+          "completion_ns": 80388000,
+          "session_id": 49,
+          "start_ns": 79888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 81425600,
+          "completion_ns": 81925600,
+          "session_id": 50,
+          "start_ns": 81425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 83088000,
+          "completion_ns": 83588000,
+          "session_id": 51,
+          "start_ns": 83088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 84625600,
+          "completion_ns": 85125600,
+          "session_id": 52,
+          "start_ns": 84625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 86288000,
+          "completion_ns": 86788000,
+          "session_id": 53,
+          "start_ns": 86288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 87825600,
+          "completion_ns": 88325600,
+          "session_id": 54,
+          "start_ns": 87825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 89488000,
+          "completion_ns": 89988000,
+          "session_id": 55,
+          "start_ns": 89488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 91025600,
+          "completion_ns": 91525600,
+          "session_id": 56,
+          "start_ns": 91025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 92688000,
+          "completion_ns": 93188000,
+          "session_id": 57,
+          "start_ns": 92688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 94225600,
+          "completion_ns": 94725600,
+          "session_id": 58,
+          "start_ns": 94225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 95888000,
+          "completion_ns": 96388000,
+          "session_id": 59,
+          "start_ns": 95888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 97425600,
+          "completion_ns": 97925600,
+          "session_id": 60,
+          "start_ns": 97425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 99088000,
+          "completion_ns": 99588000,
+          "session_id": 61,
+          "start_ns": 99088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 100625600,
+          "completion_ns": 101125600,
+          "session_id": 62,
+          "start_ns": 100625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 102288000,
+          "completion_ns": 102788000,
+          "session_id": 63,
+          "start_ns": 102288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 103825600,
+          "completion_ns": 104325600,
+          "session_id": 64,
+          "start_ns": 103825600,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3088000,
+          "completion_ns": 3588000,
+          "session_id": 1,
+          "start_ns": 3088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6288000,
+          "completion_ns": 6788000,
+          "session_id": 3,
+          "start_ns": 6288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7825600,
+          "completion_ns": 8325600,
+          "session_id": 4,
+          "start_ns": 7825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11025600,
+          "completion_ns": 11525600,
+          "session_id": 6,
+          "start_ns": 11025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12688000,
+          "completion_ns": 13188000,
+          "session_id": 7,
+          "start_ns": 12688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 14225600,
+          "completion_ns": 14725600,
+          "session_id": 8,
+          "start_ns": 14225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15888000,
+          "completion_ns": 16388000,
+          "session_id": 9,
+          "start_ns": 15888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19088000,
+          "completion_ns": 19588000,
+          "session_id": 11,
+          "start_ns": 19088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20625600,
+          "completion_ns": 21125600,
+          "session_id": 12,
+          "start_ns": 20625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 23825600,
+          "completion_ns": 24325600,
+          "session_id": 14,
+          "start_ns": 23825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25488000,
+          "completion_ns": 25988000,
+          "session_id": 15,
+          "start_ns": 25488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 28688000,
+          "completion_ns": 29188000,
+          "session_id": 17,
+          "start_ns": 28688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30225600,
+          "completion_ns": 30725600,
+          "session_id": 18,
+          "start_ns": 30225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33425600,
+          "completion_ns": 33925600,
+          "session_id": 20,
+          "start_ns": 33425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35088000,
+          "completion_ns": 35588000,
+          "session_id": 21,
+          "start_ns": 35088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 36625600,
+          "completion_ns": 37125600,
+          "session_id": 22,
+          "start_ns": 36625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38288000,
+          "completion_ns": 38788000,
+          "session_id": 23,
+          "start_ns": 38288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 41488000,
+          "completion_ns": 41988000,
+          "session_id": 25,
+          "start_ns": 41488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43025600,
+          "completion_ns": 43525600,
+          "session_id": 26,
+          "start_ns": 43025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46225600,
+          "completion_ns": 46725600,
+          "session_id": 28,
+          "start_ns": 46225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 47888000,
+          "completion_ns": 48388000,
+          "session_id": 29,
+          "start_ns": 47888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51088000,
+          "completion_ns": 51588000,
+          "session_id": 31,
+          "start_ns": 51088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52625600,
+          "completion_ns": 53125600,
+          "session_id": 32,
+          "start_ns": 52625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 54288000,
+          "completion_ns": 54788000,
+          "session_id": 33,
+          "start_ns": 54288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 55825600,
+          "completion_ns": 56325600,
+          "session_id": 34,
+          "start_ns": 55825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 57488000,
+          "completion_ns": 57988000,
+          "session_id": 35,
+          "start_ns": 57488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 59025600,
+          "completion_ns": 59525600,
+          "session_id": 36,
+          "start_ns": 59025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 60688000,
+          "completion_ns": 61188000,
+          "session_id": 37,
+          "start_ns": 60688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 62225600,
+          "completion_ns": 62725600,
+          "session_id": 38,
+          "start_ns": 62225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 63888000,
+          "completion_ns": 64388000,
+          "session_id": 39,
+          "start_ns": 63888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 65425600,
+          "completion_ns": 65925600,
+          "session_id": 40,
+          "start_ns": 65425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 67088000,
+          "completion_ns": 67588000,
+          "session_id": 41,
+          "start_ns": 67088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 68625600,
+          "completion_ns": 69125600,
+          "session_id": 42,
+          "start_ns": 68625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 70288000,
+          "completion_ns": 70788000,
+          "session_id": 43,
+          "start_ns": 70288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 71825600,
+          "completion_ns": 72325600,
+          "session_id": 44,
+          "start_ns": 71825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 73488000,
+          "completion_ns": 73988000,
+          "session_id": 45,
+          "start_ns": 73488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 75025600,
+          "completion_ns": 75525600,
+          "session_id": 46,
+          "start_ns": 75025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 76688000,
+          "completion_ns": 77188000,
+          "session_id": 47,
+          "start_ns": 76688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 78225600,
+          "completion_ns": 78725600,
+          "session_id": 48,
+          "start_ns": 78225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 79888000,
+          "completion_ns": 80388000,
+          "session_id": 49,
+          "start_ns": 79888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 81425600,
+          "completion_ns": 81925600,
+          "session_id": 50,
+          "start_ns": 81425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 83088000,
+          "completion_ns": 83588000,
+          "session_id": 51,
+          "start_ns": 83088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 84625600,
+          "completion_ns": 85125600,
+          "session_id": 52,
+          "start_ns": 84625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 86288000,
+          "completion_ns": 86788000,
+          "session_id": 53,
+          "start_ns": 86288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 87825600,
+          "completion_ns": 88325600,
+          "session_id": 54,
+          "start_ns": 87825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 89488000,
+          "completion_ns": 89988000,
+          "session_id": 55,
+          "start_ns": 89488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 91025600,
+          "completion_ns": 91525600,
+          "session_id": 56,
+          "start_ns": 91025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 92688000,
+          "completion_ns": 93188000,
+          "session_id": 57,
+          "start_ns": 92688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 94225600,
+          "completion_ns": 94725600,
+          "session_id": 58,
+          "start_ns": 94225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 95888000,
+          "completion_ns": 96388000,
+          "session_id": 59,
+          "start_ns": 95888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 97425600,
+          "completion_ns": 97925600,
+          "session_id": 60,
+          "start_ns": 97425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 99088000,
+          "completion_ns": 99588000,
+          "session_id": 61,
+          "start_ns": 99088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 100625600,
+          "completion_ns": 101125600,
+          "session_id": 62,
+          "start_ns": 100625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 102288000,
+          "completion_ns": 102788000,
+          "session_id": 63,
+          "start_ns": 102288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 103825600,
+          "completion_ns": 104325600,
+          "session_id": 64,
+          "start_ns": 103825600,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 64
+    },
+    {
+      "cell": "n64-load0.7",
+      "native": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        },
+        {
+          "arrival_ns": 26600000,
+          "completion_ns": 54000000,
+          "session_id": 33,
+          "start_ns": 52400000,
+          "waiting_ns": 25800000
+        },
+        {
+          "arrival_ns": 27400000,
+          "completion_ns": 55600000,
+          "session_id": 34,
+          "start_ns": 54000000,
+          "waiting_ns": 26600000
+        },
+        {
+          "arrival_ns": 28200000,
+          "completion_ns": 57200000,
+          "session_id": 35,
+          "start_ns": 55600000,
+          "waiting_ns": 27400000
+        },
+        {
+          "arrival_ns": 29000000,
+          "completion_ns": 58800000,
+          "session_id": 36,
+          "start_ns": 57200000,
+          "waiting_ns": 28200000
+        },
+        {
+          "arrival_ns": 29800000,
+          "completion_ns": 60400000,
+          "session_id": 37,
+          "start_ns": 58800000,
+          "waiting_ns": 29000000
+        },
+        {
+          "arrival_ns": 30600000,
+          "completion_ns": 62000000,
+          "session_id": 38,
+          "start_ns": 60400000,
+          "waiting_ns": 29800000
+        },
+        {
+          "arrival_ns": 31400000,
+          "completion_ns": 63600000,
+          "session_id": 39,
+          "start_ns": 62000000,
+          "waiting_ns": 30600000
+        },
+        {
+          "arrival_ns": 32200000,
+          "completion_ns": 65200000,
+          "session_id": 40,
+          "start_ns": 63600000,
+          "waiting_ns": 31400000
+        },
+        {
+          "arrival_ns": 33000000,
+          "completion_ns": 66800000,
+          "session_id": 41,
+          "start_ns": 65200000,
+          "waiting_ns": 32200000
+        },
+        {
+          "arrival_ns": 33800000,
+          "completion_ns": 68400000,
+          "session_id": 42,
+          "start_ns": 66800000,
+          "waiting_ns": 33000000
+        },
+        {
+          "arrival_ns": 34600000,
+          "completion_ns": 70000000,
+          "session_id": 43,
+          "start_ns": 68400000,
+          "waiting_ns": 33800000
+        },
+        {
+          "arrival_ns": 35400000,
+          "completion_ns": 71600000,
+          "session_id": 44,
+          "start_ns": 70000000,
+          "waiting_ns": 34600000
+        },
+        {
+          "arrival_ns": 36200000,
+          "completion_ns": 73200000,
+          "session_id": 45,
+          "start_ns": 71600000,
+          "waiting_ns": 35400000
+        },
+        {
+          "arrival_ns": 37000000,
+          "completion_ns": 74800000,
+          "session_id": 46,
+          "start_ns": 73200000,
+          "waiting_ns": 36200000
+        },
+        {
+          "arrival_ns": 37800000,
+          "completion_ns": 76400000,
+          "session_id": 47,
+          "start_ns": 74800000,
+          "waiting_ns": 37000000
+        },
+        {
+          "arrival_ns": 38600000,
+          "completion_ns": 78000000,
+          "session_id": 48,
+          "start_ns": 76400000,
+          "waiting_ns": 37800000
+        },
+        {
+          "arrival_ns": 39400000,
+          "completion_ns": 79600000,
+          "session_id": 49,
+          "start_ns": 78000000,
+          "waiting_ns": 38600000
+        },
+        {
+          "arrival_ns": 40200000,
+          "completion_ns": 81200000,
+          "session_id": 50,
+          "start_ns": 79600000,
+          "waiting_ns": 39400000
+        },
+        {
+          "arrival_ns": 41000000,
+          "completion_ns": 82800000,
+          "session_id": 51,
+          "start_ns": 81200000,
+          "waiting_ns": 40200000
+        },
+        {
+          "arrival_ns": 41800000,
+          "completion_ns": 84400000,
+          "session_id": 52,
+          "start_ns": 82800000,
+          "waiting_ns": 41000000
+        },
+        {
+          "arrival_ns": 42600000,
+          "completion_ns": 86000000,
+          "session_id": 53,
+          "start_ns": 84400000,
+          "waiting_ns": 41800000
+        },
+        {
+          "arrival_ns": 43400000,
+          "completion_ns": 87600000,
+          "session_id": 54,
+          "start_ns": 86000000,
+          "waiting_ns": 42600000
+        },
+        {
+          "arrival_ns": 44200000,
+          "completion_ns": 89200000,
+          "session_id": 55,
+          "start_ns": 87600000,
+          "waiting_ns": 43400000
+        },
+        {
+          "arrival_ns": 45000000,
+          "completion_ns": 90800000,
+          "session_id": 56,
+          "start_ns": 89200000,
+          "waiting_ns": 44200000
+        },
+        {
+          "arrival_ns": 45800000,
+          "completion_ns": 92400000,
+          "session_id": 57,
+          "start_ns": 90800000,
+          "waiting_ns": 45000000
+        },
+        {
+          "arrival_ns": 46600000,
+          "completion_ns": 94000000,
+          "session_id": 58,
+          "start_ns": 92400000,
+          "waiting_ns": 45800000
+        },
+        {
+          "arrival_ns": 47400000,
+          "completion_ns": 95600000,
+          "session_id": 59,
+          "start_ns": 94000000,
+          "waiting_ns": 46600000
+        },
+        {
+          "arrival_ns": 48200000,
+          "completion_ns": 97200000,
+          "session_id": 60,
+          "start_ns": 95600000,
+          "waiting_ns": 47400000
+        },
+        {
+          "arrival_ns": 49000000,
+          "completion_ns": 98800000,
+          "session_id": 61,
+          "start_ns": 97200000,
+          "waiting_ns": 48200000
+        },
+        {
+          "arrival_ns": 49800000,
+          "completion_ns": 100400000,
+          "session_id": 62,
+          "start_ns": 98800000,
+          "waiting_ns": 49000000
+        },
+        {
+          "arrival_ns": 50600000,
+          "completion_ns": 102000000,
+          "session_id": 63,
+          "start_ns": 100400000,
+          "waiting_ns": 49800000
+        },
+        {
+          "arrival_ns": 51400000,
+          "completion_ns": 103600000,
+          "session_id": 64,
+          "start_ns": 102000000,
+          "waiting_ns": 50600000
+        }
+      ],
+      "operation": "BSM",
+      "oracle": [
+        {
+          "arrival_ns": 1200000,
+          "completion_ns": 2800000,
+          "session_id": 1,
+          "start_ns": 1200000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 1800000,
+          "completion_ns": 4400000,
+          "session_id": 2,
+          "start_ns": 2800000,
+          "waiting_ns": 1000000
+        },
+        {
+          "arrival_ns": 2600000,
+          "completion_ns": 6000000,
+          "session_id": 3,
+          "start_ns": 4400000,
+          "waiting_ns": 1800000
+        },
+        {
+          "arrival_ns": 3400000,
+          "completion_ns": 7600000,
+          "session_id": 4,
+          "start_ns": 6000000,
+          "waiting_ns": 2600000
+        },
+        {
+          "arrival_ns": 4200000,
+          "completion_ns": 9200000,
+          "session_id": 5,
+          "start_ns": 7600000,
+          "waiting_ns": 3400000
+        },
+        {
+          "arrival_ns": 5000000,
+          "completion_ns": 10800000,
+          "session_id": 6,
+          "start_ns": 9200000,
+          "waiting_ns": 4200000
+        },
+        {
+          "arrival_ns": 5800000,
+          "completion_ns": 12400000,
+          "session_id": 7,
+          "start_ns": 10800000,
+          "waiting_ns": 5000000
+        },
+        {
+          "arrival_ns": 6600000,
+          "completion_ns": 14000000,
+          "session_id": 8,
+          "start_ns": 12400000,
+          "waiting_ns": 5800000
+        },
+        {
+          "arrival_ns": 7400000,
+          "completion_ns": 15600000,
+          "session_id": 9,
+          "start_ns": 14000000,
+          "waiting_ns": 6600000
+        },
+        {
+          "arrival_ns": 8200000,
+          "completion_ns": 17200000,
+          "session_id": 10,
+          "start_ns": 15600000,
+          "waiting_ns": 7400000
+        },
+        {
+          "arrival_ns": 9000000,
+          "completion_ns": 18800000,
+          "session_id": 11,
+          "start_ns": 17200000,
+          "waiting_ns": 8200000
+        },
+        {
+          "arrival_ns": 9800000,
+          "completion_ns": 20400000,
+          "session_id": 12,
+          "start_ns": 18800000,
+          "waiting_ns": 9000000
+        },
+        {
+          "arrival_ns": 10600000,
+          "completion_ns": 22000000,
+          "session_id": 13,
+          "start_ns": 20400000,
+          "waiting_ns": 9800000
+        },
+        {
+          "arrival_ns": 11400000,
+          "completion_ns": 23600000,
+          "session_id": 14,
+          "start_ns": 22000000,
+          "waiting_ns": 10600000
+        },
+        {
+          "arrival_ns": 12200000,
+          "completion_ns": 25200000,
+          "session_id": 15,
+          "start_ns": 23600000,
+          "waiting_ns": 11400000
+        },
+        {
+          "arrival_ns": 13000000,
+          "completion_ns": 26800000,
+          "session_id": 16,
+          "start_ns": 25200000,
+          "waiting_ns": 12200000
+        },
+        {
+          "arrival_ns": 13800000,
+          "completion_ns": 28400000,
+          "session_id": 17,
+          "start_ns": 26800000,
+          "waiting_ns": 13000000
+        },
+        {
+          "arrival_ns": 14600000,
+          "completion_ns": 30000000,
+          "session_id": 18,
+          "start_ns": 28400000,
+          "waiting_ns": 13800000
+        },
+        {
+          "arrival_ns": 15400000,
+          "completion_ns": 31600000,
+          "session_id": 19,
+          "start_ns": 30000000,
+          "waiting_ns": 14600000
+        },
+        {
+          "arrival_ns": 16200000,
+          "completion_ns": 33200000,
+          "session_id": 20,
+          "start_ns": 31600000,
+          "waiting_ns": 15400000
+        },
+        {
+          "arrival_ns": 17000000,
+          "completion_ns": 34800000,
+          "session_id": 21,
+          "start_ns": 33200000,
+          "waiting_ns": 16200000
+        },
+        {
+          "arrival_ns": 17800000,
+          "completion_ns": 36400000,
+          "session_id": 22,
+          "start_ns": 34800000,
+          "waiting_ns": 17000000
+        },
+        {
+          "arrival_ns": 18600000,
+          "completion_ns": 38000000,
+          "session_id": 23,
+          "start_ns": 36400000,
+          "waiting_ns": 17800000
+        },
+        {
+          "arrival_ns": 19400000,
+          "completion_ns": 39600000,
+          "session_id": 24,
+          "start_ns": 38000000,
+          "waiting_ns": 18600000
+        },
+        {
+          "arrival_ns": 20200000,
+          "completion_ns": 41200000,
+          "session_id": 25,
+          "start_ns": 39600000,
+          "waiting_ns": 19400000
+        },
+        {
+          "arrival_ns": 21000000,
+          "completion_ns": 42800000,
+          "session_id": 26,
+          "start_ns": 41200000,
+          "waiting_ns": 20200000
+        },
+        {
+          "arrival_ns": 21800000,
+          "completion_ns": 44400000,
+          "session_id": 27,
+          "start_ns": 42800000,
+          "waiting_ns": 21000000
+        },
+        {
+          "arrival_ns": 22600000,
+          "completion_ns": 46000000,
+          "session_id": 28,
+          "start_ns": 44400000,
+          "waiting_ns": 21800000
+        },
+        {
+          "arrival_ns": 23400000,
+          "completion_ns": 47600000,
+          "session_id": 29,
+          "start_ns": 46000000,
+          "waiting_ns": 22600000
+        },
+        {
+          "arrival_ns": 24200000,
+          "completion_ns": 49200000,
+          "session_id": 30,
+          "start_ns": 47600000,
+          "waiting_ns": 23400000
+        },
+        {
+          "arrival_ns": 25000000,
+          "completion_ns": 50800000,
+          "session_id": 31,
+          "start_ns": 49200000,
+          "waiting_ns": 24200000
+        },
+        {
+          "arrival_ns": 25800000,
+          "completion_ns": 52400000,
+          "session_id": 32,
+          "start_ns": 50800000,
+          "waiting_ns": 25000000
+        },
+        {
+          "arrival_ns": 26600000,
+          "completion_ns": 54000000,
+          "session_id": 33,
+          "start_ns": 52400000,
+          "waiting_ns": 25800000
+        },
+        {
+          "arrival_ns": 27400000,
+          "completion_ns": 55600000,
+          "session_id": 34,
+          "start_ns": 54000000,
+          "waiting_ns": 26600000
+        },
+        {
+          "arrival_ns": 28200000,
+          "completion_ns": 57200000,
+          "session_id": 35,
+          "start_ns": 55600000,
+          "waiting_ns": 27400000
+        },
+        {
+          "arrival_ns": 29000000,
+          "completion_ns": 58800000,
+          "session_id": 36,
+          "start_ns": 57200000,
+          "waiting_ns": 28200000
+        },
+        {
+          "arrival_ns": 29800000,
+          "completion_ns": 60400000,
+          "session_id": 37,
+          "start_ns": 58800000,
+          "waiting_ns": 29000000
+        },
+        {
+          "arrival_ns": 30600000,
+          "completion_ns": 62000000,
+          "session_id": 38,
+          "start_ns": 60400000,
+          "waiting_ns": 29800000
+        },
+        {
+          "arrival_ns": 31400000,
+          "completion_ns": 63600000,
+          "session_id": 39,
+          "start_ns": 62000000,
+          "waiting_ns": 30600000
+        },
+        {
+          "arrival_ns": 32200000,
+          "completion_ns": 65200000,
+          "session_id": 40,
+          "start_ns": 63600000,
+          "waiting_ns": 31400000
+        },
+        {
+          "arrival_ns": 33000000,
+          "completion_ns": 66800000,
+          "session_id": 41,
+          "start_ns": 65200000,
+          "waiting_ns": 32200000
+        },
+        {
+          "arrival_ns": 33800000,
+          "completion_ns": 68400000,
+          "session_id": 42,
+          "start_ns": 66800000,
+          "waiting_ns": 33000000
+        },
+        {
+          "arrival_ns": 34600000,
+          "completion_ns": 70000000,
+          "session_id": 43,
+          "start_ns": 68400000,
+          "waiting_ns": 33800000
+        },
+        {
+          "arrival_ns": 35400000,
+          "completion_ns": 71600000,
+          "session_id": 44,
+          "start_ns": 70000000,
+          "waiting_ns": 34600000
+        },
+        {
+          "arrival_ns": 36200000,
+          "completion_ns": 73200000,
+          "session_id": 45,
+          "start_ns": 71600000,
+          "waiting_ns": 35400000
+        },
+        {
+          "arrival_ns": 37000000,
+          "completion_ns": 74800000,
+          "session_id": 46,
+          "start_ns": 73200000,
+          "waiting_ns": 36200000
+        },
+        {
+          "arrival_ns": 37800000,
+          "completion_ns": 76400000,
+          "session_id": 47,
+          "start_ns": 74800000,
+          "waiting_ns": 37000000
+        },
+        {
+          "arrival_ns": 38600000,
+          "completion_ns": 78000000,
+          "session_id": 48,
+          "start_ns": 76400000,
+          "waiting_ns": 37800000
+        },
+        {
+          "arrival_ns": 39400000,
+          "completion_ns": 79600000,
+          "session_id": 49,
+          "start_ns": 78000000,
+          "waiting_ns": 38600000
+        },
+        {
+          "arrival_ns": 40200000,
+          "completion_ns": 81200000,
+          "session_id": 50,
+          "start_ns": 79600000,
+          "waiting_ns": 39400000
+        },
+        {
+          "arrival_ns": 41000000,
+          "completion_ns": 82800000,
+          "session_id": 51,
+          "start_ns": 81200000,
+          "waiting_ns": 40200000
+        },
+        {
+          "arrival_ns": 41800000,
+          "completion_ns": 84400000,
+          "session_id": 52,
+          "start_ns": 82800000,
+          "waiting_ns": 41000000
+        },
+        {
+          "arrival_ns": 42600000,
+          "completion_ns": 86000000,
+          "session_id": 53,
+          "start_ns": 84400000,
+          "waiting_ns": 41800000
+        },
+        {
+          "arrival_ns": 43400000,
+          "completion_ns": 87600000,
+          "session_id": 54,
+          "start_ns": 86000000,
+          "waiting_ns": 42600000
+        },
+        {
+          "arrival_ns": 44200000,
+          "completion_ns": 89200000,
+          "session_id": 55,
+          "start_ns": 87600000,
+          "waiting_ns": 43400000
+        },
+        {
+          "arrival_ns": 45000000,
+          "completion_ns": 90800000,
+          "session_id": 56,
+          "start_ns": 89200000,
+          "waiting_ns": 44200000
+        },
+        {
+          "arrival_ns": 45800000,
+          "completion_ns": 92400000,
+          "session_id": 57,
+          "start_ns": 90800000,
+          "waiting_ns": 45000000
+        },
+        {
+          "arrival_ns": 46600000,
+          "completion_ns": 94000000,
+          "session_id": 58,
+          "start_ns": 92400000,
+          "waiting_ns": 45800000
+        },
+        {
+          "arrival_ns": 47400000,
+          "completion_ns": 95600000,
+          "session_id": 59,
+          "start_ns": 94000000,
+          "waiting_ns": 46600000
+        },
+        {
+          "arrival_ns": 48200000,
+          "completion_ns": 97200000,
+          "session_id": 60,
+          "start_ns": 95600000,
+          "waiting_ns": 47400000
+        },
+        {
+          "arrival_ns": 49000000,
+          "completion_ns": 98800000,
+          "session_id": 61,
+          "start_ns": 97200000,
+          "waiting_ns": 48200000
+        },
+        {
+          "arrival_ns": 49800000,
+          "completion_ns": 100400000,
+          "session_id": 62,
+          "start_ns": 98800000,
+          "waiting_ns": 49000000
+        },
+        {
+          "arrival_ns": 50600000,
+          "completion_ns": 102000000,
+          "session_id": 63,
+          "start_ns": 100400000,
+          "waiting_ns": 49800000
+        },
+        {
+          "arrival_ns": 51400000,
+          "completion_ns": 103600000,
+          "session_id": 64,
+          "start_ns": 102000000,
+          "waiting_ns": 50600000
+        }
+      ],
+      "sessions": 64
+    },
+    {
+      "cell": "n64-load0.7",
+      "native": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 16281440,
+          "completion_ns": 16781440,
+          "session_id": 9,
+          "start_ns": 16281440,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19812869,
+          "completion_ns": 20312869,
+          "session_id": 11,
+          "start_ns": 19812869,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20927612,
+          "completion_ns": 21427612,
+          "session_id": 12,
+          "start_ns": 20927612,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 24459041,
+          "completion_ns": 24959041,
+          "session_id": 14,
+          "start_ns": 24459041,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25698584,
+          "completion_ns": 26198584,
+          "session_id": 15,
+          "start_ns": 25698584,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 29230013,
+          "completion_ns": 29730013,
+          "session_id": 17,
+          "start_ns": 29230013,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30344756,
+          "completion_ns": 30844756,
+          "session_id": 18,
+          "start_ns": 30344756,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33876185,
+          "completion_ns": 34376185,
+          "session_id": 20,
+          "start_ns": 33876185,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35115728,
+          "completion_ns": 35615728,
+          "session_id": 21,
+          "start_ns": 35115728,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 37407614,
+          "completion_ns": 37907614,
+          "session_id": 22,
+          "start_ns": 37407614,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38647157,
+          "completion_ns": 39147157,
+          "session_id": 23,
+          "start_ns": 38647157,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 42178586,
+          "completion_ns": 42678586,
+          "session_id": 25,
+          "start_ns": 42178586,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43293329,
+          "completion_ns": 43793329,
+          "session_id": 26,
+          "start_ns": 43293329,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46824758,
+          "completion_ns": 47324758,
+          "session_id": 28,
+          "start_ns": 46824758,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 48064301,
+          "completion_ns": 48564301,
+          "session_id": 29,
+          "start_ns": 48064301,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51595730,
+          "completion_ns": 52095730,
+          "session_id": 31,
+          "start_ns": 51595730,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52710473,
+          "completion_ns": 53210473,
+          "session_id": 32,
+          "start_ns": 52710473,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 54288000,
+          "completion_ns": 54788000,
+          "session_id": 33,
+          "start_ns": 54288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 56241902,
+          "completion_ns": 56741902,
+          "session_id": 34,
+          "start_ns": 56241902,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 57488000,
+          "completion_ns": 57988000,
+          "session_id": 35,
+          "start_ns": 57488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 59773331,
+          "completion_ns": 60273331,
+          "session_id": 36,
+          "start_ns": 59773331,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 61012874,
+          "completion_ns": 61512874,
+          "session_id": 37,
+          "start_ns": 61012874,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 62225600,
+          "completion_ns": 62725600,
+          "session_id": 38,
+          "start_ns": 62225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 64544303,
+          "completion_ns": 65044303,
+          "session_id": 39,
+          "start_ns": 64544303,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 65659046,
+          "completion_ns": 66159046,
+          "session_id": 40,
+          "start_ns": 65659046,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 67088000,
+          "completion_ns": 67588000,
+          "session_id": 41,
+          "start_ns": 67088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 69190475,
+          "completion_ns": 69690475,
+          "session_id": 42,
+          "start_ns": 69190475,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 70430018,
+          "completion_ns": 70930018,
+          "session_id": 43,
+          "start_ns": 70430018,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 71825600,
+          "completion_ns": 72325600,
+          "session_id": 44,
+          "start_ns": 71825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 73961447,
+          "completion_ns": 74461447,
+          "session_id": 45,
+          "start_ns": 73961447,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 75076190,
+          "completion_ns": 75576190,
+          "session_id": 46,
+          "start_ns": 75076190,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 77492876,
+          "completion_ns": 77992876,
+          "session_id": 47,
+          "start_ns": 77492876,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 78607619,
+          "completion_ns": 79107619,
+          "session_id": 48,
+          "start_ns": 78607619,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 79888000,
+          "completion_ns": 80388000,
+          "session_id": 49,
+          "start_ns": 79888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 82139048,
+          "completion_ns": 82639048,
+          "session_id": 50,
+          "start_ns": 82139048,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 83378591,
+          "completion_ns": 83878591,
+          "session_id": 51,
+          "start_ns": 83378591,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 84625600,
+          "completion_ns": 85125600,
+          "session_id": 52,
+          "start_ns": 84625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 86910020,
+          "completion_ns": 87410020,
+          "session_id": 53,
+          "start_ns": 86910020,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 88024763,
+          "completion_ns": 88524763,
+          "session_id": 54,
+          "start_ns": 88024763,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 89488000,
+          "completion_ns": 89988000,
+          "session_id": 55,
+          "start_ns": 89488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 91556192,
+          "completion_ns": 92056192,
+          "session_id": 56,
+          "start_ns": 91556192,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 92795735,
+          "completion_ns": 93295735,
+          "session_id": 57,
+          "start_ns": 92795735,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 94225600,
+          "completion_ns": 94725600,
+          "session_id": 58,
+          "start_ns": 94225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 96327164,
+          "completion_ns": 96827164,
+          "session_id": 59,
+          "start_ns": 96327164,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 97441907,
+          "completion_ns": 97941907,
+          "session_id": 60,
+          "start_ns": 97441907,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 99858593,
+          "completion_ns": 100358593,
+          "session_id": 61,
+          "start_ns": 99858593,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 100973336,
+          "completion_ns": 101473336,
+          "session_id": 62,
+          "start_ns": 100973336,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 102288000,
+          "completion_ns": 102788000,
+          "session_id": 63,
+          "start_ns": 102288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 104504765,
+          "completion_ns": 105004765,
+          "session_id": 64,
+          "start_ns": 104504765,
+          "waiting_ns": 0
+        }
+      ],
+      "operation": "CORRECTION",
+      "oracle": [
+        {
+          "arrival_ns": 3332867,
+          "completion_ns": 3832867,
+          "session_id": 1,
+          "start_ns": 3332867,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 4625600,
+          "completion_ns": 5125600,
+          "session_id": 2,
+          "start_ns": 4625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 6864296,
+          "completion_ns": 7364296,
+          "session_id": 3,
+          "start_ns": 6864296,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 7979039,
+          "completion_ns": 8479039,
+          "session_id": 4,
+          "start_ns": 7979039,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 9488000,
+          "completion_ns": 9988000,
+          "session_id": 5,
+          "start_ns": 9488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 11510468,
+          "completion_ns": 12010468,
+          "session_id": 6,
+          "start_ns": 11510468,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 12750011,
+          "completion_ns": 13250011,
+          "session_id": 7,
+          "start_ns": 12750011,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 15041897,
+          "completion_ns": 15541897,
+          "session_id": 8,
+          "start_ns": 15041897,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 16281440,
+          "completion_ns": 16781440,
+          "session_id": 9,
+          "start_ns": 16281440,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 17425600,
+          "completion_ns": 17925600,
+          "session_id": 10,
+          "start_ns": 17425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 19812869,
+          "completion_ns": 20312869,
+          "session_id": 11,
+          "start_ns": 19812869,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 20927612,
+          "completion_ns": 21427612,
+          "session_id": 12,
+          "start_ns": 20927612,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 22288000,
+          "completion_ns": 22788000,
+          "session_id": 13,
+          "start_ns": 22288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 24459041,
+          "completion_ns": 24959041,
+          "session_id": 14,
+          "start_ns": 24459041,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 25698584,
+          "completion_ns": 26198584,
+          "session_id": 15,
+          "start_ns": 25698584,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 27025600,
+          "completion_ns": 27525600,
+          "session_id": 16,
+          "start_ns": 27025600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 29230013,
+          "completion_ns": 29730013,
+          "session_id": 17,
+          "start_ns": 29230013,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 30344756,
+          "completion_ns": 30844756,
+          "session_id": 18,
+          "start_ns": 30344756,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 31888000,
+          "completion_ns": 32388000,
+          "session_id": 19,
+          "start_ns": 31888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 33876185,
+          "completion_ns": 34376185,
+          "session_id": 20,
+          "start_ns": 33876185,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 35115728,
+          "completion_ns": 35615728,
+          "session_id": 21,
+          "start_ns": 35115728,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 37407614,
+          "completion_ns": 37907614,
+          "session_id": 22,
+          "start_ns": 37407614,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 38647157,
+          "completion_ns": 39147157,
+          "session_id": 23,
+          "start_ns": 38647157,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 39825600,
+          "completion_ns": 40325600,
+          "session_id": 24,
+          "start_ns": 39825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 42178586,
+          "completion_ns": 42678586,
+          "session_id": 25,
+          "start_ns": 42178586,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 43293329,
+          "completion_ns": 43793329,
+          "session_id": 26,
+          "start_ns": 43293329,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 44688000,
+          "completion_ns": 45188000,
+          "session_id": 27,
+          "start_ns": 44688000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 46824758,
+          "completion_ns": 47324758,
+          "session_id": 28,
+          "start_ns": 46824758,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 48064301,
+          "completion_ns": 48564301,
+          "session_id": 29,
+          "start_ns": 48064301,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 49425600,
+          "completion_ns": 49925600,
+          "session_id": 30,
+          "start_ns": 49425600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 51595730,
+          "completion_ns": 52095730,
+          "session_id": 31,
+          "start_ns": 51595730,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 52710473,
+          "completion_ns": 53210473,
+          "session_id": 32,
+          "start_ns": 52710473,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 54288000,
+          "completion_ns": 54788000,
+          "session_id": 33,
+          "start_ns": 54288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 56241902,
+          "completion_ns": 56741902,
+          "session_id": 34,
+          "start_ns": 56241902,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 57488000,
+          "completion_ns": 57988000,
+          "session_id": 35,
+          "start_ns": 57488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 59773331,
+          "completion_ns": 60273331,
+          "session_id": 36,
+          "start_ns": 59773331,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 61012874,
+          "completion_ns": 61512874,
+          "session_id": 37,
+          "start_ns": 61012874,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 62225600,
+          "completion_ns": 62725600,
+          "session_id": 38,
+          "start_ns": 62225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 64544303,
+          "completion_ns": 65044303,
+          "session_id": 39,
+          "start_ns": 64544303,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 65659046,
+          "completion_ns": 66159046,
+          "session_id": 40,
+          "start_ns": 65659046,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 67088000,
+          "completion_ns": 67588000,
+          "session_id": 41,
+          "start_ns": 67088000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 69190475,
+          "completion_ns": 69690475,
+          "session_id": 42,
+          "start_ns": 69190475,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 70430018,
+          "completion_ns": 70930018,
+          "session_id": 43,
+          "start_ns": 70430018,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 71825600,
+          "completion_ns": 72325600,
+          "session_id": 44,
+          "start_ns": 71825600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 73961447,
+          "completion_ns": 74461447,
+          "session_id": 45,
+          "start_ns": 73961447,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 75076190,
+          "completion_ns": 75576190,
+          "session_id": 46,
+          "start_ns": 75076190,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 77492876,
+          "completion_ns": 77992876,
+          "session_id": 47,
+          "start_ns": 77492876,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 78607619,
+          "completion_ns": 79107619,
+          "session_id": 48,
+          "start_ns": 78607619,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 79888000,
+          "completion_ns": 80388000,
+          "session_id": 49,
+          "start_ns": 79888000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 82139048,
+          "completion_ns": 82639048,
+          "session_id": 50,
+          "start_ns": 82139048,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 83378591,
+          "completion_ns": 83878591,
+          "session_id": 51,
+          "start_ns": 83378591,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 84625600,
+          "completion_ns": 85125600,
+          "session_id": 52,
+          "start_ns": 84625600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 86910020,
+          "completion_ns": 87410020,
+          "session_id": 53,
+          "start_ns": 86910020,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 88024763,
+          "completion_ns": 88524763,
+          "session_id": 54,
+          "start_ns": 88024763,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 89488000,
+          "completion_ns": 89988000,
+          "session_id": 55,
+          "start_ns": 89488000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 91556192,
+          "completion_ns": 92056192,
+          "session_id": 56,
+          "start_ns": 91556192,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 92795735,
+          "completion_ns": 93295735,
+          "session_id": 57,
+          "start_ns": 92795735,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 94225600,
+          "completion_ns": 94725600,
+          "session_id": 58,
+          "start_ns": 94225600,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 96327164,
+          "completion_ns": 96827164,
+          "session_id": 59,
+          "start_ns": 96327164,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 97441907,
+          "completion_ns": 97941907,
+          "session_id": 60,
+          "start_ns": 97441907,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 99858593,
+          "completion_ns": 100358593,
+          "session_id": 61,
+          "start_ns": 99858593,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 100973336,
+          "completion_ns": 101473336,
+          "session_id": 62,
+          "start_ns": 100973336,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 102288000,
+          "completion_ns": 102788000,
+          "session_id": 63,
+          "start_ns": 102288000,
+          "waiting_ns": 0
+        },
+        {
+          "arrival_ns": 104504765,
+          "completion_ns": 105004765,
+          "session_id": 64,
+          "start_ns": 104504765,
+          "waiting_ns": 0
+        }
+      ],
+      "sessions": 64
+    }
+  ],
+  "max_absolute_completion_error_ns": 0,
+  "passed": true,
+  "requests": 500,
+  "source": "independent resource-ready/FIFO oracle vs actual native circuit completion"
+}
