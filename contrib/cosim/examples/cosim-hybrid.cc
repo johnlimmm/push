@@ -449,6 +449,17 @@ void RunParticipant(Wire& wire)
     }
     // Register application initialization before possible session starts at t=0.
     for (uint32_t i = 0; i < nodes.GetN(); ++i) nodes.Get(i)->Initialize();
+    // TeleportationApp schedules its own zero-delay session activation from
+    // StartApplication. Drain startup before registering user requests so a
+    // t=0 Teleport request cannot be overtaken by a later t=0 Swap request.
+    size_t startupEvents = 0;
+    while (NextTime() == 0)
+    {
+        Require(++startupEvents <= MAX_BATCH, "application startup event limit");
+        Simulator::Run();
+    }
+    // Deliver readiness traces at t=0 through the normal bridge boundary.
+    Simulator::ScheduleNow([] {});
     // Background packets use a separate port and never invoke quantum requests.
     const auto flow = flows.at(0);
     for (uint32_t i = 0; i < flow.count; ++i)

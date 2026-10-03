@@ -1,25 +1,28 @@
 % Insert after VI-D. Requires graphicx. Copy figures/ next to the manuscript.
 \subsection{Timing Fidelity and Simulation Cost}
-We validate the operation-level scheduler against a separately implemented
-capacity-one FIFO dispatcher driving NetSquid 1.1.7 timed
-\texttt{QuantumProcessor} instructions. Both paths receive the same arrivals
-and configured durations. The native path dispatches its next request only on
-the processor's program-completion event; it does not reuse QuCl's scheduling
-code or computed completion timestamps. Equal-time arrivals are submitted as
-a batch in input order. The comparison includes idle, saturated, simultaneous,
-bursty, and completion-boundary arrivals (including offsets of $\pm1$ ns),
-BSMs of 1.6 ms, corrections of 0.5 and 0.05 ms, and variable-duration correction
-workloads. Across 120 workloads and 2,500 requests, the maximum absolute
-start, completion, and waiting-time differences are all 0 ns. Replaying 500
-R/B requests from 12 actual mixed-protocol runs also gives 0 ns maximum error.
-This establishes timing equivalence for the specified atomic FIFO model;
-it does not validate physical device durations or gate-level noisy evolution.
+Production execution uses native NetSquid 1.1.7 \texttt{QuantumProgram}s:
+CNOT, H, and two sequential measurements for BSM, followed at the destination
+by X-or-I and Z-or-I correction slots. Each physical instruction has a configured
+duration. Native program-done callbacks release execution resources and trigger
+Q2NS completion; BSM completion creates the actual R--B UDP packet at that time.
+Native T1/T2 models account for both idle storage and active instruction time;
+ideal gates act at instruction completion. These durations are illustrative
+model parameters rather than hardware calibration.
+
+A separately implemented NetSquid-only timed circuit enumerates the four BSM
+outcomes with Born probabilities. For each execution model, we compare the
+observed branch's intermediate gate states and frame, packet-arrival,
+correction-start and usable states using that model's operation timestamps.
+This checks the implementation of the configured circuit/noise model; it does
+not claim equivalence to physical hardware or the earlier atomic state model.
+An independent analytic FIFO schedule also checks start, completion and waiting
+times for 500 R/B requests in 12 mixed-protocol runs, with maximum error 0 ns.
 
 For simulation cost, we execute finite mixed Swap--Teleport batches of
 1, 4, 8, 16, 32, and 64 sessions with a request interval of 0.8 ms, at
 R--B background offered loads of 0 and 0.70. Each condition has one warmup
 and ten measured repetitions in shuffled order. All runs retain native memory
-noise, production event logging, and the full background-traffic drain.
+noise, instruction-state probes, production event logging, and the full background-traffic drain.
 Runtime includes state initialization, ns-3 startup/configuration, federation,
 and shutdown, but excludes build/import time, offline independent-reference
 validation, and result-file writing. All repeated traces are identical within
@@ -29,13 +32,13 @@ over runtime repetitions, not over network workloads. These measurements
 characterize finite-batch cost on a fixed topology, rather than isolated IPC
 overhead or arbitrary-topology scalability.
 
-At 64 sessions, mean total simulation runtimes are 1.17 [1.00, 1.40] and 1.50 [1.41, 1.61] s at offered loads 0 and 0.70, respectively. The corresponding synchronization-round counts are 418 and 817, and bidirectional IPC line counts are 2381 and 4110. Counts include setup and the complete traffic drain.
+At 64 sessions, mean total simulation runtimes are 2.32 [2.09, 2.58] and 3.54 [3.16, 3.87] s at offered loads 0 and 0.70, respectively. The corresponding synchronization-round counts are 449 and 848, and bidirectional IPC line counts are 2443 and 4172. Counts include setup and the complete traffic drain.
 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=\textwidth]{figures/fig7-timing-cost.pdf}
-\caption{Additional validation. (a) Atomic completion timing against an
-independent dispatcher using native timed instructions. (b) Mean simulation
+\caption{Additional validation. (a) Actual native circuit completion timing against an
+independent analytic FIFO schedule. (b) Mean simulation
 runtime per completed transaction, with 95\% repetition-bootstrap intervals.
 Offline reference validation and file writing are excluded.}
 \label{fig:timing-cost}

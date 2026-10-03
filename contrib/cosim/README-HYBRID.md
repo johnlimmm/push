@@ -1,5 +1,11 @@
 # QuCl Hybrid v2 — R에서 직접 시작하는 Swap + Teleportation
 
+이 문서는 보존된 **atomic v2** 실행과 결과를 설명한다.
+BSM/correction 내부의 실제 timed `QuantumProgram` 실행은
+[v3 README-NATIVE](README-NATIVE.md)와 [SPEC-NATIVE](SPEC-NATIVE.md)를 따른다.
+Atomic 논문 산출물은 [archive](baselines/atomic-v2-paper.tar.gz)에 보존했다.
+현재 `paper/RESULTS.md`와 `README-P5B.md`는 native v3 재평가 결과를 설명한다.
+
 두 Q2NS 앱이 `session_start_ns`에 R에서 직접 external BSM request를 발생시킨다.
 **실행 노드는 A=0, R=1, B=2**이며 Swap의 A–R / R–B EPR 구조를 유지한다.
 Teleport의 source/Alice는 R이다. 결과 통신은 기존 Q2NS의 실제 R→B UDP 경로다.

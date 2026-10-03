@@ -1,0 +1,52 @@
+{
+  "architecture": "native-timed-v3",
+  "artifacts": {
+    "correctness": {
+      "path": "results/native-timed/summary.json",
+      "sha256": "cfdfd742fe78d5525c0b5aa94c53435f0a83fdfe99a42a2a13864a579ea9e9ca"
+    },
+    "cost": {
+      "path": "results/native-paper-scaling/summary.json",
+      "sha256": "998a37e9311659fb27ad7af0908e04d051b3416e305bd9ccf5a4d3bad49ebbae"
+    },
+    "expanded": {
+      "path": "results/native-p5b-expanded/summary.json",
+      "sha256": "478bc43ed70c8578206bfa7e88cbd12d596a38c7fda2ef8f2b0feceaa6c5c3a3"
+    },
+    "paper": {
+      "path": "paper/results-summary.json",
+      "sha256": "4782697bdfc708d1fce24b9fb421d42658a38570cee06196a68bb9d9792f5ea7"
+    },
+    "pilot": {
+      "path": "results/native-p5b-pilot/summary.json",
+      "sha256": "2307a53bb6760e7d57d35ff6f38a4c3c8d5924619340b96655c46dda1f2d5779"
+    },
+    "regression": {
+      "path": "results/native-timed/regression-summary.json",
+      "sha256": "8eb25b27a96192bec59790ae36a36e3d8615c46c0abf6b255af72aa27964a4c6"
+    },
+    "timing": {
+      "path": "results/native-paper-scaling/timing.json",
+      "sha256": "45ed228ed6e6b601ae76cae06ecbb9deb9ce4cbdfdc5bf10bcb72f3f06b88f4c"
+    }
+  },
+  "atomic_evidence_preserved": [
+    "baselines/atomic-v2-paper.tar.gz",
+    "baselines/direct-start-v2-results.tar.gz"
+  ],
+  "cost_measured_runs": 120,
+  "cost_warmup_runs": 12,
+  "date": "2026-10-02T14:09:56.884179+00:00",
+  "expanded_calibration_runs": 6,
+  "expanded_execution_runs": 1152,
+  "expanded_paired_cases": 384,
+  "manuscript_note": "Tables, figures and LaTeX replacement blocks updated. Original QuCl.pdf retained; full manuscript source unavailable.",
+  "max_density_matrix_error": 6.661338147750939e-16,
+  "passed": true,
+  "pilot_paired_cases": 48,
+  "scope": "Native timed gate chains; A/R/B local starts; pre-created resources; illustrative durations; periodic background phases.",
+  "timing_max_error_ns": 0,
+  "timing_requests": 500,
+  "total_test_cases": 258,
+  "transactions_per_model": 1536
+}

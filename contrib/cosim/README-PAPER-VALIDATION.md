@@ -1,112 +1,103 @@
-# QuCl paper — timing fidelity, simulation cost, expanded P5-B
+# QuCl paper — native timed execution 평가
 
-Controller 경로를 제거한 **direct-session-start-v2**로 전체 검증·평가를 다시 실행했다.
-노드는 A/R/B이며 latency 기준은 R의 local session start다. Classical load는 R→B에만 적용한다. 실험 계획은 실행 전에
-[`hybrid-paper-validation.json`](scenarios/hybrid-paper-validation.json)과
-[`p5b-paper-expanded.json`](scenarios/p5b-paper-expanded.json)에 고정했다.
+현재 논문용 실행 기준은 **native-timed-v3**다. A/R/B에서 session이 R에 직접 도착하고,
+NetSquid의 실제 `QuantumProgram` 완료가 Q2NS R→B result packet 생성을 구동한다.
+Full Sync, No-Dq-R, Fixed-Dc 모두 같은 timed gate chain과 idle/active T1/T2를 사용한다.
 
-## 산출물
+## 실험 계획
 
-현재 실행 원자료: `results/direct-start-timing`, `direct-start-scaling`,
-`direct-start-p5b-pilot`, `direct-start-p5b-expanded`. 이전 `paper-*-20260921*`는 이전 구조의 결과다.
-[새 전체 검증 요약](results/direct-start-validation-summary.json)을 기준으로 읽는다.
+- [P5-B 확대 계획](scenarios/native-p5b-paper-expanded.json): 기존과 같은 384 paired cases,
+  1,152 model executions + calibration 6회. 모델별 1,536 transactions.
+- Test traffic seeds 1000–1031, calibration 100/101, quantum seeds 7/11을 유지한다.
+  Loads 0/0.35/0.7, request intervals 0.8/2 ms, F_min=0.5, deadline=5 ms를 유지한다.
+- [비용 측정 계획](scenarios/native-paper-validation.json): 1/4/8/16/32/64 sessions × load 0/0.7,
+  각 cell warmup 1회 + 10회 반복. 총 12 warmups와 120 measured runs.
+- P5-B는 Swap이며 B wait=0을 요구한다. 비용 측정은 Swap/Teleport 교대이며 B FIFO도 검증한다.
+- CNOT/H/M0/M1은 0.6/0.2/0.4/0.4 ms. Correction X/I와 Z/I 슬롯은 P5-B에서 각 25 μs,
+  비용 측정에서 각 250 μs다. 합계 시간과 workload는 atomic v2와 맞추되 quantum state는 다시 계산한다.
+- P5-B CI는 traffic-seed cluster bootstrap, 비용 CI는 같은 workload의 runtime 반복 bootstrap이다.
+  둘 모두 95% percentile interval이며 비용 측정은 다른 실험이 끝난 뒤 단독으로 수행한다.
 
-- [원고 교정 메모와 측정 방법](paper/REVISION-NOTES.md)
-- [실험 수치·95% CI 표](paper/RESULTS.md)
-- [요약 JSON](paper/results-summary.json)
-- [VI-E LaTeX 삽입문](paper/validation-insert.tex)
-- [VI-A/VI-D 확대 결과 교체문](paper/abstraction-results-insert.tex)
-- [VI-A 설정 표·지표 정의](paper/setup-and-metrics.tex)
-- [Fig. 4 — latency MAE](paper/figures/fig4-latency-mae.pdf)
-- [Fig. 5 — expected-fidelity bias](paper/figures/fig5-expected-fidelity.pdf)
-- [Fig. 6 — contention control](paper/figures/fig6-mechanism-control.pdf)
-- [Fig. 7 — timing / cost](paper/figures/fig7-timing-cost.pdf)
-- [전체 실행시간·round/IPC 비용](paper/figures/simulation-cost-details.pdf)
-- [Timing 원자료 CSV](paper/timing.csv), [runtime 반복 원자료 CSV](paper/scaling.csv)
+## 현재 산출물
 
-원본 `/home/ns3/QuCl.pdf`는 변경하지 않았다. `.tex/.bib` 원본이 없으므로 기존 PDF에 그림을
-억지로 덧붙이거나 참고문헌을 임의로 복원하지 않았다. 삽입문·그림을 원고 소스에 반영한 후
-참고문헌, figure 번호와 페이지 수를 다시 확인해야 한다.
+- [수치·95% CI 표](paper/RESULTS.md), [요약·입력 해시](paper/results-summary.json)
+- [Fig. 4 latency MAE](paper/figures/fig4-latency-mae.pdf),
+  [Fig. 5 expected-fidelity bias](paper/figures/fig5-expected-fidelity.pdf),
+  [Fig. 6 contention control](paper/figures/fig6-mechanism-control.pdf),
+  [Fig. 7 native timing / cost](paper/figures/fig7-timing-cost.pdf)
+- [설정·지표 LaTeX](paper/setup-and-metrics.tex), [VI-D 교체문](paper/abstraction-results-insert.tex),
+  [VI-E 교체문](paper/validation-insert.tex), [원고 수정 메모](paper/REVISION-NOTES.md)
+- [Native correctness](paper/NATIVE-VALIDATION.md), [전체 회귀](results/native-timed/regression-summary.json)
+- [Pilot](results/native-p5b-pilot/summary.json), [Expanded](results/native-p5b-expanded/summary.json),
+  [비용 측정](results/native-paper-scaling/summary.json), [실제 timing](results/native-paper-scaling/timing.json)
 
-## 원자료 복원
+`/home/ns3/QuCl.pdf`의 전체 `.tex/.bib` 원본은 workspace에서 찾지 못했다.
+원본 PDF는 유지하고, 반영할 문장·표·그림·LaTeX를 갱신한다. 최종 PDF의 참고문헌,
+figure 번호와 page budget은 원본 manuscript 소스에서 반영·확인해야 한다.
 
-Git에는 현재 구조의 검증 요약, 대표 실행, 평가 CSV와 논문 표·그림을 포함한다.
-전체 실행 trace와 calibration 원자료는
-[압축본](baselines/direct-start-v2-results.tar.gz)에 보존했다.
-[manifest](baselines/direct-start-v2-results.json)에 파일별 SHA-256을 기록했다.
-새 checkout의 ns-3 루트에서 다음 명령으로 압축본을 확인하고 원래 경로에 복원할 수 있다.
+## 재실행
+
+ns-3 루트에서 NetSquid 환경의 Python으로 실행한다. 완료된 출력 경로는 다시 사용하지 않는다.
+기존 `run_p5b.py`/`paper_scaling.py`는 atomic 재현용이다.
+
+```bash
+/home/ns3/qunet/bin/python contrib/cosim/tools/validate_native_timed.py
+
+/home/ns3/qunet/bin/python contrib/cosim/experiments/run_native_p5b.py \
+  contrib/cosim/scenarios/native-p5b-paper-expanded.json \
+  --output-dir contrib/cosim/results/native-expanded-new
+
+# 다른 실험이 끝난 뒤 단독 실행
+/home/ns3/qunet/bin/python contrib/cosim/experiments/run_native_paper.py \
+  --output-dir contrib/cosim/results/native-scaling-new
+
+# matplotlib 3.8.4 / NumPy 1.26.4 별도 plotting 환경
+/tmp/qucl-native-plot-env/bin/python contrib/cosim/experiments/render_native_paper_results.py \
+  --timing contrib/cosim/results/native-scaling-new/timing.json \
+  --scaling contrib/cosim/results/native-scaling-new/summary.json \
+  --expanded contrib/cosim/results/native-expanded-new/summary.json \
+  --manuscript /home/ns3/QuCl.pdf --output-dir contrib/cosim/paper
+```
+
+## 측정·해석의 범위
+
+Native circuit의 start/completion/wait를 독립 analytic FIFO와 대조한다. 각 모델의
+중간 gate와 checkpoint state는 별도로 구현한 native NetSquid circuit과 비교한다.
+이전 atomic scheduler의 120 synthetic workloads/2,500 requests는 과거 증거로 보존하며
+새 native 평가의 표본 수에 더하지 않는다. 장비 parameter를 검증하는 실험은 아니다.
+
+비용에는 core/state 초기화, ns-3 시작·설정, native federation, **모든 instruction state probe**,
+기존 로그·snapshot, traffic drain과 종료를 포함한다. Python import/build/config normalization,
+사후 reference 검증과 파일 쓰기는 제외한다. IPC만 분리한 overhead나 노드 수 scalability가 아니다.
+
+No-Dq-R은 session별 R 실행 엔진으로 동시성을 늘리되 qubit state를 복제하지 않는다.
+Fixed-Dc는 가상 result 도착 이벤트를 쓴다. 두 근사를 Full Sync와 같은 native 물리 모델에서 비교한다.
+Decoupled는 latency/deadline만 예측하며 fidelity/service feasibility는 정의하지 않는다.
+
+Bootstrap CI는 calibration 두 seed를 고정하고 periodic background phase family에 조건화한다.
+같은 quantum seed가 모델 간 같은 branch를 보장하지 않는다. 무부하의 zero-width CI나 오판 0건은
+모집단 확률을 확정하지 않는다. 관측 fidelity와 branch 확률 가중 E[F], deadline-only와 service 오판을 구분한다.
+
+## 과거 결과 보존
+
+- [Atomic v2 논문 산출물](baselines/atomic-v2-paper.tar.gz) · [파일별 해시](baselines/atomic-v2-paper.json)
+- [Atomic v2 실행 원자료](baselines/direct-start-v2-results.tar.gz) · [manifest](baselines/direct-start-v2-results.json)
+- [Native 이전 source 기준점](baselines/native-timed-parent.json)
+
+Native 전체 원자료는 [압축본](baselines/native-timed-v3-results.tar.gz)과
+[파일별 SHA-256 manifest](baselines/native-timed-v3-results.json)에 보존한다.
+모든 entry를 다시 읽어 원본 파일과 byte 단위로 일치하는지 확인했다.
+새 checkout에서 결과를 복원하려면 다음 명령을 사용한다.
+
+```bash
+sha256sum -c contrib/cosim/baselines/native-timed-v3-results.sha256
+tar --skip-old-files -xzf contrib/cosim/baselines/native-timed-v3-results.tar.gz
+```
+
+예전 raw data를 복원하려면 ns-3 루트에서 아래 명령을 쓴다. 현재 paper 파일 위에
+atomic paper archive를 풀지 않는다. 별도 디렉터리에서 열어 비교한다.
 
 ```bash
 sha256sum -c contrib/cosim/baselines/direct-start-v2-results.sha256
 tar --skip-old-files -xzf contrib/cosim/baselines/direct-start-v2-results.tar.gz
 ```
-
-Git에 이미 포함된 파일은 `--skip-old-files`가 보존한다.
-압축본은 현재 구조의 재실행 결과만 포함하며, 이전 v1 결과와 구분한다.
-
-## 실행
-
-ns-3 루트에서 실행한다. 변경 후 빌드한 `cosim-hybrid` 바이너리와 NetSquid 1.1.7이 필요하다.
-완료 결과를 덮어쓰지 않도록 새로운 출력 경로를 사용한다.
-
-```bash
-/home/ns3/qunet/bin/python -m unittest discover \
-  -s contrib/cosim/experiments/tests -v
-
-/home/ns3/qunet/bin/python contrib/cosim/experiments/run_paper_validation.py timing \
-  --output-dir contrib/cosim/results/paper-timing-new
-
-/home/ns3/qunet/bin/python contrib/cosim/experiments/run_p5b.py \
-  contrib/cosim/scenarios/p5b-paper-expanded.json \
-  --output-dir contrib/cosim/results/paper-expanded-new
-
-# Runtime benchmark는 위 실험이 끝난 후 단독으로 실행한다.
-/home/ns3/qunet/bin/python contrib/cosim/experiments/run_paper_validation.py scaling \
-  --output-dir contrib/cosim/results/paper-scaling-new
-
-/home/ns3/qunet/bin/python contrib/cosim/tools/verify_hybrid_v1.py --archive-only
-```
-
-전체 회귀는 아래로 실행한다. 과거 P0–P5-A/Q2NS suite와 새 Hybrid/P5-B, timing/계측,
-Q2NS native suite를 함께 재실행한다. 과거 archive의 hash 보존과 현재 source 동일성은 구분한다.
-
-```bash
-/home/ns3/qunet/bin/python contrib/cosim/tools/validate_direct_start.py
-```
-
-그림은 NetSquid와 분리한 Python 환경에서 생성한다. 사용한 plotting dependency는
-matplotlib 3.8.4 / NumPy 1.26.4다.
-
-```bash
-python3 -m venv /tmp/qucl-paper-plot-env
-/tmp/qucl-paper-plot-env/bin/pip install matplotlib==3.8.4 numpy==1.26.4
-/tmp/qucl-paper-plot-env/bin/python contrib/cosim/experiments/render_paper_results.py \
-  --timing contrib/cosim/results/paper-timing-new/summary.json \
-  --scaling contrib/cosim/results/paper-scaling-new/summary.json \
-  --expanded contrib/cosim/results/paper-expanded-new/summary.json \
-  --output-dir contrib/cosim/paper
-```
-
-## 해석의 범위
-
-- Timing은 native **physical instruction 완료 이벤트**와 비교한다. 독립 FIFO의 tie policy는
-  명시적으로 맞춘다. 모든 quantum state/noise의 gate-level 동등성이나 장비 duration의 현실성을
-  검증하는 실험은 아니다. Production runtime에 native timed QuantumProgram을 도입하지 않는다.
-- Cost는 trace logging과 traffic drain을 포함하는 실제 finite-batch 실행 비용이다. Reference
-  subprocess/결과 저장 비용은 분리하며, IPC 자체만의 overhead라고 해석하지 않는다.
-- Scaling은 고정 topology에서 session 수를 늘린다. 64 sessions를 64 nodes로 표현하지 않는다.
-- P5-B는 32개 독립 background phase seed를 사용한다. Quantum 반복·세션은 cluster 안에서
-  평균낸다. Calibration/test 분리와 F_min/deadline을 유지하며 feasibility 결과를 선택적으로 숨기지 않는다.
-- Bootstrap CI는 사전에 고정한 workload family와 calibration에 조건화되어 있다. 결과가 0인
-  metric의 degenerate empirical CI를 일반적인 error probability=0의 증거로 쓰지 않는다.
-
-## 구현 파일
-
-- `experiments/paper_timing.py`: native dispatcher, production core fixture, 실제 trace 재생.
-- `experiments/paper_scaling.py`: 같은 HybridFederation/Core/adapter를 사용한 구간별 계측과 검증.
-- `experiments/run_paper_validation.py`: 과거 archive 검사, 현재 구조의 실험 실행, provenance.
-- `experiments/render_paper_results.py`: PDF/PNG 그림, CSV, 수치 표 및 VI-E 삽입문.
-- `experiments/tests/test_paper_validation.py`: 1 ns 오류·FIFO 순서 오류 검출, identity duration,
-  동시 도착 정책, 계측 runner와 production report 동등성.
-
-큰 raw trace는 `results/`에 있고, `paper/`의 표·그림·요약은 원본 summary hash를 기록한다.

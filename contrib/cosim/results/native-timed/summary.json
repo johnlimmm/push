@@ -1,0 +1,486 @@
+{
+  "architecture": "native-timed-v3",
+  "atomic_comparison": {
+    "branch_weighted_density_matrix_difference": 0.008699268479695765,
+    "explanation": "Different noise/gate ordering; not an atomic regression failure",
+    "timing_equal": true
+  },
+  "atomic_parent_commit": "8f21a2470cf2e04dc0a03b181dfa7bc7a9e48301",
+  "atomic_results_archive_unchanged": true,
+  "atomic_sources_verified": true,
+  "branch_coverage": {
+    "branches": {
+      "+": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "+i": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "-": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "0": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ],
+      "1": [
+        "00",
+        "01",
+        "10",
+        "11"
+      ]
+    },
+    "max_density_matrix_error": 0,
+    "passed": true,
+    "seeds": 32,
+    "transactions": 160
+  },
+  "completion_source": "netsquid_program_done",
+  "date": "2026-10-02T14:09:56.838827+00:00",
+  "evaluation_note": "Native P5-B and cost results are reported separately in paper/RESULTS.md; atomic evidence is archived.",
+  "max_density_matrix_error": 4.440892098500626e-16,
+  "milestone": "NetSquid-native timed instruction chains",
+  "model_note": "Native T1/T2 applies to idle and active storage once each; ideal gates act at instruction completion. Durations are illustrative.",
+  "native_timing_error_ns": 0,
+  "new_native_tests": 19,
+  "overflow_negative_test": {
+    "expected_failure": true,
+    "report": "overflow-rejected.json"
+  },
+  "passed": true,
+  "regression": "regression-summary.json",
+  "scenarios": {
+    "boundary-arrivals": {
+      "max_density_matrix_error": 2.7755575615628914e-16,
+      "native_instructions": 36,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 6,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 6
+      },
+      "report": "boundary-arrivals.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 1600000,
+          "bsm_start_ns": 0,
+          "completion_ns": 2325600,
+          "correction_start_ns": 1825600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 0,
+          "transaction_latency_ns": 2325600,
+          "usable_fidelity": 0.8313960268819044
+        },
+        {
+          "bsm_completion_ns": 3200000,
+          "bsm_start_ns": 1600000,
+          "completion_ns": 3988000,
+          "correction_start_ns": 3488000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 1000000,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 2,
+          "session_start_ns": 600000,
+          "transaction_latency_ns": 3388000,
+          "usable_fidelity": 0.5237287924505247
+        },
+        {
+          "bsm_completion_ns": 4800000,
+          "bsm_start_ns": 3200000,
+          "completion_ns": 5525600,
+          "correction_start_ns": 5025600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 2400000,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 3,
+          "session_start_ns": 800000,
+          "transaction_latency_ns": 4725600,
+          "usable_fidelity": 0.6164699698410543
+        },
+        {
+          "bsm_completion_ns": 6400000,
+          "bsm_start_ns": 4800000,
+          "completion_ns": 7188000,
+          "correction_start_ns": 6688000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 3600000,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 4,
+          "session_start_ns": 1200000,
+          "transaction_latency_ns": 5988000,
+          "usable_fidelity": 0.3849754895221469
+        },
+        {
+          "bsm_completion_ns": 8000000,
+          "bsm_start_ns": 6400000,
+          "completion_ns": 8725600,
+          "correction_start_ns": 8225600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 4800000,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 5,
+          "session_start_ns": 1600000,
+          "transaction_latency_ns": 7125600,
+          "usable_fidelity": 0.5408005662416875
+        },
+        {
+          "bsm_completion_ns": 9600000,
+          "bsm_start_ns": 8000000,
+          "completion_ns": 10388000,
+          "correction_start_ns": 9888000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 6399999,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 6,
+          "session_start_ns": 1600001,
+          "transaction_latency_ns": 8787999,
+          "usable_fidelity": 0.29690054266809196
+        }
+      ]
+    },
+    "delayed-result": {
+      "max_density_matrix_error": 0.0,
+      "native_instructions": 6,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 1,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 1
+      },
+      "report": "delayed-result.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 2600000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 8125600,
+          "correction_start_ns": 7625600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 5025600,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 7125600,
+          "usable_fidelity": 0.6492601432266543
+        }
+      ]
+    },
+    "different-gate-partition": {
+      "max_density_matrix_error": 0.0,
+      "native_instructions": 6,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 1,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 1
+      },
+      "report": "different-gate-partition.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 2600000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 3325600,
+          "correction_start_ns": 2825600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 2325600,
+          "usable_fidelity": 0.7492146757250413
+        }
+      ]
+    },
+    "mixed": {
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "native_instructions": 24,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "mixed.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 2600000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 4212000,
+          "correction_start_ns": 3712000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 1112000,
+          "result_queue_ns": 824000,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 3212000,
+          "usable_fidelity": 0.4629923114918401
+        },
+        {
+          "bsm_completion_ns": 4200000,
+          "bsm_start_ns": 2600000,
+          "completion_ns": 5749600,
+          "correction_start_ns": 5249600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 1600000,
+          "result_delay_ns": 1049600,
+          "result_queue_ns": 824000,
+          "session_id": 2,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 4749600,
+          "usable_fidelity": 0.6453496447481211
+        },
+        {
+          "bsm_completion_ns": 5800000,
+          "bsm_start_ns": 4200000,
+          "completion_ns": 7412000,
+          "correction_start_ns": 6912000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 2400000,
+          "result_delay_ns": 1112000,
+          "result_queue_ns": 824000,
+          "session_id": 3,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 5612000,
+          "usable_fidelity": 0.3909803121308599
+        },
+        {
+          "bsm_completion_ns": 7400000,
+          "bsm_start_ns": 5800000,
+          "completion_ns": 8949600,
+          "correction_start_ns": 8449600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 4000000,
+          "result_delay_ns": 1049600,
+          "result_queue_ns": 824000,
+          "session_id": 4,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 7149600,
+          "usable_fidelity": 0.5434567112779923
+        }
+      ]
+    },
+    "mixed-fast-bsm": {
+      "max_density_matrix_error": 1.6653345369377348e-16,
+      "native_instructions": 24,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "mixed-fast-bsm.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 1010000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 1798000,
+          "correction_start_ns": 1298000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 798000,
+          "usable_fidelity": 0.6824535379312276
+        },
+        {
+          "bsm_completion_ns": 1020000,
+          "bsm_start_ns": 1010000,
+          "completion_ns": 2298000,
+          "correction_start_ns": 1798000,
+          "correction_wait_ns": 474400,
+          "quantum_wait_ns": 10000,
+          "result_delay_ns": 303600,
+          "result_queue_ns": 78000,
+          "session_id": 2,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 1298000,
+          "usable_fidelity": 0.8273123747051723
+        },
+        {
+          "bsm_completion_ns": 1810000,
+          "bsm_start_ns": 1800000,
+          "completion_ns": 2798000,
+          "correction_start_ns": 2298000,
+          "correction_wait_ns": 200000,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 288000,
+          "result_queue_ns": 0,
+          "session_id": 3,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 998000,
+          "usable_fidelity": 0.5570608696781629
+        },
+        {
+          "bsm_completion_ns": 1820000,
+          "bsm_start_ns": 1810000,
+          "completion_ns": 3298000,
+          "correction_start_ns": 2798000,
+          "correction_wait_ns": 674400,
+          "quantum_wait_ns": 10000,
+          "result_delay_ns": 303600,
+          "result_queue_ns": 78000,
+          "session_id": 4,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 1498000,
+          "usable_fidelity": 0.743509105122202
+        }
+      ]
+    },
+    "teleport": {
+      "max_density_matrix_error": 0.0,
+      "native_instructions": 6,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 1,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 1
+      },
+      "report": "teleport.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 2600000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 3325600,
+          "correction_start_ns": 2825600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 225600,
+          "result_queue_ns": 0,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 2325600,
+          "usable_fidelity": 0.7412154967362408
+        }
+      ]
+    },
+    "without-state-probes": {
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "native_instructions": 24,
+      "passed": true,
+      "q2ns_status": {
+        "corrections_applied": 4,
+        "native_qubit_count": 0,
+        "native_state_count": 0,
+        "sessions": 4
+      },
+      "report": "without-state-probes.json",
+      "sessions": [
+        {
+          "bsm_completion_ns": 2600000,
+          "bsm_start_ns": 1000000,
+          "completion_ns": 4212000,
+          "correction_start_ns": 3712000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 0,
+          "result_delay_ns": 1112000,
+          "result_queue_ns": 824000,
+          "session_id": 1,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 3212000,
+          "usable_fidelity": 0.46299231149183995
+        },
+        {
+          "bsm_completion_ns": 4200000,
+          "bsm_start_ns": 2600000,
+          "completion_ns": 5749600,
+          "correction_start_ns": 5249600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 1600000,
+          "result_delay_ns": 1049600,
+          "result_queue_ns": 824000,
+          "session_id": 2,
+          "session_start_ns": 1000000,
+          "transaction_latency_ns": 4749600,
+          "usable_fidelity": 0.6453496447481208
+        },
+        {
+          "bsm_completion_ns": 5800000,
+          "bsm_start_ns": 4200000,
+          "completion_ns": 7412000,
+          "correction_start_ns": 6912000,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 2400000,
+          "result_delay_ns": 1112000,
+          "result_queue_ns": 824000,
+          "session_id": 3,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 5612000,
+          "usable_fidelity": 0.3909803121308598
+        },
+        {
+          "bsm_completion_ns": 7400000,
+          "bsm_start_ns": 5800000,
+          "completion_ns": 8949600,
+          "correction_start_ns": 8449600,
+          "correction_wait_ns": 0,
+          "quantum_wait_ns": 4000000,
+          "result_delay_ns": 1049600,
+          "result_queue_ns": 824000,
+          "session_id": 4,
+          "session_start_ns": 1800000,
+          "transaction_latency_ns": 7149600,
+          "usable_fidelity": 0.5434567112779924
+        }
+      ]
+    }
+  },
+  "scope": "Fixed A/R/B; pre-created resources; serial native gates; shared capacity-one R/B; UDP result path.",
+  "shared_startup_fix": {
+    "contrib/cosim/examples/cosim-hybrid.cc": {
+      "current_sha256": "3132c7f026ed1b95911ce92e1a428b8565a054939c9cbec832fb4f0cdc4ca3e5",
+      "reason": "Drain zero-time Q2NS application activation before user session registration, preserving config-order FIFO for mixed t=0 requests. Atomic Python backend is unchanged; original C++ source is preserved in parent_commit."
+    }
+  },
+  "source_sha256": {
+    "README.md": "bfc22c6db7bdc0cd564f389e99305ac7ac2bbe34d55f6e9acb6a4aaed99075cd",
+    "contrib/cosim/README-NATIVE.md": "14e416ae9df866cd8857861bebc748be4f79613d5ea1df2b9d6ea272bcfdd4c8",
+    "contrib/cosim/SPEC-NATIVE.md": "e5de7654d892ea2b90cac7fbefd970aa9cab0faf45a4a35efddd8cbd4514fec2",
+    "contrib/cosim/examples/cosim-hybrid.cc": "3132c7f026ed1b95911ce92e1a428b8565a054939c9cbec832fb4f0cdc4ca3e5",
+    "contrib/cosim/python/native_adapters.py": "9c79d1747691b50d6d036a26e4694dd59f436579602b1a6278d8a670517596b5",
+    "contrib/cosim/python/native_config.py": "0d02df998d4ede63ff5eb3e656f99ffdd2fe7130b30832fc4f23fcdae77c8fb1",
+    "contrib/cosim/python/native_core.py": "1f32663202014a676efc53e94c386e6c8776e0a92231670a8d28e02b0749cc66",
+    "contrib/cosim/python/native_programs.py": "0a29b48ada6acf445c2348a912a548fb16c38e8a1acc6f2620ed087d65acee89",
+    "contrib/cosim/python/native_validation.py": "323398aa4be384ad4048c494efe2a8485fcf3766b8bcab8109f4343f9de8f0a7",
+    "contrib/cosim/python/netsquid_reference_native.py": "fc2ed1a824b401d4d5d88c342aa9228afbeb12b766d1eb694fe5cb80a6d10551",
+    "contrib/cosim/python/run_native_hybrid.py": "f9d7ffaf9e64883c1e86d6919db12e4271940eb6bc6956ad9c16344cf3fbae7d",
+    "contrib/cosim/scenarios/native-mixed.json": "8e5fbce144e4b9c505fe39f12da80eb23a6ddc730482be68e30a2d75121a5ce0",
+    "contrib/cosim/scenarios/native-p5b-paper-expanded.json": "0695fd7a08d7f7bffe826af17b3c5a646e55f1c54009074f1b19efc4d976cb02",
+    "contrib/cosim/scenarios/native-p5b-pilot.json": "a7190e595c6c48884538e5e461b7d8064a2f3ed4b6fa9940e4fa1b03b03cb4b4",
+    "contrib/cosim/scenarios/native-paper-validation.json": "9ddc8444953d287d81e40760381f7ee78114b2b5c7b97920d3e417d08eca75d1",
+    "contrib/cosim/scenarios/native-teleport.json": "057261d18ffdd99773bc8e39ca87e1d77bfe7bf265b9f0663d045012d2e4e6a2",
+    "contrib/cosim/tests/test_native_hybrid.py": "9f19ca6346c47a58b8d2efb8df991494d032c1b255c62390bff46b63d9709567",
+    "contrib/cosim/tools/summarize_native_timed.py": "298b2a9e1541114b60d65b64d3289265f03afde49d1dd993e4d964baf7f3d10d",
+    "contrib/cosim/tools/validate_native_timed.py": "e94293792ef4741a43e083af6b4248ec49bbb8edae851d7d12b76ce24624b3b1"
+  },
+  "total_test_cases": 258
+}

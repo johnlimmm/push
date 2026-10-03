@@ -1,11 +1,12 @@
-# P5-B — Direct-start 실행 구조의 단순화 오차
+# P5-B — Native timed 실행 구조의 단순화 오차
 
 ## 실행 기준
 
-현재 기준은 `direct-session-start-v2`다. R의 Q2NS SwapApp이 `session_start_ns`에
+현재 기준은 `native-timed-v3`다. R의 Q2NS SwapApp이 `session_start_ns`에
 external BSM을 요청한다. Controller, C–R 링크, command packet/queue는 없다.
 Full Sync와 No-Dq-R은 `cosim-hybrid`의 실제 Q2NS UDP result 경로를 사용한다.
-모든 실행 모델은 `HybridExecutionCore`, `HybridFederation`, 동일 adapter와 native T1/T2 aging을 쓴다.
+Full/No-Dq/Fixed는 `NativeExecutionCore` 계열과 `NativeHybridFederation`, 동일 native
+QuantumProgram 및 T1/T2 aging을 쓴다. Atomic v2 평가 코드는 별도로 보존한다.
 
 Full Sync는 지정한 물리 모델 내 상세 실행 기준이며 실제 하드웨어 정답을 뜻하지 않는다.
 이전 command-path 구현과 수치는 `baselines/hybrid-v1-freeze.*` 및 이전 결과 디렉터리에 보존한다.
@@ -18,8 +19,10 @@ Full Sync는 지정한 물리 모델 내 상세 실행 기준이며 실제 하�
 | No-Dq-R | R 실행 capacity를 session 수로 늘림. 실제 BSM 완료시각에 Q2NS result를 생성·재전송. B FIFO 유지 |
 | Decoupled | No-Dq-R의 실측 result delay + local session 시작시각으로 독립 계산한 R FIFO wait |
 
-No-Dq-R의 capacity는 평가용 근사다. 물리 memory 위치/자원 ownership, BSM duration을 유지한다.
-같은 시각은 설정 목록 순서다. Fixed-Dc는 packet simulator를 생략하며 가상 도착 이벤트의
+No-Dq-R의 capacity는 평가용 근사다. Session별 native R QuantumProcessor를 두어
+서로 겹치는 BSM을 실제로 실행한다. Session마다 R memory position은 계속 두 개이며
+state를 복제하지 않는다. Logical R 위치·자원 ownership, instruction duration/noise와 shared B는 유지한다.
+이번 P5-B의 session start는 서로 다르다. Fixed-Dc는 packet simulator를 생략하며 가상 도착 이벤트의
 source는 `fixed-delay`다. 실제 ns-3/Q2NS packet이 실행됐다고 기록하지 않는다.
 
 ## Latency와 baseline 식
@@ -48,6 +51,11 @@ Q-run의 도착은 정확히 local `session_start_ns`다. C-run은 No-Dq-R의 �
 
 - R→B background load 0 / 0.35 / 0.7, request interval 0.8 / 2 ms, 4 Swap sessions.
 - 모든 모델에서 BSM 1.6 ms, correction 50 μs, T1=20 ms/T2=10 ms, EPR 생성 t=0.
+- BSM은 CNOT 600 μs → H 200 μs → M0 400 μs → M1 400 μs다.
+  Correction은 X/I 25 μs → Z/I 25 μs다. Identity branch도 동일한 시간을 점유한다.
+- Native memory의 idle T1/T2와 각 physical instruction의 active T1/T2를 한 번씩 적용한다.
+  Ideal gate는 instruction 완료 때 적용한다. 별도 calibrated gate-error model은 없다.
+- Gate parameter는 예시 설정이다. Atomic v2와 총 duration이 같아도 state 일치를 요구하지 않는다.
 - Result link 10 Mb/s, propagation 0.2 ms; result payload 80 bytes, background payload 1000 bytes.
 - IPv4/UDP/PPP overhead 30 bytes. Background 주기는 wire serialization / offered load를 정수 ns로 반올림.
 - Traffic seed는 주기 background의 시작 phase만 바꾼다. 첫 난수는 유일한 result flow에 사용한다.
@@ -84,6 +92,11 @@ P5-B workload는 Swap이며, 별도의 Hybrid mixed 검증에서는 B FIFO 대�
 No-Dq-R은 R wait=0과 새 완료시각에서의 실제 재전송을 검사한다.
 Fixed-Dc는 독립 constant-delay 일정과 실제 shared core의 dispatch/자원 lifecycle을 검사한다.
 별도 NetSquid subprocess는 각 모델의 실제 operation/packet-arrival timestamp를 받아
-native memory + Bell projection으로 모든 branch state를 계산한다.
-검증 cache에는 완전한 reference spec(protocol, 생성시각, noise, 각 operation/도착시각)을 key로 쓴다.
+별도로 구현한 timed QuantumProgram과 Bell projection으로 모든 branch state를 계산한다.
+각 gate 완료 후의 state 및 frame/packet-arrival/correction-start/usable을 비교한다.
+검증 cache에는 완전한 native reference spec(protocol, input state, noise, instruction duration,
+각 operation/도착시각)을 key로 쓴다. 생성시각은 이번 native 계약에서 t=0으로 고정이다.
 각 run의 실제 density matrix와 다시 비교하며 다른 구조의 결과 파일을 읽어 대체하지 않는다.
+
+실행: `experiments/run_native_p5b.py`; 계획: `scenarios/native-p5b-paper-expanded.json`.
+기존 `experiments/run_p5b.py`는 atomic v2 재현용이며 native 결과로 표시하지 않는다.

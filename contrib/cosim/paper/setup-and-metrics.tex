@@ -15,6 +15,8 @@ Result payload & 80 B & 80 B (Swap), 2 B (Teleport) \\
 Modeled per-packet headers & 30 B & Same \\
 Background payload & 1,000 B & Same \\
 BSM / correction duration & 1.6 ms / 0.05 ms & 1.6 ms / 0.5 ms \\
+CNOT / H / each measurement & 0.6 / 0.2 / 0.4 ms & Same \\
+X-or-I / Z-or-I slots & 0.025 / 0.025 ms & 0.25 / 0.25 ms \\
 Memory $T_1$ / $T_2$ & 20 ms / 10 ms & Same \\
 Resource creation & Pre-created at $t=0$ & Same \\
 Quantum formalism / memory noise & Density matrix / native T1T2NoiseModel & Same \\
@@ -46,3 +48,14 @@ service-feasibility prediction is defined for that model.
 Service feasibility uses the pre-specified $F_{\min}=0.5$ and a 5-ms latency
 deadline. Deadline-only and joint fidelity/deadline misclassifications are
 reported separately relative to Full Sync, not to physical hardware ground truth.
+
+
+All state-bearing models execute native NetSquid timed instruction chains.
+Idle memory noise and active-instruction storage noise use the same native
+T1/T2 model, each applied over its own elapsed interval. Ideal gates act at
+instruction completion; no separate calibrated gate-error model is added.
+No-Dq-R gives each session its own R execution engine while retaining two R
+memory positions per session, without copying quantum states. B remains shared.
+Fixed-Dc changes only result delivery to a calibrated constant-delay event.
+The cost study includes all instruction-state probes and records their count;
+it measures the instrumented simulator, not a probes-disabled optimized backend.

@@ -1,0 +1,133 @@
+scaling warmup n1-load0.0 PASS
+scaling warmup n1-load0.7 PASS
+scaling warmup n4-load0.0 PASS
+scaling warmup n4-load0.7 PASS
+scaling warmup n8-load0.0 PASS
+scaling warmup n8-load0.7 PASS
+scaling warmup n16-load0.0 PASS
+scaling warmup n16-load0.7 PASS
+scaling warmup n32-load0.0 PASS
+scaling warmup n32-load0.7 PASS
+scaling warmup n64-load0.0 PASS
+scaling warmup n64-load0.7 PASS
+scaling n4-load0.7 repetition 1 PASS
+scaling n32-load0.0 repetition 9 PASS
+scaling n32-load0.7 repetition 8 PASS
+scaling n8-load0.0 repetition 8 PASS
+scaling n1-load0.7 repetition 6 PASS
+scaling n4-load0.0 repetition 2 PASS
+scaling n32-load0.0 repetition 1 PASS
+scaling n1-load0.0 repetition 9 PASS
+scaling n4-load0.0 repetition 3 PASS
+scaling n8-load0.7 repetition 6 PASS
+scaling n16-load0.7 repetition 9 PASS
+scaling n1-load0.7 repetition 7 PASS
+scaling n64-load0.0 repetition 7 PASS
+scaling n1-load0.0 repetition 2 PASS
+scaling n4-load0.7 repetition 8 PASS
+scaling n64-load0.7 repetition 4 PASS
+scaling n1-load0.7 repetition 9 PASS
+scaling n8-load0.7 repetition 5 PASS
+scaling n8-load0.7 repetition 8 PASS
+scaling n16-load0.0 repetition 5 PASS
+scaling n8-load0.0 repetition 3 PASS
+scaling n32-load0.0 repetition 5 PASS
+scaling n1-load0.7 repetition 1 PASS
+scaling n4-load0.0 repetition 5 PASS
+scaling n8-load0.0 repetition 0 PASS
+scaling n64-load0.7 repetition 9 PASS
+scaling n32-load0.0 repetition 7 PASS
+scaling n16-load0.0 repetition 9 PASS
+scaling n1-load0.0 repetition 3 PASS
+scaling n64-load0.0 repetition 0 PASS
+scaling n4-load0.0 repetition 4 PASS
+scaling n8-load0.7 repetition 1 PASS
+scaling n1-load0.7 repetition 8 PASS
+scaling n64-load0.0 repetition 4 PASS
+scaling n16-load0.7 repetition 6 PASS
+scaling n4-load0.7 repetition 2 PASS
+scaling n16-load0.7 repetition 5 PASS
+scaling n4-load0.0 repetition 6 PASS
+scaling n8-load0.0 repetition 5 PASS
+scaling n16-load0.7 repetition 1 PASS
+scaling n1-load0.0 repetition 1 PASS
+scaling n32-load0.0 repetition 6 PASS
+scaling n8-load0.7 repetition 9 PASS
+scaling n16-load0.7 repetition 7 PASS
+scaling n16-load0.7 repetition 8 PASS
+scaling n8-load0.7 repetition 7 PASS
+scaling n8-load0.0 repetition 1 PASS
+scaling n32-load0.0 repetition 3 PASS
+scaling n1-load0.0 repetition 6 PASS
+scaling n4-load0.7 repetition 6 PASS
+scaling n64-load0.7 repetition 2 PASS
+scaling n64-load0.7 repetition 7 PASS
+scaling n64-load0.0 repetition 2 PASS
+scaling n4-load0.0 repetition 0 PASS
+scaling n32-load0.7 repetition 4 PASS
+scaling n64-load0.7 repetition 5 PASS
+scaling n16-load0.0 repetition 7 PASS
+scaling n1-load0.7 repetition 4 PASS
+scaling n16-load0.0 repetition 4 PASS
+scaling n4-load0.7 repetition 4 PASS
+scaling n1-load0.0 repetition 7 PASS
+scaling n16-load0.0 repetition 2 PASS
+scaling n64-load0.0 repetition 6 PASS
+scaling n4-load0.7 repetition 7 PASS
+scaling n32-load0.7 repetition 0 PASS
+scaling n4-load0.7 repetition 0 PASS
+scaling n64-load0.0 repetition 3 PASS
+scaling n16-load0.7 repetition 4 PASS
+scaling n64-load0.7 repetition 3 PASS
+scaling n32-load0.7 repetition 3 PASS
+scaling n32-load0.0 repetition 8 PASS
+scaling n16-load0.0 repetition 8 PASS
+scaling n8-load0.0 repetition 7 PASS
+scaling n4-load0.0 repetition 7 PASS
+scaling n1-load0.7 repetition 2 PASS
+scaling n8-load0.0 repetition 4 PASS
+scaling n32-load0.7 repetition 5 PASS
+scaling n32-load0.7 repetition 9 PASS
+scaling n64-load0.7 repetition 6 PASS
+scaling n1-load0.0 repetition 5 PASS
+scaling n64-load0.0 repetition 5 PASS
+scaling n16-load0.0 repetition 1 PASS
+scaling n8-load0.0 repetition 6 PASS
+scaling n8-load0.7 repetition 0 PASS
+scaling n4-load0.7 repetition 9 PASS
+scaling n4-load0.0 repetition 8 PASS
+scaling n32-load0.7 repetition 1 PASS
+scaling n16-load0.0 repetition 0 PASS
+scaling n64-load0.7 repetition 0 PASS
+scaling n4-load0.0 repetition 9 PASS
+scaling n16-load0.0 repetition 3 PASS
+scaling n4-load0.7 repetition 3 PASS
+scaling n1-load0.7 repetition 5 PASS
+scaling n32-load0.7 repetition 6 PASS
+scaling n4-load0.0 repetition 1 PASS
+scaling n1-load0.0 repetition 8 PASS
+scaling n32-load0.0 repetition 0 PASS
+scaling n32-load0.0 repetition 4 PASS
+scaling n16-load0.7 repetition 0 PASS
+scaling n8-load0.0 repetition 9 PASS
+scaling n1-load0.0 repetition 0 PASS
+scaling n8-load0.7 repetition 4 PASS
+scaling n1-load0.7 repetition 0 PASS
+scaling n8-load0.7 repetition 3 PASS
+scaling n1-load0.0 repetition 4 PASS
+scaling n8-load0.0 repetition 2 PASS
+scaling n64-load0.0 repetition 8 PASS
+scaling n1-load0.7 repetition 3 PASS
+scaling n64-load0.0 repetition 1 PASS
+scaling n64-load0.7 repetition 8 PASS
+scaling n32-load0.7 repetition 2 PASS
+scaling n64-load0.7 repetition 1 PASS
+scaling n32-load0.7 repetition 7 PASS
+scaling n64-load0.0 repetition 9 PASS
+scaling n32-load0.0 repetition 2 PASS
+scaling n16-load0.7 repetition 2 PASS
+scaling n4-load0.7 repetition 5 PASS
+scaling n8-load0.7 repetition 2 PASS
+scaling n16-load0.0 repetition 6 PASS
+scaling n16-load0.7 repetition 3 PASS
+Native cost/timing PASS

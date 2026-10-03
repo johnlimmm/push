@@ -1,0 +1,24 @@
+test_01_actual_native_instruction_chain (test_native_hybrid.NativeHybridTests) ... ok
+test_02_noiseless_states_all_four_branches (test_native_hybrid.NativeHybridTests) ... ok
+test_03_mixed_shared_fifo_and_native_result (test_native_hybrid.NativeHybridTests) ... ok
+test_04_correction_and_packet_contention (test_native_hybrid.NativeHybridTests) ... ok
+test_05_same_duration_atomic_timing_but_different_noisy_state (test_native_hybrid.NativeHybridTests) ... ok
+test_06_gate_partition_changes_state_at_equal_completion (test_native_hybrid.NativeHybridTests) ... ok
+test_07_duration_changes_native_completion_and_packet_generation (test_native_hybrid.NativeHybridTests) ... ok
+test_08_result_delay_isolated_from_bsm (test_native_hybrid.NativeHybridTests) ... ok
+test_09_classical_inputs_at_gate_and_program_boundaries (test_native_hybrid.NativeHybridTests) ... ok
+test_10_same_time_requests_preserve_config_order (test_native_hybrid.NativeHybridTests) ... ok
+test_11_observation_does_not_change_quantum_evolution (test_native_hybrid.NativeHybridTests) ... ok
+test_12_corrupt_native_trace_and_state_rejected (test_native_hybrid.NativeHybridTests) ... ok
+test_13_invalid_durations_rejected (test_native_hybrid.NativeHybridTests) ... ok
+test_14_post_transaction_background_drain (test_native_hybrid.NativeHybridTests) ... ok
+test_15_packet_drop_is_explicit_failure (test_native_hybrid.NativeHybridTests) ... ok
+test_16_atomic_parent_sources_unchanged (test_native_hybrid.NativeHybridTests) ... ok
+test_17_completion_requires_native_callback (test_native_hybrid.NativeHybridTests) ... ok
+test_18_extra_native_event_is_processed_between_classical_inputs (test_native_hybrid.NativeHybridTests) ... ok
+test_19_busy_instruction_storage_noise_is_not_omitted_or_doubled (test_native_hybrid.NativeHybridTests) ... ok
+
+----------------------------------------------------------------------
+Ran 19 tests in 21.688s
+
+OK

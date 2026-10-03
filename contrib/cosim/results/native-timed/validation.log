@@ -1,0 +1,11 @@
+python: True
+paper: True
+q2ns-analysis: True
+q2ns-netcontroller: True
+q2ns-qchannel: True
+q2ns-qnode: True
+q2ns-qstate-interface: True
+q2ns-qstate-registry: True
+q2ns-swap-external: True
+q2ns-teleport-external: True
+Native timed: 258 tests PASS

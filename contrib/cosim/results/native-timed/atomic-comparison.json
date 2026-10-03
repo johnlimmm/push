@@ -1,0 +1,5 @@
+{
+  "branch_weighted_density_matrix_difference": 0.008699268479695765,
+  "explanation": "Different noise/gate ordering; not an atomic regression failure",
+  "timing_equal": true
+}

@@ -1,0 +1,29 @@
+{
+  "bootstrap_samples": 10000,
+  "native_instructions": {
+    "cnot_ns": 600000,
+    "h_ns": 200000,
+    "measure_ns": 400000,
+    "x_ns": 250000,
+    "z_ns": 250000
+  },
+  "order_seed": 7301,
+  "quantum_seed": 7,
+  "request_interval_ns": 800000,
+  "scaling_loads": [
+    0.0,
+    0.7
+  ],
+  "scaling_repetitions": 10,
+  "scaling_warmups_per_cell": 1,
+  "scope": "Native timed circuits with idle/active T1/T2; mixed protocol finite-batch cost including instruction state probes; fixed A/R/B.",
+  "session_counts": [
+    1,
+    4,
+    8,
+    16,
+    32,
+    64
+  ],
+  "traffic_seed": 401
+}

@@ -1,0 +1,23 @@
+{
+  "name": "native-teleport",
+  "sessions": [
+    {
+      "session_id": 1,
+      "protocol": "teleport",
+      "input_state": "+i",
+      "session_start_ns": 1000000
+    }
+  ],
+  "memory_noise": {
+    "model": "T1T2NoiseModel",
+    "T1_ns": 10000000,
+    "T2_ns": 10000000
+  },
+  "native_instructions": {
+    "cnot_ns": 600000,
+    "h_ns": 200000,
+    "measure_ns": 400000,
+    "x_ns": 250000,
+    "z_ns": 250000
+  }
+}

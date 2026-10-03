@@ -1,4 +1,6 @@
-% Replace pilot counts/point estimates in VI-A and VI-D; use direct-session-start-v2 model definitions.
+% Replace pilot counts/point estimates in VI-A and VI-D; use native-timed-v3 model definitions.
+All state-bearing variants execute the same native timed gates and idle/active T1/T2 model. No-Dq-R assigns each session an independent R execution slot while retaining its memory state and the shared B processor. Fixed-Dc replaces result transport only. Decoupled remains a latency-only composition.
+
 All sessions start locally at R; latency is measured from local session activation to correction completion. Only R--B result delivery contributes classical delay.
 
 The expanded finite-batch study uses 32 independent traffic-phase seeds,
@@ -23,11 +25,11 @@ Decoupled & 0.000 [0.000, 0.000] & 0.117 [0.073, 0.165] & 0.223 [0.189, 0.260] \
 \end{tabular}
 \end{table*}
 
-At a 0.8-ms request interval, the expected-fidelity biases of No-Dq-R are 0.0435 [0.0435, 0.0435], 0.0423 [0.0419, 0.0426], 0.0409 [0.0403, 0.0415], respectively. These are probability-weighted branch expectations, not single observed-branch fidelities.
+At a 0.8-ms request interval, the expected-fidelity biases of No-Dq-R are 0.0486 [0.0486, 0.0486], 0.0472 [0.0467, 0.0476], 0.0456 [0.0449, 0.0462], respectively. These are probability-weighted branch expectations, not single observed-branch fidelities.
 
 At a 2-ms interval, the Fixed-Dc latency MAEs are 0.184 [0.151, 0.216] and 0.240 [0.227, 0.253] ms at loads 0.35 and 0.70. No-Dq-R and Decoupled have zero latency error in these noncontending finite workloads.
 
-With the unchanged $F_{\min}=0.5$ and 5-ms deadline measured from local session start, No-Dq-R has false service-feasible fractions 0.2500 [0.2500, 0.2500], 0.1875 [0.1484, 0.2266], 0.0938 [0.0547, 0.1328] at a 0.8-ms interval. These are finite-workload, paired sampled classifications; they are not hardware success probabilities. The zero-load traffic phase is inactive, so its degenerate interval does not establish population certainty.
+With the unchanged $F_{\min}=0.5$ and 5-ms deadline measured from local session start, No-Dq-R has false service-feasible fractions 0.2500 [0.2500, 0.2500], 0.2344 [0.2109, 0.2500], 0.1875 [0.1484, 0.2188] at a 0.8-ms interval. These are finite-workload, paired sampled classifications; they are not hardware success probabilities. The zero-load traffic phase is inactive, so its degenerate interval does not establish population certainty.
 
 \begin{table*}[t]
 \centering
@@ -41,11 +43,11 @@ Interval (ms) & Load & Model & False feasible & False infeasible \\
 2.0 & 0.0 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
 2.0 & 0.0 & No-Dq-R & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
 0.8 & 0.35 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
-0.8 & 0.35 & No-Dq-R & 0.1875 [0.1484, 0.2266] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.35 & No-Dq-R & 0.2344 [0.2109, 0.2500] & 0.0000 [0.0000, 0.0000] \\
 2.0 & 0.35 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
 2.0 & 0.35 & No-Dq-R & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
 0.8 & 0.7 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
-0.8 & 0.7 & No-Dq-R & 0.0938 [0.0547, 0.1328] & 0.0000 [0.0000, 0.0000] \\
+0.8 & 0.7 & No-Dq-R & 0.1875 [0.1484, 0.2188] & 0.0000 [0.0000, 0.0000] \\
 2.0 & 0.7 & Fixed-Dc & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
 2.0 & 0.7 & No-Dq-R & 0.0000 [0.0000, 0.0000] & 0.0000 [0.0000, 0.0000] \\
 \hline

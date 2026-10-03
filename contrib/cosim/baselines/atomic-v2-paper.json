@@ -1,0 +1,27 @@
+{
+  "architecture": "direct-session-start-v2",
+  "archive": "atomic-v2-paper.tar.gz",
+  "archive_sha256": "4733181315ac37a08f8e6a8a9fbaea34c13d7c8277e2cbdf2f12653a09e830fa",
+  "files": {
+    "contrib/cosim/paper/RESULTS.md": "e40d45fb5e2bc0acc5a15bd63abb4d73f7d40fde629bc47101d8351cc33643a4",
+    "contrib/cosim/paper/REVISION-NOTES.md": "6919b29eaf8f0b4fc66d7d4c2de49cce77a0171cf289c28e60087545cffa709a",
+    "contrib/cosim/paper/abstraction-results-insert.tex": "5f3d326456572a25e5004035bc13199dea734af24079a84039f854fc92e488fa",
+    "contrib/cosim/paper/figures/fig4-latency-mae.pdf": "9f21d8265d71354ecd956421092395c12023ce7de5cc1016467a2bcb16323287",
+    "contrib/cosim/paper/figures/fig4-latency-mae.png": "677f60f11c1cd64e30349b358838df0249e7ad0dfe21b34e62b051136212be50",
+    "contrib/cosim/paper/figures/fig5-expected-fidelity.pdf": "4d2ec10a4b90e9167cec8d5583d3597bd45ed21cc54349faf35090b70d24df71",
+    "contrib/cosim/paper/figures/fig5-expected-fidelity.png": "1e07b1a697153dfa13776ec0c4241d339c35848a41fc8ef46c577160598508d3",
+    "contrib/cosim/paper/figures/fig6-mechanism-control.pdf": "728c6f981b3c4e0f2fe6f53e77b76d42f8c08c551ad97ea16f31ddb5a33d5bb5",
+    "contrib/cosim/paper/figures/fig6-mechanism-control.png": "291e0d4198c8a233ad4af99d870f028c8f1e89d6a5dc1d964b3699da269f7674",
+    "contrib/cosim/paper/figures/fig7-timing-cost.pdf": "a363e646d3d83aa874099e9c2d6b6d1296b4d2442361357c2d28c09b676180f3",
+    "contrib/cosim/paper/figures/fig7-timing-cost.png": "c26e22ae1d9702d49e5b26032d16e82259bf8d3b9d39291060a5fb19957849ed",
+    "contrib/cosim/paper/figures/simulation-cost-details.pdf": "6946d8576aa40e5d89a8faa52ca9eb68b0870460f1e6e42c5eac8e9af860fb82",
+    "contrib/cosim/paper/figures/simulation-cost-details.png": "ce5f59800c76b56034b0bb529ce91d2bbf82950819273709bb6548f8d714ba1d",
+    "contrib/cosim/paper/results-summary.json": "0e43abf3c81899742b0df26e12c405e69a4cd3ccb2b1c5082ebcd553b0b7e3b2",
+    "contrib/cosim/paper/scaling.csv": "2b0390b979bd26f91dd85c8929d46eeee095b7ce31d11868144e6a2a4d6228c4",
+    "contrib/cosim/paper/setup-and-metrics.tex": "ce4ebef2b18e0eca26eec10bdb3e894b37f945c3fc8d81b5e7f16c1fc94c07e5",
+    "contrib/cosim/paper/timing.csv": "1fa768c5a45accbbc1cc4f3b18068a30430f3a400f70f4a0f6a30f92d2097947",
+    "contrib/cosim/paper/validation-checks.json": "7049fb537b94d9e272197a2e55b10771184ce54f893bcd280f0e2b113f34dd63",
+    "contrib/cosim/paper/validation-insert.tex": "bfa5f0f504626be5e6ef2a3be4c692d5dce46c16d17c18b4a2ed162f93b16079"
+  },
+  "parent_commit": "8f21a2470cf2e04dc0a03b181dfa7bc7a9e48301"
+}

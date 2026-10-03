@@ -1,0 +1,21 @@
+test_all_models_share_instruction_and_noise_configuration (test_native_evaluation.NativeEvaluationTests) ... ok
+test_b_wait_rejected_and_plan_thresholds_retained (test_native_evaluation.NativeEvaluationTests) ... ok
+test_corrupted_gate_or_cached_reference_rejected (test_native_evaluation.NativeEvaluationTests) ... ok
+test_decoupled_keeps_result_phase_error_and_no_state_prediction (test_native_evaluation.NativeEvaluationTests) ... ok
+test_instrumentation_is_production_native (test_native_evaluation.NativeEvaluationTests) ... ok
+test_no_dq_uses_concurrent_real_native_programs (test_native_evaluation.NativeEvaluationTests) ... ok
+test_no_load_fixed_delay_reproduces_full (test_native_evaluation.NativeEvaluationTests) ... ok
+test_noncontending_no_dq_reproduces_full (test_native_evaluation.NativeEvaluationTests) ... ok
+test_timing_oracle_detects_mutated_actual_completion (test_native_evaluation.NativeEvaluationTests) ... ok
+test_corrupt_completion_order_is_detected (test_paper_validation.PaperValidationTests) ... ok
+test_identity_correction_reserves_full_duration (test_paper_validation.PaperValidationTests) ... ok
+test_instrumentation_preserves_full_production_report (test_paper_validation.PaperValidationTests) ... ok
+test_native_duration_perturbation_is_detected (test_paper_validation.PaperValidationTests) ... ok
+test_same_timestamp_order_is_input_order_not_session_id (test_paper_validation.PaperValidationTests) ... ok
+test_scaling_maximum_workload_and_repeat_statistics (test_paper_validation.PaperValidationTests) ... ok
+test_timing_boundary_and_all_arrival_patterns (test_paper_validation.PaperValidationTests) ... ok
+
+----------------------------------------------------------------------
+Ran 16 tests in 13.748s
+
+OK
