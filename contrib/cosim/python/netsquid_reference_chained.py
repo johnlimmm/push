@@ -21,7 +21,7 @@ from netsquid.qubits import qubitapi as qapi
 def run_branch(spec,bits):
     ns.sim_reset();ns.set_qstate_formalism(ns.QFormalism.DM)
     d=spec['native_instructions'];noise=spec['memory_noise']
-    target=np.array({'0':[1,0],'1':[0,1],'+':[1,1],'-':[1,-1],'+i':[1,1j]}[spec['input_state']],complex)
+    target=np.array({'0':[1,0],'1':[0,1],'+':[1,1],'-':[1,-1],'+i':[1,1j],'-i':[1,-1j]}[spec['input_state']],complex)
     target/=np.linalg.norm(target);phi=np.array([1,0,0,1],complex)/np.sqrt(2)
     psi,a,r1,r2,b=qapi.create_qubits(5)
     active=[psi,a,r1,r2,b]

@@ -1,13 +1,17 @@
 {
-  "date": "2026-10-03T11:48:07.960732+00:00",
+  "baseline_evidence_date": "2026-10-03T11:48:07.960732+00:00",
+  "date": "2026-10-04T01:36:36.827214+00:00",
   "frozen_sources_unchanged": true,
   "passed": true,
   "published_evidence_preserved": true,
+  "rerun_scope": "chained only; unchanged frozen baseline suite results retained",
   "suites": {
     "chained": {
-      "log": "chained-tests.log",
+      "date": "2026-10-04T01:36:36.827214+00:00",
+      "elapsed_seconds": 93.836,
+      "log": "chained-six-inputs-tests.log",
       "passed": true,
-      "tests": 16
+      "tests": 17
     },
     "existing-evaluation": {
       "command": [
@@ -124,5 +128,5 @@
       "tests": 7
     }
   },
-  "total_test_cases": 307
+  "total_test_cases": 308
 }

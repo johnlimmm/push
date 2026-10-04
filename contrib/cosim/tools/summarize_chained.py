@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Audit retained chain results, freeze provenance, and preserve raw evidence."""
 import datetime
+import argparse
 import gzip
 import hashlib
 import json
@@ -14,12 +15,21 @@ def digest(path):return hashlib.sha256(path.read_bytes()).hexdigest()
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--archive-name',default='chained-v5-results')
+    args=parser.parse_args()
+    if Path(args.archive_name).name!=args.archive_name:raise ValueError('archive name must be a basename')
+    archive=MODULE/'baselines'/(args.archive_name+'.tar.gz')
+    if archive.exists():raise ValueError('result archive already exists')
     evaluation=json.loads((MODULE/'results/chained-evaluation/summary.json').read_text())
     regression=json.loads((MODULE/'results/chained-regression/summary.json').read_text())
     coverage=json.loads((MODULE/'results/chained-tests/branch-coverage.json').read_text())
+    noise=json.loads((MODULE/'results/chained-tests/noise-inputs.json').read_text())
     frozen=json.loads((MODULE/'baselines/provisioned-v4-freeze.json').read_text())
     unchanged=all(digest(ROOT/p)==h for p,h in frozen['source_sha256'].items())
-    assert evaluation['passed'] and regression['passed'] and coverage['passed'] and unchanged
+    assert evaluation['passed'] and regression['passed'] and coverage['passed'] and noise['passed'] and unchanged
+    assert set(coverage['branches'])==set(noise['inputs'])=={'0','1','+','-','+i','-i'}
+    assert coverage['transactions']==96 and noise['runs']==12
     max_error=0.;reports=0
     for entry in evaluation['reports']:
         path=MODULE/'results/chained-evaluation'/entry['report']
@@ -49,7 +59,10 @@ def main():
         date=datetime.datetime.now(datetime.timezone.utc).isoformat(),passed=True,
         total_test_cases=regression['total_test_cases'],new_tests=regression['suites']['chained']['tests'],
         characterization_runs=reports,characterization_chains=evaluation['transactions'],
-        branch_coverage=coverage,max_density_matrix_error=max_error,frozen_v4_sources_unchanged=unchanged,
+        branch_coverage=coverage,noise_input_validation=noise,
+        max_density_matrix_error=max_error,frozen_v4_sources_unchanged=unchanged,
+        rerun_scope=regression.get('rerun_scope','full regression'),
+        characterization_evidence='Retained 48-run +i characterization; six-state validation rerun separately',
         topology='A(Alice)--R(repeater)--B(Bob)',
         quantum_operations='native R Swap BSM, native A Teleport BSM, shared native B corrections',
         pair_handoff='same A/B qubit objects and memory locations, single consumption, no replacement EPR',
@@ -62,8 +75,6 @@ def main():
     for folder in ('results/chained-tests','results/chained-evaluation','results/chained-regression','paper/chained-v5'):
         files.extend(p for p in (MODULE/folder).rglob('*') if p.is_file())
     files.append(MODULE/'results/chained-validation-summary.json')
-    archive=MODULE/'baselines/chained-v5-results.tar.gz'
-    if archive.exists():raise ValueError('result archive already exists')
     with tarfile.open(str(archive),'w:gz') as tar:
         for p in sorted(files):tar.add(str(p),arcname=str(p.relative_to(ROOT)))
     hashes={str(p.relative_to(ROOT)):digest(p) for p in sorted(files)}
@@ -72,8 +83,8 @@ def main():
         for p,h in hashes.items():assert hashlib.sha256(tar.extractfile(p).read()).hexdigest()==h
     manifest=dict(architecture=summary['architecture'],archive=str(archive.relative_to(ROOT)),
         archive_sha256=digest(archive),file_sha256=hashes,files=len(files),byte_reproduction_verified=True)
-    archive.with_name('chained-v5-results.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
-    archive.with_name('chained-v5-results.sha256').write_text(manifest['archive_sha256']+'  '+manifest['archive']+'\n')
+    archive.with_name(args.archive_name+'.json').write_text(json.dumps(manifest,indent=2,sort_keys=True)+'\n')
+    archive.with_name(args.archive_name+'.sha256').write_text(manifest['archive_sha256']+'  '+manifest['archive']+'\n')
     print('Verified {} tests, {} runs, error {:.3g}; archived {} files ({:.2f} MiB)'.format(
         summary['total_test_cases'],reports,max_error,len(files),archive.stat().st_size/1024**2))
 

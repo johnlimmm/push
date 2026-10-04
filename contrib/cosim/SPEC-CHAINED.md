@@ -117,7 +117,11 @@ Validation requires:
    density matrices using the same observed stage timestamps and physical parameters.
    It imports no production core, adapter or quantum program. The reference performs
    conditional measurement projection; enumeration covers all 16 joint branches.
-6. Noiseless inputs 0, 1, +, -, +i each cover all 16 joint branches with fidelity≈1.
+6. Noiseless inputs 0, 1, +, -, +i, -i each cover all 16 joint branches with fidelity≈1
+   (96 transactions). Native T1/T2 is also checked for all six inputs at A–R delays
+   0.2 and 1 ms: 12 runs, observed checkpoint-state comparison and enumeration of
+   all 16 reference branches per run. The two Y eigenstates must have opposite
+   imaginary-coherence signs at teleport BSM start.
 7. Existing P0–v4/P5-B/native Q2NS regression remains unchanged and passing.
 
 ## Analysis contract
@@ -128,7 +132,7 @@ Each run has four chains. Quantum seed is fixed; final expected fidelity is comp
 by exact Born-probability weighting of the independent reference's 16 joint branches
 at that chain's timing. This is not a 16-seed sample mean.
 
-The five-input branch test separately uses seeds selected for **coverage**, not
+The six-input branch test separately uses seeds selected for **coverage**, not
 performance inference. Noiseless coverage results must not be presented as random
 performance samples. Analysis is finite periodic-background characterization with
 four phases; no hardware fidelity, population success-rate, throughput scaling,

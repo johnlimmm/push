@@ -3,6 +3,7 @@ import copy
 from provisioned_config import normalize_config as normalize_provisioned
 from quantum_scheduler import integer, MAX_TIME_NS
 from p1_validation import tx_duration_ns
+from chained_states import STATES
 
 
 def normalize_config(raw):
@@ -24,12 +25,20 @@ def normalize_config(raw):
             raise ValueError('duplicate chain ID')
         seen.add(cid)
         chain.setdefault('input_state', '+i')
+        if not isinstance(chain['input_state'], str) or chain['input_state'] not in STATES:
+            raise ValueError('unsupported chained input state')
         sid = 2*slot+1
+        # The frozen v4 normalizer validates common timing/network fields and
+        # only knows five input labels. Use its existing Y-state label for that
+        # validation, then restore the actual v5 label before any execution.
+        validation_state = '+i' if chain['input_state'] == '-i' else chain['input_state']
         sessions.extend([dict(session_id=sid, protocol='swap', session_start_ns=chain['session_start_ns']),
                          dict(session_id=sid+1, protocol='teleport', session_start_ns=chain['session_start_ns'],
-                              input_state=chain['input_state'])])
+                              input_state=validation_state)])
     raw['sessions'] = sessions
     config = normalize_provisioned(raw)
+    for slot, chain in enumerate(chains):
+        config['sessions'][2*slot+1]['input_state'] = chain['input_state']
     if not isinstance(access, dict) or set(access) != {'rate_bps', 'delay_ns'}:
         raise ValueError('invalid A--R classical access link')
     integer(access['rate_bps'], 'access rate', 1, 10**12)

@@ -16,6 +16,7 @@ from run_provisioned import save_report
 
 NOISE_OFF=dict(model='T1T2NoiseModel',T1_ns=0,T2_ns=0)
 BRANCH_SEEDS=[0,1,2,3,5,6,10,11,14,15,16,25,26,29,33,49]
+INPUT_STATES=('0','1','+','-','+i','-i')
 OUT=MODULE/'results/chained-tests'
 
 
@@ -39,9 +40,9 @@ class ChainedTests(unittest.TestCase):
         self.assertEqual(len(r['snapshot']['quantum_network']['deliveries']),2)
         self.assertEqual(r['validation']['packet_hops'],5)
 
-    def test_all_joint_branches_for_five_noiseless_inputs(self):
-        coverage={};maximum=0;transactions=0
-        for state in ('0','1','+','-','+i'):
+    def test_all_joint_branches_for_six_noiseless_inputs(self):
+        coverage={};maximum=0;transactions=0;min_fidelity=1.
+        for state in INPUT_STATES:
             branches=set()
             for seed in BRANCH_SEEDS:
                 r=ChainedManager(dict(seed=seed,memory_noise=NOISE_OFF,
@@ -49,12 +50,49 @@ class ChainedTests(unittest.TestCase):
                 bits=''.join(str(x) for sid in ('1','2') for x in r['snapshot']['sessions'][sid]['measurement_bits'])
                 branches.add(bits);transactions+=1
                 self.assertAlmostEqual(r['metrics']['chains'][0]['output_fidelity'],1.,places=12)
+                min_fidelity=min(min_fidelity,r['metrics']['chains'][0]['output_fidelity'])
                 maximum=max(maximum,r['cross_validation']['max_density_matrix_error'])
                 save_report(OUT/('branch-'+state.replace('+','plus').replace('-','minus')+'-'+str(seed)+'.json.gz'),r)
             self.assertEqual(branches,{format(i,'04b') for i in range(16)})
             coverage[state]=sorted(branches)
         (OUT/'branch-coverage.json').write_text(json.dumps(dict(passed=True,branches=coverage,seeds=BRANCH_SEEDS,
-            transactions=transactions,max_density_matrix_error=maximum),indent=2)+'\n')
+            transactions=transactions,min_output_fidelity=min_fidelity,max_density_matrix_error=maximum),indent=2)+'\n')
+
+    def test_six_noisy_inputs_against_reference(self):
+        cases=[];maximum=0.
+        for state in INPUT_STATES:
+            by_delay={}
+            for delay in (200000,1000000):
+                with self.subTest(state=state,access_delay_ns=delay):
+                    r=ChainedManager(dict(access_link=dict(rate_bps=10000000,delay_ns=delay),
+                        chains=[dict(chain_id=1,session_start_ns=1000000,input_state=state)])).run(enumerate_branches=True)
+                    self.assertEqual(r['config']['sessions'][1]['input_state'],state)
+                    cv=r['cross_validation'];ref=cv['chains']['1']['reference']
+                    self.assertLess(cv['max_density_matrix_error'],1e-12)
+                    self.assertEqual(len(ref['branches']),16)
+                    self.assertAlmostEqual(sum(b['probability'] for b in ref['branches'].values()),1.,places=12)
+                    checkpoints=r['snapshot']['sessions']['2']['checkpoints']
+                    # Conjugate Y inputs must retain opposite imaginary signs:
+                    # catches accidentally preparing +i when the config says -i.
+                    if state in ('+i','-i'):
+                        imag=checkpoints['bsm_start']['input']['density_matrix']['imag'][0][1]
+                        self.assertGreater(imag*(1 if state=='-i' else -1),0.)
+                    name='noise-'+state.replace('+','plus').replace('-','minus')+'-'+str(delay)+'.json.gz'
+                    save_report(OUT/name,r)
+                    maximum=max(maximum,cv['max_density_matrix_error'])
+                    m=r['metrics']['chains'][0]
+                    cases.append(dict(input_state=state,access_delay_ns=delay,report=name,
+                        max_density_matrix_error=cv['max_density_matrix_error'],
+                        output_fidelity=m['output_fidelity'],expected_output_fidelity=ref['expected_fidelity'],
+                        completion_ns=m['completion_ns'],latency_ns=m['latency_ns']))
+                    by_delay[delay]=r
+            slow,fast=by_delay[1000000],by_delay[200000]
+            self.assertEqual(slow['snapshot']['sessions']['1']['checkpoints'],fast['snapshot']['sessions']['1']['checkpoints'])
+            self.assertEqual(slow['metrics']['chains'][0]['completion_ns']-fast['metrics']['chains'][0]['completion_ns'],1600000)
+            self.assertNotEqual(slow['snapshot']['sessions']['2']['checkpoints']['usable']['density_matrix'],
+                                fast['snapshot']['sessions']['2']['checkpoints']['usable']['density_matrix'])
+        (OUT/'noise-inputs.json').write_text(json.dumps(dict(passed=True,inputs=list(INPUT_STATES),runs=len(cases),
+            reference_branches_per_run=16,max_density_matrix_error=maximum,cases=cases),indent=2)+'\n')
 
     def test_reference_joint_probability_normalization(self):
         ref=self.single['cross_validation']['chains']['1']['reference']

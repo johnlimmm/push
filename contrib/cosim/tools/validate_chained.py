@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Run preserved baseline regression and assemble new chain evidence without overwriting archives."""
 import datetime
+import argparse
 import gzip
 import hashlib
 import json
@@ -17,6 +18,29 @@ OUT=MODULE/'results/chained-regression'
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--refresh-chained-only',action='store_true',
+        help='Update the chained suite from a fresh log; retain dated frozen baseline evidence')
+    parser.add_argument('--chained-log',type=Path,default=Path('/tmp/chained-tests.log'))
+    args=parser.parse_args()
+    if args.refresh_chained_only:
+        result=json.loads((OUT/'summary.json').read_text())
+        assert result['passed']
+        match=re.search(r'Ran (\d+) tests in ([\d.]+)s\s+OK\s*$',args.chained_log.read_text())
+        if not match or int(match.group(1))!=17:raise ValueError('requires a fresh passing 17-case chained log')
+        frozen=json.loads((MODULE/'baselines/provisioned-v4-freeze.json').read_text())
+        assert all(hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h for p,h in frozen['source_sha256'].items())
+        result.setdefault('baseline_evidence_date',result['date'])
+        result['date']=datetime.datetime.now(datetime.timezone.utc).isoformat()
+        result['rerun_scope']='chained only; unchanged frozen baseline suite results retained'
+        dest=OUT/args.chained_log.name
+        if args.chained_log.resolve()!=dest.resolve():shutil.copyfile(str(args.chained_log),str(dest))
+        result['suites']['chained']=dict(tests=int(match.group(1)),passed=True,
+            elapsed_seconds=float(match.group(2)),log=dest.name,date=result['date'])
+        result['total_test_cases']=sum(v['tests'] for v in result['suites'].values())
+        (OUT/'summary.json').write_text(json.dumps(result,indent=2,sort_keys=True)+'\n')
+        print('Refreshed chained suite; frozen baseline evidence retained from '+result['baseline_evidence_date'])
+        return
     if OUT.exists():raise ValueError('choose a clean regression output directory')
     OUT.mkdir(parents=True)
     names=subprocess.check_output(['git','ls-files','-z','contrib/cosim/results'],cwd=str(ROOT)).decode().split('\0')
@@ -33,7 +57,7 @@ def main():
             elapsed_seconds=time.monotonic()-start,log=path.name)
         print(name+': '+str(suites[name]['passed']),flush=True)
     try:
-        # New tests already ran once; do not repeat the same 80 branch runs.
+        # New tests already ran once; do not repeat the same 96 branch runs.
         code='''import unittest
 suite=unittest.defaultTestLoader.discover('contrib/cosim/tests')
 def flatten(s):
@@ -56,9 +80,9 @@ raise SystemExit(not result.wasSuccessful())
                 dest=dest.with_name(dest.name+'.gz');dest.parent.mkdir(parents=True,exist_ok=True)
                 with gzip.open(str(dest),'wb') as stream:stream.write(current.read_bytes())
             current.write_bytes(previous)
-    shutil.copyfile('/tmp/chained-tests.log',OUT/'chained-tests.log')
+    shutil.copyfile(str(args.chained_log),OUT/'chained-tests.log')
     text=(OUT/'chained-tests.log').read_text();match=re.search(r'Ran (\d+) tests in [\d.]+s\s+OK\s*$',text)
-    suites['chained']=dict(tests=int(match.group(1)) if match else 0,passed=bool(match) and int(match.group(1))==16,log='chained-tests.log')
+    suites['chained']=dict(tests=int(match.group(1)) if match else 0,passed=bool(match) and int(match.group(1))==17,log='chained-tests.log')
     frozen=json.loads((MODULE/'baselines/provisioned-v4-freeze.json').read_text())
     unchanged=all(hashlib.sha256((ROOT/p).read_bytes()).hexdigest()==h for p,h in frozen['source_sha256'].items())
     result=dict(date=datetime.datetime.now(datetime.timezone.utc).isoformat(),suites=suites,

@@ -1,0 +1,136 @@
+{
+  "passed": true,
+  "inputs": [
+    "0",
+    "1",
+    "+",
+    "-",
+    "+i",
+    "-i"
+  ],
+  "runs": 12,
+  "reference_branches_per_run": 16,
+  "max_density_matrix_error": 3.3306690738754696e-16,
+  "cases": [
+    {
+      "input_state": "0",
+      "access_delay_ns": 200000,
+      "report": "noise-0-200000.json.gz",
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "output_fidelity": 0.7493483668141921,
+      "expected_output_fidelity": 0.7680408643787388,
+      "completion_ns": 6612800,
+      "latency_ns": 5612800
+    },
+    {
+      "input_state": "0",
+      "access_delay_ns": 1000000,
+      "report": "noise-0-1000000.json.gz",
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "output_fidelity": 0.692690790628254,
+      "expected_output_fidelity": 0.7514216881022624,
+      "completion_ns": 8212800,
+      "latency_ns": 7212800
+    },
+    {
+      "input_state": "1",
+      "access_delay_ns": 200000,
+      "report": "noise-1-200000.json.gz",
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "output_fidelity": 0.6966094810122698,
+      "expected_output_fidelity": 0.6389991719915535,
+      "completion_ns": 6612800,
+      "latency_ns": 5612800
+    },
+    {
+      "input_state": "1",
+      "access_delay_ns": 1000000,
+      "report": "noise-1-1000000.json.gz",
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "output_fidelity": 0.6986597135089747,
+      "expected_output_fidelity": 0.6121166265051763,
+      "completion_ns": 8212800,
+      "latency_ns": 7212800
+    },
+    {
+      "input_state": "+",
+      "access_delay_ns": 200000,
+      "report": "noise-plus-200000.json.gz",
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "output_fidelity": 0.5792348983885593,
+      "expected_output_fidelity": 0.5799185585824231,
+      "completion_ns": 6612800,
+      "latency_ns": 5612800
+    },
+    {
+      "input_state": "+",
+      "access_delay_ns": 1000000,
+      "report": "noise-plus-1000000.json.gz",
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "output_fidelity": 0.5582373558744036,
+      "expected_output_fidelity": 0.5580327843589437,
+      "completion_ns": 8212800,
+      "latency_ns": 7212800
+    },
+    {
+      "input_state": "-",
+      "access_delay_ns": 200000,
+      "report": "noise-minus-200000.json.gz",
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "output_fidelity": 0.5792348983885593,
+      "expected_output_fidelity": 0.5799185585824231,
+      "completion_ns": 6612800,
+      "latency_ns": 5612800
+    },
+    {
+      "input_state": "-",
+      "access_delay_ns": 1000000,
+      "report": "noise-minus-1000000.json.gz",
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "output_fidelity": 0.5582373558744036,
+      "expected_output_fidelity": 0.5580327843589437,
+      "completion_ns": 8212800,
+      "latency_ns": 7212800
+    },
+    {
+      "input_state": "+i",
+      "access_delay_ns": 200000,
+      "report": "noise-plusi-200000.json.gz",
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "output_fidelity": 0.5792348983885593,
+      "expected_output_fidelity": 0.5723133022008753,
+      "completion_ns": 6612800,
+      "latency_ns": 5612800
+    },
+    {
+      "input_state": "+i",
+      "access_delay_ns": 1000000,
+      "report": "noise-plusi-1000000.json.gz",
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "output_fidelity": 0.5582373558744036,
+      "expected_output_fidelity": 0.5525102347607841,
+      "completion_ns": 8212800,
+      "latency_ns": 7212800
+    },
+    {
+      "input_state": "-i",
+      "access_delay_ns": 200000,
+      "report": "noise-minusi-200000.json.gz",
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "output_fidelity": 0.5792348983885593,
+      "expected_output_fidelity": 0.5723133022008753,
+      "completion_ns": 6612800,
+      "latency_ns": 5612800
+    },
+    {
+      "input_state": "-i",
+      "access_delay_ns": 1000000,
+      "report": "noise-minusi-1000000.json.gz",
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "output_fidelity": 0.5582373558744036,
+      "expected_output_fidelity": 0.5525102347607841,
+      "completion_ns": 8212800,
+      "latency_ns": 7212800
+    }
+  ]
+}

@@ -1,14 +1,35 @@
 # Hybrid v5 — Swapping-assisted A→B teleportation
 
-**Actual Swap output qubits are consumed by A’s TeleportationApp. All results below are new v5 runs.**
+**Actual Swap output qubits are consumed by A’s TeleportationApp. Six-input validation was rerun; the original v5 +i characterization is retained.**
 
 ## Validation
 
-- 307 total regression cases PASS (16 new + 291 preserved baseline cases).
-- Five noiseless inputs (0, 1, +, −, +i), each covering all 16 joint Swap/Teleport BSM branches: 80 transactions; final fidelity ≈1.
+- 308 passing regression cases recorded (17 chained cases rerun; 291 unchanged baseline results retained).
+- Six noiseless inputs (0, 1, +, −, +i, −i), each covering all 16 joint Swap/Teleport BSM branches: 96 transactions; final fidelity ≈1.
+- 12 new noise-on runs: six inputs × two A–R delays, with 16 reference branches enumerated per run.
 - 48 characterization runs / 192 end-to-end chains; independent two-stage NetSquid reference, including native instruction checkpoints.
 - Maximum density-matrix difference across characterization/branch/single evidence: 5e-16.
 - Actual routed UDP, per-hop FIFO recurrence, native R/A/B processor FIFO, ready-before-teleport, same-object pair handoff, single consumption and sole NetSquid state ownership all pass.
+
+## Six-input aging validation
+
+Native memory T1=20 ms, T2=10 ms; input/EPR creation at t=0, start at 1 ms, quantum seed 7.
+Each value below is the reference’s Born-weighted fidelity over all 16 joint branches, relative to the original input.
+Production checkpoint states match the independently implemented reference for the observed branch.
+Increasing A–R propagation leaves swapping checkpoints unchanged and adds 1.6 ms to final completion.
+The +i and −i inputs retain opposite imaginary-coherence signs before teleport BSM.
+
+| Input | Expected output fidelity, A–R 0.2 ms | Expected output fidelity, A–R 1 ms |
+|---|---:|---:|
+| 0 | 0.768041 | 0.751422 |
+| 1 | 0.638999 | 0.612117 |
+| + | 0.579919 | 0.558033 |
+| - | 0.579919 | 0.558033 |
+| +i | 0.572313 | 0.552510 |
+| -i | 0.572313 | 0.552510 |
+
+No population inference is made from these deterministic validation conditions.
+The 48-run characterization below remains a +i workload, not a six-input average.
 
 ## Single-chain timing
 

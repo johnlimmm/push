@@ -6,7 +6,7 @@ from netsquid.qubits import qubitapi as qapi
 from native_core import NativeExecutionCore
 from native_programs import physical_instructions
 from native_adapters import NativeTeleportAdapter
-from hybrid_adapters import STATES
+from chained_states import STATES
 from provisioned_core import ProvisionedSwapAdapter, ProvisionedFederation
 from quantum_network_backend import QuantumNetworkBackend
 

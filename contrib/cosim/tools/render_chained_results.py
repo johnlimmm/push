@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 """Generate standalone end-to-end results and figures from retained measurements."""
 import csv
+import argparse
 import gzip
 import json
 from pathlib import Path
@@ -19,10 +20,14 @@ def read_report(name):
 
 
 def main():
+    parser=argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--text-only',action='store_true',help='Retain the existing characterization figures')
+    args=parser.parse_args()
     OUT.mkdir(parents=True,exist_ok=True)
     summary=json.loads((MODULE/'results/chained-evaluation/summary.json').read_text())
     regression=json.loads((MODULE/'results/chained-regression/summary.json').read_text())
     branches=json.loads((MODULE/'results/chained-tests/branch-coverage.json').read_text())
+    noise=json.loads((MODULE/'results/chained-tests/noise-inputs.json').read_text())
     single=read_report('single.json.gz');burst=read_report('burst.json.gz')
     shutil.copyfile(MODULE/'results/chained-evaluation/chains.csv',OUT/'chains.csv')
     plt.rcParams.update({'font.size':10,'pdf.fonttype':42,'ps.fonttype':42})
@@ -46,7 +51,8 @@ def main():
     ax.set(yticks=[0,1,2],yticklabels=['R: swap','A: Alice','B: Bob'],xlabel='Simulation time (ms)',
            title='One native Swap → Teleport chain; dashed arrows include actual packet transit')
     ax.grid(axis='x',alpha=.2);ax.set_ylim(2.5,-.5);fig.tight_layout()
-    for ext in ('png','pdf'):fig.savefig(OUT/('chain-timeline.'+ext),dpi=180)
+    if not args.text_only:
+        for ext in ('png','pdf'):fig.savefig(OUT/('chain-timeline.'+ext),dpi=180)
     plt.close(fig)
     fig,axes=plt.subplots(1,2,figsize=(10,4),sharex=True)
     for interval,marker in [(800000,'o'),(4000000,'s')]:
@@ -62,19 +68,35 @@ def main():
     for ax in axes:ax.grid(alpha=.25)
     fig.suptitle('Finite characterization: 4 chains × 4 traffic phases per condition',fontsize=11)
     fig.tight_layout()
-    for ext in ('png','pdf'):fig.savefig(OUT/('chain-characterization.'+ext),dpi=180)
+    if not args.text_only:
+        for ext in ('png','pdf'):fig.savefig(OUT/('chain-characterization.'+ext),dpi=180)
     plt.close(fig)
-    maximum=max(summary['max_density_matrix_error'],branches['max_density_matrix_error'],single['cross_validation']['max_density_matrix_error'])
+    maximum=max(summary['max_density_matrix_error'],branches['max_density_matrix_error'],
+                noise['max_density_matrix_error'],single['cross_validation']['max_density_matrix_error'])
     lines=['# Hybrid v5 — Swapping-assisted A→B teleportation','',
-      '**Actual Swap output qubits are consumed by A’s TeleportationApp. All results below are new v5 runs.**','',
+      '**Actual Swap output qubits are consumed by A’s TeleportationApp. Six-input validation was rerun; the original v5 +i characterization is retained.**','',
       '## Validation','',
-      '- {} total regression cases PASS ({} new + 291 preserved baseline cases).'.format(regression['total_test_cases'],regression['suites']['chained']['tests']),
-      '- Five noiseless inputs (0, 1, +, −, +i), each covering all 16 joint Swap/Teleport BSM branches: {} transactions; final fidelity ≈1.'.format(branches['transactions']),
+      '- {} passing regression cases recorded ({} chained cases rerun; 291 unchanged baseline results retained).'.format(regression['total_test_cases'],regression['suites']['chained']['tests']),
+      '- Six noiseless inputs (0, 1, +, −, +i, −i), each covering all 16 joint Swap/Teleport BSM branches: {} transactions; final fidelity ≈1.'.format(branches['transactions']),
+      '- {} new noise-on runs: six inputs × two A–R delays, with 16 reference branches enumerated per run.'.format(noise['runs']),
       '- {} characterization runs / {} end-to-end chains; independent two-stage NetSquid reference, including native instruction checkpoints.'.format(summary['runs'],summary['transactions']),
       '- Maximum density-matrix difference across characterization/branch/single evidence: {:.3g}.'.format(maximum),
       '- Actual routed UDP, per-hop FIFO recurrence, native R/A/B processor FIFO, ready-before-teleport, same-object pair handoff, single consumption and sole NetSquid state ownership all pass.','',
-      '## Single-chain timing','',
-      '| Boundary | Simulation time (ms) |','|---|---:|']
+      '## Six-input aging validation','',
+      'Native memory T1=20 ms, T2=10 ms; input/EPR creation at t=0, start at 1 ms, quantum seed 7.',
+      'Each value below is the reference’s Born-weighted fidelity over all 16 joint branches, relative to the original input.',
+      'Production checkpoint states match the independently implemented reference for the observed branch.',
+      'Increasing A–R propagation leaves swapping checkpoints unchanged and adds 1.6 ms to final completion.',
+      'The +i and −i inputs retain opposite imaginary-coherence signs before teleport BSM.','',
+      '| Input | Expected output fidelity, A–R 0.2 ms | Expected output fidelity, A–R 1 ms |',
+      '|---|---:|---:|']
+    cases={(c['input_state'],c['access_delay_ns']):c for c in noise['cases']}
+    for state in noise['inputs']:
+        lines.append('| {} | {:.6f} | {:.6f} |'.format(state,
+            cases[state,200000]['expected_output_fidelity'],cases[state,1000000]['expected_output_fidelity']))
+    lines+=['','No population inference is made from these deterministic validation conditions.',
+            'The 48-run characterization below remains a +i workload, not a six-input average.','',
+            '## Single-chain timing','','| Boundary | Simulation time (ms) |','|---|---:|']
     req={(r['session_id'],r['operation']):r for r in single['snapshot']['requests']}
     for label,time in [('Local start',1000000),('Elementary resources ready',1200000),('R swap BSM complete',req[1,'BSM']['completion_ns']),
         ('B swap correction complete / pair handoff',req[1,'CORRECTION']['completion_ns']),('Ready packet received at A',single['metrics']['chains'][0]['ready_received_ns']),
@@ -120,7 +142,8 @@ def main():
        '- Plans: `scenarios/chained-evaluation.json`; raw reports: `results/chained-evaluation/*.json.gz`; per-chain metrics: [chains.csv](chains.csv).',
        '- Branch seeds are selected for deterministic coverage, not performance sampling.','']
     (OUT/'RESULTS.md').write_text('\n'.join(lines))
-    print('Rendered chain timeline, characterization figures, and RESULTS.md')
+    print('Updated RESULTS.md; existing figures retained' if args.text_only else
+          'Rendered chain timeline, characterization figures, and RESULTS.md')
 
 
 if __name__=='__main__':main()

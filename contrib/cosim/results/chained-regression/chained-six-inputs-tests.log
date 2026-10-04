@@ -1,0 +1,22 @@
+test_access_delay_isolates_swap_from_teleport (test_chained.ChainedTests) ... ok
+test_actual_resource_provenance_and_positions (test_chained.ChainedTests) ... ok
+test_all_joint_branches_for_six_noiseless_inputs (test_chained.ChainedTests) ... ok
+test_channel_noise_reaches_consumed_pair (test_chained.ChainedTests) ... ok
+test_frozen_v4_sources (test_chained.ChainedTests) ... ok
+test_invalid_config_rejected (test_chained.ChainedTests) ... ok
+test_overflow_rejected_with_report (test_chained.ChainedTests) ... ok
+test_reference_joint_probability_normalization (test_chained.ChainedTests) ... ok
+test_result_burst_causes_A_and_B_contention (test_chained.ChainedTests) ... ok
+test_shared_B_fifo_between_protocols (test_chained.ChainedTests) ... ok
+test_simultaneous_zero_delay_and_zero_start (test_chained.ChainedTests) ... ok
+test_single_native_end_to_end (test_chained.ChainedTests) ... ok
+test_six_noisy_inputs_against_reference (test_chained.ChainedTests) ... ok
+test_tampered_early_teleport_rejected (test_chained.ChainedTests) ... ok
+test_tampered_handoff_rejected (test_chained.ChainedTests) ... ok
+test_tampered_packet_timing_rejected (test_chained.ChainedTests) ... ok
+test_tampered_quantum_state_rejected (test_chained.ChainedTests) ... ok
+
+----------------------------------------------------------------------
+Ran 17 tests in 93.836s
+
+OK
