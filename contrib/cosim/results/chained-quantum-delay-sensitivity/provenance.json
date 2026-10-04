@@ -1,0 +1,30 @@
+{
+  "base_commit": "4ac000af9c26d8681e6ac4df77219a8ce2e08bdf",
+  "existing_1x_evidence": "results/chained-evaluation",
+  "python": "/home/ns3/qunet/bin/python",
+  "source_sha256": {
+    "contrib/cosim/README-CHAINED.md": "ff65b586279d38f85c490a96812821baeaafb67d9d9dbdc4376ed4217f7c3d02",
+    "contrib/cosim/SPEC-CHAINED.md": "e52e66ee06b68ff005e49f0928c5c28ed55046f1eea3735d52c02f80c68e8581",
+    "contrib/cosim/examples/cosim-chained.cc": "a47f15f9877b77fc27e1a8d36883eb4df5f93a585e251a6ec0cbb48ac5a2cd46",
+    "contrib/cosim/experiments/run_chained_evaluation.py": "73bde9ecbc5c53111dfb8544106bd356bc390727b5cb0f00238975606b60177a",
+    "contrib/cosim/experiments/run_chained_sensitivity.py": "68ac7b7b5ca32b59d05337966910a6f4be13e81e4c9ea94cd6ddcd82e0045963",
+    "contrib/cosim/python/chained_config.py": "98a2c8c33b2d1331c05185af63091d11c4d3470e8aa2f36d58df27f727537128",
+    "contrib/cosim/python/chained_core.py": "ae5a118d41f8bca66447498aa8f9547d82e97fae13d8ba2d4499ac3eda7247d3",
+    "contrib/cosim/python/chained_participant.py": "bd0e1c6fc5d6a7692ee01b0f4953c0c44251c1479bb8876d53f59ecac528c4c9",
+    "contrib/cosim/python/chained_states.py": "dca884f40eb3d6809b32264e45db09ce7ce35819b7691a82dd8ce582c75a132f",
+    "contrib/cosim/python/chained_validation.py": "d4b5acff3dc69bb079f95c54ef9a293bed63f3d3603c9499cfdb47b7b76dec1a",
+    "contrib/cosim/python/netsquid_reference_chained.py": "c32ed33f6c6dd628ba419587c36f2d248a375c16284e00accc3df47e8b90bae3",
+    "contrib/cosim/python/run_chained.py": "5fccf6cef29ee36f3b0a333ab2404bfd5cec2480c487215c8f9117b943bfc7ab",
+    "contrib/cosim/scenarios/chained-contention.json": "c72e8163796ac50db20a1651851e8ca704fdb9696c8452935899240589fa7bcc",
+    "contrib/cosim/scenarios/chained-evaluation.json": "1ba2f6b81223b479448da4114e80c8ea27402446ca15d7f5a66bba5b957ac037",
+    "contrib/cosim/scenarios/chained-minus-i.json": "1735bf3ffd7662bc72b5425bca729dab52e518515a567429805fed315750060b",
+    "contrib/cosim/scenarios/chained-quantum-delay-sensitivity.json": "aefcfb3a99816524769b94ce2c3d97684a6c8f55b61367c41b54694b310872e0",
+    "contrib/cosim/scenarios/chained-single.json": "fcfaba9e8b7b94264c6fcfb3ce959fc5abeedc09c58063f18c5156ac66971f0e",
+    "contrib/cosim/tests/test_chained.py": "45cc8c2e2f400462494b656e31ca52bb812ba7e1fb57ecf2a069afbf3725c6a6",
+    "contrib/cosim/tools/render_chained_results.py": "4884ed842d72c42ebe37825ada6f862a6ef3cbb35dc5f1855b6c83dd555cbb79",
+    "contrib/cosim/tools/summarize_chained.py": "53e2fd88c8016af03c68aff2351e2e30f9c9a9da62199b6055440a7dbceee30b",
+    "contrib/cosim/tools/validate_chained.py": "df83cc66c3f697c316de5d62df48340e446b2f560135f15ef2a7eb15005b2747",
+    "scratch/cosim-chained/CMakeLists.txt": "1cd9571a627c0455c985f2f7e21edd7a646bce0255941319c33c3514e55f3db8"
+  },
+  "started_at": "2026-10-04T05:39:18.127823+00:00"
+}

@@ -1,0 +1,679 @@
+{
+  "architecture": "swapping-assisted-teleportation-v5",
+  "baseline_1x_reproduced_runs": 8,
+  "elapsed_seconds": 197.46076767903287,
+  "groups": [
+    {
+      "means": {
+        "expected_output_fidelity": 0.5227568971918362,
+        "latency_ns": 8294000.0,
+        "ready_packet_queue_ns": 0.0,
+        "resource_wait_ns": 0.0,
+        "swap_B_wait_ns": 81200.0,
+        "swap_R_wait_ns": 1200000.0,
+        "swap_packet_queue_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0,
+        "teleport_packet_queue_ns": 0.0,
+        "total_control_queue_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5043213510586617,
+          0.5525102347607842
+        ],
+        "latency_ns": [
+          7012800,
+          9737600
+        ],
+        "ready_packet_queue_ns": [
+          0,
+          0
+        ],
+        "resource_wait_ns": [
+          0,
+          0
+        ],
+        "swap_B_wait_ns": [
+          0,
+          324800
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2400000
+        ],
+        "swap_packet_queue_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_packet_queue_ns": [
+          0,
+          0
+        ],
+        "total_control_queue_ns": [
+          0,
+          0
+        ]
+      },
+      "result_load": 0,
+      "scale": 0.5,
+      "transactions": 16
+    },
+    {
+      "means": {
+        "expected_output_fidelity": 0.5198634812526389,
+        "latency_ns": 9077209.9375,
+        "ready_packet_queue_ns": 0.0,
+        "resource_wait_ns": 0.0,
+        "swap_B_wait_ns": 20300.0,
+        "swap_R_wait_ns": 1200000.0,
+        "swap_packet_queue_ns": 291850.125,
+        "teleport_A_wait_ns": 187452.0625,
+        "teleport_B_wait_ns": 59300.0,
+        "teleport_packet_queue_ns": 305507.75,
+        "total_control_queue_ns": 597357.875
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5035844064605076,
+          0.5525102347607842
+        ],
+        "latency_ns": [
+          7012800,
+          10877956
+        ],
+        "ready_packet_queue_ns": [
+          0,
+          0
+        ],
+        "resource_wait_ns": [
+          0,
+          0
+        ],
+        "swap_B_wait_ns": [
+          0,
+          324800
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2400000
+        ],
+        "swap_packet_queue_ns": [
+          0,
+          797595
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          619250
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ],
+        "teleport_packet_queue_ns": [
+          0,
+          775658
+        ],
+        "total_control_queue_ns": [
+          0,
+          1042299
+        ]
+      },
+      "result_load": 0.7,
+      "scale": 0.5,
+      "transactions": 16
+    },
+    {
+      "means": {
+        "expected_output_fidelity": 0.5227568971918362,
+        "latency_ns": 8494000.0,
+        "ready_packet_queue_ns": 0.0,
+        "resource_wait_ns": 50000.0,
+        "swap_B_wait_ns": 81200.0,
+        "swap_R_wait_ns": 1350000.0,
+        "swap_packet_queue_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0,
+        "teleport_packet_queue_ns": 0.0,
+        "total_control_queue_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5043213510586618,
+          0.5525102347607841
+        ],
+        "latency_ns": [
+          7212800,
+          9937600
+        ],
+        "ready_packet_queue_ns": [
+          0,
+          0
+        ],
+        "resource_wait_ns": [
+          0,
+          200000
+        ],
+        "swap_B_wait_ns": [
+          0,
+          324800
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "swap_packet_queue_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_packet_queue_ns": [
+          0,
+          0
+        ],
+        "total_control_queue_ns": [
+          0,
+          0
+        ]
+      },
+      "result_load": 0,
+      "scale": 1,
+      "transactions": 16
+    },
+    {
+      "means": {
+        "expected_output_fidelity": 0.5183963112746708,
+        "latency_ns": 9492507.875,
+        "ready_packet_queue_ns": 0.0,
+        "resource_wait_ns": 50000.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 1350000.0,
+        "swap_packet_queue_ns": 350662.6875,
+        "teleport_A_wait_ns": 245458.8125,
+        "teleport_B_wait_ns": 118600.0,
+        "teleport_packet_queue_ns": 364986.375,
+        "total_control_queue_ns": 715649.0625
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5035192172700576,
+          0.5472385453654706
+        ],
+        "latency_ns": [
+          7954641,
+          11139137
+        ],
+        "ready_packet_queue_ns": [
+          0,
+          0
+        ],
+        "resource_wait_ns": [
+          0,
+          200000
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          2600000
+        ],
+        "swap_packet_queue_ns": [
+          0,
+          786715
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          786715
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ],
+        "teleport_packet_queue_ns": [
+          0,
+          775658
+        ],
+        "total_control_queue_ns": [
+          267441,
+          1139516
+        ]
+      },
+      "result_load": 0.7,
+      "scale": 1,
+      "transactions": 16
+    },
+    {
+      "means": {
+        "expected_output_fidelity": 0.5152544043732599,
+        "latency_ns": 9694000.0,
+        "ready_packet_queue_ns": 0.0,
+        "resource_wait_ns": 500000.0,
+        "swap_B_wait_ns": 81200.0,
+        "swap_R_wait_ns": 2100000.0,
+        "swap_packet_queue_ns": 0.0,
+        "teleport_A_wait_ns": 0.0,
+        "teleport_B_wait_ns": 0.0,
+        "teleport_packet_queue_ns": 0.0,
+        "total_control_queue_ns": 0.0
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5028966882405782,
+          0.535198662982191
+        ],
+        "latency_ns": [
+          8412800,
+          11137600
+        ],
+        "ready_packet_queue_ns": [
+          0,
+          0
+        ],
+        "resource_wait_ns": [
+          0,
+          1400000
+        ],
+        "swap_B_wait_ns": [
+          0,
+          324800
+        ],
+        "swap_R_wait_ns": [
+          0,
+          3800000
+        ],
+        "swap_packet_queue_ns": [
+          0,
+          0
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          0
+        ],
+        "teleport_packet_queue_ns": [
+          0,
+          0
+        ],
+        "total_control_queue_ns": [
+          0,
+          0
+        ]
+      },
+      "result_load": 0,
+      "scale": 2,
+      "transactions": 16
+    },
+    {
+      "means": {
+        "expected_output_fidelity": 0.5124162645489629,
+        "latency_ns": 10669650.875,
+        "ready_packet_queue_ns": 0.0,
+        "resource_wait_ns": 500000.0,
+        "swap_B_wait_ns": 0.0,
+        "swap_R_wait_ns": 2100000.0,
+        "swap_packet_queue_ns": 333519.9375,
+        "teleport_A_wait_ns": 239744.5625,
+        "teleport_B_wait_ns": 118600.0,
+        "teleport_packet_queue_ns": 364986.375,
+        "total_control_queue_ns": 698506.3125
+      },
+      "ranges": {
+        "expected_output_fidelity": [
+          0.5023752333811875,
+          0.5318828197353584
+        ],
+        "latency_ns": [
+          9131784,
+          12316280
+        ],
+        "ready_packet_queue_ns": [
+          0,
+          0
+        ],
+        "resource_wait_ns": [
+          0,
+          1400000
+        ],
+        "swap_B_wait_ns": [
+          0,
+          0
+        ],
+        "swap_R_wait_ns": [
+          0,
+          3800000
+        ],
+        "swap_packet_queue_ns": [
+          0,
+          763858
+        ],
+        "teleport_A_wait_ns": [
+          0,
+          763858
+        ],
+        "teleport_B_wait_ns": [
+          0,
+          474400
+        ],
+        "teleport_packet_queue_ns": [
+          0,
+          775658
+        ],
+        "total_control_queue_ns": [
+          244584,
+          1116659
+        ]
+      },
+      "result_load": 0.7,
+      "scale": 2,
+      "transactions": 16
+    }
+  ],
+  "interpretation": "Finite paired delivery-timescale sensitivity with fixed RA:RB ratio, native T1/T2 and noiseless lossless quantum transit. Zero-load traffic phases are duplicate conditions; no population inference or hardware calibration.",
+  "max_density_matrix_error": 4.996003610813204e-16,
+  "paired_latency_decomposition_passed": true,
+  "passed": true,
+  "plan": {
+    "acceptance": "All causal/FIFO/resource/native-state checks pass; no fidelity or latency monotonicity requirement.",
+    "access_delay_ns": 1000000,
+    "background_packet_count": 60,
+    "background_payload_bytes": 1000,
+    "chains_per_run": 4,
+    "classical_rate_bps": 10000000,
+    "first_start_ns": 1000000,
+    "input_state": "+i",
+    "memory_noise": {
+      "T1_ns": 20000000,
+      "T2_ns": 10000000,
+      "model": "T1T2NoiseModel"
+    },
+    "name": "chained-quantum-delay-sensitivity",
+    "native_instructions": {
+      "cnot_ns": 600000,
+      "h_ns": 200000,
+      "measure_ns": 400000,
+      "x_ns": 250000,
+      "z_ns": 250000
+    },
+    "quantum_delays": [
+      {
+        "RA_ns": 400000,
+        "RB_ns": 600000,
+        "scale": 0.5
+      },
+      {
+        "RA_ns": 800000,
+        "RB_ns": 1200000,
+        "scale": 1
+      },
+      {
+        "RA_ns": 1600000,
+        "RB_ns": 2400000,
+        "scale": 2
+      }
+    ],
+    "quantum_seed": 7,
+    "queue_packets": 128,
+    "request_interval_ns": 800000,
+    "result_delay_ns": 200000,
+    "result_loads": [
+      0,
+      0.7
+    ],
+    "result_payload_bytes": 80,
+    "scope": "Finite paired delivery-timescale sensitivity with fixed RA:RB ratio, native T1/T2 and noiseless lossless quantum transit. Zero-load traffic phases are duplicate conditions; no population inference or hardware calibration.",
+    "traffic_seeds": [
+      101,
+      102,
+      103,
+      104
+    ]
+  },
+  "provenance": {
+    "base_commit": "4ac000af9c26d8681e6ac4df77219a8ce2e08bdf",
+    "existing_1x_evidence": "results/chained-evaluation",
+    "python": "/home/ns3/qunet/bin/python",
+    "source_sha256": {
+      "contrib/cosim/README-CHAINED.md": "ff65b586279d38f85c490a96812821baeaafb67d9d9dbdc4376ed4217f7c3d02",
+      "contrib/cosim/SPEC-CHAINED.md": "e52e66ee06b68ff005e49f0928c5c28ed55046f1eea3735d52c02f80c68e8581",
+      "contrib/cosim/examples/cosim-chained.cc": "a47f15f9877b77fc27e1a8d36883eb4df5f93a585e251a6ec0cbb48ac5a2cd46",
+      "contrib/cosim/experiments/run_chained_evaluation.py": "73bde9ecbc5c53111dfb8544106bd356bc390727b5cb0f00238975606b60177a",
+      "contrib/cosim/experiments/run_chained_sensitivity.py": "68ac7b7b5ca32b59d05337966910a6f4be13e81e4c9ea94cd6ddcd82e0045963",
+      "contrib/cosim/python/chained_config.py": "98a2c8c33b2d1331c05185af63091d11c4d3470e8aa2f36d58df27f727537128",
+      "contrib/cosim/python/chained_core.py": "ae5a118d41f8bca66447498aa8f9547d82e97fae13d8ba2d4499ac3eda7247d3",
+      "contrib/cosim/python/chained_participant.py": "bd0e1c6fc5d6a7692ee01b0f4953c0c44251c1479bb8876d53f59ecac528c4c9",
+      "contrib/cosim/python/chained_states.py": "dca884f40eb3d6809b32264e45db09ce7ce35819b7691a82dd8ce582c75a132f",
+      "contrib/cosim/python/chained_validation.py": "d4b5acff3dc69bb079f95c54ef9a293bed63f3d3603c9499cfdb47b7b76dec1a",
+      "contrib/cosim/python/netsquid_reference_chained.py": "c32ed33f6c6dd628ba419587c36f2d248a375c16284e00accc3df47e8b90bae3",
+      "contrib/cosim/python/run_chained.py": "5fccf6cef29ee36f3b0a333ab2404bfd5cec2480c487215c8f9117b943bfc7ab",
+      "contrib/cosim/scenarios/chained-contention.json": "c72e8163796ac50db20a1651851e8ca704fdb9696c8452935899240589fa7bcc",
+      "contrib/cosim/scenarios/chained-evaluation.json": "1ba2f6b81223b479448da4114e80c8ea27402446ca15d7f5a66bba5b957ac037",
+      "contrib/cosim/scenarios/chained-minus-i.json": "1735bf3ffd7662bc72b5425bca729dab52e518515a567429805fed315750060b",
+      "contrib/cosim/scenarios/chained-quantum-delay-sensitivity.json": "aefcfb3a99816524769b94ce2c3d97684a6c8f55b61367c41b54694b310872e0",
+      "contrib/cosim/scenarios/chained-single.json": "fcfaba9e8b7b94264c6fcfb3ce959fc5abeedc09c58063f18c5156ac66971f0e",
+      "contrib/cosim/tests/test_chained.py": "45cc8c2e2f400462494b656e31ca52bb812ba7e1fb57ecf2a069afbf3725c6a6",
+      "contrib/cosim/tools/render_chained_results.py": "4884ed842d72c42ebe37825ada6f862a6ef3cbb35dc5f1855b6c83dd555cbb79",
+      "contrib/cosim/tools/summarize_chained.py": "53e2fd88c8016af03c68aff2351e2e30f9c9a9da62199b6055440a7dbceee30b",
+      "contrib/cosim/tools/validate_chained.py": "df83cc66c3f697c316de5d62df48340e446b2f560135f15ef2a7eb15005b2747",
+      "scratch/cosim-chained/CMakeLists.txt": "1cd9571a627c0455c985f2f7e21edd7a646bce0255941319c33c3514e55f3db8"
+    },
+    "started_at": "2026-10-04T05:39:18.127823+00:00"
+  },
+  "reports": [
+    {
+      "load": 0,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 101,
+      "report": "q0.5-load0-phase101.json.gz",
+      "scale": 0.5,
+      "sha256": "273b08b33e0f5940aa79a9823feea6dc2c18b6d197938626272e709859c70b3d"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 102,
+      "report": "q0.5-load0-phase102.json.gz",
+      "scale": 0.5,
+      "sha256": "2007801df668754451ba37e3912440e8a86607fb550db65fd7e030fc681253ed"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 103,
+      "report": "q0.5-load0-phase103.json.gz",
+      "scale": 0.5,
+      "sha256": "58eb773ef2d717da27970cbe2598b972437456bdf2675a717879566efd31f24e"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 104,
+      "report": "q0.5-load0-phase104.json.gz",
+      "scale": 0.5,
+      "sha256": "2d007279d0f40723dc3b6f83397d542269522306b1eee4237e4ba36fe4e8dafa"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "phase_seed": 101,
+      "report": "q0.5-load0.7-phase101.json.gz",
+      "scale": 0.5,
+      "sha256": "b55c25f969c4451df109498267e1c87025335a07c4e71bad3b09e1906fe23a0d"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 102,
+      "report": "q0.5-load0.7-phase102.json.gz",
+      "scale": 0.5,
+      "sha256": "061692e392ae9e22d75c9ce267fadef249dbf0b60950f88624aa1094f9f2ad7d"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 2.220446049250313e-16,
+      "phase_seed": 103,
+      "report": "q0.5-load0.7-phase103.json.gz",
+      "scale": 0.5,
+      "sha256": "f97d45bf0a3e68f1d6f29745f013d209639798b700577ce4fbfaef8598ce0958"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 2.7755575615628914e-16,
+      "phase_seed": 104,
+      "report": "q0.5-load0.7-phase104.json.gz",
+      "scale": 0.5,
+      "sha256": "cf8d14c29edaede11cc3b50455cc11da5463d2cd5a43bcff7b96612f7ab50a05"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.996003610813204e-16,
+      "phase_seed": 101,
+      "report": "q1-load0-phase101.json.gz",
+      "scale": 1,
+      "sha256": "1ef29bd786f21c45f187bccdca2e4aab33d5b7c0f49113e9c5da54470b925c9d"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.996003610813204e-16,
+      "phase_seed": 102,
+      "report": "q1-load0-phase102.json.gz",
+      "scale": 1,
+      "sha256": "30986e03ade6b56ffc29f7ea457ebdcde2f990d6ce67b69231cd25f5b666c6e6"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.996003610813204e-16,
+      "phase_seed": 103,
+      "report": "q1-load0-phase103.json.gz",
+      "scale": 1,
+      "sha256": "26dbe5df758d8e09ecc44f8ed4783e0563fd66f728dfe419dadb4da6b787c204"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.996003610813204e-16,
+      "phase_seed": 104,
+      "report": "q1-load0-phase104.json.gz",
+      "scale": 1,
+      "sha256": "b31cf4ae59fb0be2a7115c6a9ee44721635ad1d98120661c6584fac9b944229a"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "phase_seed": 101,
+      "report": "q1-load0.7-phase101.json.gz",
+      "scale": 1,
+      "sha256": "b4dab71f7f1a54599e26f0a0852eff367b540a7bb6926a0bfd5796bd334e564e"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 102,
+      "report": "q1-load0.7-phase102.json.gz",
+      "scale": 1,
+      "sha256": "ec3f38fd950a02b39e9fc8a7f34a0a0a5600875f45829c2e59acb08292385857"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "phase_seed": 103,
+      "report": "q1-load0.7-phase103.json.gz",
+      "scale": 1,
+      "sha256": "ab5bac749aede54ef4c0939f94438980bea660ec1838cad62c3fb1af601bf192"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 4.163336342344337e-16,
+      "phase_seed": 104,
+      "report": "q1-load0.7-phase104.json.gz",
+      "scale": 1,
+      "sha256": "6e3c7c50bcf2ca1763ac42c55c436e3d06627a1eee0123edcebeacbd38e17ee3"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "phase_seed": 101,
+      "report": "q2-load0-phase101.json.gz",
+      "scale": 2,
+      "sha256": "87b24292d848dc0fe19f42d965a64ca69fb5e3b98a05552bf996c916477ec80d"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "phase_seed": 102,
+      "report": "q2-load0-phase102.json.gz",
+      "scale": 2,
+      "sha256": "5a3b7980fb18b459cff6dd834ba521694734538f2f44c0fc093816c6aed8f162"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "phase_seed": 103,
+      "report": "q2-load0-phase103.json.gz",
+      "scale": 2,
+      "sha256": "1d58062c13ca8ea24676117961b06df3417a66619c8db12000cd4672b06206ab"
+    },
+    {
+      "load": 0,
+      "max_density_matrix_error": 4.440892098500626e-16,
+      "phase_seed": 104,
+      "report": "q2-load0-phase104.json.gz",
+      "scale": 2,
+      "sha256": "9558c1c061fbc26c54932e040c247bda6df3d6986819d45024a6d13c0aff5fcf"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 101,
+      "report": "q2-load0.7-phase101.json.gz",
+      "scale": 2,
+      "sha256": "c8133604d74dfe18b8803d0c3e0a093e46efd2cb7131639b4cd4a44e4b72a4ca"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 102,
+      "report": "q2-load0.7-phase102.json.gz",
+      "scale": 2,
+      "sha256": "691ab3b95828098a34149ccce3798203ffada723473b10bf2997f5879bf7b1f6"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 103,
+      "report": "q2-load0.7-phase103.json.gz",
+      "scale": 2,
+      "sha256": "973972f766fa41db9482d3e37e6b413679ff19bcdd12e6b366d5815462551d50"
+    },
+    {
+      "load": 0.7,
+      "max_density_matrix_error": 3.3306690738754696e-16,
+      "phase_seed": 104,
+      "report": "q2-load0.7-phase104.json.gz",
+      "scale": 2,
+      "sha256": "b34e98d34094e1d8671d4212b4625701f478dd1017d73c51422d187e732e6c2c"
+    }
+  ],
+  "runs": 24,
+  "transactions": 96,
+  "unique_phase_conditions": 15,
+  "zero_load_phase_repetitions": "same workload; no additional independent samples"
+}
