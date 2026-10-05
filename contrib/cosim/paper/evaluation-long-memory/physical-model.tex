@@ -1,0 +1,45 @@
+% Requires booktabs and references.bib. All figures use this profile.
+\paragraph{Literature-parameterized physical model.}
+We adopt the nominal instruction times reported by Liao et al.\ in
+\emph{Benchmarking of quantum protocols}~\cite{liao2022benchmarking}
+(Table~3), and the matching H/X/Z, memory and gate-noise parameters
+used by Iqbal et al.\ in \emph{Investigating Imperfect Cloning for
+Extending Quantum Communication Capabilities}~\cite{iqbal2023cloning}
+(Table~3 and Section~4).
+\begin{table}[t]
+\centering
+\caption{Adopted nominal processor profile. Times and noise parameters are
+from~\cite{iqbal2023cloning}; instruction times also appear
+in~\cite{liao2022benchmarking}. Derived circuit durations are QuCl choices.}
+\label{tab:qucl-physical-profile}
+\small
+\begin{tabular}{@{}lr@{}}
+\toprule
+Parameter & Value \\
+\midrule
+CNOT & 20~$\mu$s \\
+H / X / Z & 5~ns each \\
+Single measurement & 3.7~$\mu$s \\
+Memory $T_1$, $T_2$ & 10~h, 1~s \\
+Gate depolarization parameter $p$ & 0.01 \\
+\midrule
+Serial CNOT--H--M--M & 27.405~$\mu$s \\
+Two correction slots & 10~ns \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+NetSquid executes the timed instructions and applies native T1/T2 storage
+noise. We explicitly implement the quoted gate parameter as independent
+per-participating-qubit depolarization,
+$\mathcal{D}_p(\rho)=(1-p)\rho+pI/2$, before each actual CNOT, H, X or Z,
+after storage noise for the instruction's duration. The channel extends
+locally to entangled qubits. Ideal measurements and unused identity
+correction slots receive storage noise only. Both correction slots
+reserve 5~ns regardless of the measured branch.
+This noise placement and the serial measurement schedule are explicit
+QuCl modeling choices, not an assertion that the cited simulator uses
+the same channel placement. Initialization and readout are ideal;
+quantum transit is lossless and noiseless. The profile is a published
+nominal abstraction, not a calibrated physical NV device or a complete
+reproduction of the cited experiments.

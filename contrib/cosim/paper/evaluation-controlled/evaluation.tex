@@ -1,0 +1,133 @@
+% Compact evaluation: one validation table and two figures.
+% Requires graphicx, amsmath, amssymb, booktabs.
+% In the main paper: \newcommand{\quclevalpath}{evaluation}
+% Add evaluation/references to the main paper's bibliography database list.
+\providecommand{\quclevalpath}{.}
+\input{\quclevalpath/numbers.tex}
+
+\section{Experimental Validation and Analysis}
+\label{sec:eval}
+We ask two questions: how does coupled execution change completion time,
+and how much error results from simplifying that execution? We first
+validate correctness, then answer these questions with two controlled studies.
+
+\subsection{Setup and Validation}
+\label{subsec:setup}
+The composed workload performs swapping at R and uses the resulting A--B
+pair for teleportation from A to B. Inputs and elementary EPRs are created
+at $t=0$. Native NetSquid channels deliver remote halves to A and B in
+0.8 and 1.2~ms. R has ideal instantaneous knowledge of this delivery;
+after the swap correction, A instead learns pair readiness through an
+actual B--R--A UDP packet. Swap and teleportation result packets traverse
+R--B and A--R--B. R and A have separate BSM processors; corrections share B.
+
+Classical links operate at 10~Mb/s. Native CNOT/H/M/M instructions take
+0.6/0.2/0.4/0.4~ms; X-or-I and Z-or-I correction slots take 0.25~ms each.
+Native memory noise uses $T_1/T_2=20/10$~ms in idle and active storage.
+Quantum transit is lossless, with zero depolarization and no memory
+T1/T2 noise; destination-memory aging begins on placement.
+These are controlled parameters, not hardware calibration or a model
+of heralded entanglement generation.
+
+\input{\quclevalpath/physical-model.tex}
+
+\input{\quclevalpath/table_validation.tex}
+
+Six Pauli eigenstates, including both $|+i\rangle$ and $|-i\rangle$,
+cover all 16 joint swap/teleport measurement outcomes in 96 noiseless
+executions. The minimum fidelity is numerically unity. Twelve noisy runs
+cover all six inputs at A--R delays of 0.2 and 1~ms. State errors against
+an independent two-stage NetSquid reference are shown in
+Table~\ref{tab:qucl-validation}. Checks also verify same-object pair
+handoff, single consumption, and packet-reception gating of subsequent
+operations. State comparisons use observed operation timestamps;
+separate per-hop FIFO and processor checks validate causal timing.
+The 500-request, zero-error FIFO result in the table is a separate frozen
+v4 mixed-protocol regression, not an additional composed-workflow sample.
+
+\subsection{End-to-End Execution}
+\label{subsec:coupled}
+Figure~\ref{fig:latency} compares four execution conditions at each
+A--R propagation delay. R--B propagation remains 0.2~ms; the first start
+is at 1~ms. The three delays, two start intervals, two R--B background
+loads, and four periodic-traffic phases yield 48 runs and 192 chains.
+Inputs are $|+i\rangle$. Latency is final teleportation correction
+completion minus local workflow start.
+
+At the 0.8-ms interval without background traffic, mean latency rises
+from \quclChainLowLatency to \quclChainMidLatency and
+\quclChainHighLatency~ms as A--R delay increases from 0.2 to 1 and 5~ms.
+For an isolated workflow with unchanged waits, A--R is crossed by both
+readiness and teleportation-result signaling, giving
+$\Delta T=2\Delta d_{AR}$. The isolated 0.2-to-1-ms comparison confirms
+unchanged swap checkpoints, readiness shifted by 0.8~ms, and completion
+shifted by 1.6~ms.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{\quclevalpath/figures/fig3_end_to_end_latency.pdf}
+\caption{Direct comparison of composed-workflow latency. Color denotes
+start interval; hatching denotes R$\to$B background load 0.7. Bar heights
+and labels are means. Whiskers show observed minima/maxima over four
+chain positions and four traffic phases per cell, not confidence
+intervals. All conditions share one zero-based axis.}
+\label{fig:latency}
+\end{figure*}
+
+The delays add, but their components are causally dependent: quantum
+completion determines packet generation, and packet arrival determines
+eligibility for the next quantum operation. In a separate 24-run
+sensitivity at load 0.7, halving quantum RA/RB delivery times reduces
+latency by \quclFastLatencyReduction~ms and packet queueing by
+\quclFastQueueReduction~ms. Doubling them increases latency by
+\quclSlowLatencyIncrease~ms while packet queueing decreases by
+\quclSlowQueueReduction~ms. This fixed-ratio sensitivity changes readiness
+and remote-memory placement together; it does not isolate a scheduler delay.
+
+Because resources are created at $t=0$, start-interval comparisons change
+both contention and storage age. The finite phase sweep is not a population
+estimate; at zero background load, phase repetitions are identical conditions.
+
+\subsection{Errors from Execution Simplification}
+\label{subsec:abstraction}
+The second study uses a separate frozen v4 provisioned swapping workload.
+Its correction is 50~$\mu$s, below the 88-$\mu$s result serialization
+time, to exclude B contention. Fidelity targets the corrected A--B Bell
+pair, rather than the teleported input of the first study.
+
+Full Coupling retains readiness, shared processors, native timed quantum
+operations, and actual result packets. No R Contention removes only R's
+capacity constraint and generates actual packets at the new completion
+times. Fixed Classical Delay replaces result transport with a mean
+calibrated from separate traffic phases. Decoupled Timing combines R FIFO
+waits with No R Contention packet delays without regenerating packets
+at shifted times; it predicts no quantum state.
+
+Three loads, two intervals, 32 test traffic phases, and two quantum seeds
+give 384 paired cases and 1,536 transactions per model. The 95\% bootstrap
+intervals resample traffic phases after averaging session/quantum
+repetitions within each phase. They are conditional on the fixed
+calibration from two separate phases.
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=\textwidth]{\quclevalpath/figures/fig5_6_execution_abstraction.pdf}
+\caption{Model errors relative to Full Coupling in the separate swapping
+workload, at a 0.8-ms interval. Models are adjacent within each load.
+(a) Latency MAE. (b) Expected-fidelity bias in percentage points,
+$100(\mathbb{E}[F_{\rm model}]-\mathbb{E}[F_{\rm Full}])$, on one common
+zero-based axis. Decoupled Timing is absent from (b) because it has no
+state prediction. Whiskers are 95\% traffic-cluster bootstrap intervals.}
+\label{fig:abstraction}
+\end{figure*}
+
+At load 0.7, No R Contention produces \quclNoQueueMAEHigh~ms latency MAE
+and expected-fidelity bias $+\quclNoQueueBiasHigh$ (about +6.06 percentage
+points). Fixed Classical Delay and Decoupled Timing have smaller but
+nonzero MAEs of \quclFixedMAEHigh and \quclDecoupledMAEHigh~ms.
+Fixed Classical Delay's fidelity bias changes from
+$\quclFixedBiasMid$ at load 0.35 to $\quclFixedBiasHigh$ at load 0.7:
+packet simplification is not uniformly optimistic. As a control, at the
+2-ms interval R waiting disappears and No R Contention has zero observed
+latency and fidelity error. Thus, the error depends on whether the removed
+execution dependency is active.

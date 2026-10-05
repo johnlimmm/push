@@ -1,0 +1,7 @@
+scope,sample,measure,value
+v5 noiseless state,6 inputs x 16 joint branches,max density-matrix error,1.1102230246251565e-16
+v5 noiseless state,96 chains,minimum fidelity,0.9999999999999998
+v5 noisy six-state,12 runs,max density-matrix error,3.3306690738754696e-16
+v5 characterization,48 runs / 192 chains,max density-matrix error,4.996003610813204e-16
+v5 delivery sensitivity,24 runs / 96 chains,max density-matrix error,4.996003610813204e-16
+v4 FIFO timing regression,500 R/B requests / 12 workloads,max start/completion/wait error (ns),0

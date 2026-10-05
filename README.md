@@ -1,191 +1,126 @@
-# Hybrid Quantum–Classical Network Simulator
+# QuCl — Hybrid Quantum–Classical Network Simulator
 
-**Q2NS/ns-3의 실제 classical protocol·packet 실행과 NetSquid의 quantum state evolution을 연결하는 공동 시뮬레이터.**
+**Q2NS/ns-3의 실제 protocol·packet 실행과 NetSquid의 quantum state·timed operation을 연결한다.**
+현재 종단 간 시나리오는 **R에서 swapping → 생성된 A–B 얽힘을 사용해 A에서 B로 teleportation**이다.
+두 protocol은 공통 시간 동기화와 quantum 실행 기반을 사용하며, 같은 qubit의 상태와 저장 이력을 이어간다.
 
-## 새 종단 간 시나리오: Swap → A–B Teleportation
+[현재 구현과 실행](contrib/cosim/README-CHAINED.md) ·
+[실행 계약](contrib/cosim/SPEC-CHAINED.md) ·
+[최신 평가·그림](contrib/cosim/paper/evaluation/RESULTS.md) ·
+[논문 평가절](contrib/cosim/paper/evaluation/evaluation.tex)
 
-**Hybrid v5는 R의 swapping으로 만든 실제 A–B pair를 A의 TeleportationApp에 넘긴다.**
-A=Alice, R=repeater, B=Bob이다. B의 swapping correction 이후 준비 완료 UDP가
-B→R→A로 전달되고, A의 teleport BSM 결과는 A→R→B의 실제 UDP packet으로 전달된다.
-같은 qubit 객체·noise history를 유지하며 A/R/B native processor FIFO와 공통 federation을 사용한다.
+## 현재 실행 구조
 
-[실행 안내](contrib/cosim/README-CHAINED.md) · [실행 계약](contrib/cosim/SPEC-CHAINED.md) ·
-[검증·분석 결과](contrib/cosim/paper/chained-v5/RESULTS.md)
+A는 Alice, R은 repeater, B는 Bob이다. 별도 Controller 노드나 첫 연산을 위한 synthetic command packet은 없다.
 
-기존 R→B mixed workload와 v3/v4/P5-B 결과는 각각의 회귀 기준으로 보존한다.
-
-이 저장소는 `johnlimmm`의 hybrid simulator 구현과 검증 결과를 담는다.
-기존 **Hybrid v3 (native timed execution)**은 실제 Q2NS **SwapApp**과 **TeleportationApp**을 공통 실행 기반에 연결하고,
-두 프로토콜의 혼합 실행에서 classical packet queue와 quantum processor queue가
-실제 연산 시각 및 memory aging에 반영되는 것을 검증했다.
-
-BSM과 correction 내부를 실제 NetSquid `QuantumProgram`으로 실행한다.
-기존 v2 atomic 실행과 논문 평가 결과는 별도 기준점으로 유지한다.
-새 실행 방법과 검증 결과는 [README-NATIVE](contrib/cosim/README-NATIVE.md)에 있다.
-
-**v3 검증·평가: 전체 258개 PASS · 독립 native reference와 최대 density-matrix error 6.66×10⁻¹⁶.**
-
-## 새 실행 경로: Hybrid v4 quantum-channel provisioning
-
-**v4에서는 실제 NetSquid quantum-channel 도착이 자원 준비와 BSM 시작 가능 시각을 결정한다.**
-Swap/Teleport의 준비 대기와 shared R FIFO 대기를 분리하고, 이후 native BSM → 실제 ns-3 UDP →
-B FIFO/correction을 이어 실행한다. 무손실 전달과 지연 0의 readiness 통지를 명시적으로 가정한다.
-
-**v4 검증: 전체 278개 PASS · 새 평가 96회/192 transaction · 최대 density-matrix error 4.44×10⁻¹⁶.**
-
-[README-PROVISIONED](contrib/cosim/README-PROVISIONED.md) ·
-[SPEC](contrib/cosim/SPEC-PROVISIONED.md) · [v4 결과](contrib/cosim/paper/PROVISIONING.md)
-
-v4의 P5-B/실행 비용 평가 계약과 재현 방법은
-[README-PROVISIONED-EVALUATION](contrib/cosim/README-PROVISIONED-EVALUATION.md)에 있다.
-새 평가 표·그림은 [v4 논문 결과](contrib/cosim/paper/provisioned-v4/RESULTS.md)에 별도로 기록한다.
-**v4 평가 완료: 회귀 291개 PASS · P5-B 384 paired cases · 비용 측정 120회 · timing error 0 ns.**
-
-아래 native/P5-B 수치는 보존된 **v3** 평가다. v4 provisioning의 실행·검증 결과는 위 문서에 구분했다.
-
-## 이 프로젝트에서 구현한 것
-
-| 구현 | 역할 | 주요 코드 |
-|---|---|---|
-| `NativeHybridFederation` / `NativeExecutionCore` | native event calendar에 ns-3 경계를 등록하고 실제 program-done callback으로 완료 전달 | [native_core.py](contrib/cosim/python/native_core.py) |
-| Native instruction chain | timed CNOT/H/measurement와 X/I/Z/I, idle·active storage aging | [native_programs.py](contrib/cosim/python/native_programs.py) |
-| `HybridFederation` | ns-3와 NetSquid의 다음 이벤트 경계를 맞추고, 요청·완료의 인과 순서를 유지 | [hybrid_core.py](contrib/cosim/python/hybrid_core.py) |
-| `HybridExecutionCore` | 정수 ns clock, shared R/B FIFO, session별 요청 식별, 자원 예약·해제 | [hybrid_core.py](contrib/cosim/python/hybrid_core.py) |
-| `SwapAdapter` / `TeleportAdapter` | pair+pair→pair와 qubit+pair→qubit의 서로 다른 자원·연산 의미를 공통 core에 연결 | [hybrid_adapters.py](contrib/cosim/python/hybrid_adapters.py) |
-| 실제 Q2NS 앱의 외부 실행 연결 | Q2NS가 protocol/UDP를 실행하고 NetSquid에 BSM·correction을 비동기로 요청 | [cosim-hybrid.cc](contrib/cosim/examples/cosim-hybrid.cc), [Q2NS patches](contrib/cosim/integrations/) |
-| Native memory aging | 입력 qubit과 EPR을 NetSquid memory에 저장하고 실제 simulation time에 따라 T1/T2 noise 반영 | [adapters](contrib/cosim/python/hybrid_adapters.py) |
-| 독립 검증 | packet FIFO·processor timing·자원 격리·causal log와 별도 NetSquid reference의 density matrix 비교 | [validation](contrib/cosim/python/hybrid_validation.py), [reference](contrib/cosim/python/netsquid_reference_hybrid.py) |
-| 단순화 모델 비교 | Full Sync 대비 Fixed-Dc / No-Dq-R / Decoupled의 예측 오차 평가 | [P5-B 평가 코드](contrib/cosim/experiments/), [pilot 결과](contrib/cosim/README-P5B.md) |
-
-ns-3, Q2NS, NetSquid 자체는 기존 프로젝트다. 이 저장소의 구현 범위는 그 사이의 실행·시간·자원 연결,
-Q2NS 외부 실행 adapter, 시나리오 및 검증·평가 코드다.
-
-## 실행 구조
-
-```mermaid
-flowchart TD
-    S[Local session start at R] --> R[Q2NS SwapApp / TeleportationApp at R]
-    R -->|Async BSM request| H[NativeExecutionCore: shared R FIFO]
-    H --> N[NetSquid timed program: CNOT, H, measurements]
-    N -->|Completion at simulation time| R
-    R -->|Actual Q2NS UDP result / ns-3 queue| B[Q2NS app at B]
-    B -->|Async correction request| Q[NativeExecutionCore: shared B FIFO]
-    Q --> M[NetSquid timed program: X/I, Z/I]
-    M -->|Correction completion| B
+```text
+NetSquid: A–R / R–B EPR 전달 → memory 배치
+                         ↓
+R의 local session start + 자원 준비
+ → R FIFO → native swapping BSM
+ → 실제 Q2NS R→B UDP 결과 → B FIFO → native correction
+ → 실제 B→R→A 준비 완료 UDP
+ → A FIFO → native teleportation BSM (기존 A–B pair 소비)
+ → 실제 Q2NS A→R→B UDP 결과 → B FIFO → native correction
+ → B의 최종 상태 및 fidelity
 ```
 
-- **Q2NS/ns-3**: 앱의 protocol 진행, 실제 payload, UDP, packet queue, 전송·전파 지연.
-- **공통 core/federation**: 시간 동기화, processor 배정, 자원 lifecycle, 완료 전달과 로그.
-- **NetSquid**: 유일한 quantum-state 소유자. Q2NS 외부 session에는 중복 Qubit/QState를 만들지 않는다.
+양자 연산 완료시각이 다음 packet의 생성시각을 결정하고, packet 도착이 다음 양자 연산을 허용한다.
+Processor 대기와 network queueing은 실제 실행시각 및 memory aging에 함께 반영된다.
+여러 workflow는 A/R/B processor와 classical links를 공유한다. B correction FIFO에는 두 protocol의 요청이 들어간다.
 
-각 physical instruction은 지정된 duration 동안 native processor를 점유한다.
-대기시간과 instruction 실행시간의 T1/T2 aging을 반영하고, 실제 program 완료가
-다음 packet을 생성한다. 합계 duration을 같은 값으로 맞춰도 atomic 모델과 noisy state가
-달라질 수 있으므로 두 모델은 각각 독립 reference로 검증한다.
-
-## 현재 실행할 수 있는 시나리오
-
-| 시나리오 | 내용 | 설정 |
+| 계층 | 담당하는 것 | 구현 |
 |---|---|---|
-| Native Teleportation | 입력 qubit + EPR, timed BSM, 실제 결과 packet, timed correction | [native-teleport.json](contrib/cosim/scenarios/native-teleport.json) |
-| Native Mixed | Swap·Teleport가 같은 R/B processor를 공유하고 서로 대기시킴 | [native-mixed.json](contrib/cosim/scenarios/native-mixed.json) |
-| Joint contention | 여러 Swap session의 quantum FIFO와 classical background traffic 결합 | [hybrid-swap-joint-result.json](contrib/cosim/scenarios/hybrid-swap-joint-result.json) |
-| Simplification pilot | 네 실행/근사 모델을 동일 workload 조건에서 비교 | [native-p5b-pilot.json](contrib/cosim/scenarios/native-p5b-pilot.json) |
+| Q2NS/ns-3 | SwapApp·TeleportationApp, 실제 payload/UDP, queueing·전파, 준비 완료 통신 | [cosim-chained.cc](contrib/cosim/examples/cosim-chained.cc), [Q2NS patches](contrib/cosim/integrations/) |
+| 공통 실행·동기화 | native event 경계, FIFO, 요청·완료 전달, protocol별 자원 lifecycle | [native_core.py](contrib/cosim/python/native_core.py), [chained_core.py](contrib/cosim/python/chained_core.py) |
+| NetSquid components | node/channel 전달, memory, timed CNOT/H/measurement/correction, T1/T2 | [quantum_network_backend.py](contrib/cosim/python/quantum_network_backend.py), [native_programs.py](contrib/cosim/python/native_programs.py) |
+| 검증 | packet·processor FIFO, qubit handoff, 독립 circuit의 state/time 비교 | [chained_validation.py](contrib/cosim/python/chained_validation.py), [tests](contrib/cosim/tests/) |
+| 평가 | 문헌 기반 파라미터, 여섯 입력, Full Sync 및 단순화 모델 비교 | [평가 runner](contrib/cosim/experiments/run_memory_evaluation.py), [설정](contrib/cosim/scenarios/memory-evaluation.json) |
 
-기본 Mixed 실행의 R 대기시간은 session 순서대로 **0 / 1.6 / 2.4 / 4.0 ms**다.
-추가 fast-BSM 테스트에서는 B correction FIFO의 protocol 간 경합도 검증한다.
-
-## Native 검증·평가
-
-- **Python 159개 + 평가/timing/계측 16개 + Q2NS native 83개 = 258개 PASS**.
-- 5개 Teleport 입력 상태 × 32 seeds에서 네 BSM branch를 확인했다.
-- Native P5-B pilot 48조건과 확대 384조건을 같은 instruction/noise 설정으로 실행한다.
-- 논문용 결과는 [P5-B 평가](contrib/cosim/README-P5B.md),
-  [표·CI·그림](contrib/cosim/paper/RESULTS.md), [재현 절차](contrib/cosim/README-PAPER-VALIDATION.md)를 따른다.
-- [전체 native 평가 요약](contrib/cosim/results/native-paper-validation-summary.json)
-- 과거 atomic 수치는 [논문 산출물](contrib/cosim/baselines/atomic-v2-paper.tar.gz)과
-  [실행 원자료](contrib/cosim/baselines/direct-start-v2-results.tar.gz)에 보존했다.
-
-현재 topology는 **A/R/B**다. `session_start_ns`에 R의 Q2NS 앱이 BSM을 요청하며,
-classical 통신은 실제 **R→B result UDP**다. Latency는 local session start부터 correction 완료까지다.
-
-P0–P5-A/초기 Q2NS는 과거 command-path 구조의 regression fixture로 보존한다.
-[Hybrid v1 release 기록](contrib/cosim/releases/hybrid-v1/)과
-[v1 archive](contrib/cosim/baselines/hybrid-v1-freeze.tar.gz)는 이전 버전의 결과이며 현재 수치와 구분한다.
+NetSquid가 quantum state를 단독 소유한다. 외부 실행 session에 Q2NS의 별도 Qubit/QState를 만들지 않는다.
+Swapping 출력은 동일한 A/B qubit 객체로 teleportation에 전달되며, 새 EPR로 교체하지 않는다.
+연산 내부는 NetSquid `QuantumProgram`/`PhysicalInstruction`으로 실행하고 실제 완료 callback을 사용한다.
+Fidelity도 NetSquid의 `fidelity(..., squared=True)`로 계산한다. 분기 확률 가중과 통계 집계는 평가 코드에서 수행한다.
 
 ## 빠른 실행
 
-검증 환경: **ns-3.47 / Python 3.7.17 / NetSquid 1.1.7 / NumPy 1.21.6**.
-NetSquid가 설치된 Python 환경을 별도로 준비해야 한다. 이 저장소에 NetSquid를 재배포하지 않는다.
+검증 환경: **ns-3.47 / NetSquid 1.1.7 / Python 3.7.17 / NumPy 1.21.6**.
+NetSquid 설치 환경은 별도로 준비한다. 이 저장소에 NetSquid를 재배포하지 않는다.
 
-### 1. Q2NS 준비 — 새 checkout에서 한 번
-
-저장소 루트에서 실행한다. 현재 개발 workspace에는 이미 적용되어 있으므로 재적용하지 않는다.
+새 checkout에서는 ns-3 루트에서 Q2NS를 준비한다. 기존 개발 workspace에는 이미 patch가 적용되어 있다.
 
 ```bash
 git clone https://github.com/QuantumInternet-it/q2ns.git contrib/q2ns
 git -C contrib/q2ns checkout --detach f22ba28f437099ba3cf9956ca332ba5ce8bb14fd
 git -C contrib/q2ns apply ../cosim/integrations/q2ns-swap-external.patch
 git -C contrib/q2ns apply ../cosim/integrations/q2ns-teleport-external.patch
-```
 
-### 2. 빌드 및 Mixed 실행
-
-```bash
 ./ns3 configure --enable-examples --enable-tests
-CCACHE_TEMPDIR=/tmp/cosim-ccache ./ns3 build cosim-hybrid -j 1
+./ns3 build cosim-chained cosim-provisioned -j 1
 
-# 자신의 NetSquid 환경에 맞게 Python 경로를 지정한다.
+# 자신의 NetSquid Python 경로로 지정한다.
 COSIM_PYTHON=/home/ns3/qunet/bin/python
-"$COSIM_PYTHON" contrib/cosim/python/run_native_hybrid.py \
-  contrib/cosim/scenarios/native-mixed.json \
-  --output /tmp/native-mixed.json
+"$COSIM_PYTHON" contrib/cosim/python/run_chained.py \
+  contrib/cosim/scenarios/chained-single.json \
+  --output contrib/cosim/results/chained-single-new.json.gz --enumerate-branches
 ```
 
-`run_native_hybrid.py`가 ns-3 participant를 시작하고 IPC와 native federation 실행을 관리한다.
-Teleport 단독 실행은 설정을 `native-teleport.json`으로 바꾸면 된다.
-Atomic 기준점은 기존 `run_hybrid.py`로 실행한다.
-전체 회귀를 위한 추가 build target과 재현 절차는 [release 문서](contrib/cosim/RELEASE-HYBRID-V1.md)에 있다.
+이 명령은 기본 chain 예제를 실행한다. **최신 논문 파라미터를 사용한 전체 평가는 별도 설정·runner로 실행한다.**
 
 ```bash
-# 과거 v1 archive 검증 (현재 v2 source는 의도적으로 변경됨)
-python3 contrib/cosim/tools/verify_hybrid_v1.py --archive-only
-
-# 현재 구조를 포함한 전체 회귀
-/home/ns3/qunet/bin/python contrib/cosim/tools/validate_native_timed.py
-/home/ns3/qunet/bin/python contrib/cosim/tools/summarize_native_timed.py
+"$COSIM_PYTHON" contrib/cosim/experiments/run_memory_evaluation.py \
+  contrib/cosim/scenarios/memory-evaluation.json \
+  --output-dir contrib/cosim/results/memory-evaluation-new
 ```
 
-## 코드와 문서 읽는 순서
+완료된 평가 디렉터리는 덮어쓰지 않는다. 그림 생성·원자료 복원·전체 회귀는
+[현재 작업 정리](contrib/cosim/CURRENT.md)를 따른다.
 
-1. [README-NATIVE](contrib/cosim/README-NATIVE.md), [SPEC-NATIVE](contrib/cosim/SPEC-NATIVE.md): native 실행·noise·동기화 계약.
-2. [run_native_hybrid.py](contrib/cosim/python/run_native_hybrid.py) → [native_core.py](contrib/cosim/python/native_core.py): 실제 federation 흐름.
-3. [native_programs.py](contrib/cosim/python/native_programs.py) / [native_adapters.py](contrib/cosim/python/native_adapters.py): timed 연산과 protocol 자원 연결.
-4. [reference](contrib/cosim/python/netsquid_reference_native.py) / [tests](contrib/cosim/tests/test_native_hybrid.py): 독립 native state/time 검증.
-5. [README-HYBRID](contrib/cosim/README-HYBRID.md), [SPEC-HYBRID](contrib/cosim/SPEC-HYBRID.md): 보존된 atomic 기반의 시간·자원·adapter 계약.
+## 검증과 최신 평가
 
-`contrib/cosim/README.md` 및 이전 milestone 문서는 당시의 기준점을 기록한 문서다.
-P0–P5-B의 구현·결과도 함께 보존하며, 진입점은 이 README, README-NATIVE(v3), README-PROVISIONED(v4)다.
+- 이번 게시 준비에서 **Python 구현 196개 + 평가 44개 + Q2NS native 83개 = 323개**를 새로 실행해 모두 통과했다.
+- 실제 packet FIFO와 native processor FIFO, 요청·완료 인과관계, 자원 단일 소비를 검증한다.
+- 여섯 입력 `0, 1, +, -, +i, -i`와 두 BSM의 16개 joint outcome을 검증한다.
+- Native instruction 및 protocol checkpoint에서 별도 NetSquid circuit과 상태를 비교한다.
+- 현재 문헌 파라미터 평가: **147개 workload 조건, chain 882회와 swapping 비교 441회, 별도 calibration 13회**.
+- 최대 reference density-matrix error는 **9.99×10⁻¹⁶**다.
 
-## 지원 범위와 다음 단계
+최신 [평가 패키지](contrib/cosim/paper/evaluation/)에는 원고, Fig. 3–5, CSV, 출처·해시가 있다.
+게이트·측정 시간과 T1/T2의 출처 및 적용 가정은 [물리 모델](contrib/cosim/paper/PHYSICAL-MODEL.md)에 정리했다.
+여러 문헌의 파라미터를 결합한 추상 모델이며 특정 장치의 보정된 재현 모델은 아니다.
 
-**v3 지원 범위:** 고정 A/R/B 배치, IPv4/UDP, t=0에 생성한 input/EPR,
-직렬 timed BSM/correction, shared capacity-one R/B FIFO, native T1/T2 aging.
-Gate duration은 설정 가능한 모델 값이며 하드웨어 실측값이 아니다.
+## 지원 범위
 
-**v4 추가 범위:** 실제 NetSquid Network/Node/QuantumChannel를 통한 EPR half 전달,
-준비 완료 callback과 BSM eligibility, channel depolarization 및 이동/저장 noise 구분.
+**현재 지원:** 고정 A/R/B topology, IPv4/UDP, t=0 input/EPR 생성과 native quantum-channel 전달,
+native timed BSM/correction, processor FIFO, T1/T2 aging, Swap→Teleport 자원 전달,
+혼잡 및 단순화 오차 평가. 기존 독립 Swap/Teleport 혼합 실행도 회귀 기준으로 유지한다.
 
-임의 topology, 물리적 photon source·heralded EPR generation, loss/retry, 실제 readiness ACK,
-모든 Q2NS 예제의 무수정 실행은 아직 지원하지 않는다. 각 버전의 범위와 결과는 별도로 기록한다.
+**현재 범위 밖:** 임의 topology와 routing, 확률적 photon generation/heralding, loss/retry,
+모든 Q2NS 예제의 무수정 실행. Elementary EPR delivery의 준비 통지는 R에 지연 0으로 가정하며,
+swapping 이후 A에 전달하는 준비 통지는 실제 UDP로 실행한다.
+
+## 이전 기준점
+
+기존 구현·결과는 회귀와 비교를 위해 보존한다. 과거 문서의 수치는 최신 논문 평가와 구분한다.
+
+| 단계 | 보존 내용 |
+|---|---|
+| P0–P5 / Q2NS / Hybrid v1 | 동기화, aging, classical·quantum 경합, adapter 및 atomic 실행 검증: [기록](contrib/cosim/releases/hybrid-v1/) |
+| Native v3 | timed instruction chain과 native event 동기화: [문서](contrib/cosim/README-NATIVE.md) |
+| Provisioned v4 | native channel 전달과 resource readiness: [문서](contrib/cosim/README-PROVISIONED.md) |
+| Chained v5 | 실제 swapped pair로 A→B teleportation: [문서](contrib/cosim/README-CHAINED.md) |
+| 이전 평가 | [controlled](contrib/cosim/paper/evaluation-controlled/), [long-memory](contrib/cosim/paper/evaluation-long-memory/), [현재 평가 안내](contrib/cosim/paper/LATEST.md) |
+
+모듈의 초기 [README](contrib/cosim/README.md)와 [v3 RESULTS](contrib/cosim/paper/RESULTS.md)는 당시의 검증 기준점이다.
+현재 진입점은 이 문서와 [CURRENT](contrib/cosim/CURRENT.md)다.
 
 ## 기반 프로젝트와 라이선스
 
-- [ns-3](https://www.nsnam.org/): classical network simulator. 원본 설명은 [README-NS3.md](README-NS3.md)에 보존한다.
-- [Q2NS](https://github.com/QuantumInternet-it/q2ns): quantum-network protocol 앱과 논리 자원 계층.
-- [NetSquid](https://netsquid.org/): quantum state 및 native memory evolution.
+- [ns-3](https://www.nsnam.org/): classical network simulator. 원본 안내는 [README-NS3.md](README-NS3.md)에 보존한다.
+- [Q2NS](https://github.com/QuantumInternet-it/q2ns): protocol 앱과 논리 자원 계층.
+- [NetSquid](https://netsquid.org/): quantum state, components 및 timed execution.
 
-ns-3 기반 소스를 함께 포함하며 원본의 라이선스와 저작자 표기를 유지한다.
-이 저장소의 Git 이력은 프로젝트 게시용 단일 snapshot에서 시작한다.
-게시 commit의 작성자가 포함된 upstream 소스 전체의 원저자라는 뜻은 아니다.
-라이선스는 [LICENSE](LICENSE)를 참고한다.
+이 저장소의 구현 기여는 세 시스템 사이의 시간·자원·실행 연결, Q2NS 외부 실행 adapter,
+시나리오와 검증·평가 코드다. ns-3 기반 소스의 라이선스와 저작자 표기는 유지한다.
+게시용 Git 이력은 프로젝트 snapshot에서 시작하며, 게시 commit 작성자가 upstream 소스 전체의
+원저자라는 뜻은 아니다. [LICENSE](LICENSE)를 참고한다.

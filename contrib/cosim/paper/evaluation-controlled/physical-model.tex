@@ -1,0 +1,61 @@
+% Requires booktabs and the three entries in references.bib.
+% This insert distinguishes completed controlled runs from a literature profile.
+\paragraph{Parameter provenance and literature reference profile.}
+Liao et al.\ identify nominal NV-based instruction times in
+Table~3 of their NetSquid study, \emph{Benchmarking of quantum
+protocols}~\cite{liao2022benchmarking}.
+Iqbal et al., in \emph{Investigating Imperfect Cloning for Extending
+Quantum Communication Capabilities}~\cite{iqbal2023cloning}, reuse these
+times and explicitly include H, X, and Z in the single-qubit category
+(Table~3). Their Section~4 also specifies the memory and gate-noise
+parameters. We use this published profile as the reference for a
+literature-based extension, rather than attributing the current
+controlled settings to a calibrated device.
+
+\begin{table}[t]
+\centering
+\caption{Parameter provenance. The reported experiments use the controlled
+column. The literature column is a reference profile for subsequent
+evaluation; it has not produced the results reported here.}
+\label{tab:qucl-physical-profile}
+\small
+\begin{tabular}{@{}lrr@{}}
+\toprule
+Parameter & Controlled & Literature \\
+\midrule
+CNOT & 600~$\mu$s & 20~$\mu$s \\
+H & 200~$\mu$s & 5~ns \\
+Single measurement & 400~$\mu$s & 3.7~$\mu$s \\
+X / Z (each)$^{a}$ & 250~$\mu$s & 5~ns \\
+Memory $T_1$ & 20~ms & 10~h \\
+Memory $T_2$ & 10~ms & 1~s \\
+Gate depolarization$^{b}$ & --- & 0.01 \\
+\bottomrule
+\end{tabular}
+\par\smallskip
+\begin{minipage}{\columnwidth}
+\footnotesize
+Literature values: Table~3 and Section~4 of~\cite{iqbal2023cloning};
+instruction-time antecedent: Table~3 of~\cite{liao2022benchmarking}.
+$^{a}$The separate swapping ablation uses 25~$\mu$s per correction slot.
+$^{b}$The controlled runs include active/idle memory noise but no
+additional gate depolarization. The literature's 0.01 is a channel
+parameter, not a gate-infidelity measurement.
+\end{minipage}
+\end{table}
+
+Under QuCl's serial CNOT--H--M--M schedule, the literature times imply
+$T_{\rm BSM}=20+0.005+2(3.7)=27.405~\mu$s.
+This is a circuit-derived duration, not a reported BSM measurement.
+Using these times does not by itself reproduce a complete physical NV
+processor; gate, readout, and memory assumptions must remain explicit.
+
+A distinct trapped-ion model in \emph{Quantum data centres: a
+simulation-based comparative noise analysis}~\cite{campbell2025qdc}
+uses 135~$\mu$s single-qubit gates, 600~$\mu$s two-qubit gates, and
+6-ms measurements (Table~1). Its measurement duration is an author
+estimate, and its memory model is depolarizing. This provides a
+published precedent for the 600-$\mu$s scale, but does not substantiate
+our complete 600/200/400-$\mu$s instruction profile. All figures below
+retain the controlled settings; evaluation under the literature profile
+requires new runs and a workload designed around its service times.

@@ -1,0 +1,21 @@
+{
+  "max_density_matrix_error": 9.992007221626409e-16,
+  "original_summary_sha256": "d5bb713b36a16c7f47bfe7cd84274dfe75353e61cdeb390db3e0e50e8b1ed80e",
+  "passed": true,
+  "raw_reports": 1402,
+  "scope": "Raw report byte hashes, recorded validation status, and exact native-fidelity-only source migration; no simulation rerun.",
+  "source_changes": {
+    "experiments/literature_reference_chained.py": {
+      "after": "20cc4f773dbd8638b3d22f3c288bf90c8586e103390b7472aed49ffc0a77c5ff",
+      "before": "890badc70559bd12ab80eb327227f461fa705a671cd1fd80237543e12da6ac9b",
+      "new_expression": "float(qapi.fidelity(qs,ref,squared=True))",
+      "old_expression": "float(np.real(ref.conj()@dm@ref))"
+    },
+    "experiments/literature_reference_provisioned.py": {
+      "after": "842b4b1a01fff93c60132a21ac087ffba2cd0c7858ac0dd3d61536b4bf9d4124",
+      "before": "63a742da86255bc911ef6eb7fb9e8783f973546c6c60be18affa7a209e85b8c2",
+      "new_expression": "float(qapi.fidelity(qubits,ref,squared=True))",
+      "old_expression": "float(np.real(ref.conj()@rho@ref))"
+    }
+  }
+}

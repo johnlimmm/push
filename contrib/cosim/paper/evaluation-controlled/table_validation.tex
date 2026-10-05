@@ -1,0 +1,19 @@
+% Requires booktabs. Input after numbers.tex.
+\begin{table}[t]
+\centering
+\caption{Validation evidence. State errors are maximum absolute density-matrix entry differences against the independent reference at matched operation times. The timing row is a separate v4 mixed-protocol regression.}
+\label{tab:qucl-validation}
+\small
+\begin{tabular}{@{}ll@{}}
+\toprule
+Check / sample & Result \\
+\midrule
+Noiseless: 6 inputs $\times$ 16 branches & $F_{\min}\simeq 1$ \\
+\quad 96 composed executions & $\epsilon_\rho=\quclNoiselessError$ \\
+Noisy: 6 inputs $\times$ 2 delays & $\epsilon_\rho=\quclNoiseError$ \\
+Chained sweep: 48 runs / 192 chains & $\epsilon_\rho=\quclChainError$ \\
+Pair continuity / packet gating & Pass \\
+FIFO: 500 requests / 12 workloads & $\epsilon_t=0$ ns \\
+\bottomrule
+\end{tabular}
+\end{table}

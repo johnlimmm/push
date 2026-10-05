@@ -1,0 +1,155 @@
+{
+  "base_commit": "68d35fd12ce2ddd80bf8fab73be61987dab92ec6",
+  "date": "2026-10-05T06:38:02.551591+00:00",
+  "evidence_manifest": "contrib/cosim/baselines/literature-memory-evidence.json",
+  "log_directory": "contrib/cosim/results/release-20261005-verified",
+  "passed": true,
+  "published_evidence_preserved": true,
+  "scope": "Fresh full Python and Q2NS regression; no evaluation sweep rerun.",
+  "suites": {
+    "core": {
+      "command": [
+        "/home/ns3/qunet/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "contrib/cosim/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "elapsed_seconds": 444.395,
+      "log": "core.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "f0f053e54db9f5898e53eff2eb3c02d88c7fd334d8a5dd0cc9393b94ae8b43c1",
+      "tests": 196
+    },
+    "experiments": {
+      "command": [
+        "/home/ns3/qunet/bin/python",
+        "-m",
+        "unittest",
+        "discover",
+        "-s",
+        "contrib/cosim/experiments/tests",
+        "-p",
+        "test_*.py",
+        "-v"
+      ],
+      "elapsed_seconds": 69.785,
+      "log": "experiments.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "687f501b4c9cbf84bb820d87f0afdea0e475c2e0269b9b1ac6bc27d3111a304c",
+      "tests": 44
+    },
+    "q2ns-analysis": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-analysis",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.193,
+      "log": "q2ns-analysis.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "741ceefe6fc2646dcf8423abce7387799d8b32b148af163c6f5ee1d537b081e3",
+      "tests": 4
+    },
+    "q2ns-netcontroller": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-netcontroller",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.209,
+      "log": "q2ns-netcontroller.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "7f678a44e18ceb5aef21e9645416e86667591eb7cf14459fe051a24dffcdb6f8",
+      "tests": 8
+    },
+    "q2ns-qchannel": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qchannel",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.223,
+      "log": "q2ns-qchannel.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "2af3dc50e688f1ff12c99d1ef7357547f97944d3963480c60e5597038adeb37e",
+      "tests": 14
+    },
+    "q2ns-qnode": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qnode",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.192,
+      "log": "q2ns-qnode.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "ceb1eff7c2a48c53b78b5416206ed8e7af8ead0dd52032047ee4c321e456644e",
+      "tests": 7
+    },
+    "q2ns-qstate-interface": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-interface",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.205,
+      "log": "q2ns-qstate-interface.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "228ed75849f57ab3a8d38f49cf130709104cc4bd65eaf22e9b15ea5e0bb7ddf5",
+      "tests": 4
+    },
+    "q2ns-qstate-registry": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-qstate-registry",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.208,
+      "log": "q2ns-qstate-registry.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "42d4809381970d1650e93c2f1199cf2292206f10a5c75d61b463484067f663d5",
+      "tests": 35
+    },
+    "q2ns-swap-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-swap-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.212,
+      "log": "q2ns-swap-external.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "81ff2ad455381d404dd412842b2d7c05a2e42233eba7b76a9f6e3315ceda01bf",
+      "tests": 4
+    },
+    "q2ns-teleport-external": {
+      "command": [
+        "build/utils/ns3.47-test-runner-default",
+        "--suite=q2ns-teleport-external",
+        "--verbose"
+      ],
+      "elapsed_seconds": 0.238,
+      "log": "q2ns-teleport-external.log",
+      "passed": true,
+      "returncode": 0,
+      "sha256": "08816a40263d398662fc27d29fafd75d17ac36fae515622466ce1020abe9cbbc",
+      "tests": 7
+    }
+  },
+  "total_test_cases": 323,
+  "validator_sha256": "d641241de9da6adecccf8d808038e4d2a63042d93b7dda4e29dc8995806afa55"
+}

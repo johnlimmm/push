@@ -1,0 +1,83 @@
+{
+  "figures": [
+    "fig1_chain_latency",
+    "fig2_model_error"
+  ],
+  "generated_sha256": {
+    "FIGURES.pdf": "51e5705bbab670dcfdffccd51f850c3764d824ea67545b0f97bbab727b66cbb2",
+    "LITERATURE-PROFILE": "289f7ab5b9853d171c00bc9a4d3668fcc8841d628cbf4a2f519d791674fe43dd",
+    "README.md": "0266ab82a6a009878ffceb682434a8214e59d4f463eaf422c3c5227c6133423e",
+    "RESULTS.md": "1a8e7cfcb3c73f92a63048f33b14665d5fcbbd6d670df8ba9ccca75207957022",
+    "data/ablation_cells.csv": "72da3801a5f044a9d5211e12636a2db5e6b569b3acfb3f8b80add8ce4fbcdc87",
+    "data/calibration.json": "8b794c516f2ce8dd81624bb31862a7b6f32c74786e6b29f1447d5c78aa64c1e5",
+    "data/chain_cells.csv": "979150c9937fbc389df8ee73a77050f26156cbefaca334075cfa8e88c4fc6bf7",
+    "data/chains.csv": "130e8e3ddec59a24619778ffacfbbd2e9f95f208618bf44dcaef81d2271abe9f",
+    "data/errors.csv": "9e432c11e391ba530a09cd38bf480a896a79eeec415ec759e78a0b074984756b",
+    "data/plan.json": "8da5448a963d97cf9e52a37a45ca6404333cdac93724012b3724db870af0b823",
+    "data/result_phase_coupling.csv": "bbe33fedc1d6a9a2b8eb059ce9307bfef8eea91ec880638e063effb6ecadfc28",
+    "data/six_state_noise.csv": "1ab9bde1e01848437bb3e499af0dfb1901a2ea2f205f379ee262adf5470cebfb",
+    "evaluation.tex": "5fedd1abae6f49ef79223cc403c38b3fc212bfbe420461b8337a8ddebd94181d",
+    "figures/fig1_chain_latency.pdf": "a3753163ab0e9134478e44b90ab74b276bca15514df94be54c6623b9369aa027",
+    "figures/fig1_chain_latency.png": "2febefe5ca905855cf5af1cd29734b53e1bd7010d932e29dc33bd7ed7712b921",
+    "figures/fig2_model_error.pdf": "4cf77640835321b5f3380c95519b2e488fecf2869367e1ab24710dcd483c0204",
+    "figures/fig2_model_error.png": "3d85792614baaa9babf810521517bd1f245f3652ea79d9c5a4657dca30f060d7",
+    "physical-model.tex": "e2777f9b4672ce01bf62ce104dee20394bb42c44bf2e13cc4eab2c9b5c678d3c",
+    "references.bib": "73652a9fe121c6475c58aa989854c727c7db6f37ba8039b4d28337bec1c5104c",
+    "table_validation.tex": "e96aabdcc5a1c274e5d3a157d3c6ed66047826c7904dfdbf6ecc328f18a501b4"
+  },
+  "latex_compiled": false,
+  "participant_sha256": {
+    "build/contrib/cosim/examples/ns3.47-cosim-chained-default": "b187aed846bf048c494bb9e703cd651f3091858c1f05a9266fb634e26e08c20a",
+    "build/contrib/cosim/examples/ns3.47-cosim-provisioned-default": "823a6d2a6c245c59d8dfbe28c04bcb28b8d0d69adf2c7e08d0a135ee4e563804"
+  },
+  "plan_sha256": "8da5448a963d97cf9e52a37a45ca6404333cdac93724012b3724db870af0b823",
+  "profile": "liao-iqbal-nominal-with-explicit-qucl-noise-placement",
+  "raw_reports_audited": 667,
+  "render_environment": {
+    "matplotlib": "3.8.4",
+    "numpy": "1.26.4",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+  },
+  "renderer": "tools/render_literature_evaluation.py",
+  "renderer_sha256": "aa78325c6651d0d8d1d5c74904e6bfa1d97073b7ed1aa02fe6852302eb8ea5e4",
+  "resumption": {
+    "new_evaluation_runs": 232,
+    "reason": "Independent worker timeout; bounded worker lifetime and nonblocking stderr sink. Physics/circuits unchanged.",
+    "resumed": true,
+    "reused_evaluation_runs": 356,
+    "source_changes": {
+      "experiments/literature_reference_client.py": {
+        "after": "05c06935234505dc2e64b29ec9ef3fd243e64040c4c4f971e4ed28d7e63b712b",
+        "before": "0eddd6887924e70c2029cfcb96aed32e4a83f07d99bfb01303393a43300e702a"
+      },
+      "experiments/run_literature_evaluation.py": {
+        "after": "025ba2d425fa2bf3c82505d64dffc426c7cba0ca7446c6beaf91426f8d9b5136",
+        "before": "a320bb3931428e781a725c06086bebcb6fb0e9d12400daaf5729f5bbe98aa0db"
+      }
+    }
+  },
+  "run": "results/literature-evaluation-v1",
+  "run_summary_sha256": "74e1c599db61034d0c13b24374c595ebfe51f4689471964ab76ce26edc1fe4d6",
+  "scope": "Literature-parameterized nominal processor; fixed topology, ideal source/readout, lossless delivery, finite four-session batches.",
+  "simulation_environment": {
+    "executable": "/home/ns3/qunet/bin/python",
+    "netsquid": "1.1.7",
+    "numpy": "1.21.6",
+    "python": "3.7.17 (default, Jun  6 2023, 20:10:09) \n[GCC 11.3.0]"
+  },
+  "source_hashes_unchanged": true,
+  "tests": {
+    "experiments": {
+      "log": "results/literature-experiment-tests.log",
+      "seconds": 64.855,
+      "sha256": "50b9b8d8b4720f87de162ea895a94c9482e29216af331d5a99bc8f444e085461",
+      "tests": 38
+    },
+    "regression": {
+      "log": "results/literature-regression-suite.log",
+      "seconds": 554.308,
+      "sha256": "69d1d8bf7ac4ea42d3b57b3ef4e9705c63b81fbe4e25e4b0e8c2d6c34e62bd4e",
+      "tests": 196
+    }
+  }
+}

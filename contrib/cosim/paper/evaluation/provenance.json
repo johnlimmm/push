@@ -1,0 +1,199 @@
+{
+  "figures": [
+    "fig3_chain_latency",
+    "fig4_teleport_fidelity",
+    "fig5_model_error"
+  ],
+  "generated_sha256": {
+    "FIGURES.pdf": "da31548040521d0082b60b9ce69431da21d66fb6d83f9a535e0af0d1076b8ec4",
+    "MEMORY-PROFILE": "fe546182b04e2203beef75ce5dfc96e09bd159242ec632192b4cc1fdee48f90a",
+    "README.md": "aca2eb016a334be0e3c0f5c7d7751387a1d251ad3226ba30d77d540360f5e906",
+    "RESULTS.md": "42c524372de3d73236f796eccc58737248a97797b499d3db5b0f1da75dcac3b3",
+    "data/ablation_cells.csv": "90878bd83835345758145c26131e8e1a708f6157ea3b2266e132f5db5c15fe27",
+    "data/calibration.json": "8b794c516f2ce8dd81624bb31862a7b6f32c74786e6b29f1447d5c78aa64c1e5",
+    "data/chain_cells.csv": "0193212b8786962af29995ca2d63c7ea88cff21421edd7730d357e900cb41883",
+    "data/chains.csv": "d1b806e2f2a7e8cec6b80a3ee59fb42e645b34602a94bce3695e91929879ed15",
+    "data/errors.csv": "638082faa6e6dd2f97a2bc4551ca34c9df31f6624b3c6fc8415e7cd743a032a7",
+    "data/fidelity_by_input.csv": "0604dfe0900bd3ff0e49c3886be519853a0e63859bde74663ff88873d27e0805",
+    "data/native-fidelity-audit.json": "8452cd004c0d6a6a073ef558ee200643ad7e5acfa1f978bd18391ab7324dc542",
+    "data/plan.json": "ac611970b8fce5fc6dea31baa33f0c8f49b55e0d7643adde5779d2fcf7400cdd",
+    "data/result_phase_coupling.csv": "bbe33fedc1d6a9a2b8eb059ce9307bfef8eea91ec880638e063effb6ecadfc28",
+    "data/six_state_noise.csv": "5776a9c403e27a1b5a57096900026d05bfb3082ff587c5db2f516b26a2dfcc59",
+    "evaluation.tex": "f54a85887df28df6af3d65395d0fbfbe07697b5602c883cb77b6bb45146d36c6",
+    "figures/fig3_chain_latency.pdf": "59f72482193b56f50d590a12520ec53f511c23629308be56496d103926ca94b2",
+    "figures/fig3_chain_latency.png": "d485a7b9bb2dd97a09c7922ffef7cd990a8677e3c4262b7508e2f2d9d114b84c",
+    "figures/fig4_teleport_fidelity.pdf": "2056614172a33868967da892eaa46c0032b8e90688dcbba983293a4e887bfb76",
+    "figures/fig4_teleport_fidelity.png": "8a8c3fa648a91c53b4c012b50cce9fe8d0f5c50078f0610d07f665c8e0a3ba6c",
+    "figures/fig5_model_error.pdf": "100d54cfa72248b05fb203579f370ac4df9263d237b4b6416d4d92fea6c56551",
+    "figures/fig5_model_error.png": "278a71108ae23c2b01dd84bce82fb5e86f59a45d2e166b0c62cad77de5c59a5b",
+    "references.bib": "58124d852b7a94470cabfc47b728b6f00c7c106d5dd301e7f753a52a50f83c50"
+  },
+  "latex_compiled": false,
+  "manuscript_mode": "author-maintained; inline tables",
+  "native_fidelity_recomputation": {
+    "counts": {
+      "branch_expectations": 5356,
+      "output_states": 120736,
+      "reports": 1402
+    },
+    "max_expected_fidelity_difference": 4.440892098500626e-16,
+    "max_fidelity_difference": 4.440892098500626e-16,
+    "method": "netsquid.qubits.qubitapi.fidelity(qubits, target, squared=True)",
+    "netsquid_version": "1.1.7",
+    "passed": true,
+    "run_summary_sha256": "d5bb713b36a16c7f47bfe7cd84274dfe75353e61cdeb390db3e0e50e8b1ed80e",
+    "scope": "Metric recomputation on preserved output density matrices; no new network/quantum evolution run.",
+    "source_changes": {
+      "experiments/literature_reference_chained.py": {
+        "after": "20cc4f773dbd8638b3d22f3c288bf90c8586e103390b7472aed49ffc0a77c5ff",
+        "before": "890badc70559bd12ab80eb327227f461fa705a671cd1fd80237543e12da6ac9b",
+        "new_expression": "float(qapi.fidelity(qs,ref,squared=True))",
+        "old_expression": "float(np.real(ref.conj()@dm@ref))"
+      },
+      "experiments/literature_reference_provisioned.py": {
+        "after": "842b4b1a01fff93c60132a21ac087ffba2cd0c7858ac0dd3d61536b4bf9d4124",
+        "before": "63a742da86255bc911ef6eb7fb9e8783f973546c6c60be18affa7a209e85b8c2",
+        "new_expression": "float(qapi.fidelity(qubits,ref,squared=True))",
+        "old_expression": "float(np.real(ref.conj()@rho@ref))"
+      }
+    },
+    "state_evolution_sources_unchanged": true,
+    "tool": "tools/audit_native_fidelity.py",
+    "tool_sha256": "459c69e1cd2dd9ef75b06c0a7a76254d4cae1eba0010bb4c8ecf547fb9595a1a"
+  },
+  "parallel_execution": {
+    "batch_cells": 20,
+    "complete_cells_before": 127,
+    "completed": true,
+    "invocations": [
+      {
+        "complete_cells_before": 13,
+        "exit_code": 143,
+        "missing_cells": 134,
+        "note": "Only missing new-profile reports generated; final runner --resume audits all cells. Fresh process per cell, identical physical code and plan.",
+        "orchestrator": "tools/complete_memory_evaluation.py",
+        "orchestrator_sha256": "e709b0f58802d3bf589f5c8c60f7b583dcb30579f9fbfb7e4862f55075afe017",
+        "source_archive": "orchestration/complete_memory_evaluation-first.py",
+        "workers": 2
+      },
+      {
+        "batch_cells": 24,
+        "complete_cells_before": 55,
+        "completed": true,
+        "missing_cells": 92,
+        "note": "Only missing new-profile reports generated; final runner --resume audits all cells. Fresh process per cell, identical physical code and plan.",
+        "orchestrator": "tools/complete_memory_evaluation.py",
+        "orchestrator_sha256": "80fce5d0f8e6b94bfbe3070f45400f32c173c8ebd6853884887796b01afc70f4",
+        "workers": 2
+      },
+      {
+        "batch_cells": 24,
+        "complete_cells_before": 79,
+        "completed": true,
+        "missing_cells": 68,
+        "note": "Only missing new-profile reports generated; final runner --resume audits all cells. Fresh process per cell, identical physical code and plan.",
+        "orchestrator": "tools/complete_memory_evaluation.py",
+        "orchestrator_sha256": "80fce5d0f8e6b94bfbe3070f45400f32c173c8ebd6853884887796b01afc70f4",
+        "workers": 2
+      },
+      {
+        "batch_cells": 24,
+        "complete_cells_before": 103,
+        "completed": true,
+        "missing_cells": 44,
+        "note": "Only missing new-profile reports generated; final runner --resume audits all cells. Fresh process per cell, identical physical code and plan.",
+        "orchestrator": "tools/complete_memory_evaluation.py",
+        "orchestrator_sha256": "80fce5d0f8e6b94bfbe3070f45400f32c173c8ebd6853884887796b01afc70f4",
+        "workers": 2
+      },
+      {
+        "batch_cells": 20,
+        "complete_cells_before": 127,
+        "completed": true,
+        "missing_cells": 20,
+        "note": "Only missing new-profile reports generated; final runner --resume audits all cells. Fresh process per cell, identical physical code and plan.",
+        "orchestrator": "tools/complete_memory_evaluation.py",
+        "orchestrator_sha256": "80fce5d0f8e6b94bfbe3070f45400f32c173c8ebd6853884887796b01afc70f4",
+        "workers": 2
+      }
+    ],
+    "missing_cells": 20,
+    "note": "Only missing new-profile reports generated; final runner --resume audits all cells. Fresh process per cell, identical physical code and plan.",
+    "orchestrator": "tools/complete_memory_evaluation.py",
+    "orchestrator_sha256": "80fce5d0f8e6b94bfbe3070f45400f32c173c8ebd6853884887796b01afc70f4",
+    "workers": 2
+  },
+  "participant_sha256": {
+    "build/contrib/cosim/examples/ns3.47-cosim-chained-default": "b187aed846bf048c494bb9e703cd651f3091858c1f05a9266fb634e26e08c20a",
+    "build/contrib/cosim/examples/ns3.47-cosim-provisioned-default": "823a6d2a6c245c59d8dfbe28c04bcb28b8d0d69adf2c7e08d0a135ee4e563804"
+  },
+  "plan_sha256": "ac611970b8fce5fc6dea31baa33f0c8f49b55e0d7643adde5779d2fcf7400cdd",
+  "presentation_update": {
+    "change": "Figure width reduced 25% (7.2 to 5.4 inches); height/fonts/colors retained; model legend wrapped and LaTeX insertion width reduced proportionally.",
+    "colors": [
+      "#DCE7F1",
+      "#F5E3D3",
+      "#F0DEE6"
+    ],
+    "edges": [
+      "#91A4B7",
+      "#B8A18D",
+      "#B39AA6"
+    ],
+    "figure_size_inches": [
+      5.4,
+      3.45
+    ],
+    "inputs": "Previously audited summary and exported chain_cells.csv; hashes rechecked.",
+    "previous_provenance_sha256": "ab816da4f70dfabe8642f7bd35b1dd1a869bece922fe0206ec48d97fd61390c8",
+    "previous_renderer_sha256": "ec5b9d39e7b5a0c20be5f0afb5ae42f15d3a2ac85fb97379fb0dacbf0987e46e"
+  },
+  "profile": "literature-gate-times-with-bugalho-memory-20ms-10ms",
+  "raw_reports_audited": 1402,
+  "render_environment": {
+    "matplotlib": "3.8.4",
+    "numpy": "1.26.4",
+    "python": "3.10.12 (main, Aug 31 2026, 10:18:17) [GCC 11.4.0]"
+  },
+  "renderer": "tools/render_memory_evaluation.py",
+  "renderer_sha256": "d870356ffaa8ebe37b9a28a7d7e72c02379eb1c813f6c5d87dc202a379480ada",
+  "resumption": {
+    "new_evaluation_runs": 0,
+    "reason": "Resume only byte-identical plan and execution sources.",
+    "resumed": true,
+    "reused_evaluation_runs": 1323,
+    "source_changes": {}
+  },
+  "run": "results/memory-evaluation-v1",
+  "run_summary_sha256": "d5bb713b36a16c7f47bfe7cd84274dfe75353e61cdeb390db3e0e50e8b1ed80e",
+  "scope": "Literature-informed composite abstract processor: Liao/Iqbal gates, Bugalho 20/10 ms memory applied uniformly; fixed topology, ideal source/readout, lossless delivery, finite four-session batches.",
+  "simulation_environment": {
+    "executable": "/home/ns3/qunet/bin/python",
+    "netsquid": "1.1.7",
+    "numpy": "1.21.6",
+    "python": "3.7.17 (default, Jun  6 2023, 20:10:09) \n[GCC 11.3.0]"
+  },
+  "source_hashes_unchanged": false,
+  "state_evolution_sources_unchanged": true,
+  "tests": {
+    "experiments": {
+      "log": "results/native-fidelity-experiment-tests.log",
+      "seconds": 72.206,
+      "sha256": "2a9f934a422d7a23fd6c83976ddcf513ade7a51e5ea3a9b09a2c81ae14628ff4",
+      "tests": 44
+    },
+    "regression": {
+      "log": "results/memory-regression-suite.log",
+      "note": "194 initial passes plus the two frozen-document checks passing after removal of a navigation notice from the historical RESULTS.md. Execution code unchanged; original failed log retained.",
+      "recheck": {
+        "log": "results/memory-freeze-recheck.log",
+        "seconds": 7.422,
+        "sha256": "05962cd59e0f5f38c351752e7c921c5cef2a349921980a9734587af59cfce3f3",
+        "tests": 2
+      },
+      "seconds": 578.8190000000001,
+      "sha256": "8a817b2fd8dc2cfc0be7d000c5f083f6760f5baa5ddb109635b767150117823a",
+      "tests": 196
+    }
+  }
+}
